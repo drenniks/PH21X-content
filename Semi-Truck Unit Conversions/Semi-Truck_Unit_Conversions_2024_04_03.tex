@@ -1,0 +1,151 @@
+\documentclass[]{article}
+\usepackage[a4paper, total={15cm,23cm}]{geometry}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{verbatim}
+\usepackage{tcolorbox}
+\usepackage{textcomp}
+\usepackage{xcomment}
+\usepackage{xstring}
+\usepackage{array}
+%opening
+\title{Semi-Truck Unit Conversions}
+\author{Benjamin Bauml}
+\date{Spring 2024}
+\pagestyle{fancy}
+\rhead{PH 221}
+\chead{Spring 2024}
+\lhead{Week 1}
+
+% Version 2024-02-21
+% Changes
+% 2024-02-21 Added xstring package to enable smooth implementation of new \ModePage command.
+% For Assignment, leave Purpose as 1. For Worksheet, set to 2. For Student Solution, set to 3. For Teacher Solution, set to 4.
+\newcommand{\Purpose}{4}
+
+\newcommand{\Exclusion}{0}
+\newcommand{\PageTurn}{0}
+\newcommand{\GrayProb}{0}
+\newcommand{\Tipsy}{0}
+
+% Assignment
+\if\Purpose1
+\renewcommand{\Exclusion}{1}
+\fi
+% Worksheet
+\if\Purpose2
+\renewcommand{\Exclusion}{1}
+\renewcommand{\PageTurn}{1}
+\fi
+% Student Solution
+\if\Purpose3
+\renewcommand{\PageTurn}{1}
+\renewcommand{\GrayProb}{1}
+\fi
+% Teaching Copy
+\if\Purpose4
+\renewcommand{\PageTurn}{1}
+\renewcommand{\GrayProb}{1}
+\renewcommand{\Tipsy}{1}
+\fi
+
+\if\Exclusion1
+\xcomment{Title,Problem,ProblemSub,PassFig}
+\fi
+
+\def \NewQ {0}
+\def \PForce {0}
+\newcommand{\MaybePage}[1]{
+	\def \PForce {#1}
+	\if\PForce1
+		\newpage
+	\else
+		\if\NewQ0
+		\gdef \NewQ {\PageTurn}
+		\else
+		\newpage
+		\fi
+	\fi
+}
+
+\newcommand{\ModePage}[1]{
+	\IfSubStr{#1}{\Purpose}{\newpage}{}
+}
+
+\newenvironment{Problem}[2][0]{%The first argument is optional, and if it is set to 1, the \newpage will be forced.
+\MaybePage{#1}
+\section*{#2}
+\if\GrayProb1
+\begin{tcolorbox}[colback=lightgray,colframe=lightgray,sharp corners,boxsep=1pt,left=0pt,right=0pt,top=0pt,bottom=0pt,after skip=2pt]
+\else
+\begin{tcolorbox}[colback=white,colframe=white,sharp corners,boxsep=1pt,left=0pt,right=0pt,top=0pt,bottom=0pt,after skip=2pt]
+\fi
+}{
+\end{tcolorbox}\noindent
+}
+
+\newenvironment{ProblemSub}[1][0]{%The argument is optional, and if a string of numbers is entered into it, it will force a \newpage in any \Purpose that shows up in the string. For example, "13" would lead to the newpage being forced in modes 1 and 3.
+\ModePage{#1}
+\if\GrayProb1
+\begin{tcolorbox}[colback=lightgray,colframe=lightgray,sharp corners,boxsep=1pt,left=0pt,right=0pt,top=0pt,bottom=0pt,after skip=2pt]
+\else
+\begin{tcolorbox}[colback=white,colframe=white,sharp corners,boxsep=1pt,left=0pt,right=0pt,top=0pt,bottom=0pt,after skip=2pt]
+\fi
+}{
+\end{tcolorbox}\noindent
+}
+
+\newenvironment{PassFig}{\begin{figure}[h]}{\end{figure}}
+
+\newcommand{\TeachingTips}[1]{
+\if\Tipsy1
+\begin{tcolorbox}[colback=lightgray,colframe=black]
+#1
+\end{tcolorbox}
+\fi
+}
+
+\newenvironment{Title}{\maketitle}{}
+
+\begin{document}
+\begin{Title}
+\begin{center}
+	This material is borrowed/adapted from PH 201 Tutorial 1 for Fall 2020.
+\end{center}
+\end{Title}
+
+\begin{Problem}{Activity}
+	A semi-truck travels 11 km in 7.5 minutes.
+\end{Problem}
+\begin{ProblemSub}
+	a) What does the ratio (11 km)/(7.5 min) tell you about the truck's motion?
+\end{ProblemSub}
+This tells us the truck's average speed.
+\begin{ProblemSub}
+	b) What does the ratio (7.5 min)/(11 km) tell you about the truck's motion?
+\end{ProblemSub}
+This tells us how long it takes the truck to travel one kilometer.
+\begin{ProblemSub}
+	c) Find the truck's average speed in miles per hour, then in meters per second. Can you tell what type of road (school zone, residential area, freeway, German Autobahn, etc.) the truck should be traveling on?
+\end{ProblemSub}
+\[
+\begin{split}
+	\text{average speed (mph)} & = \frac{11\text{ km}}{7.5\text{ min}} = \frac{11\text{ km}}{7.5\text{ min}} \left(\frac{60 \text{ min}}{1\text{ h}}\right) = 88\text{ km/h} = 88\text{ km/h} \left(\frac{1\text{ mile}}{1.6 \text{ km}}\right) = 55\text{ mph} \\
+	\text{average speed (m/s)} & = \frac{11\text{ km}}{7.5\text{ m}} = \frac{11\text{ km}}{7.5\text{ m}} \left(\frac{1000\text{ m}}{1\text{ km}}\right) \left(\frac{1\text{ min}}{60\text{ s}}\right) = 24.444 \text{ m/s} \approx 24\text{ m/s}
+\end{split}
+\]
+55 mph is an appropriate freeway speed for a semi-truck.
+
+Side Note: Notice that I truncated 24.444 to just 24. When figuring out how many decimal places to use, a decent rule of thumb (at this level) is to only include as many digits (not including leading zeros) as you are given in the least precise piece of data. Here, both 11 and 7.5 have two ``significant figures,'' so my final answer should only have two digits. If we had instead been given 11.0 and 7.50, we could assume enough reliability out to three digits to give our final answer as 24.4. However, if we had been given 11.0 and 7.5, we would still want to stick with two digits only, because 7.5 is less precise. Since every data point is assumed to be somewhat uncertain (limited by the accuracy of our measurements), we can't assume that 7.5 is precisely 7.50, nor that 7.50 is precisely 7.500.
+\begin{ProblemSub}
+	d) Find the time in seconds it takes the truck to travel one meter.
+\end{ProblemSub}
+\[
+\text{time per meter} = \frac{7.5\text{ min}}{11\text{ km}} = \frac{7.5\text{ min}}{11\text{ km}} \left(\frac{1\text{ km}}{1000\text{ m}}\right) \left(\frac{60\text{ s}}{1\text{ min}}\right) = \frac{1}{24.444\text{ m/s}} \approx 0.041\text{ s/m}
+\]
+Side Note: 0.041 has two ``significant figures,'' since we do not count the leading zeros.
+\end{document}

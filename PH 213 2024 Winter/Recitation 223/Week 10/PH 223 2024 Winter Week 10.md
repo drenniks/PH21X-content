@@ -37,7 +37,7 @@ tags:
 ## Notes
 * Added to Vault 2024 03 28
 	* Assignment Format Version 2024-02-21
-	* Requires dvipsnames option for xcolor package
+	* requires dvipsnames option for xcolor package
 	* displacement current questions commented (not used in PH 213 Winter 2024)
 	* requires auxiliary image file that could easily be replaced with tikz
 		* ![RC Concepts Circuit](./RC_Concepts_Circuit.pdf)

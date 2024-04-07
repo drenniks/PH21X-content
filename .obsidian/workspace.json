@@ -1,0 +1,172 @@
+{
+  "main": {
+    "id": "2a63c434742a7882",
+    "type": "split",
+    "children": [
+      {
+        "id": "52e4c083b7512679",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a07f5fe92ec47dbc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Course Outcomes and Learning Objectives.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f405393a3ad3db09",
+    "type": "split",
+    "children": [
+      {
+        "id": "0ddd8ba7c66ad91d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0ee81c010de32636",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "53dca0328abba495",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "4eec9245679491b0",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "397f0b09edb9f314",
+    "type": "split",
+    "children": [
+      {
+        "id": "b49bee3288de07bc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "43b1daba4bc59161",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Course Outcomes and Learning Objectives.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "c5e2efa6f97d5756",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Course Outcomes and Learning Objectives.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "5ce905a782fefcfc",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "c456c6b228f1afd5",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Course Outcomes and Learning Objectives.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "a07f5fe92ec47dbc",
+  "lastOpenFiles": [
+    "PH 211 2024 Spring/Recitation 221/Week 1/PH 221 2024 Spring Week 1.md",
+    "Two Vector Hike/Two_Vector_Hike_2024_04_03.pdf",
+    "Two Vector Hike/Two Vector Hike.md",
+    "Motion Diagram Jogging/Motion_Diagram_Jogging_2024_04_03.pdf",
+    "Motion Diagram Jogging/Motion Diagram Jogging.md",
+    "Course Outcomes and Learning Objectives.md",
+    "Frictionless Pool Lag/Frictionless_Pool_Lag_2024_04_03.pdf",
+    "Semi-Truck Unit Conversions/Semi-Truck Unit Conversions.md",
+    "Visual Vector Addition/Visual Vector Addition.md",
+    "Frictionless Pool Lag/Frictionless Pool Lag.md",
+    "Semi-Truck Unit Conversions/Semi-Truck_Unit_Conversions_2024_04_03.pdf",
+    "Visual Vector Addition/Visual_Vector_Additon_2024_04_03.pdf",
+    "PH 211 2024 Spring/Recitation 221/Week 1/PH_221_Week_1-Solution.pdf",
+    "Magnetic Field of a Partially Curved Wire/Magnetic Field of a Partially Curved Wire.md",
+    "PH 213 2024 Winter/Recitation 223/Week 10/PH 223 2024 Winter Week 10.md",
+    "Motion Diagram Jogging/Motion_Diagram_Jogging_2024_04_03.tex",
+    "Motion Diagram Jogging",
+    "Two Vector Hike/Two_Vector_Hike_2024_04_03.tex",
+    "Two Vector Hike",
+    "PH 211 2024 Spring/Studio/Week 1/PH 211 Studio 01 Representations and Sensemaking.md"
+  ]
+}
