@@ -11,6 +11,8 @@ tags:
   - learning_objectives/critical_thinking/manageable_pieces
   - learning_objectives/critical_thinking/apply_concepts
   - modality/in-person
+  - time/unknown
+  - source/PH201_tutorials
 ---
 # Two Vector Hike
 ## Spring 2024

@@ -13,6 +13,9 @@ tags:
   - usage/PH213/section_type/recitation
   - format/assignment2024-02-21
   - modality/in-person/remote_capable
+  - content/coordinate_systems
+  - time/unknown
+  - source/Knight
 ---
 # Magnetic Field of a Partially Curved Wire
 ## Winter 2024

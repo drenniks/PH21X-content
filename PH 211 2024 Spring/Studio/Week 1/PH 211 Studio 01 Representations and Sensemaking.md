@@ -9,6 +9,8 @@ tags:
   - usage/PH211/section_type/studio
   - content/vectors/basics
   - content/vectors/displacement
+  - content/representations
+  - content/units
 ---
 # PH 211 Studio 01 Representations and Sensemaking
 ## Files

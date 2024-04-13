@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "52e4c083b7512679",
+        "id": "2e413b780544cdcd",
         "type": "tabs",
         "children": [
           {
-            "id": "a07f5fe92ec47dbc",
+            "id": "7eefa4a38f8832d2",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Course Outcomes and Learning Objectives.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -48,7 +44,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:usage/PH211/quarter/Sp2024/Week1",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Course Outcomes and Learning Objectives.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Course Outcomes and Learning Objectives.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Course Outcomes and Learning Objectives.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -146,27 +138,32 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a07f5fe92ec47dbc",
+  "active": "7eefa4a38f8832d2",
   "lastOpenFiles": [
     "PH 211 2024 Spring/Recitation 221/Week 1/PH 221 2024 Spring Week 1.md",
-    "Two Vector Hike/Two_Vector_Hike_2024_04_03.pdf",
-    "Two Vector Hike/Two Vector Hike.md",
-    "Motion Diagram Jogging/Motion_Diagram_Jogging_2024_04_03.pdf",
-    "Motion Diagram Jogging/Motion Diagram Jogging.md",
-    "Course Outcomes and Learning Objectives.md",
-    "Frictionless Pool Lag/Frictionless_Pool_Lag_2024_04_03.pdf",
-    "Semi-Truck Unit Conversions/Semi-Truck Unit Conversions.md",
     "Visual Vector Addition/Visual Vector Addition.md",
-    "Frictionless Pool Lag/Frictionless Pool Lag.md",
+    "Two Vector Hike/Two Vector Hike.md",
+    "Two Vector Hike/Two_Vector_Hike_2024_04_03.pdf",
+    "Toy Rocket Launch/Toy Rocket Launch.md",
+    "Toy Rocket Launch/Toy_Rocket_Launch_2024_04_12.pdf",
+    "Semi-Truck Unit Conversions/Semi-Truck Unit Conversions.md",
     "Semi-Truck Unit Conversions/Semi-Truck_Unit_Conversions_2024_04_03.pdf",
-    "Visual Vector Addition/Visual_Vector_Additon_2024_04_03.pdf",
-    "PH 211 2024 Spring/Recitation 221/Week 1/PH_221_Week_1-Solution.pdf",
+    "RC Concepts in Current/RC Concepts in Current.md",
+    "RC Concepts in Current/RC_Concepts_in_Current_2024_03_28.pdf",
+    "RC Concepts in Current/RC_Concepts_Circuit.pdf",
+    "Motion Diagram Jogging/Motion Diagram Jogging.md",
+    "Motion Diagram Jogging/Motion_Diagram_Jogging_2024_04_03.pdf",
     "Magnetic Field of a Partially Curved Wire/Magnetic Field of a Partially Curved Wire.md",
-    "PH 213 2024 Winter/Recitation 223/Week 10/PH 223 2024 Winter Week 10.md",
-    "Motion Diagram Jogging/Motion_Diagram_Jogging_2024_04_03.tex",
-    "Motion Diagram Jogging",
-    "Two Vector Hike/Two_Vector_Hike_2024_04_03.tex",
-    "Two Vector Hike",
-    "PH 211 2024 Spring/Studio/Week 1/PH 211 Studio 01 Representations and Sensemaking.md"
+    "Magnetic Field of a Partially Curved Wire/Magnetic_Field_of_a_Partially_Curved_Wire_2024_03_27.pdf",
+    "LC Time Interpretation/LC Time Interpretation.md",
+    "LC Time Interpretation/LC_Time_Interpretation_2024_03_28.pdf",
+    "Frictionless Pool Lag/Frictionless Pool Lag.md",
+    "Frictionless Pool Lag/Frictionless_Pool_Lag_2024_04_03.pdf",
+    "PH 211 2024 Spring/Studio/Week 2/PH 211 Studio 02 Motion Representations.md",
+    "PH 211 2024 Spring/Studio/Week 2/PH211_ST_02_Motion_Reps_240411_221947.pdf",
+    "Course Outcomes and Learning Objectives.md",
+    "PH 211 2024 Spring/Studio/Week 1/PH 211 Studio 01 Representations and Sensemaking.md",
+    "PH 211 2024 Spring/Recitation 221/Week 2/PH 221 2024 Spring Week 2.md",
+    "PH 213 2024 Winter/Recitation 223/Week 10/PH 223 2024 Winter Week 10.md"
   ]
 }

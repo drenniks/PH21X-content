@@ -6,6 +6,8 @@ tags:
   - content/vectors/basics
   - learning_objectives/representations
   - modality/in-person
+  - time/unknown
+  - source/PH201_tutorials
 ---
 # Visual Vector Addition
 ## Spring 2021

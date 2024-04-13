@@ -11,6 +11,8 @@ tags:
   - usage/PH213/quarter/W2024/Week10
   - usage/PH213/section_type/recitation
   - modality/in-person/remote_capable
+  - time/unknown
+  - source/Knight/chapter30/workbook
 ---
 # LC Time Interpretation
 ## Winter 2024

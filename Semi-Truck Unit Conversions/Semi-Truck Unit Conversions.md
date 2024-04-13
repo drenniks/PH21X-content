@@ -7,6 +7,8 @@ tags:
   - content/scalars/speed
   - learning_objectives/critical_thinking/sensemaking
   - modality/in-person
+  - time/unknown
+  - source/PH201_tutorials
 ---
 # Semi-Truck Unit Conversions
 ## Spring 2024
