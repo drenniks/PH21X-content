@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "2e413b780544cdcd",
+        "id": "90d396962ac055fc",
         "type": "tabs",
         "children": [
           {
-            "id": "7eefa4a38f8832d2",
+            "id": "f61953a7f4d2188a",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -81,6 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "PH 211 2024 Spring/Studio/Week 3/PH 211 Studio 03 Kinematics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +98,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "PH 211 2024 Spring/Studio/Week 3/PH 211 Studio 03 Kinematics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +120,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "PH 211 2024 Spring/Studio/Week 3/PH 211 Studio 03 Kinematics.md"
+              }
             }
           }
         ]
@@ -138,11 +142,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7eefa4a38f8832d2",
+  "active": "0ee81c010de32636",
   "lastOpenFiles": [
+    "PH 211 2024 Spring/Studio/Week 3/PH211_ST_03_Kinematics_240416_000332.pdf",
+    "PH 211 2024 Spring/Studio/Week 3/PH 211 Studio 03 Kinematics.md",
+    "PH 211 2024 Spring/Studio/Week 2/PH 211 Studio 02 Motion Representations.md",
+    "PH 211 2024 Spring/Recitation 221/Week 3/PH 221 Week 3.md",
+    "Two Window Toss/Two Window Toss.md",
+    "PH 211 2024 Spring/Recitation 221/Week 3/PH_221_Week_3-Solution.pdf",
+    "PH 211 2024 Spring/Recitation 221/Week 3/PH_221_Week_3.pdf",
+    "PH 211 2024 Spring/Recitation 221/Week 2/PH 221 2024 Spring Week 2.md",
+    "Course Outcomes and Learning Objectives.md",
+    "Two Window Toss/Two_Window_Toss.pdf",
+    "Two Vector Hike/Two Vector Hike.md",
     "PH 211 2024 Spring/Recitation 221/Week 1/PH 221 2024 Spring Week 1.md",
     "Visual Vector Addition/Visual Vector Addition.md",
-    "Two Vector Hike/Two Vector Hike.md",
     "Two Vector Hike/Two_Vector_Hike_2024_04_03.pdf",
     "Toy Rocket Launch/Toy Rocket Launch.md",
     "Toy Rocket Launch/Toy_Rocket_Launch_2024_04_12.pdf",
@@ -154,16 +168,9 @@
     "Motion Diagram Jogging/Motion Diagram Jogging.md",
     "Motion Diagram Jogging/Motion_Diagram_Jogging_2024_04_03.pdf",
     "Magnetic Field of a Partially Curved Wire/Magnetic Field of a Partially Curved Wire.md",
-    "Magnetic Field of a Partially Curved Wire/Magnetic_Field_of_a_Partially_Curved_Wire_2024_03_27.pdf",
     "LC Time Interpretation/LC Time Interpretation.md",
-    "LC Time Interpretation/LC_Time_Interpretation_2024_03_28.pdf",
     "Frictionless Pool Lag/Frictionless Pool Lag.md",
-    "Frictionless Pool Lag/Frictionless_Pool_Lag_2024_04_03.pdf",
-    "PH 211 2024 Spring/Studio/Week 2/PH 211 Studio 02 Motion Representations.md",
-    "PH 211 2024 Spring/Studio/Week 2/PH211_ST_02_Motion_Reps_240411_221947.pdf",
-    "Course Outcomes and Learning Objectives.md",
     "PH 211 2024 Spring/Studio/Week 1/PH 211 Studio 01 Representations and Sensemaking.md",
-    "PH 211 2024 Spring/Recitation 221/Week 2/PH 221 2024 Spring Week 2.md",
     "PH 213 2024 Winter/Recitation 223/Week 10/PH 223 2024 Winter Week 10.md"
   ]
 }
