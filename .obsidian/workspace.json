@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "28070da4f00b26c3",
+        "id": "fe703fd752d46ffa",
         "type": "tabs",
         "children": [
           {
-            "id": "d37577049056f9a0",
+            "id": "973f844ff19f870f",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -44,7 +44,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#source/Paul_Emigh",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -138,8 +138,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d37577049056f9a0",
+  "active": "973f844ff19f870f",
   "lastOpenFiles": [
+    "Representations_and_Images/Loose Representations and Images.md",
+    "Representations_and_Images/Knobby_Ball_with_Spring_on_Ramp.svg",
+    "Paul's_Images/PH_211_Figures/Knobby_Ball_with_Spring_on_Ramp.svg",
+    "Representations_and_Images/Two_Pendula_Collide.svg",
+    "Representations_and_Images/Two_Pendulums_Collide.svg",
+    "Paul's_Images/PH_211_Figures/Two_Pendulums_Collide.svg",
+    "Representations_and_Images/Ball_Braced_Between_Two_Angled_Surfaces.svg",
+    "Paul's_Images/PH_211_Figures/Ball_Braced_Between_Two_Angled_Surfaces.svg",
+    "Representations_and_Images/Stack_of_Blocks_Sliding_as_Group_FBDs.svg",
+    "Representations_and_Images/Stack_of_Blocks_Sliding_as_Group.svg",
+    "Paul's_Images/PH_211_Figures/Stack_of_Blocks_Sliding_as_Group_FBDs.svg",
+    "Course Outcomes and Learning Objectives.md",
+    "Activities/Force_versus_Net_Force/Force versus Net Force.md",
     "Formats/Formats.md",
     "211/Recitation/Week_5/PH_221_Week_5-Solution.pdf",
     "Assignment_Basics.tex.md",
@@ -148,9 +161,7 @@
     "Activities/Maximum_Tilt/Maximum Tilt.md",
     "Activities/Steady_Block_on_a_Sliding_Ramp/Steady Block on a Sliding Ramp.md",
     "Activities/Apparent_Weight_in_an_Elevator/Apparent Weight in an Elevator.md",
-    "Activities/Force_versus_Net_Force/Force versus Net Force.md",
     "211/Recitation/Week_5/PH_221_Week_5.pdf",
-    "Course Outcomes and Learning Objectives.md",
     "Activities/Crate_Brick_Box_Car_FBDs/Crate Brick Box Car FBDs.md",
     "211/Recitation/Week_5/PH_221_Week_5-Worksheet.pdf",
     "211/Recitation/Week_5/PH_221_Week_5.synctex(busy)",
@@ -173,8 +184,6 @@
     "211/Studio/Week_1/PH 211 Studio 01 Representations and Sensemaking.md",
     "Activities/Two_Window_Toss/Two Window Toss.md",
     "211/Recitation/Week_2/PH 221 2024 Spring Week 2.md",
-    "Visual Vector Addition/Visual Vector Addition.md",
-    "PH 211 2024 Spring/Recitation 221/Week 1/PH 221 2024 Spring Week 1.md",
-    "Paul's Images/PH 211 Figures/RAMPU.svg"
+    "Visual Vector Addition/Visual Vector Addition.md"
   ]
 }
