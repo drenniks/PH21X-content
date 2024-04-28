@@ -1,0 +1,26 @@
+\newcommand{\FBDaxes}[3]{
+	\begin{scope}[shift={(#1)},rotate=#2]
+		% x-axis
+		\draw[thick,->] (-2,0) -- (2,0);
+		\node[anchor=west] at (2,0) {$x$};
+		% y-axis
+		\draw[thick,->] (0,-2) -- (0,2);
+		\node[anchor=west] at (0,2) {$y$};
+		\coordinate (#3) at (0,0);
+	\end{scope}
+}
+\newcommand{\FBDvectorMA}[4]{
+	\begin{scope}[shift={(#1)}]
+		\coordinate (#4tip) at ({#2*cos(#3)},{#2*sin(#3)});
+		\draw[ultra thick,blue,->] (#1) -- (#4tip);
+	\end{scope}
+}
+\newcommand{\FBDvectorXY}[3]{
+	\begin{scope}[shift={(#1)}]
+		\coordinate (#3tip) at (#2);
+		\draw[ultra thick,blue,->] (0,0) -- (#3tip);
+	\end{scope}
+}
+\newcommand{\FBDdot}[1]{
+	\filldraw[black] (#1) circle (3pt);
+}

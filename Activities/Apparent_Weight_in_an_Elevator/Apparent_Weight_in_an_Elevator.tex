@@ -1,0 +1,53 @@
+\Problem{Apparent Weight in an Elevator}{\ApparentWeight}{
+Zach, whose mass is 80 kg, is on an elevator descending at 12 m/s. The elevator takes 3.0 s to brake to a stop at the ground floor.
+}
+\ProblemSub{\ApparentWeightA}{
+(a) Draw a free-body diagram for Zach. Which force is Zach's apparent weight?
+}
+\Solution{\ApparentWeightASol}{
+\begin{figure}[h]
+	\centering
+	\begin{tikzpicture}
+		\FBDaxes{0,0}{0}{axes}
+		\FBDvectorXY{axes}{0,1.5}{FN}
+		\node[anchor=west] at (FNtip) {$\vec{F}^{N}_{Z,el}$};
+		\FBDvectorXY{axes}{0,-1}{FG}
+		\node[anchor=west] at (FGtip) {$\vec{F}^{g}_{Z,E}$};
+		\FBDdot{axes}
+	\end{tikzpicture}
+\end{figure}
+
+The floor of the elevator pushes up on Zach with the normal force $\vec{F}^{N}_{Z,el}$. In turn, he pushes back on the floor with an equal and opposite force, $\vec{F}^{N}_{el,Z}$ (this is Newton's 3rd law). If the floor were a scale, this is the force that it would measure---it doesn't magically know the force of gravity on Zach, $\vec{F}^{g}_{Z,E}$ (which some might refer to as Zach's actual weight); it can only go off of what it feels from Zach's feet pushing on it. The normal force is Zach's apparent weight.
+}
+\ProblemSub{\ApparentWeightB}{
+(b) What is Zach's apparent weight before the elevator starts braking?
+}
+\Solution{\ApparentWeightBSol}{
+Before braking, the elevator descends at a constant speed. Therefore
+\[
+\begin{split}
+	F^{net}_{y} & = ma_{y} = 0 \\
+	F^{N}_{Z,el} - F^{g}_{Z,E} & = 0 \\
+	F^{N}_{Z,el} & = F^{g}_{Z,E} = mg = (80\text{ kg})(9.8\text{ m/s}^{2}) \approx 780\text{ N}.
+\end{split}
+\]
+Zach's apparent weight is 780 N while in an inertial reference frame.
+}
+\ProblemSub{\ApparentWeightC}{
+(c) What is Zach's apparent weight while the elevator is braking?
+}
+\Solution{\ApparentWeightCSol}{
+The elevator must decelerate from 12 m/s to 0 m/s over 3.0 seconds. On average, that means
+\[
+a_{y} = \frac{\Delta v}{\Delta t} = \frac{12\text{ m/s}}{3.0\text{ s}} = 4.0 \text{ m/s}^{2}.
+\]
+Now, the net force is nonzero, and we find
+\[
+\begin{split}
+	F^{net}_{y} & = ma_{y} \\
+	F^{N}_{Z,el} - F^{g}_{Z,E} & = ma_{y} \\
+	F^{N}_{Z,el} & = ma_{y} + F^{g}_{Z,E} = m(a_{y} + g) = (80\text{ kg})(4.0\text{ m/s}^{2} + 9.8\text{ m/s}^{2}) \approx 1100\text{ N}.
+\end{split}
+\]
+Zach's apparent weight is 1100 N while in the braking elevator.
+}

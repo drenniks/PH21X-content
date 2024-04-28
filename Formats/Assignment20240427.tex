@@ -1,0 +1,126 @@
+% Version 2024-04-27
+% Changes
+% 2024-02-21 Added xstring package to enable smooth implementation of new \ModePage command.
+% 2024-04-27 Set up to split activities and formatting aspects into separate files. Removed dependence on xcomment. Added an automatic counter to number the activities in a problem set.
+\usepackage{tcolorbox}
+\usepackage{xstring}
+% You will want the following four lines in your document (the last two uncommented):
+% For Assignment, leave Purpose as 1. For Worksheet, set to 2. For Student Solution, set to 3. For Teacher Solution, set to 4.
+% If you want keep the pieces from being called manually, set DefOnly to 0.
+%\newcommand{\Purpose}{4}
+%\newcommand{\DefOnly}{1}
+\newcommand{\Exclusion}{0}
+\newcommand{\PageTurn}{0}
+\newcommand{\GrayProb}{0}
+\newcommand{\Tipsy}{0}
+
+% Assignment
+\if\Purpose1
+\renewcommand{\Exclusion}{1}
+\fi
+% Worksheet
+\if\Purpose2
+\renewcommand{\Exclusion}{1}
+\renewcommand{\PageTurn}{1}
+\fi
+% Student Solution
+\if\Purpose3
+\renewcommand{\PageTurn}{1}
+\renewcommand{\GrayProb}{1}
+\fi
+% Teaching Copy
+\if\Purpose4
+\renewcommand{\PageTurn}{1}
+\renewcommand{\GrayProb}{1}
+\renewcommand{\Tipsy}{1}
+\fi
+
+\def \NewQ {0}
+\def \PForce {0}
+\newcommand{\MaybePage}[1]{
+	\def \PForce {#1}
+	\if\PForce1
+	\newpage
+	\else
+	\if\NewQ0
+	\gdef \NewQ {\PageTurn}
+	\else
+	\newpage
+	\fi
+	\fi
+}
+
+\newcommand{\ModePage}[1]{
+	\IfSubStr{#1}{\Purpose}{\newpage}{}
+}
+
+\newcounter{ActNumber}
+\setcounter{ActNumber}{0}
+
+\newcommand{\Problem}[4][0]{%The first argument is optional, and if it is set to 1, the \newpage will be forced. The second argument is the name of the activity, the third is the command the activity is stored as, and the fourth is the actual problem statement.
+\newcommand{#3}{
+\MaybePage{#1}
+\addtocounter{ActNumber}{1}
+\section*{\SecType\Week-\theActNumber: #2}
+\if\GrayProb1
+\begin{tcolorbox}[colback=lightgray,colframe=lightgray,sharp corners,boxsep=1pt,left=0pt,right=0pt,top=0pt,bottom=0pt,after skip=2pt]
+\else
+\begin{tcolorbox}[colback=white,colframe=white,sharp corners,boxsep=1pt,left=0pt,right=0pt,top=0pt,bottom=0pt,after skip=2pt]
+\fi
+#4
+\end{tcolorbox}\noindent
+}
+\if\DefOnly0
+\else
+#3
+\fi
+}
+	
+\newcommand{\ProblemSub}[3][0]{%The first argument is optional, and if a string of numbers is entered into it, it will force a \newpage in any \Purpose that shows up in the string. For example, "13" would lead to the newpage being forced in modes 1 and 3. The second is the command the activity is stored as, and the third is the actual problem statement.
+\newcommand{#2}{
+\ModePage{#1}
+\if\GrayProb1
+\begin{tcolorbox}[colback=lightgray,colframe=lightgray,sharp corners,boxsep=1pt,left=0pt,right=0pt,top=0pt,bottom=0pt,after skip=2pt]
+\else
+\begin{tcolorbox}[colback=white,colframe=white,sharp corners,boxsep=1pt,left=0pt,right=0pt,top=0pt,bottom=0pt,after skip=2pt]
+\fi
+#3
+\end{tcolorbox}\noindent
+}
+\if\DefOnly0
+\else
+#2
+\fi
+}
+		
+\newcommand{\Solution}[2]{%The first argument is the command the solution is stored as, and the second is the actual solution.
+\newcommand{#1}{
+\if\Exclusion0
+#2
+\fi
+}
+\if\DefOnly0
+\else
+#1
+\fi
+}
+		
+\newcommand{\ProblemFig}[2]{%The first argument is the command the figure is stored as, and the second is the actual figure.
+\newcommand{#1}{
+\begin{figure}[h]
+#2
+\end{figure}
+}
+\if\DefOnly0
+\else
+#1
+\fi
+}
+		
+\newcommand{\TeachingTips}[1]{
+\if\Tipsy1
+\begin{tcolorbox}[colback=lightgray,colframe=black]
+#1
+\end{tcolorbox}
+\fi
+}
