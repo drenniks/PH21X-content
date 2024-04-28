@@ -13,7 +13,7 @@ tags:
   - content/vectors/direction_as_sign
   - outcomes/determine_germane_principles
 ---
-# PH 211 Studio 01 Representations and Sensemaking
+# PH 211 Studio 02 Motion Representations
 ## Files
 [PH 211 Studio 02 PDF](./PH211_ST_02_Motion_Reps_240411_221947.pdf)
 ## Activities

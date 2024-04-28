@@ -3,24 +3,7 @@ tags:
   - usage/PH211/quarter/Sp2024/Week1
   - usage/PH211/section_type/recitation
   - format/assignment2024-02-21
-  - content/vectors/basics
-  - learning_objectives/representations
   - modality/in-person
-  - content/units/conversion
-  - content/scalars/speed
-  - learning_objectives/critical_thinking/sensemaking
-  - content/coordinate_systems
-  - content/kinematics
-  - content/vectors/direction_as_sign
-  - content/vectors/velocity
-  - outcomes/conceptual_and_quantitative_predictions
-  - content/scalars/distance
-  - content/vectors/components/trigonometry
-  - content/vectors/displacement
-  - learning_objectives/critical_thinking/apply_concepts
-  - learning_objectives/critical_thinking/manageable_pieces
-  - learning_objectives/critical_thinking/assumptions_and_simplifications
-  - content/representations/motion_diagrams
 ---
 # PH 221 2024 Spring Week 1
 ## Files

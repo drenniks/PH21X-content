@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "90d396962ac055fc",
+        "id": "28070da4f00b26c3",
         "type": "tabs",
         "children": [
           {
-            "id": "f61953a7f4d2188a",
+            "id": "d37577049056f9a0",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "PH 211 2024 Spring/Recitation 221/Week 1/PH 221 2024 Spring Week 1.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -48,7 +44,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:format/assignment2024-02-21",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,8 +61,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -86,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PH 211 2024 Spring/Recitation 221/Week 1/PH 221 2024 Spring Week 1.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PH 211 2024 Spring/Recitation 221/Week 1/PH 221 2024 Spring Week 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "PH 211 2024 Spring/Recitation 221/Week 1/PH 221 2024 Spring Week 1.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -147,37 +138,43 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f61953a7f4d2188a",
+  "active": "d37577049056f9a0",
   "lastOpenFiles": [
-    "PH 211 2024 Spring/Recitation 221/Week 1/PH_221_Week_1.tmp",
-    "PH 211 2024 Spring/Recitation 221/Week 1/PH_221_Week_1.aux",
-    "PH 211 2024 Spring/Recitation 221/Week 1/PH_221_Week_1.log",
+    "Formats/Formats.md",
+    "211/Recitation/Week_5/PH_221_Week_5-Solution.pdf",
+    "Assignment_Basics.tex.md",
+    "Activities/Suspended_Loudspeaker/Suspended Loudspeaker.md",
+    "211/Recitation/Week_5/PH 221 Week 5.md",
+    "Activities/Maximum_Tilt/Maximum Tilt.md",
+    "Activities/Steady_Block_on_a_Sliding_Ramp/Steady Block on a Sliding Ramp.md",
+    "Activities/Apparent_Weight_in_an_Elevator/Apparent Weight in an Elevator.md",
+    "Activities/Force_versus_Net_Force/Force versus Net Force.md",
+    "211/Recitation/Week_5/PH_221_Week_5.pdf",
+    "Course Outcomes and Learning Objectives.md",
+    "Activities/Crate_Brick_Box_Car_FBDs/Crate Brick Box Car FBDs.md",
+    "211/Recitation/Week_5/PH_221_Week_5-Worksheet.pdf",
+    "211/Recitation/Week_5/PH_221_Week_5.synctex(busy)",
+    "211/Recitation/Week_5/PH_221_Week_5.tex.nS5225",
+    "211/Recitation/Week_5/PH_221_Week_5.tex.Lh5225",
+    "211/Recitation/Week_5/PH_221_Week_5.synctex.gz",
+    "211/Recitation/Week_5/PH_221_Week_5.aux",
+    "211/Recitation/Week_5/PH_221_Week_5.log",
+    "211/Recitation/Week_4/PH 221 Week 4.md",
+    "Activities/Suitcase_Pull/Suitcase Pull.md",
+    "Activities/Free_Fall_from_FBD/Free Fall from FBD.md",
+    "211/Recitation/Week_4/PH_221_Week_4.pdf",
+    "Activities/RC_Concepts_in_Current/RC Concepts in Current.md",
+    "Activities/Frictionless_Pool_Lag/Frictionless Pool Lag.md",
+    "211/Recitation/Week_1/PH 221 2024 Spring Week 1.md",
+    "211/Recitation/Week_3/PH 221 Week 3.md",
+    "211/Studio/Week_4/PH 211 Studio 04 Free-Body Diagrams.md",
+    "211/Studio/Week_3/PH 211 Studio 03 Kinematics.md",
+    "211/Studio/Week_2/PH 211 Studio 02 Motion Representations.md",
+    "211/Studio/Week_1/PH 211 Studio 01 Representations and Sensemaking.md",
+    "Activities/Two_Window_Toss/Two Window Toss.md",
+    "211/Recitation/Week_2/PH 221 2024 Spring Week 2.md",
     "Visual Vector Addition/Visual Vector Addition.md",
     "PH 211 2024 Spring/Recitation 221/Week 1/PH 221 2024 Spring Week 1.md",
-    "Course Outcomes and Learning Objectives.md",
-    "PH 211 2024 Spring/Recitation 221/Week 2/PH 221 2024 Spring Week 2.md",
-    "PH 211 2024 Spring/Recitation 221/Week 2/PH_221_Week_2-Teacher_Solution.pdf",
-    "PH 211 2024 Spring/Recitation 221/Week 2/PH_221_Week_2.pdf",
-    "PH 211 2024 Spring/Recitation 221/Week 2/PH_221_Week_2-Solution.pdf",
-    "PH 211 2024 Spring/Studio/Week 3/PH211_ST_03_Kinematics_240416_000332.pdf",
-    "PH 211 2024 Spring/Studio/Week 3/PH 211 Studio 03 Kinematics.md",
-    "Paul's Images/PH 211 Figures/RAMPU.svg",
-    "Two Window Toss/Two_Window_Toss.pdf",
-    "Two Window Toss/Two Window Toss.md",
-    "PH 211 2024 Spring/Studio/Week 2/PH 211 Studio 02 Motion Representations.md",
-    "PH 211 2024 Spring/Recitation 221/Week 3/PH 221 Week 3.md",
-    "PH 211 2024 Spring/Recitation 221/Week 3/PH_221_Week_3-Solution.pdf",
-    "PH 211 2024 Spring/Recitation 221/Week 3/PH_221_Week_3.pdf",
-    "Two Vector Hike/Two Vector Hike.md",
-    "Two Vector Hike/Two_Vector_Hike_2024_04_03.pdf",
-    "Toy Rocket Launch/Toy Rocket Launch.md",
-    "Semi-Truck Unit Conversions/Semi-Truck Unit Conversions.md",
-    "RC Concepts in Current/RC Concepts in Current.md",
-    "Motion Diagram Jogging/Motion Diagram Jogging.md",
-    "Magnetic Field of a Partially Curved Wire/Magnetic Field of a Partially Curved Wire.md",
-    "LC Time Interpretation/LC Time Interpretation.md",
-    "Frictionless Pool Lag/Frictionless Pool Lag.md",
-    "PH 211 2024 Spring/Studio/Week 1/PH 211 Studio 01 Representations and Sensemaking.md",
-    "PH 213 2024 Winter/Recitation 223/Week 10/PH 223 2024 Winter Week 10.md"
+    "Paul's Images/PH 211 Figures/RAMPU.svg"
   ]
 }

@@ -3,17 +3,8 @@ tags:
   - usage/PH211/quarter/Sp2024/Week3
   - usage/PH211/section_type/recitation
   - format/assignment2024-02-21
-  - content/vectors/components/trigonometry
-  - learning_objectives/representations
-  - learning_objectives/critical_thinking/manageable_pieces
-  - learning_objectives/critical_thinking/apply_concepts
   - modality/in-person
   - time/long
-  - source/BENUMBrAL
-  - content/kinematics
-  - content/vectors/acceleration
-  - content/vectors/velocity
-  - learning_objectives/point_model
 ---
 # PH 221 2024 Spring Week 3
 ## Files
