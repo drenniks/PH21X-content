@@ -27,9 +27,9 @@ tags:
 [PH 211 Studio 04 PDF](./PH211_ST_04_Free-body_Diagrams_240423_142805.pdf)
 ## Activities
 Activity 4-1: Moving a Box
-Activity 3-2: Moving a Box II
-Activity 3-3: Book on a Ramp (aka Textbook on a Tilted Table)
-Activity 3-4: Book on a Ramp (Special Case) (aka Tilted Table Sensemaking)
+Activity 4-2: Moving a Box II
+Activity 4-3: Book on a Ramp (aka Textbook on a Tilted Table)
+Activity 4-4: Book on a Ramp (Special Case) (aka Tilted Table Sensemaking)
 ## Notes
 * Added to Vault 2024 04 27
 	* solution document only

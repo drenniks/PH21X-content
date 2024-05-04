@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "fe703fd752d46ffa",
+        "id": "b3a68f4fd2b6f0db",
         "type": "tabs",
         "children": [
           {
-            "id": "973f844ff19f870f",
+            "id": "471aa34d119811c7",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -81,6 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "211/Studio/Week_5/PH 211 Studio 05 Laws of Motion.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +98,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "211/Studio/Week_5/PH 211 Studio 05 Laws of Motion.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +120,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "211/Studio/Week_5/PH 211 Studio 05 Laws of Motion.md"
+              }
             }
           }
         ],
@@ -138,8 +142,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "973f844ff19f870f",
+  "active": "0ee81c010de32636",
   "lastOpenFiles": [
+    "211/Studio/Week_5/PH211_ST_05_Laws_of_Motion_240430_121912.pdf",
+    "211/Studio/Week_5/PH 211 Studio 05 Laws of Motion.md",
+    "211/Studio/Week_4/PH 211 Studio 04 Free-Body Diagrams.md",
     "Representations_and_Images/Loose Representations and Images.md",
     "Representations_and_Images/Knobby_Ball_with_Spring_on_Ramp.svg",
     "Paul's_Images/PH_211_Figures/Knobby_Ball_with_Spring_on_Ramp.svg",
@@ -173,17 +180,14 @@
     "211/Recitation/Week_4/PH 221 Week 4.md",
     "Activities/Suitcase_Pull/Suitcase Pull.md",
     "Activities/Free_Fall_from_FBD/Free Fall from FBD.md",
-    "211/Recitation/Week_4/PH_221_Week_4.pdf",
     "Activities/RC_Concepts_in_Current/RC Concepts in Current.md",
     "Activities/Frictionless_Pool_Lag/Frictionless Pool Lag.md",
     "211/Recitation/Week_1/PH 221 2024 Spring Week 1.md",
     "211/Recitation/Week_3/PH 221 Week 3.md",
-    "211/Studio/Week_4/PH 211 Studio 04 Free-Body Diagrams.md",
     "211/Studio/Week_3/PH 211 Studio 03 Kinematics.md",
     "211/Studio/Week_2/PH 211 Studio 02 Motion Representations.md",
     "211/Studio/Week_1/PH 211 Studio 01 Representations and Sensemaking.md",
     "Activities/Two_Window_Toss/Two Window Toss.md",
-    "211/Recitation/Week_2/PH 221 2024 Spring Week 2.md",
-    "Visual Vector Addition/Visual Vector Addition.md"
+    "211/Recitation/Week_2/PH 221 2024 Spring Week 2.md"
   ]
 }
