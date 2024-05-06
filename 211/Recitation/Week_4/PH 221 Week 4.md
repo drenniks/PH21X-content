@@ -6,7 +6,7 @@ tags:
   - modality/in-person
   - time/medium
 ---
-# PH 221 2024 Spring Week 3
+# PH 221 2024 Spring Week 4
 ## Files
 [PH 221 Week 4 TeX](PH_221_Week_4.tex)
 [PH 221 Week 4 PDF](PH_221_Week_4.pdf)

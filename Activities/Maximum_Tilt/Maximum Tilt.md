@@ -24,5 +24,7 @@ tags:
 # Maximum Tilt
 ## Spring 2024
 [Maximum Tilt TeX](./Maximum_Tilt.tex)
+[Maximum Tilt Preview TeX](./Maximum_Tilt_Preview.tex)
+[Maximum Tilt Preview PDF](./Maximum_Tilt_Preview.pdf)
 * Added to Vault
 	* Assignment Format Version 2024-04-27

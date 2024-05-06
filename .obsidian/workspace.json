@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "b3a68f4fd2b6f0db",
+        "id": "34d9d8a5195ab769",
         "type": "tabs",
         "children": [
           {
-            "id": "471aa34d119811c7",
+            "id": "e0a69522ecb37f7b",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -81,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "211/Studio/Week_5/PH 211 Studio 05 Laws of Motion.md",
+                "file": "Activities/Suspended_Loudspeaker/Suspended_Loudspeaker_Preview.pdf",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,7 +98,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "211/Studio/Week_5/PH 211 Studio 05 Laws of Motion.md",
+                "file": "Activities/Suspended_Loudspeaker/Suspended_Loudspeaker_Preview.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -121,7 +121,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "211/Studio/Week_5/PH 211 Studio 05 Laws of Motion.md"
+                "file": "Activities/Suspended_Loudspeaker/Suspended_Loudspeaker_Preview.pdf"
               }
             }
           }
@@ -144,7 +144,27 @@
   },
   "active": "0ee81c010de32636",
   "lastOpenFiles": [
-    "211/Studio/Week_5/PH211_ST_05_Laws_of_Motion_240430_121912.pdf",
+    "Activities/Suspended_Loudspeaker/Suspended Loudspeaker.md",
+    "Activities/Suspended_Loudspeaker/Suspended_Loudspeaker_Preview.synctex.gz",
+    "Activities/Suspended_Loudspeaker/Suspended_Loudspeaker_Preview.pdf",
+    "Activities/Suspended_Loudspeaker/Suspended_Loudspeaker_Preview.aux",
+    "Activities/Suspended_Loudspeaker/Suspended_Loudspeaker_Preview.synctex(busy)",
+    "Activities/Suspended_Loudspeaker/Suspended_Loudspeaker_Preview.log",
+    "Activities/Suspended_Loudspeaker/Suspended_Loudspeaker_Preview.tex.b14933",
+    "Activities/Suspended_Loudspeaker/Suspended_Loudspeaker_Preview.tex",
+    "Activities/Suspended_Loudspeaker/Suspended_Loudspeaker_Preview.tex.Z14933",
+    "Activities/Steady_Block_on_a_Sliding_Ramp/Steady Block on a Sliding Ramp.md",
+    "Activities/Steady_Block_on_a_Sliding_Ramp/Steady_Block_on_a_Sliding_Ramp_Preview.pdf",
+    "Activities/Maximum_Tilt/Maximum Tilt.md",
+    "Activities/Steady_Block_on_a_Sliding_Ramp/Steady_Block_on_a_Sliding_Ramp_Preview.synctex.gz",
+    "Activities/Apparent_Weight_in_an_Elevator/Apparent Weight in an Elevator.md",
+    "211/Recitation/Week_5/PH 221 Week 5.md",
+    "Activities/Force_versus_Net_Force/Force versus Net Force.md",
+    "Activities/Two_Blocks_on_a_Frictionless_Half-Ramp/Two Blocks on a Frictionless Half-Ramp.md",
+    "Activities/Interactions_and_the_Third_Law/Interactions and the Third Law.md",
+    "211/Recitation/Week_6/PH 221 Week 6.md",
+    "Activities/Suitcase_Pull/Suitcase Pull.md",
+    "211/Recitation/Week_4/PH 221 Week 4.md",
     "211/Studio/Week_5/PH 211 Studio 05 Laws of Motion.md",
     "211/Studio/Week_4/PH 211 Studio 04 Free-Body Diagrams.md",
     "Representations_and_Images/Loose Representations and Images.md",
@@ -159,35 +179,15 @@
     "Representations_and_Images/Stack_of_Blocks_Sliding_as_Group.svg",
     "Paul's_Images/PH_211_Figures/Stack_of_Blocks_Sliding_as_Group_FBDs.svg",
     "Course Outcomes and Learning Objectives.md",
-    "Activities/Force_versus_Net_Force/Force versus Net Force.md",
     "Formats/Formats.md",
-    "211/Recitation/Week_5/PH_221_Week_5-Solution.pdf",
     "Assignment_Basics.tex.md",
-    "Activities/Suspended_Loudspeaker/Suspended Loudspeaker.md",
-    "211/Recitation/Week_5/PH 221 Week 5.md",
-    "Activities/Maximum_Tilt/Maximum Tilt.md",
-    "Activities/Steady_Block_on_a_Sliding_Ramp/Steady Block on a Sliding Ramp.md",
-    "Activities/Apparent_Weight_in_an_Elevator/Apparent Weight in an Elevator.md",
-    "211/Recitation/Week_5/PH_221_Week_5.pdf",
     "Activities/Crate_Brick_Box_Car_FBDs/Crate Brick Box Car FBDs.md",
-    "211/Recitation/Week_5/PH_221_Week_5-Worksheet.pdf",
-    "211/Recitation/Week_5/PH_221_Week_5.synctex(busy)",
-    "211/Recitation/Week_5/PH_221_Week_5.tex.nS5225",
-    "211/Recitation/Week_5/PH_221_Week_5.tex.Lh5225",
-    "211/Recitation/Week_5/PH_221_Week_5.synctex.gz",
-    "211/Recitation/Week_5/PH_221_Week_5.aux",
-    "211/Recitation/Week_5/PH_221_Week_5.log",
-    "211/Recitation/Week_4/PH 221 Week 4.md",
-    "Activities/Suitcase_Pull/Suitcase Pull.md",
     "Activities/Free_Fall_from_FBD/Free Fall from FBD.md",
     "Activities/RC_Concepts_in_Current/RC Concepts in Current.md",
     "Activities/Frictionless_Pool_Lag/Frictionless Pool Lag.md",
     "211/Recitation/Week_1/PH 221 2024 Spring Week 1.md",
     "211/Recitation/Week_3/PH 221 Week 3.md",
     "211/Studio/Week_3/PH 211 Studio 03 Kinematics.md",
-    "211/Studio/Week_2/PH 211 Studio 02 Motion Representations.md",
-    "211/Studio/Week_1/PH 211 Studio 01 Representations and Sensemaking.md",
-    "Activities/Two_Window_Toss/Two Window Toss.md",
-    "211/Recitation/Week_2/PH 221 2024 Spring Week 2.md"
+    "211/Studio/Week_2/PH 211 Studio 02 Motion Representations.md"
   ]
 }

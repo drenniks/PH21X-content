@@ -21,6 +21,8 @@ tags:
 # Suspended Loudspeaker
 ## Spring 2024
 [Suspended Loudspeaker TeX](./Suspended_Loudspeaker.tex)
+[Suspended Loudspeaker Preview TeX](./Suspended_Loudspeaker_Preview.tex)
+[Suspended Loudspeaker Preview PDF](./Suspended_Loudspeaker_Preview.pdf)
 * Added to Vault
 	* Assignment Format Version 2024-04-27
 	* ![Two Cable Speaker](Two_Cable_Speaker.pdf)

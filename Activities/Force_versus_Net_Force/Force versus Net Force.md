@@ -14,5 +14,7 @@ tags:
 # Force versus Net Force
 ## Spring 2024
 [Force versus Net Force TeX](./Force_versus_Net_Force.tex)
+[Force versus Net Force Preview TeX](./Force_versus_Net_Force_Preview.tex)
+[Force versus Net Force Preview PDF](./Force_versus_Net_Force_Preview.pdf)
 * Added to Vault
 	* Assignment Format Version 2024-04-27

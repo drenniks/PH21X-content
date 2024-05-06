@@ -23,5 +23,7 @@ tags:
 # Apparent Weight in an Elevator
 ## Spring 2024
 [Apparent Weight in an Elevator TeX](./Apparent_Weight_in_an_Elevator.tex)
+[Apparent Weight in an Elevator Preview TeX](./Apparent_Weight_in_an_Elevator_Preview.tex)
+[Apparent Weight in an Elevator Preview PDF](./Apparent_Weight_in_an_Elevator_Preview.pdf)
 * Added to Vault
 	* Assignment Format Version 2024-04-27

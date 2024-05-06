@@ -1,0 +1,32 @@
+\documentclass[]{article}
+\newcommand{\FileDepth}{../..}
+\input{\FileDepth/Formats/AssignmentBasics.tex}
+\usepackage{cancel}%This is special for Activities 4 and 5.
+%opening
+\newcommand{\SecType}{X}
+\newcommand{\Week}{X}
+\title{Suspended Loudspeaker}
+\author{Benjamin Bauml}
+\date{Spring 2024}
+\pagestyle{fancy}
+\rhead{PH 221}
+\chead{Spring 2024}
+\lhead{Week \Week}
+
+% For Assignment, leave Purpose as 1. For Worksheet, set to 2. For Student Solution, set to 3. For Teacher Solution, set to 4.
+% If you want keep the pieces from being called manually, set DefOnly to 0.
+\newcommand{\Purpose}{4}
+\newcommand{\DefOnly}{1}
+
+\input{\FileDepth/Formats/Assignment20240427.tex}
+
+\input{\FileDepth/Formats/FBDCommands.tex}
+
+\begin{document}
+\maketitle
+\begin{center}
+	This material is borrowed/adapted from PH 201 Tutorial 5 for Fall 2020 and Mastering Physics.
+\end{center}
+
+\input{\FileDepth/Activities/Suspended_Loudspeaker/Suspended_Loudspeaker.tex}
+\end{document}

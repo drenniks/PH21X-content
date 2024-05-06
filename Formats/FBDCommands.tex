@@ -1,12 +1,12 @@
-\newcommand{\FBDaxes}[3]{
-	\begin{scope}[shift={(#1)},rotate=#2]
+\newcommand{\FBDaxes}[4][2]{
+	\begin{scope}[shift={(#2)},rotate=#3]
 		% x-axis
-		\draw[thick,->] (-2,0) -- (2,0);
-		\node[anchor=west] at (2,0) {$x$};
+		\draw[thick,->] (-#1,0) -- (#1,0);
+		\node[anchor=west] at (#1,0) {$x$};
 		% y-axis
-		\draw[thick,->] (0,-2) -- (0,2);
-		\node[anchor=west] at (0,2) {$y$};
-		\coordinate (#3) at (0,0);
+		\draw[thick,->] (0,-#1) -- (0,#1);
+		\node[anchor=south] at (0,#1) {$y$};
+		\coordinate (#4) at (0,0);
 	\end{scope}
 }
 \newcommand{\FBDvectorMA}[4]{
@@ -23,4 +23,31 @@
 }
 \newcommand{\FBDdot}[1]{
 	\filldraw[black] (#1) circle (3pt);
+}
+\newcommand{\FBDbox}[5][1]{
+	\begin{scope}[shift={(#2)},rotate=#3]
+		\filldraw[color=black,fill=white,thick] ({-#1/2},{#1/2}) -- ({-#1/2},{-#1/2}) -- ({#1/2},{-#1/2}) -- ({#1/2},{#1/2}) -- cycle;
+		% Left side coordinates
+		\coordinate (#4ltq) at ({-#1/2},{#1/4});
+		\coordinate (#4lcent) at ({-#1/2},0);
+		\coordinate (#4lbq) at ({-#1/2},{-#1/4});
+		% right side coordinates
+		\coordinate (#4rtq) at ({#1/2},{#1/4});
+		\coordinate (#4rcent) at ({#1/2},0);
+		\coordinate (#4rbq) at ({#1/2},{-#1/4});
+		% top coordinates
+		\coordinate (#4tlq) at ({-#1/4},{#1/2});
+		\coordinate (#4tcent) at (0,{#1/2});
+		\coordinate (#4trq) at ({#1/4},{#1/2});
+		% bottom coordinates
+		\coordinate (#4blq) at ({-#1/4},{-#1/2});
+		\coordinate (#4bcent) at (0,{-#1/2});
+		\coordinate (#4brq) at ({#1/4},{-#1/2});
+		% corners
+		\coordinate (#4tl) at ({-#1/2},{#1/2});
+		\coordinate (#4tr) at ({#1/2},{#1/2});
+		\coordinate (#4bl) at ({-#1/2},{-#1/2});
+		\coordinate (#4br) at ({#1/2},{-#1/2});
+		\node at (0,0) {#5};
+	\end{scope}
 }
