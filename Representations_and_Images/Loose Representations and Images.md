@@ -6,6 +6,21 @@ tags:
 # Ball Braced Between Two Angled Surfaces
 ![Ball Braced Between Two Angled Surfaces](./Ball_Braced_Between_Two_Angled_Surfaces.svg)
 * #source/Paul_Emigh #usage/PH211 #content/forces #content/forces/normal #content/vectors/forces #content/vectors/components/trigonometry #learning_objectives/critical_thinking/sensemaking 
+# Block on Downward Ramp Attached to Block Over Edge
+![Block on Downward Ramp Attached to Block Over Edge](./Block_on_Downward_Ramp_Attached_to_Block_Over_Edge.svg)
+* #source/Paul_Emigh #usage/PH211 #content/forces #content/forces/normal #content/forces/gravity #content/vectors/components/trigonometry #content/coordinate_systems #learning_objectives/Newton_and_conservation_laws #content/forces/friction/static #content/forces/friction/kinetic #content/representations/free-body_diagrams #content/forces/tension #content/energy/gravitational_potential #content/energy/kinetic #content/energy/thermal
+# Block on Ramp Attached to Block Over Edge
+![Block on Ramp Attached to Block Over Edge](./Block_on_Ramp_Attached_to_Block_Over_Edge.svg)
+* #source/Paul_Emigh #usage/PH211 #content/forces #content/forces/normal #content/forces/gravity #content/vectors/components/trigonometry #content/coordinate_systems #learning_objectives/Newton_and_conservation_laws #content/forces/friction/static #content/forces/friction/kinetic #content/representations/free-body_diagrams #content/forces/tension #content/energy/kinetic #content/energy/gravitational_potential #content/energy/thermal
+# Block on Ramp with Friction
+![Block on Ramp with Friction](./Block_on_Ramp_with_Friction.svg)
+* #source/Paul_Emigh #usage/PH211 #content/forces #content/forces/normal #content/forces/gravity #content/vectors/components/trigonometry #content/coordinate_systems #learning_objectives/Newton_and_conservation_laws #content/forces/friction/static #content/forces/friction/kinetic #content/representations/free-body_diagrams #content/energy/kinetic #content/energy/thermal 
+# Block on Ramp with Hand Support
+![Block on Ramp with Hand Support](./Block_on_Ramp_with_Hand_Support.svg)
+* #source/Paul_Emigh #usage/PH211 #content/forces #content/forces/normal #content/forces/gravity #content/vectors/components/trigonometry #content/coordinate_systems #learning_objectives/Newton_and_conservation_laws #content/forces/friction/static #content/forces/friction/kinetic #content/representations/free-body_diagrams #content/energy/kinetic #content/energy/gravitational_potential #content/energy/thermal #content/energy/work
+# Block on Upward Ramp Attached to Block Over Edge
+![Block on Upward Ramp Attached to Block Over Edge](./Block_on_Upward_Ramp_Attached_to_Block_Over_Edge.svg)
+* #source/Paul_Emigh #usage/PH211 #content/forces #content/forces/normal #content/forces/gravity #content/vectors/components/trigonometry #content/coordinate_systems #learning_objectives/Newton_and_conservation_laws #content/forces/friction/static #content/forces/friction/kinetic #content/representations/free-body_diagrams #content/forces/tension #content/energy/gravitational_potential #content/energy/kinetic #content/energy/thermal
 # Knobby Ball with Spring on Ramp
 ![Knobby Ball with Spring on Ramp](./Knobby_Ball_with_Spring_on_Ramp.svg)
 * #source/Paul_Emigh #usage/PH211 #content/forces/normal #content/forces/gravity #content/forces/spring #content/forces/friction #content/energy/kinetic #content/energy/gravitational_potential #content/energy/spring_potential #content/oscillations

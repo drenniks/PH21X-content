@@ -5,7 +5,7 @@ tags:
   - format/assignment2024-04-27
   - content/coordinate_systems
   - modality/in-person
-  - time/short
+  - time/unknown
   - source/Knight/chapter7
   - content/forces/friction/kinetic
   - content/forces/friction/static

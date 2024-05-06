@@ -15,7 +15,7 @@ tags:
   - outcomes/determine_germane_principles
   - outcomes/conceptual_and_quantitative_predictions
   - learning_objectives/critical_thinking/apply_concepts
-  - time/unknown
+  - time/short
   - source/MasteringPhysics
 ---
 # Suspended Loudspeaker

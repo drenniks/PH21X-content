@@ -18,7 +18,7 @@ tags:
   - outcomes/determine_germane_principles
   - outcomes/conceptual_and_quantitative_predictions
   - learning_objectives/critical_thinking/apply_concepts
-  - time/unknown
+  - time/short
 ---
 # Apparent Weight in an Elevator
 ## Spring 2024

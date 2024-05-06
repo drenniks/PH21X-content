@@ -5,10 +5,7 @@ tags:
   - format/assignment2024-04-27
   - content/coordinate_systems
   - modality/in-person
-  - time/short
-  - content/forces/friction/kinetic
-  - content/forces/friction/static
-  - content/forces/friction/rolling
+  - time/unknown
   - content/forces/gravity
   - content/forces/normal
   - content/forces/tension

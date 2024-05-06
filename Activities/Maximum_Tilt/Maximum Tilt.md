@@ -19,7 +19,7 @@ tags:
   - outcomes/conceptual_and_quantitative_predictions
   - content/forces/friction/static
   - learning_objectives/critical_thinking/apply_concepts
-  - time/unknown
+  - time/short
 ---
 # Maximum Tilt
 ## Spring 2024

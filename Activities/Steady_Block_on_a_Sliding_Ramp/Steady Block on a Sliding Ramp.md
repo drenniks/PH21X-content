@@ -19,7 +19,7 @@ tags:
   - outcomes/conceptual_and_quantitative_predictions
   - learning_objectives/critical_thinking/apply_concepts
   - source/BENUMBrAL
-  - time/unknown
+  - time/short
 ---
 # Steady Block on a Sliding Ramp
 ## Spring 2024
