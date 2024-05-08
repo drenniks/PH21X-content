@@ -19,3 +19,4 @@ tags:
 ## Notes
 * Added to Vault
 	* Assignment Format 2024-04-27
+	* Since the second activity is so similar to their homework (albeit frictionless), which they also set up the diagrams for in studio, it might be worthwhile to type up a full version of the other major 3rd law studio problem, with the stacked blocks and the pulley, and use that instead. It would be good to see how the students feel about doing the near-homework problem, though, because they could find it helpful.

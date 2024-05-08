@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "1d462b112602731d",
+        "id": "5f653987c6fec639",
         "type": "tabs",
         "children": [
           {
-            "id": "2367036031caaec8",
+            "id": "033265d7243b658e",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -81,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Representations_and_Images/Loose Representations and Images.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Representations_and_Images/Loose Representations and Images.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -120,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Representations_and_Images/Loose Representations and Images.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -142,8 +138,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0ee81c010de32636",
+  "active": "033265d7243b658e",
   "lastOpenFiles": [
+    "211/Recitation/Week_6/PH 221 Week 6.md",
+    "211/Recitation/Week_6/PH_221_Week_6-Teacher_Solution.pdf",
+    "211/Recitation/Week_6/PH_221_Week_6-Solution.pdf",
+    "211/Recitation/Week_6/PH_221_Week_6-Worksheet.pdf",
+    "211/Recitation/Week_6/PH_221_Week_6.pdf",
+    "211/Recitation/Week_6/PH_221_Week_6.synctex(busy)",
+    "211/Recitation/Week_6/PH_221_Week_6.tex.kn4501",
+    "211/Recitation/Week_6/PH_221_Week_6.tex.nS4501",
+    "211/Recitation/Week_6/PH_221_Week_6.tex.Lh4501",
+    "211/Recitation/Week_6/PH_221_Week_6.tex.XM4501",
+    "Activities/Interactions_and_the_Third_Law/Interactions_and_the_Third_Law_Preview.pdf",
+    "Activities/Interactions_and_the_Third_Law/Interactions and the Third Law.md",
+    "Activities/Two_Blocks_on_a_Frictionless_Half-Ramp/Two Blocks on a Frictionless Half-Ramp.md",
+    "211/Studio/Week_5/PH 211 Studio 05 Laws of Motion.md",
     "Representations_and_Images/Block_on_Upward_Ramp_Attached_to_Block_Over_Edge.svg",
     "Representations_and_Images/Block_on_Ramp_with_Hand_Support.svg",
     "Representations_and_Images/Block_on_Ramp_with_Friction.svg",
@@ -159,26 +169,11 @@
     "Activities/Maximum_Tilt/Maximum Tilt.md",
     "Activities/Force_versus_Net_Force/Force versus Net Force.md",
     "Activities/Apparent_Weight_in_an_Elevator/Apparent Weight in an Elevator.md",
-    "Activities/Interactions_and_the_Third_Law/Interactions and the Third Law.md",
-    "211/Recitation/Week_6/PH 221 Week 6.md",
-    "Activities/Two_Blocks_on_a_Frictionless_Half-Ramp/Two Blocks on a Frictionless Half-Ramp.md",
-    "Activities/Two_Blocks_on_a_Frictionless_Half-Ramp/Two_Blocks_on_a_Frictionless_Half-Ramp_Preview.pdf",
-    "Activities/Suspended_Loudspeaker/Suspended_Loudspeaker_Preview.synctex.gz",
-    "Activities/Suspended_Loudspeaker/Suspended_Loudspeaker_Preview.pdf",
-    "Activities/Suspended_Loudspeaker/Suspended_Loudspeaker_Preview.aux",
-    "Activities/Suspended_Loudspeaker/Suspended_Loudspeaker_Preview.synctex(busy)",
-    "Activities/Suspended_Loudspeaker/Suspended_Loudspeaker_Preview.log",
-    "Activities/Suspended_Loudspeaker/Suspended_Loudspeaker_Preview.tex.b14933",
-    "Activities/Suspended_Loudspeaker/Suspended_Loudspeaker_Preview.tex",
-    "Activities/Suspended_Loudspeaker/Suspended_Loudspeaker_Preview.tex.Z14933",
-    "Activities/Steady_Block_on_a_Sliding_Ramp/Steady_Block_on_a_Sliding_Ramp_Preview.pdf",
     "211/Recitation/Week_5/PH 221 Week 5.md",
     "Activities/Suitcase_Pull/Suitcase Pull.md",
     "211/Recitation/Week_4/PH 221 Week 4.md",
-    "211/Studio/Week_5/PH 211 Studio 05 Laws of Motion.md",
     "211/Studio/Week_4/PH 211 Studio 04 Free-Body Diagrams.md",
     "Representations_and_Images/Loose Representations and Images.md",
-    "Representations_and_Images/Knobby_Ball_with_Spring_on_Ramp.svg",
     "Course Outcomes and Learning Objectives.md",
     "Formats/Formats.md",
     "Assignment_Basics.tex.md",
