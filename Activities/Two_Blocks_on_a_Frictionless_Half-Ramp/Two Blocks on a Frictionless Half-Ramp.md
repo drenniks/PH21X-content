@@ -5,7 +5,6 @@ tags:
   - format/assignment2024-04-27
   - content/coordinate_systems
   - modality/in-person
-  - time/unknown
   - content/forces/gravity
   - content/forces/normal
   - content/forces/tension
@@ -20,6 +19,7 @@ tags:
   - outcomes/conceptual_and_quantitative_predictions
   - source/PH201_tutorials
   - content/forces/interactions
+  - time/medium
 ---
 # Two Blocks on a Frictionless Half-Ramp
 ## Spring 2024

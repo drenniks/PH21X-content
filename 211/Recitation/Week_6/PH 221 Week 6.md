@@ -4,7 +4,7 @@ tags:
   - usage/PH211/section_type/recitation
   - format/assignment2024-04-27
   - modality/in-person
-  - time/unknown
+  - time/medium
 ---
 # PH 221 2024 Spring Week 6
 ## Files

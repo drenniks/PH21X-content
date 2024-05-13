@@ -5,7 +5,6 @@ tags:
   - format/assignment2024-04-27
   - content/coordinate_systems
   - modality/in-person
-  - time/unknown
   - source/Knight/chapter7
   - content/forces/friction/kinetic
   - content/forces/friction/static
@@ -23,6 +22,7 @@ tags:
   - outcomes/determine_germane_principles
   - outcomes/conceptual_and_quantitative_predictions
   - content/forces/interactions
+  - time/medium
 ---
 # Interactions and the Third Law
 ## Spring 2024

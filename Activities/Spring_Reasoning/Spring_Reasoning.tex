@@ -1,0 +1,41 @@
+\Problem{Spring Reasoning}{\SpringReas}{
+A spring has an unstretched length of 10 cm. It exerts a restoring force $ F $ when stretched to a length of 11 cm.
+}
+\ProblemSub{\SpringReasA}{
+(a) For what length of the spring is its restoring force $ 3F $?
+}
+\Solution{\SpringReasASol}{
+
+Let us keep this very general for now. An ideal spring obeys Hooke's law:
+\[
+\vec{F}_{sp} = -k\Delta\vec{s},
+\]
+where $ k $ is the spring constant, and $ \Delta\vec{s} $ is the displacement of the end of the spring from its equilibrium position. Taking components along the $ s $-direction, we maintain the sign relationship between the force and the displacement, but remove the vector notation:
+\[
+F_{sp,s} = -k\Delta s.
+\]
+Let us have two situations: Case A, where we have some displacement $ \Delta s_{A} $ and a restoring force $ F_{sp,s,A} = -k\Delta s_{A} $, and Case B, where we have another displacement $ \Delta s_{B} $ and a restoring force $ F_{sp,s,B} = -k\Delta s_{B} $. Consider what happens when we divide one equation by the other:
+\[
+\begin{split}
+	F_{sp,s,A} & = -k\Delta s_{A} \\
+	\div(F_{sp,s,B} & = -k\Delta s_{B}) \\
+	\implies \frac{F_{sp,s,A}}{F_{sp,s,B}} & = \frac{-k\Delta s_{A}}{-k\Delta s_{B}} = \frac{\Delta s_{A}}{\Delta s_{B}}.
+\end{split}
+\]
+From this, we can see that if we triple the force from Case A to Case B, we must also triple the displacement. For our particular situation, we have a positive displacement $ \Delta s = 11\text{ cm} - 10\text{ cm} = 1 $ cm and therefore a negative restoring force $ -F $. If we desire triple the restoring force ($ -3F $), we get
+\[
+\frac{-F}{-3F} = \frac{1\text{ cm}}{\Delta s_{B}} \implies \Delta s_{B} = 3\text{ cm}.
+\]
+Thus, the spring's total length must be 13 cm.
+}
+\ProblemSub{\SpringReasB}{
+(b) At what compressed length is the restoring force $ 2F $?
+}
+\Solution{\SpringReasBSol}{
+
+For a compressed spring, the displacement is negative and the restoring force is positive. We have doubled the magnitude of the force, so the displacement must also be doubled in magnitude:
+\[
+\frac{-F}{2F} = \frac{1\text{ cm}}{\Delta s_{B}} \implies \Delta s_{B} = -2\text{ cm}.
+\]
+Thus, the spring must be 2 cm shorter than its equilibrium length, or 8 cm long.
+}
