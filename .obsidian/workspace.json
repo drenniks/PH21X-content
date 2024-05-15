@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "04d71641da7adb07",
+        "id": "a6f6db00da613319",
         "type": "tabs",
         "children": [
           {
-            "id": "6ff7fd37030d7d81",
+            "id": "1cbfe11d510dc32a",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -81,6 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "211/Recitation/Week_7/PH 221 Week 7.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +98,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "211/Recitation/Week_7/PH 221 Week 7.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +120,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "211/Recitation/Week_7/PH 221 Week 7.md"
+              }
             }
           }
         ],
@@ -138,33 +142,33 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6ff7fd37030d7d81",
+  "active": "0ee81c010de32636",
   "lastOpenFiles": [
-    "211/Studio/Week_6/PH 211 Studio 06 Interacting Systems.md",
-    "211/Studio/Week_6/PH211_ST_06_Interacting Systems_240506_213233.pdf",
-    "Activities/Spring_Reasoning/Spring Reasoning.md",
+    "211/Recitation/Week_7/PH_221_Week_7.pdf",
     "211/Recitation/Week_7/PH 221 Week 7.md",
+    "211/Recitation/Week_7/PH_221_Week_7-Worksheet.pdf",
+    "211/Recitation/Week_7/PH_221_Week_7-Solution.pdf",
+    "211/Recitation/Week_7/PH_221_Week_7-Teacher_Solution.pdf",
+    "211/Recitation/Week_7/PH_221_Week_7.synctex(busy)",
+    "211/Recitation/Week_7/PH_221_Week_7.tex.Ti5531",
+    "211/Recitation/Week_7/PH_221_Week_7.tex.kn5531",
+    "211/Recitation/Week_7/PH_221_Week_7.tex.nS5531",
+    "Activities/Spring_Reasoning/Spring Reasoning.md",
+    "Activities/Spring_Reasoning/Spring_Reasoning_Preview.synctex(busy)",
+    "Activities/Spring_Reasoning/Spring_Reasoning.tex.Lh5531",
+    "Activities/Lifting_Boxes/Lifting Boxes.md",
+    "211/Studio/Week_6/PH 211 Studio 06 Interacting Systems.md",
     "211/Studio/Week_4/PH 211 Studio 04 Free-Body Diagrams.md",
     "211/Studio/Week_5/PH 211 Studio 05 Laws of Motion.md",
-    "Activities/Lifting_Boxes/Lifting Boxes.md",
     "Activities/Two_Blocks_on_a_Frictionless_Half-Ramp/Two Blocks on a Frictionless Half-Ramp.md",
     "211/Recitation/Week_6/PH 221 Week 6.md",
     "Activities/Interactions_and_the_Third_Law/Interactions and the Third Law.md",
     "211/Recitation/Week_4/PH 221 Week 4.md",
     "211/Recitation/Week_5/PH 221 Week 5.md",
-    "Activities/Spring_Reasoning/Spring_Reasoning_Preview.pdf",
-    "Activities/Lifting_Boxes/Lifting_Boxes_Preview.pdf",
     "Course Outcomes and Learning Objectives.md",
     "Activities/Visual_Dot_Product_Practice/Visual Dot Product Practice.md",
     "Activities/Visual_Vector_Addition/Visual Vector Addition.md",
-    "Activities/Visual_Dot_Product_Practice/Visual_Dot_Product_Practice_Preview.pdf",
     "Activities/Suspended_Loudspeaker/Suspended Loudspeaker.md",
-    "211/Recitation/Week_7/PH_221_Week_7.pdf",
-    "211/Recitation/Week_6/PH_221_Week_6-Teacher_Solution.pdf",
-    "211/Recitation/Week_6/PH_221_Week_6-Solution.pdf",
-    "211/Recitation/Week_6/PH_221_Week_6-Worksheet.pdf",
-    "211/Recitation/Week_6/PH_221_Week_6.pdf",
-    "211/Recitation/Week_6/PH_221_Week_6.synctex(busy)",
     "Representations_and_Images/Block_on_Upward_Ramp_Attached_to_Block_Over_Edge.svg",
     "Representations_and_Images/Block_on_Ramp_with_Hand_Support.svg",
     "Representations_and_Images/Block_on_Ramp_with_Friction.svg",
