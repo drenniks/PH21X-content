@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "a6f6db00da613319",
+        "id": "2a2ed5231fc11e94",
         "type": "tabs",
         "children": [
           {
-            "id": "1cbfe11d510dc32a",
+            "id": "4c9d444301b90326",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -81,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "211/Recitation/Week_7/PH 221 Week 7.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "211/Recitation/Week_7/PH 221 Week 7.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -120,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "211/Recitation/Week_7/PH 221 Week 7.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -142,21 +138,30 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0ee81c010de32636",
+  "active": "4c9d444301b90326",
   "lastOpenFiles": [
-    "211/Recitation/Week_7/PH_221_Week_7.pdf",
+    "Activities/Potential_versus_Change_in_Potential/Potential versus Change in Potential.md",
+    "Activities/Interpreting_a_Potential_Energy_Graph/Interpreting a Potential Energy Graph.md",
+    "Activities/Producing_a_Potential_Energy_Graph/Producing a Potential Energy Graph.md",
+    "Activities/Sliding_Cube_in_a_Bowl/Sliding Cube in a Bowl.md",
+    "211/Recitation/Week_8/PH_221_Week_8.synctex(busy)",
+    "211/Recitation/Week_8/PH_221_Week_8.synctex.gz",
+    "211/Recitation/Week_8/PH_221_Week_8.pdf",
+    "211/Recitation/Week_8/PH_221_Week_8.aux",
+    "211/Recitation/Week_8/PH_221_Week_8.log",
+    "Activities/Sliding_Cube_in_a_Bowl/Sliding_Cube_in_a_Bowl_Preview.synctex(busy)",
+    "Activities/Sliding_Cube_in_a_Bowl/Sliding_Cube_in_a_Bowl.tex.E16233",
+    "Activities/Sliding_Cube_in_a_Bowl/Sliding_Cube_in_a_Bowl_Preview.synctex.gz",
+    "Activities/Sliding_Cube_in_a_Bowl/Sliding_Cube_in_a_Bowl_Preview.pdf",
+    "Activities/Sliding_Cube_in_a_Bowl/Sliding_Cube_in_a_Bowl_Preview.aux",
+    "Activities/Visual_Dot_Product_Practice/Visual Dot Product Practice.md",
+    "Formats/Formats.md",
+    "211/Recitation/Week_8/PH 221 Week 8.md",
     "211/Recitation/Week_7/PH 221 Week 7.md",
-    "211/Recitation/Week_7/PH_221_Week_7-Worksheet.pdf",
-    "211/Recitation/Week_7/PH_221_Week_7-Solution.pdf",
-    "211/Recitation/Week_7/PH_221_Week_7-Teacher_Solution.pdf",
-    "211/Recitation/Week_7/PH_221_Week_7.synctex(busy)",
-    "211/Recitation/Week_7/PH_221_Week_7.tex.Ti5531",
-    "211/Recitation/Week_7/PH_221_Week_7.tex.kn5531",
-    "211/Recitation/Week_7/PH_221_Week_7.tex.nS5531",
-    "Activities/Spring_Reasoning/Spring Reasoning.md",
-    "Activities/Spring_Reasoning/Spring_Reasoning_Preview.synctex(busy)",
-    "Activities/Spring_Reasoning/Spring_Reasoning.tex.Lh5531",
     "Activities/Lifting_Boxes/Lifting Boxes.md",
+    "Activities/Force_versus_Net_Force/Force versus Net Force.md",
+    "211/Studio/Week_7/PH 211 Studio 07 Work and KE.md",
+    "Activities/Spring_Reasoning/Spring Reasoning.md",
     "211/Studio/Week_6/PH 211 Studio 06 Interacting Systems.md",
     "211/Studio/Week_4/PH 211 Studio 04 Free-Body Diagrams.md",
     "211/Studio/Week_5/PH 211 Studio 05 Laws of Motion.md",
@@ -166,7 +171,6 @@
     "211/Recitation/Week_4/PH 221 Week 4.md",
     "211/Recitation/Week_5/PH 221 Week 5.md",
     "Course Outcomes and Learning Objectives.md",
-    "Activities/Visual_Dot_Product_Practice/Visual Dot Product Practice.md",
     "Activities/Visual_Vector_Addition/Visual Vector Addition.md",
     "Activities/Suspended_Loudspeaker/Suspended Loudspeaker.md",
     "Representations_and_Images/Block_on_Upward_Ramp_Attached_to_Block_Over_Edge.svg",
@@ -180,14 +184,6 @@
     "Paul's_Images/PH_211_Figures/Block_on_Ramp_with_Hand_Support.svg",
     "Paul's_Images/PH_211_Figures/Block_on_Ramp_with_Friction.svg",
     "Activities/Steady_Block_on_a_Sliding_Ramp/Steady Block on a Sliding Ramp.md",
-    "Activities/Maximum_Tilt/Maximum Tilt.md",
-    "Activities/Force_versus_Net_Force/Force versus Net Force.md",
-    "Activities/Apparent_Weight_in_an_Elevator/Apparent Weight in an Elevator.md",
-    "Activities/Suitcase_Pull/Suitcase Pull.md",
-    "Representations_and_Images/Loose Representations and Images.md",
-    "Formats/Formats.md",
-    "Assignment_Basics.tex.md",
-    "Activities/Crate_Brick_Box_Car_FBDs/Crate Brick Box Car FBDs.md",
-    "Activities/Free_Fall_from_FBD/Free Fall from FBD.md"
+    "Activities/Maximum_Tilt/Maximum Tilt.md"
   ]
 }

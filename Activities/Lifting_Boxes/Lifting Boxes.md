@@ -17,7 +17,7 @@ tags:
 # Lifting Boxes
 ## Spring 2024
 [Lifting Boxes TeX](./Lifting_Boxes.tex)
-[Lifting Boxes Practice Preview TeX](./Lifting_Boxes_Preview.tex)
-[Lifting Boxes Practice Preview PDF](./Lifting_Boxes_Preview.pdf)
+[Lifting Boxes Preview TeX](./Lifting_Boxes_Preview.tex)
+[Lifting Boxes Preview PDF](./Lifting_Boxes_Preview.pdf)
 * Added to Vault
 	* Assignment Format Version 2024-04-27
