@@ -2,7 +2,7 @@
 tags:
   - usage/PH211/quarter/Sp2024/Week8
   - usage/PH211/section_type/recitation
-  - format/assignment2024-04-27
+  - format/assignment2024-05-19
   - modality/in-person
   - time/unknown
 ---
@@ -19,5 +19,5 @@ tags:
 [[Sliding Cube in a Bowl]]
 ## Notes
 * Added to Vault
-	* Assignment Format 2024-04-27
+	* Assignment Format 2024-05-19
 	* No instructor notes

@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "320848eb8c5a020d",
+        "id": "429e8e9bda3fc488",
         "type": "tabs",
         "children": [
           {
-            "id": "d3f321e760953a9a",
+            "id": "09addc33f9657fcf",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -81,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "211/Recitation/Week_8/PH_221_Week_8.pdf",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "211/Recitation/Week_8/PH_221_Week_8.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -120,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "211/Recitation/Week_8/PH_221_Week_8.pdf"
-              }
+              "state": {}
             }
           }
         ],
@@ -142,9 +138,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0ee81c010de32636",
+  "active": "09addc33f9657fcf",
   "lastOpenFiles": [
     "211/Recitation/Week_8/PH 221 Week 8.md",
+    "Formats/Formats.md",
     "211/Recitation/Week_8/PH_221_Week_8.synctex(busy)",
     "Activities/Sliding_Cube_in_a_Bowl/Sliding Cube in a Bowl.md",
     "Activities/Sliding_Cube_in_a_Bowl/Sliding_Cube_in_a_Bowl.tex.kn3241",
@@ -160,7 +157,6 @@
     "Activities/Interpreting_a_Potential_Energy_Graph/Interpreting a Potential Energy Graph.md",
     "Activities/Producing_a_Potential_Energy_Graph/Producing a Potential Energy Graph.md",
     "Activities/Visual_Dot_Product_Practice/Visual Dot Product Practice.md",
-    "Formats/Formats.md",
     "211/Recitation/Week_7/PH 221 Week 7.md",
     "Activities/Lifting_Boxes/Lifting Boxes.md",
     "Activities/Force_versus_Net_Force/Force versus Net Force.md",
