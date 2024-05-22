@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "2a2ed5231fc11e94",
+        "id": "320848eb8c5a020d",
         "type": "tabs",
         "children": [
           {
-            "id": "4c9d444301b90326",
+            "id": "d3f321e760953a9a",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -81,6 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "211/Recitation/Week_8/PH_221_Week_8.pdf",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +98,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "211/Recitation/Week_8/PH_221_Week_8.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +120,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "211/Recitation/Week_8/PH_221_Week_8.pdf"
+              }
             }
           }
         ],
@@ -138,25 +142,25 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4c9d444301b90326",
+  "active": "0ee81c010de32636",
   "lastOpenFiles": [
+    "211/Recitation/Week_8/PH 221 Week 8.md",
+    "211/Recitation/Week_8/PH_221_Week_8.synctex(busy)",
+    "Activities/Sliding_Cube_in_a_Bowl/Sliding Cube in a Bowl.md",
+    "Activities/Sliding_Cube_in_a_Bowl/Sliding_Cube_in_a_Bowl.tex.kn3241",
+    "211/Recitation/Week_8/PH_221_Week_8.pdf",
+    "211/Recitation/Week_8/PH_221_Week_8-Worksheet.pdf",
+    "211/Recitation/Week_8/PH_221_Week_8-Solution.pdf",
+    "211/Recitation/Week_8/PH_221_Week_8.tex.nS3241",
+    "211/Recitation/Week_8/PH_221_Week_8.tex.Lh3241",
+    "211/Recitation/Week_8/PH_221_Week_8.tex.XM3241",
+    "Activities/Sliding_Cube_in_a_Bowl/Sliding_Cube_in_a_Bowl.tex.TJ3241",
+    "Activities/Sliding_Cube_in_a_Bowl/Sliding_Cube_in_a_Bowl_Preview.pdf",
     "Activities/Potential_versus_Change_in_Potential/Potential versus Change in Potential.md",
     "Activities/Interpreting_a_Potential_Energy_Graph/Interpreting a Potential Energy Graph.md",
     "Activities/Producing_a_Potential_Energy_Graph/Producing a Potential Energy Graph.md",
-    "Activities/Sliding_Cube_in_a_Bowl/Sliding Cube in a Bowl.md",
-    "211/Recitation/Week_8/PH_221_Week_8.synctex(busy)",
-    "211/Recitation/Week_8/PH_221_Week_8.synctex.gz",
-    "211/Recitation/Week_8/PH_221_Week_8.pdf",
-    "211/Recitation/Week_8/PH_221_Week_8.aux",
-    "211/Recitation/Week_8/PH_221_Week_8.log",
-    "Activities/Sliding_Cube_in_a_Bowl/Sliding_Cube_in_a_Bowl_Preview.synctex(busy)",
-    "Activities/Sliding_Cube_in_a_Bowl/Sliding_Cube_in_a_Bowl.tex.E16233",
-    "Activities/Sliding_Cube_in_a_Bowl/Sliding_Cube_in_a_Bowl_Preview.synctex.gz",
-    "Activities/Sliding_Cube_in_a_Bowl/Sliding_Cube_in_a_Bowl_Preview.pdf",
-    "Activities/Sliding_Cube_in_a_Bowl/Sliding_Cube_in_a_Bowl_Preview.aux",
     "Activities/Visual_Dot_Product_Practice/Visual Dot Product Practice.md",
     "Formats/Formats.md",
-    "211/Recitation/Week_8/PH 221 Week 8.md",
     "211/Recitation/Week_7/PH 221 Week 7.md",
     "Activities/Lifting_Boxes/Lifting Boxes.md",
     "Activities/Force_versus_Net_Force/Force versus Net Force.md",

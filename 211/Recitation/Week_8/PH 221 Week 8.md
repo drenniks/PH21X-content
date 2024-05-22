@@ -12,7 +12,6 @@ tags:
 [PH 221 Week 8 PDF](PH_221_Week_8.pdf)
 [PH 221 Week 8 Worksheet PDF](PH_221_Week_8-Worksheet.pdf)
 [PH 221 Week 8 Solution PDF](PH_221_Week_8-Solution.pdf)
-[PH 221 Week 8 Teacher Solution PDF](PH_221_Week_8-Teacher_Solution.pdf)
 ## Activities
 [[Interpreting a Potential Energy Graph]]
 [[Producing a Potential Energy Graph]]
