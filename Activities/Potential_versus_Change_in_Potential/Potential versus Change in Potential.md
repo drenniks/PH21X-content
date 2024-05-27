@@ -5,13 +5,13 @@ tags:
   - format/assignment2024-05-19
   - modality/in-person
   - content/vectors/dot_product
-  - time/unknown
   - source/Knight/chapter10/workbook
   - content/energy/potential
   - content/scalars/energy
   - learning_objectives/critical_thinking/apply_concepts
   - outcomes/determine_germane_principles
   - content/forces/negative_gradient_of_potential
+  - time/short
 ---
 # Potential versus Change in Potential
 ## Spring 2024

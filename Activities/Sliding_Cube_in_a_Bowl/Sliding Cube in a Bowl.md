@@ -5,7 +5,6 @@ tags:
   - format/assignment2024-05-19
   - modality/in-person
   - content/vectors/dot_product
-  - time/unknown
   - source/Knight/chapter10/workbook
   - content/energy/gravitational_potential
   - content/scalars/energy
@@ -20,6 +19,7 @@ tags:
   - learning_objectives/Newton_and_conservation_laws
   - learning_objectives/point_model
   - learning_objectives/representations
+  - time/short
 ---
 # Sliding Cube in a Bowl
 ## Spring 2024

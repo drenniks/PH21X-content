@@ -5,7 +5,6 @@ tags:
   - format/assignment2024-05-19
   - modality/in-person
   - content/vectors/dot_product
-  - time/unknown
   - source/Knight/chapter10/workbook
   - content/energy/potential
   - content/scalars/energy
@@ -18,6 +17,7 @@ tags:
   - learning_objectives/critical_thinking/manageable_pieces
   - learning_objectives/Newton_and_conservation_laws
   - learning_objectives/representations
+  - time/short
 ---
 # Producing a Potential Energy Graph
 ## Spring 2024

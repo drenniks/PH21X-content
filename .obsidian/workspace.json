@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "429e8e9bda3fc488",
+        "id": "10123787c2001ba5",
         "type": "tabs",
         "children": [
           {
-            "id": "09addc33f9657fcf",
+            "id": "d71403a096d464de",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -81,6 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "211/Recitation/Week_9/PH 221 Week 9.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +98,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "211/Recitation/Week_9/PH 221 Week 9.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +120,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "211/Recitation/Week_9/PH 221 Week 9.md"
+              }
             }
           }
         ],
@@ -138,29 +142,36 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "09addc33f9657fcf",
+  "active": "0ee81c010de32636",
   "lastOpenFiles": [
-    "211/Recitation/Week_8/PH 221 Week 8.md",
+    "211/Recitation/Week_10/PH 221 Week 10.md",
+    "211/Recitation/Week_9/PH 221 Week 9.md",
+    "Activities/Cliffside_Midair_Collision/Cliffside Midair Collision.md",
+    "Activities/Cliffside_Midair_Collision/Cliffside_Midair_Collision_Preview.pdf",
+    "Activities/Comparing_Pushed_Particles/Comparing Pushed Particles.md",
+    "Activities/Comparing_Pushed_Particles/Comparing_Pushed_Particles_Preview.pdf",
+    "Activities/Ice_Archer_and_Cadillac_Crash/Ice Archer and Cadillac Crash.md",
+    "Activities/Ice_Archer_and_Cadillac_Crash/Ice_Archer_and_Cadillac_Crash_Preview.pdf",
     "Formats/Formats.md",
-    "211/Recitation/Week_8/PH_221_Week_8.synctex(busy)",
-    "Activities/Sliding_Cube_in_a_Bowl/Sliding Cube in a Bowl.md",
-    "Activities/Sliding_Cube_in_a_Bowl/Sliding_Cube_in_a_Bowl.tex.kn3241",
-    "211/Recitation/Week_8/PH_221_Week_8.pdf",
-    "211/Recitation/Week_8/PH_221_Week_8-Worksheet.pdf",
-    "211/Recitation/Week_8/PH_221_Week_8-Solution.pdf",
-    "211/Recitation/Week_8/PH_221_Week_8.tex.nS3241",
-    "211/Recitation/Week_8/PH_221_Week_8.tex.Lh3241",
-    "211/Recitation/Week_8/PH_221_Week_8.tex.XM3241",
-    "Activities/Sliding_Cube_in_a_Bowl/Sliding_Cube_in_a_Bowl.tex.TJ3241",
-    "Activities/Sliding_Cube_in_a_Bowl/Sliding_Cube_in_a_Bowl_Preview.pdf",
+    "Activities/Cliffside_Midair_Collision/Cliffside_Midair_Collision_Preview.synctex.gz",
+    "Activities/Cliffside_Midair_Collision/Cliffside_Midair_Collision_Preview.aux",
+    "Activities/Cliffside_Midair_Collision/Cliffside_Midair_Collision_Preview.synctex(busy)",
+    "Activities/Cliffside_Midair_Collision/Cliffside_Midair_Collision_Preview.log",
+    "Activities/Cliffside_Midair_Collision/Cliffside_Midair_Collision_Preview.tex",
+    "Activities/Cliffside_Midair_Collision/Cliffside_Midair_Collision_Preview.tex.Nb2923",
+    "Activities/Cliffside_Midair_Collision/Cliffside_Midair_Collision.tex.Vr2923",
+    "211/Recitation/Week_8/PH 221 Week 8.md",
+    "211/Studio/Week_8/PH 211 Studio 08 Energy Conservation.md",
     "Activities/Potential_versus_Change_in_Potential/Potential versus Change in Potential.md",
-    "Activities/Interpreting_a_Potential_Energy_Graph/Interpreting a Potential Energy Graph.md",
+    "Activities/Untitled.md",
+    "Activities/Sliding_Cube_in_a_Bowl/Sliding Cube in a Bowl.md",
     "Activities/Producing_a_Potential_Energy_Graph/Producing a Potential Energy Graph.md",
+    "Activities/Interpreting_a_Potential_Energy_Graph/Interpreting a Potential Energy Graph.md",
+    "211/Studio/Week_7/PH 211 Studio 07 Work and KE.md",
     "Activities/Visual_Dot_Product_Practice/Visual Dot Product Practice.md",
     "211/Recitation/Week_7/PH 221 Week 7.md",
     "Activities/Lifting_Boxes/Lifting Boxes.md",
     "Activities/Force_versus_Net_Force/Force versus Net Force.md",
-    "211/Studio/Week_7/PH 211 Studio 07 Work and KE.md",
     "Activities/Spring_Reasoning/Spring Reasoning.md",
     "211/Studio/Week_6/PH 211 Studio 06 Interacting Systems.md",
     "211/Studio/Week_4/PH 211 Studio 04 Free-Body Diagrams.md",
@@ -168,11 +179,6 @@
     "Activities/Two_Blocks_on_a_Frictionless_Half-Ramp/Two Blocks on a Frictionless Half-Ramp.md",
     "211/Recitation/Week_6/PH 221 Week 6.md",
     "Activities/Interactions_and_the_Third_Law/Interactions and the Third Law.md",
-    "211/Recitation/Week_4/PH 221 Week 4.md",
-    "211/Recitation/Week_5/PH 221 Week 5.md",
-    "Course Outcomes and Learning Objectives.md",
-    "Activities/Visual_Vector_Addition/Visual Vector Addition.md",
-    "Activities/Suspended_Loudspeaker/Suspended Loudspeaker.md",
     "Representations_and_Images/Block_on_Upward_Ramp_Attached_to_Block_Over_Edge.svg",
     "Representations_and_Images/Block_on_Ramp_with_Hand_Support.svg",
     "Representations_and_Images/Block_on_Ramp_with_Friction.svg",
@@ -182,8 +188,6 @@
     "Paul's_Images/PH_211_Figures/Block_on_Upward_Ramp_Attached_to_Block_Over_Edge.svg",
     "Paul's_Images/PH_211_Figures/Block_on_Ramp_Attached_to_Block_Over_Edge.svg",
     "Paul's_Images/PH_211_Figures/Block_on_Ramp_with_Hand_Support.svg",
-    "Paul's_Images/PH_211_Figures/Block_on_Ramp_with_Friction.svg",
-    "Activities/Steady_Block_on_a_Sliding_Ramp/Steady Block on a Sliding Ramp.md",
-    "Activities/Maximum_Tilt/Maximum Tilt.md"
+    "Paul's_Images/PH_211_Figures/Block_on_Ramp_with_Friction.svg"
   ]
 }

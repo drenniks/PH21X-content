@@ -5,7 +5,6 @@ tags:
   - format/assignment2024-05-19
   - modality/in-person
   - content/vectors/dot_product
-  - time/unknown
   - source/Knight/chapter10/workbook
   - content/energy/potential
   - content/scalars/energy
@@ -17,6 +16,7 @@ tags:
   - learning_objectives/critical_thinking/assumptions_and_simplifications
   - learning_objectives/extend_principles_to_specific_applications
   - learning_objectives/Newton_and_conservation_laws
+  - time/short
 ---
 # Interpreting a Potential Energy Graph
 ## Spring 2024
