@@ -25,7 +25,7 @@ tags:
 ---
 # Cliffside Midair Collision
 ## Spring 2024
-[Cliffside Midair Collision TeX](./Potential_versus_Change_in_Potential.tex)
+[Cliffside Midair Collision TeX](./Cliffside_Midair_Collision.tex)
 [Cliffside Midair Collision Preview TeX](./Cliffside_Midair_Collision_Preview.tex)
 [Cliffside Midair Collision Preview PDF](./Cliffside_Midair_Collision_Preview.pdf)
 * Added to Vault

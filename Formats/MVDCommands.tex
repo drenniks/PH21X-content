@@ -1,0 +1,33 @@
+\newcommand{\MVec}[3][0]{%Creates a momentum vector of length #3 centered at #2 and rotated #1 degrees counterclockwise.
+	\begin{scope}[rotate=#1,shift={(#2)}]
+		\draw[->,thick] ({-#3/2},0) -- ({#3/2},0);
+	\end{scope}
+}
+\newcommand{\MDot}[1]{%Creates a dot at #1 to represent a zero vector.
+	\begin{scope}[shift={(#1)}]
+		\filldraw (#1) circle (1pt);
+	\end{scope}
+}
+\newcommand{\MVDRows}[2][4.5]{%Creates the rows (initial, delta, final) of a momentum vector diagram. The optional argument determines the width of the table, and defaults to a good length for three columns (two objects and the total system). The non-optional argument gives a coordinate name (not displayed) to the diagram.
+	\begin{scope}
+		%\draw[thick] (0,5.5) -- (0,0);
+		\draw[thick] (-1,4.5) -- (#1,4.5);
+		\node at (-0.5,3.75) {$\vec{p}_{i}$};
+		\draw[thick] (-1,3) -- (#1,3);
+		\node at (-0.5,2.25) {$\Delta\vec{p}$};
+		\draw[thick] (-1,1.5) -- (#1,1.5);
+		\node at (-0.5,0.75) {$\vec{p}_{f}$};
+		\coordinate (#2) at (0,5);
+	\end{scope}
+}
+\newcommand{\MVDCol}[4][0.75]{%Creates a column for an object in a momentum vector diagram. The first (non-optional) argument is the coordinate name (not displayed) of the column, while the second is the displayed column header. The first argument also names the three entries down the column. The third argument anchors the column, so it should either be the coordinate name of the MVD (for the first column) or the coordinate name of the previous column. The optional argument indicates how far the center of the column should be from the previous column's edge, and defaults to 0.75
+	\begin{scope}[shift={(#4)}]
+		\node at (#1,0) {#3};
+		%\draw[thick] ({#1*2},0.5) -- ({#1*2},-5);
+		\draw[thick] (0,0.5) -- (0,-5);
+		\coordinate (#2init) at (#1,-1.25);
+		\coordinate (#2delt) at (#1,-2.75);
+		\coordinate (#2fin) at (#1,-4.25);
+		\coordinate (#2) at ({#1*2},0);
+	\end{scope}
+}
