@@ -67,8 +67,17 @@
 	\begin{figure}[h]
 		\centering
 		\begin{tikzpicture}
-			\Guides%[0]
-			\Bullet[0]{-5,-1}{\underline{Warm-Up Activity}}
+			\Guides[0]
+			\Bullet[0]{-3.5,3.75}{\tiny Credit: xkcd.com};
+			\node at (0,2) {\includegraphics[scale=0.4]{LocationMomentumXKCD}};
+			\Bullet[0]{-5,0}{\underline{Warm-Up Activity}}
+			\Bullet[0]{-5,-0.5}{You throw a brand new bouncy ball against the wall. Is the}
+			\Bullet[0]{-5,-1}{speed of the ball right after hitting the wall greater than,}
+			\Bullet[0]{-5,-1.5}{less than, or equal to the speed of the ball right before}
+			\Bullet[0]{-5,-2}{hitting the wall?}
+			\Bullet[0]{-5,-2.5}{A. Greater than}
+			\Bullet[0]{-5,-3}{B. Less than}
+			\Bullet[0]{-5,-3.5}{C. Equal to}
 		\end{tikzpicture}
 	\end{figure}
 \end{frame}
@@ -129,6 +138,30 @@
 		\centering
 		\begin{tikzpicture}
 			\Guides[0]
+			\Bullet{-5,3.5}{A small rock (mass $m$) is moving to the right on a}
+			\Bullet[0]{-5,3}{frictionless table with speed $v$.}
+			\begin{scope}[shift={(0,-0.3)}]
+				\Bullet{-5,2.5}{It hits a second rock (mass $M$) that is initially at rest on}
+				\Bullet[0]{-5,2}{the table. The rocks do not stick together.}
+				\Bullet[2]{-5,1.5}{Is momentum conserved? For what system?}
+				\Bullet[2]{-5,1}{Is energy conserved? For what system?}
+			\end{scope}
+			\begin{scope}[shift={(0,-0.6)}]
+				\Bullet{-5,0.5}{Our goal is to find the final speed of each rock, but don't}
+				\Bullet[0]{-5,0}{try to solve it yet.}
+				\Bullet[2]{-5,-0.5}{Instead, what special cases do you want to think about for}
+				\Bullet[0]{-4.7,-1}{this situation? What makes these special cases easier to}
+				\Bullet[0]{-4.7,-1.5}{think about than the general problem?}
+			\end{scope}
+		\end{tikzpicture}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Energy and Collisions}
+	\begin{figure}[h]
+		\centering
+		\begin{tikzpicture}
+			\Guides[0]
 			\Bullet{-5,3.5}{Collisions where energy is conserved are known as \textit{elastic}}
 			\Bullet[0]{-5,3}{\textit{collisions.}}
 			\Bullet{-5,2.2}{Collisions where the energy of the system decreases are}
@@ -138,6 +171,69 @@
 			\Bullet{-5,-0.1}{Collisions where the energy of the system increases are}
 			\Bullet[0]{-5,-0.6}{known as \textit{superelastic collisions.}}
 			\Bullet[2]{-5,-1.1}{Think explosions.}
+		\end{tikzpicture}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Superelastic Collisions}
+	\begin{figure}[h]
+		\centering
+		\begin{tikzpicture}
+			\Guides[0]
+			\Bullet{-5,3.5}{You are designing a sled with a compressed spring inside,}
+			\Bullet[0]{-5,3}{which can be released to separate the sled into two pieces of}
+			\Bullet[0]{-5,2.5}{equal mass ($m/2$). You are racing the sled across level snow}
+			\Bullet[0]{-5,2}{at speed $v$ when you trigger the separation.}
+			\begin{scope}[shift={(0,-1.3)}]
+				\Bullet{-5,2.5}{Right after the two halves push apart, the back end of the}
+				\Bullet[0]{-5,2}{sled is moving backward with speed $v$.}
+				\Bullet[2]{-5,1.5}{What is the velocity of the other piece?}
+				\Bullet[2]{-5,1}{How much kinetic energy did the system gain?}
+			\end{scope}
+			\begin{scope}[rotate=0,shift={(0,-1.5)}]
+				\draw[thick,->] (-0.5,0.5) -- (0.5,0.5);
+				\node[anchor=south] at (0,0.5) {$\vec{v}$};
+				\begin{scope}
+					\draw[thick] (-1.5,0.25) rectangle (0,-0.25);
+					\node at (-1,0) {$m_{b}$};
+				\end{scope}
+				\begin{scope}
+					\draw[thick] (0,0.25) -- (1.25,0.25) arc (90:-90:0.25) -- (0,-0.25) -- cycle;
+					\node at (1,0) {$m_{fr}$};
+				\end{scope}
+				\begin{scope}[yscale=2]
+					\newcommand{\Comp}{0.05}
+					\draw[thick] ({-\Comp*2},0) circle (0.1);
+					\draw[thick] (-\Comp,0) circle (0.1);
+					\draw[thick] (0,0) circle (0.1);
+					\draw[thick] (\Comp,0) circle (0.1);
+					\draw[thick] ({\Comp*2},0) circle (0.1);
+				\end{scope}
+				\draw[thick] (-2.5,-0.26) -- (2.5,-0.26);
+			\end{scope}
+			\begin{scope}[rotate=0,shift={(0,-3)}]
+				\begin{scope}[shift={(-0.5,0)}]
+					\draw[thick,->] (-0.25,0.5) -- (-1.25,0.5);
+					\node[anchor=south] at (-0.75,0.5) {$\vec{v}_{b}=-\vec{v}$};
+					\draw[thick] (-1.5,0.25) rectangle (0,-0.25);
+					\node at (-1,0) {$m_{b}$};
+				\end{scope}
+				\begin{scope}[shift={(0.5,0)}]
+					\draw[thick,->] (0.25,0.5) -- (1.25,0.5);
+					\node[anchor=south] at (0.75,0.5) {$\vec{v}_{fr}=$?};
+					\draw[thick] (0,0.25) -- (1.25,0.25) arc (90:-90:0.25) -- (0,-0.25) -- cycle;
+					\node at (1,0) {$m_{fr}$};
+				\end{scope}
+				\begin{scope}[yscale=2,shift={(-0.5,0)}]
+					\newcommand{\Comp}{0.1}
+					\draw[thick] ({-\Comp*2},0) circle (0.1);
+					\draw[thick] (-\Comp,0) circle (0.1);
+					\draw[thick] (0,0) circle (0.1);
+					\draw[thick] (\Comp,0) circle (0.1);
+					\draw[thick] ({\Comp*2},0) circle (0.1);
+				\end{scope}
+				\draw[thick] (-2.5,-0.26) -- (2.5,-0.26);
+			\end{scope}
 		\end{tikzpicture}
 	\end{figure}
 \end{frame}

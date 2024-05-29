@@ -20,3 +20,5 @@ tags:
 	* Lecture Notes
 		* Assignment Format 2024-05-19
 	* Lecture Presentation
+		* Borrows intellectual property
+		* ![Location and Momentum xkcd Comic](LocationMomentumXKCD.png)

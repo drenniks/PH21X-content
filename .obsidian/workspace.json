@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "7c55dff2b55990c8",
+        "id": "970562f270b25c42",
         "type": "tabs",
         "children": [
           {
-            "id": "ec50a21be6434c12",
+            "id": "ab6955ab6c618ab3",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -81,6 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "211/Lecture/Week_9/Lecture 18.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +98,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "211/Lecture/Week_9/Lecture 18.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +120,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "211/Lecture/Week_9/Lecture 18.md"
+              }
             }
           }
         ],
@@ -138,7 +142,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ec50a21be6434c12",
+  "active": "0ee81c010de32636",
   "lastOpenFiles": [
     "211/Lecture/Week_9/Lecture 18.md",
     "211/Lecture/Week_9/PH_211_Lecture_18.pdf",
