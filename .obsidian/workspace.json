@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "dc214721f9c5e727",
+        "id": "a509c8787d45ff78",
         "type": "tabs",
         "children": [
           {
-            "id": "2765e2c86a4bb76f",
+            "id": "f5b56bc2a2df9a8c",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -81,6 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "211/Recitation/Week_9/PH_221_Week_9.pdf",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +98,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "211/Recitation/Week_9/PH_221_Week_9.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +120,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "211/Recitation/Week_9/PH_221_Week_9.pdf"
+              }
             }
           }
         ],
@@ -142,17 +146,17 @@
   "lastOpenFiles": [
     "211/Recitation/Week_9/PH 221 Week 9.md",
     "211/Recitation/Week_9/PH_221_Week_9-Solution.pdf",
-    "211/Recitation/Week_9/PH_221_Week_9-Worksheet.pdf",
     "211/Recitation/Week_9/PH_221_Week_9.pdf",
     "211/Recitation/Week_9/PH_221_Week_9.synctex(busy)",
+    "211/Recitation/Week_9/PH_221_Week_9.tex.Lh2971",
+    "211/Recitation/Week_9/PH_221_Week_9.tex.XM2971",
+    "Activities/Ice_Archer_and_Cadillac_Crash/Ice Archer and Cadillac Crash.md",
+    "Activities/Ice_Archer_and_Cadillac_Crash/Ice_Archer_and_Cadillac_Crash_Preview.synctex(busy)",
+    "Activities/Ice_Archer_and_Cadillac_Crash/Ice_Archer_and_Cadillac_Crash.tex.TJ2971",
+    "211/Recitation/Week_9/PH_221_Week_9-Worksheet.pdf",
     "211/Recitation/Week_9/PH_221_Week_9.tex.mN3050",
     "211/Recitation/Week_9/PH_221_Week_9.tex.AK3050",
     "Formats/Formats.md",
-    "211/Recitation/Week_9/PH_221_Week_9.tex.eJ3050",
-    "211/Recitation/Week_9/PH_221_Week_9.tex.EG3050",
-    "211/Recitation/Week_9/PH_221_Week_9.tex.zU3050",
-    "Activities/Ice_Archer_and_Cadillac_Crash/Ice_Archer_and_Cadillac_Crash.tex.uI3050",
-    "Activities/Ice_Archer_and_Cadillac_Crash/Ice Archer and Cadillac Crash.md",
     "211/Studio/Week_9/PH 211 Studio 09 Collisions.md",
     "Activities/Cliffside_Midair_Collision/Cliffside Midair Collision.md",
     "Activities/Ice_Archer/Ice Archer.md",
