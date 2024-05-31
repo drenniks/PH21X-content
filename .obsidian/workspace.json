@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "970562f270b25c42",
+        "id": "dc214721f9c5e727",
         "type": "tabs",
         "children": [
           {
-            "id": "ab6955ab6c618ab3",
+            "id": "2765e2c86a4bb76f",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -44,7 +44,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#source/Paul_Emigh",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -81,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "211/Lecture/Week_9/Lecture 18.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "211/Lecture/Week_9/Lecture 18.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -120,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "211/Lecture/Week_9/Lecture 18.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -144,27 +140,30 @@
   },
   "active": "0ee81c010de32636",
   "lastOpenFiles": [
-    "211/Lecture/Week_9/Lecture 18.md",
-    "211/Lecture/Week_9/PH_211_Lecture_18.pdf",
-    "Activities/Springloaded_Sled/Springloaded Sled.md",
-    "211/Lecture/Week_9/PH_211_Lecture_18.synctex(busy)",
-    "211/Lecture/Week_9/PH_211_Lecture_18.tex.AF2769",
-    "211/Lecture/Week_9/PH_211_Lecture_18.tex.BL2769",
-    "211/Lecture/Week_9/PH_211_Lecture_18.tex.yD2769",
-    "211/Lecture/Week_9/PH_211_Lecture_18.tex.YL2769",
-    "211/Lecture/Week_9/PH_211_Lecture_18.tex.YN2769",
-    "211/Lecture/Week_9/PH_211_Lecture_18.tex.rU2769",
-    "211/Lecture/Week_9/PH_211_Lecture_18.tex.rB2769",
-    "211/Lecture/Week_9/PH_211_Lecture_18.tex.ss2769",
+    "211/Recitation/Week_9/PH 221 Week 9.md",
+    "211/Recitation/Week_9/PH_221_Week_9-Solution.pdf",
+    "211/Recitation/Week_9/PH_221_Week_9-Worksheet.pdf",
+    "211/Recitation/Week_9/PH_221_Week_9.pdf",
+    "211/Recitation/Week_9/PH_221_Week_9.synctex(busy)",
+    "211/Recitation/Week_9/PH_221_Week_9.tex.mN3050",
+    "211/Recitation/Week_9/PH_221_Week_9.tex.AK3050",
     "Formats/Formats.md",
-    "Activities/Colliding_Rocks/Colliding Rocks.md",
+    "211/Recitation/Week_9/PH_221_Week_9.tex.eJ3050",
+    "211/Recitation/Week_9/PH_221_Week_9.tex.EG3050",
+    "211/Recitation/Week_9/PH_221_Week_9.tex.zU3050",
+    "Activities/Ice_Archer_and_Cadillac_Crash/Ice_Archer_and_Cadillac_Crash.tex.uI3050",
+    "Activities/Ice_Archer_and_Cadillac_Crash/Ice Archer and Cadillac Crash.md",
+    "211/Studio/Week_9/PH 211 Studio 09 Collisions.md",
     "Activities/Cliffside_Midair_Collision/Cliffside Midair Collision.md",
+    "Activities/Ice_Archer/Ice Archer.md",
+    "Activities/Cadillac_Crash/Cadillac Crash.md",
+    "211/Studio/Week_8/PH 211 Studio 08 Energy Conservation.md",
+    "Activities/Springloaded_Sled/Springloaded Sled.md",
+    "211/Lecture/Week_9/Lecture 18.md",
+    "Activities/Colliding_Rocks/Colliding Rocks.md",
     "211/Recitation/Week_10/PH 221 Week 10.md",
     "Activities/Comparing_Pushed_Particles/Comparing Pushed Particles.md",
-    "211/Recitation/Week_9/PH 221 Week 9.md",
-    "Activities/Ice_Archer_and_Cadillac_Crash/Ice Archer and Cadillac Crash.md",
     "211/Recitation/Week_8/PH 221 Week 8.md",
-    "211/Studio/Week_8/PH 211 Studio 08 Energy Conservation.md",
     "Activities/Potential_versus_Change_in_Potential/Potential versus Change in Potential.md",
     "Activities/Untitled.md",
     "Activities/Sliding_Cube_in_a_Bowl/Sliding Cube in a Bowl.md",
@@ -176,9 +175,6 @@
     "Activities/Lifting_Boxes/Lifting Boxes.md",
     "Activities/Force_versus_Net_Force/Force versus Net Force.md",
     "Activities/Spring_Reasoning/Spring Reasoning.md",
-    "211/Studio/Week_6/PH 211 Studio 06 Interacting Systems.md",
-    "211/Studio/Week_4/PH 211 Studio 04 Free-Body Diagrams.md",
-    "211/Studio/Week_5/PH 211 Studio 05 Laws of Motion.md",
     "Representations_and_Images/Block_on_Upward_Ramp_Attached_to_Block_Over_Edge.svg",
     "Representations_and_Images/Block_on_Ramp_with_Hand_Support.svg",
     "Representations_and_Images/Block_on_Ramp_with_Friction.svg",

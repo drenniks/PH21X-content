@@ -14,7 +14,7 @@ tags:
   - time/long
   - content/energy/kinetic
   - content/methods/energy_table
-  - content/representations/momentum_vector_diagram
+  - content/representations/momentum_vector_diagrams
   - content/momentum/collisions
   - content/scalars/speed
   - content/vectors/velocity

@@ -1,7 +1,5 @@
 ---
 tags:
-  - usage/PH211/quarter/Sp2024/Week9
-  - usage/PH211/section_type/recitation
   - format/assignment2024-05-19
   - modality/in-person
   - content/vectors/momentum
@@ -10,15 +8,18 @@ tags:
   - outcomes/determine_germane_principles
   - content/forces/negative_gradient_of_potential
   - time/short
-  - content/representations/momentum_vector_diagram
+  - content/representations/momentum_vector_diagrams
   - content/momentum/collisions
   - content/scalars/speed
   - content/vectors/velocity
   - learning_objectives/critical_thinking/manageable_pieces
   - learning_objectives/Newton_and_conservation_laws
   - learning_objectives/point_model
-  - content/representations
   - learning_objectives/critical_thinking/assumptions_and_simplifications
+  - content/momentum/collisions/superelastic
+  - content/momentum/collisions/inelastic
+  - usage/PH211/quarter/Sp2024/Week9
+  - usage/PH211/section_type/recitation
 ---
 # Ice Archer and Cadillac Crash
 ## Spring 2024
@@ -27,6 +28,7 @@ tags:
 [Ice Archer and Cadillac Crash Preview PDF](./Ice_Archer_and_Cadillac_Crash_Preview.pdf)
 * Added to Vault
 	* Assignment Format Version 2024-05-19
-	* Two Borrowed Images
-	* ![Archer on Ice](Archer_on_Ice.pdf)
-	* ![Cadillac_Collision](Cadillac_Collision.pdf)
+	* Two Borrowed Images (archer image is edited; the bow used to look awful)
+		* ![Archer on Ice](Archer_on_Ice.pdf)
+		* ![Cadillac_Collision](Cadillac_Collision.pdf)
+	* Heavily modified to involve more ARCS steps and sensemaking.

@@ -1,61 +1,85 @@
-\Problem{Ice Archer and Cadillac Crash Setup}{\IceCadSetup}{
-For each part of this activity, prepare a pictorial representation, but do not solve the problem (yet).
+\newcommand{\Arxr}{\text{archer}}
+\newcommand{\Arrw}{\text{arrow}}
+\Problem{Ice Archer and Cadillac Crash}{\IceCad}{
+For this activity, we will be looking at two situations that mirror each other: a superelastic collision and a perfectly inelastic collision. We want to see how these situations are alike and how they are different.
+}
+\ProblemSub{\IceCadA}{
+(a) For each situations below, prepare a pictorial representation.
 \begin{itemize}
 	\item Draw pictures of ``before'' and ``after.''
 	\item Define symbols relevant to the problem.
 	\item List known information, and identify the desired unknown.
 \end{itemize}
 }
-\ProblemSub{\IceCadSetupA}{
-
-(a) A 50 kg archer, standing on frictionless ice, shoots a 100 g arrow at a speed of 100 m/s. What is the recoil speed of the archer?
+\ProblemSub{\IceCadI}{
+	
+(i) A 50 kg archer, standing on frictionless ice, shoots a 100 g arrow at a speed of 100 m/s. What is the recoil speed of the archer?
 }
-\Solution{\IceCadSetupASol}{
+\Solution{\IceCadAISol}{
 
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.7]{\FileDepth/Activities/Ice_Archer_and_Cadillac_Crash/Archer_on_Ice.pdf}
 \end{figure}
 }
-\ProblemSub{\IceCadSetupB}{
-
-(b) The parking brake on a 2000 kg Cadillac has failed, and it is rolling slowly, at 1 mph, toward a group of small, innocent children. As you see the situation, you realize there is just time for you to drive your 1000 kg Volkswagen head-on into the Cadillac and thus save the children. With what speed should you impact the Cadillac to bring it to a halt?
+\ProblemSub{\IceCadII}{
+	
+(ii) The parking brake on a 2000 kg Cadillac has failed, and it is rolling slowly, at 1 mph, toward a group of small, innocent children. As you see the situation, you realize there is just time for you to drive your 1000 kg Volkswagen head-on into the Cadillac and thus save the children. With what speed should you impact the Cadillac to bring it to a halt?
 }
-\Solution{\IceCadSetupBSol}{
+\Solution{\IceCadAIISol}{
 
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.7]{\FileDepth/Activities/Ice_Archer_and_Cadillac_Crash/Cadillac_Collision.pdf}
 \end{figure}
 }
-\Problem{Ice Archer and Cadillac Crash Calculations}{\IceCadCalc}{
-Using the setups from the previous activity, solve the following problems.
+\ProblemSub[34]{\IceCadB}{
+(b) For both of these situations, we want to apply conservation of momentum, but the details of why we can do this are slightly different. How can we justify conservation of momentum for the following systems?
 }
-\ProblemSub{\IceCadCalcA}{
-
-(a) A 50 kg archer, standing on frictionless ice, shoots a 100 g arrow at a speed of 100 m/s. What is the recoil speed of the archer?
+\ProblemSub{\IceCadBI}{
+(i) The archer and the arrow.
 }
-\Solution{\IceCadCalcASol}{
+\Solution{\IceCadBISol}{
 
-The archer-arrow system conserves momentum, so the combined initial momentum of the pair (which is zero, since they both start from rest) is equal to the combined final momentum of the pair:
+There is no friction, and the normal force from the ice on the archer cancels with the force of gravity on the archer. As such, there will be no net force on the archer, and therefore no impulse.
+
+For the arrow, we have to assume that there is no friction between the arrow and the archer's hands or the bow itself. We can perhaps also balance the vertical forces (gravity versus the normal force from the archer's hand), though exactly where the hand supports the arrow changes as it shoots out. However, even if we are unsure of the effect of this, an arrow can be expected to leave the bow fast enough that the time in which any net external force acts will be extremely brief, resulting in negligible impulse.
+
+Without impulse, momentum is conserved.
+}
+\ProblemSub{\IceCadBII}{
+(ii) The Cadillac and the Volkswagen.
+}
+\Solution{\IceCadBIISol}{
+
+The normal forces on the cars are balanced against the forces of gravity, so the vertical direction has no net force, but tires are built for traction, so friction cannot be ignored. However, crashes are usually quite quick events, and the forces between crashing objects are usually quite large. As such, the impulse can be assumed to be negligible, both due to the interaction being brief, and because the external forces are likely far less significant in magnitude when compared to the internal ones.
+}
+\ProblemSub{\IceCadC}{
+(c) Solve the two situations for the desired quantity. Make sure to solve symbolically before plugging in numbers.
+}
+\ProblemSub{\IceCadCI}{
+(i) What is the recoil speed of the archer?
+}
+\Solution{\IceCadCISol}{
+
+The combined initial momentum of the archer and arrow (which is zero, since they both start from rest) is equal to the combined final momentum of the pair:
 \[
 \begin{split}
-	m_{archer}\cancel{(v_{ix})}_{archer} + m_{arrow}\cancel{(v_{ix})}_{arrow} & = m_{archer}(v_{fx})_{archer} + m_{arrow}(v_{fx})_{arrow} \\
-	0 & = m_{archer}(v_{fx})_{archer} + m_{arrow}(v_{fx})_{arrow} \\
-	(v_{fx})_{archer} & = -\frac{m_{arrow}}{m_{archer}}(v_{fx})_{arrow} \\
+	m_{archer}\cancel{(v_{ix})}_{\Arxr} + m_{\Arrw}\cancel{(v_{ix})}_{\Arrw} & = m_{\Arxr}(v_{fx})_{\Arxr} + m_{\Arrw}(v_{fx})_{\Arrw} \\
+	0 & = m_{\Arxr}(v_{fx})_{\Arxr} + m_{\Arrw}(v_{fx})_{\Arrw} \\
+	(v_{fx})_{\Arxr} & = -\frac{m_{\Arrw}}{m_{\Arxr}}(v_{fx})_{\Arrw} \\
 	& = -\frac{0.1\text{ kg}}{50\text{ kg}}(100\text{ m/s}) \\
 	& = - 0.2\text{ m/s}.
 \end{split}
 \]
 The archer's recoil speed is 0.2 m/s.
 }
-\ProblemSub{\IceCadCalcB}{
-
-(b) The parking brake on a 2000 kg Cadillac has failed, and it is rolling slowly, at 1 mph, toward a group of small, innocent children. As you see the situation, you realize there is just time for you to drive your 1000 kg Volkswagen head-on into the Cadillac and thus save the children. With what speed should you impact the Cadillac to bring it to a halt?
+\ProblemSub{\IceCadCII}{
+(ii) With what speed should you impact the Cadillac to bring it to a halt?
 }
-\Solution{\IceCadCalcBSol}{
+\Solution{\IceCadCIISol}{
 
-The Cadillac-Volkswagen system conserves momentum, so the combined initial momentum of the pair is equal to the combined final momentum of the pair (which is zero, since they crash to a dead stop):
+The combined initial momentum of the Cadillac and Volkswagen is equal to the combined final momentum of the pair (which is zero, since they crash to a dead stop):
 \[
 \begin{split}
 	m_{1}(v_{ix})_{1} + m_{2}(v_{ix})_{2} & = m_{1}\cancel{(v_{fx})}_{1} + m_{2}\cancel{(v_{fx})}_{1} \\
@@ -66,4 +90,29 @@ The Cadillac-Volkswagen system conserves momentum, so the combined initial momen
 \end{split}
 \]
 You must hit the Cadillac at 2 mph to stop it.
+}
+\ProblemSub{\IceCadD}{
+(d) Identify and check special cases for each of these situations. If you examine a particular special case for one situation, adjust it to apply to the other situation. The math will be practically identical, but the physical interpretation will be distinct.
+}
+\Solution{\IceCadDSol}{
+
+\noindent\textbf{\underline{Case 1: Equal Masses}}
+
+For both situations, we can think about the internal forces. The internal forces between the two objects are equal and opposite (as they are a 3rd law pair), and equal forces on equal masses result in equal accelerations. Both forces act for the duration of the interaction, and the same acceleration over the same time means the same change in speed.
+
+If $m_{\Arxr}=m_{\Arrw}$ (the archer is firing an arrow with the mass of an equally large human), then $(v_{fx})_{\Arxr} = -(v_{fx})_{\Arrw} = -100$ m/s. Since both start from rest, they end up with the same speed due to the internal interactions.
+
+If $m_{1}=m_{2}$ (the Cadillac and the Volkswagen have the same mass), then $(v_{ix})_{2} = -(v_{ix})_{1} = -1$ mph. They have to start with the same speed for the internal interactions to bring them both to a stop.
+
+\noindent\textbf{\underline{Case 2: Archer/Volkswagen Far More Massive}}
+
+If $m_{\Arrw} \ll m_{\Arxr}$ (the archer is firing an arrow with negligible mass), then $(v_{fx})_{\Arxr} \approx 0$ m/s. The archer does not recoil significantly when propelling something with far less mass---analogously, if you flick a small beetle off of your arm, you will not feel a significant kick back from that interaction.
+
+If $m_{1} \ll m_{2}$ (the Cadillac is of negligible mass in comparison to the Volkswagen), then $(v_{ix})_{2} \approx 0$ mph. The Volkswagen is so massive that its velocity won't change when it strikes the Cadillac, and so it must be stopped at the time of the collision for both vehicles to be still afterward.
+
+\noindent\textbf{\underline{Case 3: Arrow/Cadillac Far More Massive}}
+
+If $m_{\Arrw}\gg m_{\Arxr}$ (the archer is firing an arrow far more massive than a person), then $(v_{fx})_{\Arxr} \approx \infty$. If you try to propel an extremely massive object, it will barely budge, and you will be propelled backward. In this situation, the archer successfully made the massive arrow do more than budge (they made it go 100 m/s to be exact), so they were sent absolutely flying in the opposite direction to make that happen.
+
+If $m_{1}\gg m_{2}$ (the Cadillac has far more mass than the Volkswagen), then $(v_{ix})_{2} \approx \infty$. To stop a massive object quickly requires a large amount of force---its vast inertia must be overcome to get any significant acceleration. Similarly, to stop a fast moving object quickly also requires a large amount of force---the large change in velocity requires a commensurately large acceleration. To make a massive object and a small object stop each other, the small object needs a correspondingly large speed to have comparable momentum. The great internal forces of the collision will bring both to a stop.
 }

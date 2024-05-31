@@ -27,3 +27,4 @@ tags:
 [Springloaded Sled Preview PDF](./Springloaded_Sled_Preview.pdf)
 * Added to Vault
 	* Assignment Format Version 2024-05-19
+	* The spring seems to confuse students. Perhaps the activity should be split apart, with a sled that separates without any explanation as the first part, then introduce the spring as the mechanism in a later synthesis activity.
