@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "a509c8787d45ff78",
+        "id": "38f907a5bf48776f",
         "type": "tabs",
         "children": [
           {
-            "id": "f5b56bc2a2df9a8c",
+            "id": "97e195c1e326345d",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -81,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "211/Recitation/Week_9/PH_221_Week_9.pdf",
+                "file": "211/Recitation/Week_10/PH 221 Week 10.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,7 +98,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "211/Recitation/Week_9/PH_221_Week_9.pdf",
+                "file": "211/Recitation/Week_10/PH 221 Week 10.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -121,7 +121,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "211/Recitation/Week_9/PH_221_Week_9.pdf"
+                "file": "211/Recitation/Week_10/PH 221 Week 10.md"
               }
             }
           }
@@ -144,6 +144,12 @@
   },
   "active": "0ee81c010de32636",
   "lastOpenFiles": [
+    "211/Recitation/Week_10/PH_221_Week_10-Solution.pdf",
+    "211/Recitation/Week_10/PH 221 Week 10.md",
+    "211/Recitation/Week_10/PH_221_Week_10.pdf",
+    "211/Recitation/Week_10/PH_221_Week_10.synctex(busy)",
+    "211/Recitation/Week_10/PH_221_Week_10.tex.XM5757",
+    "211/Recitation/Week_10/PH_221_Week_10.tex.TJ5757",
     "211/Recitation/Week_9/PH 221 Week 9.md",
     "211/Recitation/Week_9/PH_221_Week_9-Solution.pdf",
     "211/Recitation/Week_9/PH_221_Week_9.pdf",
@@ -151,11 +157,6 @@
     "211/Recitation/Week_9/PH_221_Week_9.tex.Lh2971",
     "211/Recitation/Week_9/PH_221_Week_9.tex.XM2971",
     "Activities/Ice_Archer_and_Cadillac_Crash/Ice Archer and Cadillac Crash.md",
-    "Activities/Ice_Archer_and_Cadillac_Crash/Ice_Archer_and_Cadillac_Crash_Preview.synctex(busy)",
-    "Activities/Ice_Archer_and_Cadillac_Crash/Ice_Archer_and_Cadillac_Crash.tex.TJ2971",
-    "211/Recitation/Week_9/PH_221_Week_9-Worksheet.pdf",
-    "211/Recitation/Week_9/PH_221_Week_9.tex.mN3050",
-    "211/Recitation/Week_9/PH_221_Week_9.tex.AK3050",
     "Formats/Formats.md",
     "211/Studio/Week_9/PH 211 Studio 09 Collisions.md",
     "Activities/Cliffside_Midair_Collision/Cliffside Midair Collision.md",
@@ -165,7 +166,6 @@
     "Activities/Springloaded_Sled/Springloaded Sled.md",
     "211/Lecture/Week_9/Lecture 18.md",
     "Activities/Colliding_Rocks/Colliding Rocks.md",
-    "211/Recitation/Week_10/PH 221 Week 10.md",
     "Activities/Comparing_Pushed_Particles/Comparing Pushed Particles.md",
     "211/Recitation/Week_8/PH 221 Week 8.md",
     "Activities/Potential_versus_Change_in_Potential/Potential versus Change in Potential.md",

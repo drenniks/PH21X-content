@@ -10,7 +10,6 @@ tags:
 ## Files
 [PH 221 Week 10 TeX](PH_221_Week_10.tex)
 [PH 221 Week 10 PDF](PH_221_Week_10.pdf)
-[PH 221 Week 10 Worksheet PDF](PH_221_Week_10-Worksheet.pdf)
 [PH 221 Week 10 Solution PDF](PH_221_Week_10-Solution.pdf)
 ## Activities
 [[Cliffside Midair Collision]]
