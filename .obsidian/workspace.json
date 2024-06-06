@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "38f907a5bf48776f",
+        "id": "aec767ca1bf1253f",
         "type": "tabs",
         "children": [
           {
-            "id": "97e195c1e326345d",
+            "id": "0ef6d03e9ddbecbd",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -81,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "211/Recitation/Week_10/PH 221 Week 10.md",
+                "file": "Course Outcomes and Learning Objectives.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,7 +98,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "211/Recitation/Week_10/PH 221 Week 10.md",
+                "file": "Course Outcomes and Learning Objectives.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -121,7 +121,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "211/Recitation/Week_10/PH 221 Week 10.md"
+                "file": "Course Outcomes and Learning Objectives.md"
               }
             }
           }
@@ -144,6 +144,12 @@
   },
   "active": "0ee81c010de32636",
   "lastOpenFiles": [
+    "README.md",
+    "Representations_and_Images/Loose Representations and Images.md",
+    "211/Studio/Week_10/PH 211 Studio 10 Physics.md",
+    "211/Studio/Week_10/PH211_ST_10_Physics_240603_235441.pdf",
+    "211/Studio/Week_9/PH 211 Studio 09 Collisions.md",
+    "211/Studio/Week_10",
     "211/Recitation/Week_10/PH_221_Week_10-Solution.pdf",
     "211/Recitation/Week_10/PH 221 Week 10.md",
     "211/Recitation/Week_10/PH_221_Week_10.pdf",
@@ -154,11 +160,8 @@
     "211/Recitation/Week_9/PH_221_Week_9-Solution.pdf",
     "211/Recitation/Week_9/PH_221_Week_9.pdf",
     "211/Recitation/Week_9/PH_221_Week_9.synctex(busy)",
-    "211/Recitation/Week_9/PH_221_Week_9.tex.Lh2971",
-    "211/Recitation/Week_9/PH_221_Week_9.tex.XM2971",
     "Activities/Ice_Archer_and_Cadillac_Crash/Ice Archer and Cadillac Crash.md",
     "Formats/Formats.md",
-    "211/Studio/Week_9/PH 211 Studio 09 Collisions.md",
     "Activities/Cliffside_Midair_Collision/Cliffside Midair Collision.md",
     "Activities/Ice_Archer/Ice Archer.md",
     "Activities/Cadillac_Crash/Cadillac Crash.md",
@@ -177,8 +180,6 @@
     "Activities/Visual_Dot_Product_Practice/Visual Dot Product Practice.md",
     "211/Recitation/Week_7/PH 221 Week 7.md",
     "Activities/Lifting_Boxes/Lifting Boxes.md",
-    "Activities/Force_versus_Net_Force/Force versus Net Force.md",
-    "Activities/Spring_Reasoning/Spring Reasoning.md",
     "Representations_and_Images/Block_on_Upward_Ramp_Attached_to_Block_Over_Edge.svg",
     "Representations_and_Images/Block_on_Ramp_with_Hand_Support.svg",
     "Representations_and_Images/Block_on_Ramp_with_Friction.svg",
