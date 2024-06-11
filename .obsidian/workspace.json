@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "500fb435860d48ca",
+        "id": "6e878de9d21bc50a",
         "type": "tabs",
         "children": [
           {
-            "id": "58791925755ec435",
+            "id": "8aa31fd2edd2a9b5",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -44,7 +44,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#usage/PH211/section_type/lecture",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -81,6 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Representations_and_Images/Loose Representations and Images.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +98,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Representations_and_Images/Loose Representations and Images.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +120,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Representations_and_Images/Loose Representations and Images.md"
+              }
             }
           }
         ],
@@ -138,8 +142,25 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "58791925755ec435",
+  "active": "0ee81c010de32636",
   "lastOpenFiles": [
+    "Representations_and_Images/Vector_to_A_from_B.svg",
+    "Paul's_Images/PH_211_Figures/Vector_to_A_from_B.svg",
+    "Representations_and_Images/Velocity_Vectors_for_Two_Sprinters.svg",
+    "Representations_and_Images/Sum_of_Three_Equal_Vectors.svg",
+    "Paul's_Images/PH_211_Figures/Sum_of_Three_Equal_Vectors.svg",
+    "Paul's_Images/PH_211_Figures/Velocity_Vectors_for_Two_Sprinters.svg",
+    "Representations_and_Images/FBD_for_Sandwiched_Block.svg",
+    "Paul's_Images/PH_211_Figures/FBD_for_Sandwiched_Block.svg",
+    "Representations_and_Images/Spring_and_Block_on_Ramp.svg",
+    "Paul's_Images/PH_211_Figures/Spring_and_Block_on_Ramp.svg",
+    "Representations_and_Images/Pendulum_Swing_to_Equilibrium.svg",
+    "Gymnast_Suspended_with.md",
+    "Representations_and_Images/Loose Representations and Images.md",
+    "211/Recitation/Week_6/PH 221 Week 6.md",
+    "Representations_and_Images/Mario_Activity_Acceleration_versus_Time.pdf",
+    "Representations_and_Images/mario.nb",
+    "Paul's_Images/PH_211_Figures/04/Mario_Activity_Acceleration_versus_Time.pdf",
     "211/Studio/Week_10/PH 211 Studio 10 Physics.md",
     "211/Studio/Week_10/PH211_ST_10_Physics_240603_235441.pdf",
     "211/Studio/Week_9/PH 211 Studio 09 Collisions.md",
@@ -158,12 +179,8 @@
     "211/Recitation/Week_10/PH_221_Week_10.tex.Lh2671",
     "211/Recitation/Week_10/PH_221_Week_10.tex.XM2671",
     "Activities/Cliffside_Midair_Collision/Cliffside_Midair_Collision_Preview.synctex(busy)",
-    "Activities/Cliffside_Midair_Collision/Cliffside_Midair_Collision.tex.TJ2671",
     "211/Recitation/Week_10/PH 221 Week 10.md",
     "README.md",
-    "Representations_and_Images/Loose Representations and Images.md",
-    "211/Studio/Week_10",
-    "211/Recitation/Week_10/PH_221_Week_10.tex.XM5757",
     "211/Recitation/Week_9/PH 221 Week 9.md",
     "Activities/Ice_Archer_and_Cadillac_Crash/Ice Archer and Cadillac Crash.md",
     "Formats/Formats.md",
@@ -172,18 +189,6 @@
     "Activities/Springloaded_Sled/Springloaded Sled.md",
     "211/Lecture/Week_9/Lecture 18.md",
     "Activities/Colliding_Rocks/Colliding Rocks.md",
-    "Activities/Comparing_Pushed_Particles/Comparing Pushed Particles.md",
-    "211/Recitation/Week_8/PH 221 Week 8.md",
-    "Activities/Potential_versus_Change_in_Potential/Potential versus Change in Potential.md",
-    "Representations_and_Images/Block_on_Upward_Ramp_Attached_to_Block_Over_Edge.svg",
-    "Representations_and_Images/Block_on_Ramp_with_Hand_Support.svg",
-    "Representations_and_Images/Block_on_Ramp_with_Friction.svg",
-    "Representations_and_Images/Block_on_Ramp_Attached_to_Block_Over_Edge.svg",
-    "Representations_and_Images/Block_on_Downward_Ramp_Attached_to_Block_Over_Edge.svg",
-    "Paul's_Images/PH_211_Figures/Block_on_Downward_Ramp_Attached_to_Block_Over_Edge.svg",
-    "Paul's_Images/PH_211_Figures/Block_on_Upward_Ramp_Attached_to_Block_Over_Edge.svg",
-    "Paul's_Images/PH_211_Figures/Block_on_Ramp_Attached_to_Block_Over_Edge.svg",
-    "Paul's_Images/PH_211_Figures/Block_on_Ramp_with_Hand_Support.svg",
-    "Paul's_Images/PH_211_Figures/Block_on_Ramp_with_Friction.svg"
+    "Activities/Comparing_Pushed_Particles/Comparing Pushed Particles.md"
   ]
 }
