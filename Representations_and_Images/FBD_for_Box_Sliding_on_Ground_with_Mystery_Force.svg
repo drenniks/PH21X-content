@@ -14,8 +14,8 @@
    viewBox="0 0 37.832382 38.415403"
    version="1.1"
    id="svg8"
-   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
-   sodipodi:docname="FBD.svg">
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="FBD_for_Box_Sliding_on_Ground_with_Mystery_Force.svg">
   <defs
      id="defs2">
     <marker
@@ -360,15 +360,15 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="2"
-     inkscape:cx="90.512871"
+     inkscape:cx="31.012871"
      inkscape:cy="110.04255"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1920"
-     inkscape:window-height="1018"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
+     inkscape:window-width="1853"
+     inkscape:window-height="1025"
+     inkscape:window-x="67"
+     inkscape:window-y="27"
      inkscape:window-maximized="1"
      fit-margin-top="0"
      fit-margin-left="0"
@@ -382,7 +382,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -404,13 +404,13 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444447px;line-height:125%;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="36.16658"
-       y="285.13596"
+       x="33.388454"
+       y="281.82867"
        id="text2207"><tspan
          sodipodi:role="line"
          id="tspan2205"
-         x="36.16658"
-         y="285.13596"
+         x="33.388454"
+         y="281.82867"
          style="font-style:italic;font-size:5.64444447px;stroke-width:0.26458332px">F<tspan
    style="font-size:64.99999762%;baseline-shift:super"
    id="tspan1121">g</tspan><tspan

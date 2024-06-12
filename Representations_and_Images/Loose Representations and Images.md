@@ -47,10 +47,10 @@ tags:
 #source/Paul_Emigh #usage/PH211/section_type/studio #usage/PH211/quarter/Sp2024 #content/energy/work #content/energy/kinetic #content/energy/thermal #content/forces/friction/kinetic #content/forces/gravity #content/forces/normal #content/forces/interactions #content/forces/tension #content/scalars/work #content/vectors/displacement #content/vectors/forces #content/vectors/velocity 
 # FBD for Box Sliding Along Table
 ![FBD for Box Sliding Along Table](FBD_for_Box_Sliding_Along_Table.svg)
-#source/Paul_Emigh #usage/PH211 #to-do/tag
+#source/Paul_Emigh #usage/PH211 #content/energy/thermal #content/energy/work #content/forces/friction/kinetic #content/forces/gravity #content/forces/normal #content/kinematics #content/representations/free-body_diagrams #content/scalars/work #content/vectors/acceleration #content/vectors/forces 
 # FBD for Box Sliding on Ground with Mystery Force
 ![FBD for Box Sliding on Ground with Mystery Force](FBD_for_Box_Sliding_on_Ground_with_Mystery_Force.svg)
-#source/Paul_Emigh #usage/PH211 #to-do/tag
+#source/Paul_Emigh #usage/PH211  #content/energy/thermal #content/energy/work #content/forces/friction/kinetic #content/forces/gravity #content/forces/normal #content/kinematics #content/representations/free-body_diagrams #content/scalars/work #content/vectors/acceleration #content/vectors/forces 
 # FBD for Sandwiched Block
 ![FBD for Sandwiched Block](FBD_for_Sandwiched_Block.svg)
 * #source/Paul_Emigh #usage/PH211 #to-do/tag
@@ -86,7 +86,7 @@ tags:
 * Has source code: [Mario Mathematica Code](mario.nb)
 # Mass with Vertical Spring Below and Pulley Above Linking to Horizontal Spring
 ![Mass with Vertical Spring Below and Pulley Above Linking to Horizontal Spring](Mass_with_Vertical_Spring_Below_and_Pulley_Above_Linking_to_Horizontal_Spring.svg)
-* #source/Paul_Emigh #usage/PH211 #to-do/tag
+* #source/Paul_Emigh #usage/PH211  #content/energy/gravitational_potential #content/energy/kinetic #content/energy/spring_potential #content/energy/thermal #content/energy/work #content/equilibrium/stable #content/forces/friction/kinetic #content/forces/gravity #content/forces/tension #content/forces/spring #content/oscillations #content/scalars/energy #content/scalars/work #content/vectors/acceleration #content/vectors/components/trigonometry #content/vectors/forces #content/vectors/position #content/vectors/velocity 
 # Masses Slung Across Peak
 ![Masses Slung Across Peak](./Masses_Slung_Across_Peak.svg)
 * #source/Paul_Emigh #usage/PH211 #to-do/tag
@@ -125,7 +125,7 @@ tags:
 * #source/Paul_Emigh #usage/PH211 #content/forces #content/forces/tension #content/vectors/forces #content/vectors/velocity #content/vectors/components/trigonometry 
 # Spring and Block on Ramp
 ![Spring and Block on Ramp](Spring_and_Block_on_Ramp.svg)
-* #source/Paul_Emigh #usage/PH211 #to-do/tag
+* #source/Paul_Emigh #usage/PH211 #content/energy/gravitational_potential #content/energy/kinetic #content/energy/spring_potential #content/energy/thermal #content/energy/work #content/equilibrium/stable #content/forces/friction/kinetic #content/forces/gravity #content/forces/normal #content/forces/spring #content/oscillations #content/scalars/energy #content/scalars/work #content/vectors/acceleration #content/vectors/components/trigonometry #content/vectors/forces #content/vectors/position #content/vectors/velocity 
 # Stack of Blocks Sliding as a Group
 ![Stack of Blocks Sliding as a Group](./Stack_of_Blocks_Sliding_as_Group.svg)
 ![Stack of Blocks Sliding as a Group FBDs](./Stack_of_Blocks_Sliding_as_Group_FBDs.svg)

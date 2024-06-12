@@ -11,15 +11,15 @@
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    id="svg2"
    version="1.1"
-   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
    xml:space="preserve"
    width="122.49689"
    height="110.75795"
    viewBox="0 0 122.49689 110.75795"
-   sodipodi:docname="Northsouth.svg"><metadata
+   sodipodi:docname="FBD_for_Sandwiched_Block.svg"><metadata
      id="metadata8"><rdf:RDF><cc:Work
          rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
      id="defs6"><marker
        inkscape:stockid="Arrow1Mend"
        orient="auto"
@@ -89,15 +89,15 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1920"
-     inkscape:window-height="1018"
+     inkscape:window-width="1853"
+     inkscape:window-height="1025"
      id="namedview4"
      showgrid="false"
      inkscape:zoom="2.3477223"
-     inkscape:cx="47.778475"
+     inkscape:cx="-2.9089509"
      inkscape:cy="25.183006"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
+     inkscape:window-x="67"
+     inkscape:window-y="27"
      inkscape:window-maximized="1"
      inkscape:current-layer="g10"
      fit-margin-top="0"
@@ -128,6 +128,7 @@
      x="-3.0668035"
      y="-91.604065"
      style="stroke-width:0.80000001px">Side view</tspan></text>
+
 <path
    style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.80000001px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend)"
    d="M 29.986512,103.53052 H 9.8819185"
@@ -144,6 +145,7 @@
      x="0.68151265"
      y="-100.46371"
      style="stroke-width:0.80000001px">N</tspan></text>
+
 <path
    style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.80000001px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend-4)"
    d="M 8.7960345,53.780172 H -11.308558"
@@ -178,17 +180,18 @@
        id="tspan1700">N</tspan><tspan
        style="font-size:64.99999762%;baseline-shift:sub"
        id="tspan1698">BG</tspan></tspan></text>
+
 <text
    xml:space="preserve"
    style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.60000038px;line-height:125%;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.80000001px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-   x="20.62159"
-   y="-20.133595"
+   x="20.962345"
+   y="-25.244932"
    id="text1696-8"
    transform="scale(1,-1)"><tspan
      sodipodi:role="line"
      id="tspan1694-3"
-     x="20.62159"
-     y="-20.133595"
+     x="20.962345"
+     y="-25.244932"
      style="stroke-width:0.80000001px"><tspan
        style="font-style:italic;stroke-width:0.80000001px"
        id="tspan1702-2">F</tspan><tspan
@@ -196,6 +199,7 @@
        id="tspan1700-7">g</tspan><tspan
        style="font-size:6.24000025px;baseline-shift:sub;stroke-width:0.80000001px"
        id="tspan1698-6">BE</tspan></tspan></text>
+
 <text
    xml:space="preserve"
    style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.60000038px;line-height:125%;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.80000001px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -214,6 +218,7 @@
        id="tspan1700-73">N</tspan><tspan
        style="font-size:6.24000025px;baseline-shift:sub;stroke-width:0.80000001px"
        id="tspan1698-2">BA</tspan></tspan></text>
+
 <text
    xml:space="preserve"
    style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.60000038px;line-height:125%;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.80000001px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -232,4 +237,5 @@
        id="tspan1700-75">N</tspan><tspan
        style="font-size:6.24000025px;baseline-shift:sub;stroke-width:0.80000001px"
        id="tspan1698-9">BB</tspan></tspan></text>
+
 </g></svg>
