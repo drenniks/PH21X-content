@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "ff9fda1abce99af9",
+        "id": "22bce9dce19aaa42",
         "type": "tabs",
         "children": [
           {
-            "id": "d7e066bf550b59d9",
+            "id": "0c9193fec3019cc1",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Representations_and_Images/Loose Representations and Images.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -48,7 +44,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#content/forces/normal",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Representations_and_Images/Loose Representations and Images.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Representations_and_Images/Loose Representations and Images.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Representations_and_Images/Loose Representations and Images.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -146,10 +138,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d7e066bf550b59d9",
+  "active": "0c9193fec3019cc1",
   "lastOpenFiles": [
-    "Representations_and_Images/FBD_for_Box_Sliding_on_Ground_with_Mystery_Force.svg",
     "Representations_and_Images/Loose Representations and Images.md",
+    "Representations_and_Images/FBD_for_Box_Sliding_on_Ground_with_Mystery_Force.svg",
     "Representations_and_Images/Vector_to_A_from_B.svg",
     "Paul's_Images/PH_211_Figures/Vector_to_A_from_B.svg",
     "Representations_and_Images/Velocity_Vectors_for_Two_Sprinters.svg",
@@ -159,7 +151,6 @@
     "Representations_and_Images/FBD_for_Sandwiched_Block.svg",
     "Paul's_Images/PH_211_Figures/FBD_for_Sandwiched_Block.svg",
     "Representations_and_Images/Spring_and_Block_on_Ramp.svg",
-    "Paul's_Images/PH_211_Figures/Spring_and_Block_on_Ramp.svg",
     "Gymnast_Suspended_with.md",
     "211/Recitation/Week_6/PH 221 Week 6.md",
     "Representations_and_Images/Mario_Activity_Acceleration_versus_Time.pdf",
