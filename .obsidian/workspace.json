@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "514fb13e2585879d",
+        "id": "da8d9400be7f0b92",
         "type": "tabs",
         "children": [
           {
-            "id": "e07957e1da269e6f",
+            "id": "f5d4ab23403127fe",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -81,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Formats/Formats.md",
+                "file": "211 Summer/Recitation/Week_1/PH 221 Week 1.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,7 +98,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Formats/Formats.md",
+                "file": "211 Summer/Recitation/Week_1/PH 221 Week 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -121,7 +121,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Formats/Formats.md"
+                "file": "211 Summer/Recitation/Week_1/PH 221 Week 1.md"
               }
             }
           }
@@ -144,13 +144,32 @@
   },
   "active": "0ee81c010de32636",
   "lastOpenFiles": [
-    "211/Recitation/Week_10/PH 221 Week 10.md",
-    "Formats/Assignment20240614.tex",
-    "Formats/Assignment20240614.tex.cF5519",
+    "211 Summer/Recitation/Week_1/PH_221_Week_1.tex.wX5337",
+    "Templates/Activity/Activity Template.md",
+    "Templates/Problem Set/Problem Set Template.md",
+    "Templates/Problem Set/PH_2XX_Section_Number.tex.FW5337",
+    "211 Summer/Recitation/Week_1/PH 221 Week 1.md",
+    "211 Summer/Recitation/Week_1/PH_221_Week_1.tex",
+    "211 Summer/Recitation/Week_1/PH_2XX_Section_Number.tex",
+    "211/Recitation/Week_1/PH 221 Week 1.md",
+    "211 Summer/Recitation/Week_1",
+    "211 Summer/Lecture_and_Studio/Week_1_Class_3_L",
+    "211 Summer/Lecture_and_Studio/Untitled.md",
+    "211 Summer/Lecture_and_Studio/Week_1_Class_2_L",
+    "211 Summer/Lecture_and_Studio/Week_1_Class_1_S",
+    "211 Summer/Lecture_and_Studio/Week_1_Class_1_L",
+    "211 Summer/Recitation",
+    "211 Summer/Lecture_and_Studio",
+    "211/Recitation/Week_9/PH 221 Week 9.md",
     "Formats/Formats.md",
-    "Formats/Assignment20240519.tex.nS5519",
     "Activities/Springloaded_Sled/Springloaded Sled.md",
+    "Activities/Cliffside_Midair_Collision/Cliffside Midair Collision.md",
+    "211/Recitation/Week_10/PH 221 Week 10.md",
     "211/Lecture/Week_9/Lecture 18.md",
+    "Activities/Visual_Vector_Addition/Visual Vector Addition.md",
+    "211/Recitation/Week_8/PH 221 Week 8.md",
+    "211/Recitation/Week_3/PH 221 Week 3.md",
+    "211/Recitation/Week_2/PH 221 Week 2.md",
     "Representations_and_Images/Loose Representations and Images.md",
     "Representations_and_Images/FBD_for_Box_Sliding_on_Ground_with_Mystery_Force.svg",
     "Representations_and_Images/Vector_to_A_from_B.svg",
@@ -164,30 +183,12 @@
     "Representations_and_Images/Spring_and_Block_on_Ramp.svg",
     "Gymnast_Suspended_with.md",
     "211/Recitation/Week_6/PH 221 Week 6.md",
-    "Representations_and_Images/Mario_Activity_Acceleration_versus_Time.pdf",
-    "Representations_and_Images/mario.nb",
-    "Paul's_Images/PH_211_Figures/04/Mario_Activity_Acceleration_versus_Time.pdf",
     "211/Studio/Week_10/PH 211 Studio 10 Physics.md",
-    "211/Studio/Week_10/PH211_ST_10_Physics_240603_235441.pdf",
     "211/Studio/Week_9/PH 211 Studio 09 Collisions.md",
     "211/Studio/Week_8/PH 211 Studio 08 Energy Conservation.md",
     "211/Studio/Week_7/PH 211 Studio 07 Work and KE.md",
     "211/Studio/Week_6/PH 211 Studio 06 Interacting Systems.md",
     "211/Studio/Week_5/PH 211 Studio 05 Laws of Motion.md",
-    "211/Studio/Week_4/PH 211 Studio 04 Free-Body Diagrams.md",
-    "211/Studio/Week_3/PH 211 Studio 03 Kinematics.md",
-    "211/Studio/Week_2/PH 211 Studio 02 Motion Representations.md",
-    "211/Studio/Week_1/PH 211 Studio 01 Representations and Sensemaking.md",
-    "211/Recitation/Week_10/PH_221_Week_10-Solution.pdf",
-    "211/Recitation/Week_10/PH_221_Week_10.pdf",
-    "Activities/Cliffside_Midair_Collision/Cliffside Midair Collision.md",
-    "211/Recitation/Week_10/PH_221_Week_10.synctex(busy)",
-    "README.md",
-    "211/Recitation/Week_9/PH 221 Week 9.md",
-    "Activities/Ice_Archer_and_Cadillac_Crash/Ice Archer and Cadillac Crash.md",
-    "Activities/Ice_Archer/Ice Archer.md",
-    "Activities/Cadillac_Crash/Cadillac Crash.md",
-    "Activities/Colliding_Rocks/Colliding Rocks.md",
-    "Activities/Comparing_Pushed_Particles/Comparing Pushed Particles.md"
+    "211/Studio/Week_4/PH 211 Studio 04 Free-Body Diagrams.md"
   ]
 }
