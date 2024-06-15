@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "22bce9dce19aaa42",
+        "id": "514fb13e2585879d",
         "type": "tabs",
         "children": [
           {
-            "id": "0c9193fec3019cc1",
+            "id": "e07957e1da269e6f",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -81,6 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Formats/Formats.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +98,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Formats/Formats.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +120,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Formats/Formats.md"
+              }
             }
           }
         ],
@@ -138,8 +142,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0c9193fec3019cc1",
+  "active": "0ee81c010de32636",
   "lastOpenFiles": [
+    "211/Recitation/Week_10/PH 221 Week 10.md",
+    "Formats/Assignment20240614.tex",
+    "Formats/Assignment20240614.tex.cF5519",
+    "Formats/Formats.md",
+    "Formats/Assignment20240519.tex.nS5519",
+    "Activities/Springloaded_Sled/Springloaded Sled.md",
+    "211/Lecture/Week_9/Lecture 18.md",
     "Representations_and_Images/Loose Representations and Images.md",
     "Representations_and_Images/FBD_for_Box_Sliding_on_Ground_with_Mystery_Force.svg",
     "Representations_and_Images/Vector_to_A_from_B.svg",
@@ -171,18 +182,11 @@
     "211/Recitation/Week_10/PH_221_Week_10.pdf",
     "Activities/Cliffside_Midair_Collision/Cliffside Midair Collision.md",
     "211/Recitation/Week_10/PH_221_Week_10.synctex(busy)",
-    "211/Recitation/Week_10/PH_221_Week_10.tex.Lh2671",
-    "211/Recitation/Week_10/PH_221_Week_10.tex.XM2671",
-    "Activities/Cliffside_Midair_Collision/Cliffside_Midair_Collision_Preview.synctex(busy)",
-    "211/Recitation/Week_10/PH 221 Week 10.md",
     "README.md",
     "211/Recitation/Week_9/PH 221 Week 9.md",
     "Activities/Ice_Archer_and_Cadillac_Crash/Ice Archer and Cadillac Crash.md",
-    "Formats/Formats.md",
     "Activities/Ice_Archer/Ice Archer.md",
     "Activities/Cadillac_Crash/Cadillac Crash.md",
-    "Activities/Springloaded_Sled/Springloaded Sled.md",
-    "211/Lecture/Week_9/Lecture 18.md",
     "Activities/Colliding_Rocks/Colliding Rocks.md",
     "Activities/Comparing_Pushed_Particles/Comparing Pushed Particles.md"
   ]

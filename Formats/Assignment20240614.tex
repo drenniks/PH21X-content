@@ -1,8 +1,9 @@
-% Version 2024-05-19
+% Version 2024-06-14
 % Changes
 % 2024-02-21 Added xstring package to enable smooth implementation of new \ModePage command.
 % 2024-04-27 Set up to split activities and formatting aspects into separate files. Removed dependence on xcomment. Added an automatic counter to number the activities in a problem set.
 % 2024-05-19 Revised old format for \TeachingTips command, which did not support \DefOnly.
+% 2024-06-14 Added Repurpose environment to allow mixing of different purpose levels in the same document.
 \usepackage{tcolorbox}
 \usepackage{xstring}
 % You will want the following four lines in your document (the last two uncommented):
@@ -35,6 +36,34 @@
 \renewcommand{\GrayProb}{1}
 \renewcommand{\Tipsy}{1}
 \fi
+
+\newenvironment{Repurpose}[1]{
+\renewcommand{\Purpose}{#1}
+\renewcommand{\Exclusion}{0}
+\renewcommand{\PageTurn}{0}
+\renewcommand{\GrayProb}{0}
+\renewcommand{\Tipsy}{0}
+% Assignment
+\if\Purpose1
+\renewcommand{\Exclusion}{1}
+\fi
+% Worksheet
+\if\Purpose2
+\renewcommand{\Exclusion}{1}
+\renewcommand{\PageTurn}{1}
+\fi
+% Student Solution
+\if\Purpose3
+\renewcommand{\PageTurn}{1}
+\renewcommand{\GrayProb}{1}
+\fi
+% Teaching Copy
+\if\Purpose4
+\renewcommand{\PageTurn}{1}
+\renewcommand{\GrayProb}{1}
+\renewcommand{\Tipsy}{1}
+\fi
+}{}
 
 \def \NewQ {0}
 \def \PForce {0}

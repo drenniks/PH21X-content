@@ -28,3 +28,4 @@ tags:
 * Added to Vault
 	* Assignment Format Version 2024-05-19
 	* The spring seems to confuse students. Perhaps the activity should be split apart, with a sled that separates without any explanation as the first part, then introduce the spring as the mechanism in a later synthesis activity.
+	* Mention of the capstone lab on elasticity should be removed; that is not what they do in capstone labs anymore.
