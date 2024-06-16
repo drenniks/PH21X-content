@@ -1,0 +1,16 @@
+\usepackage[absolute]{textpos}
+% This package relies on Assignment Format 2024-06-14 or later to work. It is recommended that the Purpose and DefOnly commands be given as such:
+%\newcommand{\Purpose}{4}
+%\newcommand{\DefOnly}{0}
+% Activities need to be entered outside of the TeacherMargin and PresentSpace environments, otherwise they will be defined only locally. They can even go in the preamble.
+\newenvironment{TeacherMargin}{\begin{textblock*}{10.8cm}(0.5cm,0.5cm)
+\small}{\end{textblock*}
+\hspace{0.1cm}}
+\newenvironment{PresentSpace}{\begin{textblock*}{0.3cm}(26.85cm,9.35cm)
+--
+\end{textblock*}
+\begin{textblock*}{15.6cm}(11.8cm,0.5cm)
+\begin{Repurpose}{1}
+\Large}{\end{Repurpose}
+\end{textblock*}
+\hspace{0.1cm}}
