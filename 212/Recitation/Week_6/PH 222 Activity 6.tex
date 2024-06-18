@@ -1,0 +1,135 @@
+\documentclass[]{article}
+\usepackage[a4paper, total={15cm,23cm}]{geometry}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{xcolor}
+\usepackage{wasysym}
+%opening
+\title{PH 222 Activity 6}
+\author{Benjamin Bauml}
+\date{Winter 2021}
+\pagestyle{fancy}
+\rhead{PH 222}
+\chead{Winter 2021}
+\lhead{Activity 6}
+
+%Custom Quotation Command
+\newcommand{\excerpt}[1]{\colorbox{lightgray}{\parbox{14.8cm}{#1}} \\}
+
+\begin{document}
+
+\maketitle
+
+\begin{center}
+Problems 2 through 5 are borrowed/adapted from Chapter 16 of the \textit{Student Workbook} for \textit{Physics for Scientists and Engineers}. Numerical values for gravitational acceleration on Venus come from $ < $https://phys.org/news/2016-01-strong-gravity-planets.html$ > $.
+\end{center}
+\section*{Activity 1}
+\excerpt{
+On Venus, gravitational acceleration is about $ g_{\venus} = 8.87 $ m/s$ ^{2} $, or $ 0.904g $. How does the period $ T_{\venus} $ of a simple pendulum on Venus compare to the period $ T $ of a pendulum on Earth? How long would the string of the pendulum have to be to make the periods differ by an entire second?
+}
+% To reveal the solution, delete "\phantom{\parbox{\textwidth}{" from the beginning, and "}}" from the end.
+\phantom{\parbox{\textwidth}{
+The period of a simple pendulum is $ T = 2\pi\sqrt{L/g} $. Comparing the period on Earth to the period on Venus, we find
+\[
+\frac{T_{\venus}}{T} = \sqrt{\frac{g}{g_{\venus}}} = \sqrt{\frac{1}{0.904}} \approx 1.05.
+\]
+As such, the period of the pendulum becomes about $ 0.05T $ longer when it is on Venus. If we want this change to be equal to 1 second, then it must be that $ T = 20 $ s on Earth. Solving the period equation for length, we find
+\[
+L = g \left(\frac{T}{2\pi}\right)^{2} = (9.8\text{ m/s}^{2})\left(\frac{20\text{ s}}{2\pi}\right)^{2} \approx 99.3\text{ m}.
+\]
+We would need a pendulum approximately 99.3 meters in length to see such a large change.
+}}
+
+\section*{Activity 2}%23&24
+\excerpt{
+(a) A light wave travels from vacuum, through a transparent material, and back to vacuum. What is the index of refraction of this material? Explain.
+}
+\begin{center}
+	\includegraphics[scale=0.5]{n3}
+\end{center}
+% To reveal the solution, delete "\phantom{\parbox{\textwidth}{" from the beginning, and "}}" from the end.
+\phantom{\parbox{\textwidth}{
+Frequency is a property of the source, and thus remains constant as the wave travels from one medium to another. The wavelength in vacuum is $ \lambda $, and in the medium, we can see that $ \lambda' = \frac{\lambda}{3} $.
+}}
+% To reveal the solution, delete "\phantom{\parbox{\textwidth}{" from the beginning, and "}}" from the end.
+\phantom{\parbox{\textwidth}{
+We know that the speed of light in the medium is $ v' = \frac{c}{n} $, where $ n $ is the medium's index of refraction. The speed is can also be expressed as a product of wavelength and frequency:
+\[
+v' = \lambda'f = \frac{\lambda}{3}f = \frac{c}{3}.
+\]
+This suggests that $ n = 3 $. \\
+}}
+\excerpt{
+(b) A light wave travels from vacuum, through a transparent material whose index of refraction is $ n = 2.0 $, and back to vacuum. Finish drawing the snapshot graph of the light wave at this instant.
+}
+\begin{center}
+	\includegraphics[scale=0.5]{n2}
+	%\includegraphics[scale=0.5]{n2sol}%solution
+\end{center}
+% To reveal the solution, delete "\phantom{\parbox{\textwidth}{" from the beginning, and "}}" from the end.
+\phantom{\parbox{\textwidth}{
+From our previous work, we can see that $ \lambda' = \frac{\lambda}{n} $, so the wave should have half of its original wavelength while within the medium. Once it leaves, it returns to its original wavelength.
+}}
+
+\section*{Activity 3}%28
+\excerpt{
+A laser beam has intensity $ I_{0} $.
+}
+\excerpt{
+(a) What is the intensity, in terms of $ I_{0} $, if a lens focuses the laser beam to $ \frac{1}{10} $ its initial diameter?
+}
+% To reveal the solution, delete "\phantom{\parbox{\textwidth}{" from the beginning, and "}}" from the end.
+\phantom{\parbox{\textwidth}{
+Intensity $ I = \frac{P}{A} $, and the cross-sectional area of the light beam is $ A = \pi r^{2} $. Therefore, $ I \propto \frac{1}{r^{2}} $. When the diameter is reduced to a tenth its original size, so is the radius. Let $ r_{1} $ be the reduced radius, and let $ r_{0} $ be the original (thus $ r_{1} = r_{0}/10 $). By comparison:
+\[
+\frac{I_{1}}{I_{0}} = \frac{r_{0}^{2}}{r_{1}^{2}} = \frac{r_{0}^{2}}{(r_{0}/10)^{2}} = 100.
+\]
+Thus, $ I_{1} = 100I_{0} $. \\
+}}
+\excerpt{
+(b) What is the intensity, in terms of $ I_{0} $, if a lens defocuses the laser beam to 10 times its initial diameter?
+}
+% To reveal the solution, delete "\phantom{\parbox{\textwidth}{" from the beginning, and "}}" from the end.
+\phantom{\parbox{\textwidth}{
+In this case, $ r_{1} = 10r_{0} $. As such,
+\[
+\frac{I_{1}}{I_{0}} = \frac{r_{0}^{2}}{r_{1}^{2}} = \frac{r_{0}^{2}}{(10r_{0})^{2}} = \frac{1}{100}.
+\]
+Thus, $ I_{1} = \frac{I_{0}}{100} $.
+}}
+
+\pagebreak
+\section*{Activity 4}%29
+\excerpt{
+Sound wave A delivers 2 J of energy in 2 s. Sound wave B delivers 10 J of energy in 5 s. Sound wave C delivers 2 mJ of energy in 1 ms. Rank in order, from largest to smallest, the sound powers $ P_{A},\ P_{B} $, and $ P_{C} $ of these three sound waves.
+}
+% To reveal the solution, delete "\phantom{\parbox{\textwidth}{" from the beginning, and "}}" from the end.
+\phantom{\parbox{\textwidth}{
+Order: $ P_{C} = P_{B} > P_{A} $ \\
+Power is the rate at which energy is delivered.
+\[
+P_{A} = \frac{2\text{ J}}{2\text{ s}} = 1\text{ W}, \qquad P_{B} = \frac{10\text{ J}}{5\text{ s}} = 2\text{ W}, \qquad P_{C} = \frac{2\text{ mJ}}{1\text{ ms}} = 2\text{ W}.
+\]
+}}
+
+\section*{Activity 5}%30
+\excerpt{
+A giant chorus of 1000 male vocalists is singing the same note. Suddenly, 999 vocalists stop, leaving one soloist. By how many decibels does the sound intensity level decrease? Explain.
+}
+% To reveal the solution, delete "\phantom{\parbox{\textwidth}{" from the beginning, and "}}" from the end.
+\phantom{\parbox{\textwidth}{
+Let $ I $ be the intensity from 1000 singers. Assuming they all sing at the same level, then the intensity drops to $ I/1000 $, or $ I/10^{3} $. The decrease in sound intensity level is $ \Delta \beta = \beta_{f}-\beta_{i} $, so
+\[
+\begin{split}
+	\Delta\beta & = (10\text{ dB})\log_{10}\left(\frac{I/10^{3}}{I_{0}}\right) - (10\text{ dB})\log_{10}\left(\frac{I}{I_{0}}\right) \\
+	& = (10\text{ dB})\log_{10}\left(\frac{I/10^{3}}{I}\right) \\
+	& = (10\text{ dB})\log_{10}\left(\frac{1}{10^{3}}\right) \\
+	& = -30\text{ dB}.
+\end{split}
+\]
+The sound intensity level decreases 30 dB.
+}}
+
+\end{document}
