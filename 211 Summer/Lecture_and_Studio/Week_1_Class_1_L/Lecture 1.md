@@ -8,8 +8,12 @@ tags:
 ## Files
 [PH 211 Lecture 1 TeX](PH_211_Lecture_1.tex)
 [PH 211 Lecture 1 PDF](PH_211_Lecture_1.pdf)
+![Playing Cards](PlayingCards.jpg)
 ## Activities
-TBD
+Introductions
+Course Structure and Policies
+Introduction to Physics, Motion, and Model Building
+Principles for Success
 ## Notes
 * Added to Vault
 	* Assignment Format 2024-06-14
