@@ -16,12 +16,11 @@ tags:
 ## Files
 [PH 211 Studio 01 PDF](./PH211_ST_01_Representations_and_Sensemaking_240405_234957.pdf)
 ## Activities
-Activity 1-1: Representations of Volume
-Activity 1-2: Driving to Portland
-Activity 1-3: Representations of Vectors
-Activity 1-4: Vectors in a Garden
+Activity 1-1: [[Representations of Volume]]
+Activity 1-2: [[Driving to Portland]]
+Activity 1-3: [[Representations of Vectors]]
+Activity 1-4: [[Vectors in a Garden]]
 ## Notes
 * Added to Vault 2024 04 06
 	* solution document only
 	* no source file
-	* activities not split into their own files
