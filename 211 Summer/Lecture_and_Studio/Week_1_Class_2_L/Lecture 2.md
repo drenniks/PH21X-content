@@ -11,11 +11,10 @@ tags:
 [PH 211 Lecture 2 Slides TeX](PH_211_Lecture_2_Slides.tex)
 [PH 211 Lecture 2 Slides PDF](PH_211_Lecture_2_Slides.pdf)
 ## Activities
-[[Comparing Motion Diagrams]]
-[[Thrown Ball]]
-[[Cart on Ramp]]
+Comparing Motion Diagrams
+Thrown Ball
 ## Notes
 * Added to Vault
 	* Assignment Format 2024-06-14
 	* Lecture Format 2024-06-15
-	* Links in Slides PDF broken.
+	* Activities not broken into separate files yet.

@@ -3,12 +3,13 @@
 \input{\FileDepth/Formats/LectureBasics.tex}
 \usepackage{censor}
 \usepackage{hyperref}
+\usepackage{multicol}
 %opening
 \newcommand{\SecType}{L}
-\newcommand{\Lec}{1}
-\title{PH 21X Lecture \Lec}
+\newcommand{\Week}{2}
+\title{PH 211 Lecture \Week}
 \author{Benjamin Bauml}
-\date{Term 2024}
+\date{Summer 2024}
 
 \newcommand{\Purpose}{4}
 \newcommand{\DefOnly}{0}
@@ -24,398 +25,325 @@
 
 \begin{document}
 \begin{TeacherMargin}
-\noindent\textbf{Meetings with Benjamin}
 
-There are two surveys on Canvas in the Start Here module. Only do the one associated with your lab section. These surveys will help me determine when to schedule my regular drop-in and appointment hours most effectively.
-
-\noindent\textbf{Meetings with the TAs}
-
-The Wormhole is the central place in the Physics Department to get help on homework. It is on the third floor of Weniger Hall, in room 334, and it will be open 2-5pm Monday through Thursday, 10am-5pm on Fridays. Not all of the TAs in the Wormhole are on the teaching team for this course, but they can all help you with physics assignments.
 \end{TeacherMargin}
 \begin{PresentSpace}
 \begin{center}
-	\huge Welcome to PH 211!
+	\huge Lecture 2: Motion
 \end{center}
-\noindent\textbf{Instructor:} Benjamin Bauml
-
-\noindent\textbf{Drop-In and Appointment Hours:} To Be Determined (TBD)
-
-To book an individual appointment with me, see my \href{https://outlook.office.com/bookwithme/user/8a879d0af7bf45e890abd3d888d8bfe4@oregonstate.edu?anonymous&ep=plink}{\color{blue}Booking Page}. \\
-
-\noindent\textbf{Teaching Assistants (TAs):}
-
-\noindent Kevin Dimmitt (Tuesday lab) and Ben Hansen (Wednesday lab)
-
-\noindent\textbf{\href{https://wormhole.physics.oregonstate.edu/}{\color{blue}Wormhole} Hours:} Fridays
-
-10 a.m. - 12 p.m. (Kevin)
-
-1 p.m. to 3 p.m. (Ben) \\
-
-\noindent\textbf{Learning Assistants (LAs):}
-
-\noindent Austin Gugenheim, Matilda Pike, Ahmed Rashid
 \end{PresentSpace}
 \newpage
 \begin{TeacherMargin}
-\noindent\textbf{What is identity?}
+\noindent\textbf{From the Syllabus}
 
-In social science, identity consists of traits that characterize a person, and these traits can be of various sorts and come from various aspects of one's life.
+Projects are assignments where you will demonstrate and synthesize what you have learned over many weeks. Projects may take many different potential forms, including written, visual, or video. Almost every week (except for weeks with ungrading), there will be some milestone to complete in this project, such as setting group expectations (if you work in a group), proposing a project, submitting a rough draft, peer reviewing other classmates’ projects, and submitting a final draft. All project milestones are due on Fridays.
 
-For instance, I get certain aspects of my identity from my job. I think of myself as a physicist, a mathematician, and a teacher.
-
-I also get identity from my hobbies, interests, and preferences. I like to dance, play music and games, and write. I like cats. These traits can make up part of my identity as well.
-
-Identity can come from personal or societal sources as well, such as gender identity, national identity, ethnic identity, religious identity, political identity, and so on. A lot of these can be very personal, so you don't need to feel compelled to share them with me. Note that I blacked out one of my identities, because while I felt it was important, I didn't feel like sharing it at this time.
-
-\noindent\textbf{Priorities}
-
-Of course you have a life outside of this class! You should expect to put in time and hard work to keep up with the class, and you will need to balance your obligations to this class against your other responsibilities and interests. I absolutely don't expect you to sacrifice everything for this class, but I do expect you to take it seriously and put in effort.
-
-Your instructional team has other priorities as well. The TAs and I have research obligations to attend to that will occupy some of our time. Some of us have families to care for. We also have hobbies that help us refresh ourselves. For instance, I am definitely not missing an opportunity to dance Argentine tango tomorrow.
-
-That said, we are here to help you learn, and we will be putting a great deal of effort into that. You are a significant priority for us.
-
-\begin{center}
-	\Large The Getting to Know You assignment is due Friday. The online component is due at 8:00 p.m.
-\end{center}
+The standard format for projects that you can expect if you continue on to 212 is a group assignment (usually 3 students), consisting of a 10-15 minute video solution to a physics problem, with a full calculation, sensemaking, and reflection. You may choose to get used to this format in preparation for continuing on in the sequence, or you can take this opportunity to be more creative in how you approach the project. I vehemently encourage you to find some idea for a project that excites you, be it creating an educational video or report, performing research, melding physics with something artistic, or even something I haven’t considered as a possible physics project yet.
 \end{TeacherMargin}
 \begin{PresentSpace}
-\begin{center}
-	\textbf{Getting to Know You}
-\end{center}
-\textbf{What is your preferred full name?}
-{\color{blue}\hrule}
-\begin{center}
-	Benjamin No\"{e} Bauml
-\end{center}
-\textbf{What do you want me to call you?}
-{\color{blue}\hrule}
-\begin{center}
-	You may call me Benjamin.
-	
-	If you don't want to call me by my first name, you may call me Mr. Bauml.
-\end{center}
-\textbf{What are your preferred pronouns?}
-{\color{blue}\hrule}
-\begin{center}
-	He/Him/His
-\end{center}
-\textbf{What identities do you associate with yourself? Include any that you feel are important to who you are, and that you are comfortable sharing with me.}
-{\color{blue}\hrule}
-\begin{center}
-	Physicist, Mathematician, Teacher, Social Dancer, Musician, Gamer, Writer, Cat Person, \censor{Bisexual}
-\end{center}
-\textbf{What are your interests? What do you want to learn? What do you do for fun?}
-{\color{blue}\hrule}
-\vspace{10pt}
-
-\noindent\textbf{Aside from this class, what are your priorities for the term? What goals (educational, professional, personal) do you have during this time?}
-{\color{blue}\hrule}
-\vspace{10pt}
-
-\noindent\textbf{Where does this class rank among your priorities for the term? If it helps, you can rank it twice; where would you rank it in terms of its actual importance to you, and where do you think it needs to be ranked in your priorities for you to be successful?}
-{\color{blue}\hrule}
-\vspace{10pt}
-
-\noindent\textbf{What is your major? What year in college is this for you? What are you studying to do?}
-{\color{blue}\hrule}
-\vspace{2pt}
+\textbf{Project Information}
+\begin{itemize}
+	\item Demonstrate and synthesize what you have learned over many weeks.
+	\item Many possible forms, such as written, visual, or video.
+	\item Milestones due Fridays at 8pm (almost) every week:
+	\begin{itemize}
+		\item Setting group expectations (Week 2)
+		\begin{itemize}
+			\item Once you have your group, you will work with them in lecture and studio.
+		\end{itemize}
+		\item Project proposal (Week 3)
+		\item Rough draft (Week 5)
+		\item Peer review (Week 6)
+		\item Final draft (Week 7)
+	\end{itemize}
+\end{itemize}
+\textbf{What to Expect in PH 212}
+\begin{itemize}
+	\item 10-15 minute video presentation by group (usually 3 students)
+	\item Solution to a physics problem, or presentation on self-taught topic (such as buoyant force or drag force)
+	\item Calculation, sensemaking, and reflection
+\end{itemize}
+\textbf{Your Options}
+\begin{itemize}
+	\item 212 format (get used to it for 212)
+	\item Some other idea that excites you!
+	\begin{itemize}
+		\item Educational video or report
+		\item Research
+		\item Melding physics with something artistic
+		\item Surprise me!
+	\end{itemize}
+	\item If it doesn't involve enough calculation, sensemaking, and reflection, I may request modifications.
+\end{itemize}
 \end{PresentSpace}
-%\newpage
-\begin{comment}
-	Instructor Notes
-\end{comment}
-\begin{comment}
-\begin{center}
-	\textbf{Getting to Know You}
-\end{center}
-\textbf{What are your interests? What do you want to learn? What do you do for fun?}
-{\color{blue}\hrule}
-\vspace{2pt}
-I am an avid dancer, with interest in ballroom dance, swing, and Argentine tango.
-
-I enjoy games, especially roleplaying games, such as \textit{Dungeons \& Dragons} (especially revised 3rd edition) and \textit{Call of Cthulhu}.
-
-I have played the French horn since 5th grade, and I have some experience with piano, baritone ukulele, and Native American flute. I am early in the process of teaching myself to play the English concertina.
-
-I like to read fantasy and science fiction, and I have some interest in creative writing.
-
-I took German for three years in high school.
-
-My research in physics has been focused on quantum mechanics. My undergraduate research focused on the consistent histories formulation, and my graduate research so far has focused on weak measurement. I find quantum computation and cryptography interesting, but I am not really in a position to change my research direction to those topics at this time.
-
-\noindent\textbf{Aside from this class, what are your priorities for the term? What goals (educational, professional, personal) do you have during this time?}
-{\color{blue}\hrule}
-\vspace{2pt}
-
-\noindent\textbf{Where does this class rank among your priorities for the term? If it helps, you can rank it twice; where would you rank it in terms of its actual importance to you, and where do you think it needs to be ranked in your priorities for you to be successful?}
-{\color{blue}\hrule}
-\vspace{2pt}
-
-\noindent\textbf{What is your major? What year in college is this for you? What are you studying to do?}
-{\color{blue}\hrule}
-\vspace{2pt}
-\end{comment}
 \newpage
 \begin{TeacherMargin}
-\noindent\textbf{Playing Cards}
 
-Sharpie-like, felt tip, gel, or calligraphy pens are probably the best for this. The texture of a playing card does not work well with pencils or ballpoint pens. Some dry erase markers will leave good marks, but others will wipe away easily.
-
-I plan on using these to randomize groups and perhaps to call on people randomly. If I call on you at random, don't panic. I won't make you answer if you don't want to. I encourage you to ask a clarifying question if you don't have an answer, as it will help you and your classmates learn (and it will help me know what I need to make clearer to help you learn), but I also won't make you ask a question if you don't want to.
-
-I would like to keep these to remember you by, but if you feel really strongly about getting these back, you can ask at the end of the term.
 \end{TeacherMargin}
 \begin{PresentSpace}
-\begin{center}
-	\textbf{Getting to Know You -- In-Class Submission}
-\end{center}
-Write your preferred full name and pronouns on a blank playing card, along with any other drawings you want to add.
-
-\noindent These should be turned in during Friday's lecture. \\
+\textbf{A Model for Motion}
+\begin{multicols}{2}
+	Quantities
+	\begin{itemize}
+		\item Position: $\vec{r}$
+		\item Velocity: $\vec{v}=\frac{d\vec{r}}{dt}$
+		\item Acceleration: $\vec{a}=\frac{d\vec{v}}{dt}$
+	\end{itemize}
+	\vspace{1cm}
+	Assumptions
+	\begin{itemize}
+		\item Use the Particle Model
+	\end{itemize}
+\end{multicols}
+Motion Diagram
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale=0.1]{PlayingCards}
+	\begin{tikzpicture}
+		\foreach \x in {1,2,3}
+			\filldraw (2*\x,0) circle (5pt);
+		\foreach \x in {1,2,3}
+			\node[anchor=north] at (2*\x,-0.2) {\x};
+		\foreach \x in {1,2,3}
+			\draw[thick,->] (2*\x,0.5) -- (2*\x+1,0.5);
+		\foreach \x in {1,2,3}
+			\node[anchor=south] at (2*\x+0.5,0.5) {$v_{\x}$};
+		\begin{scope}[shift={(-3,0)}]
+			\foreach \x in {4,5}
+				\filldraw (3*\x,0) circle (5pt);
+			\foreach \x in {4,5}
+				\node[anchor=north] at (3*\x,-0.2) {\x};
+			\foreach \x in {4,5}
+				\draw[thick,->] (3*\x,0.5) -- (3*\x+1.5,0.5);
+			\foreach \x in {4,5}
+				\node[anchor=south] at (3*\x+0.75,0.5) {$v_{\x}$};
+		\end{scope}
+	\end{tikzpicture}
 \end{figure}
 \end{PresentSpace}
 \newpage
 \begin{TeacherMargin}
-%\footnotesize
-\noindent\textbf{Lecture and Studio} The science of thinking informs the structure for this course. Lecture and studio will consist largely of activities meant to stimulate your thinking in the course. It is critically important to be present and engaged in lecture and studio every week.
+\noindent\textbf{Explanations}
 
-Everyone's learning will suffer if illness spreads through our classroom. If you are sick, stay home and look over the posted lecture slides; work through the activities on your own. Notes from class will be posted later for you to see, and you can email me questions.
+\noindent\textbf{L2-1: Comparing Motion Diagrams}
 
-You will be working in groups in lecture. For the first couple of weeks, I will randomize the groups so you can meet as many of your classmates as possible. At the end of week two, you will be choosing your groups for your projects, and you will mostly be grouped with them in class after that. We will talk more about the projects later, but for now, focus on thinking about whom you might want to work with.
+\noindent\textbf{Principles}
+\begin{itemize}
+	\item $\vec{v}_{avg} = \frac{\Delta\vec{r}}{\Delta t}$
+	\item For a motion diagram, the time intervals are the same.
+\end{itemize}
+\noindent\textbf{Reasoning}
 
-\noindent\textbf{Get-Ready Activities} You will be introduced to content in the Get-Ready activities. It is alright to make mistakes and be confused at first. Write down any questions you have so you remember to ask about them in lecture! We will be exploring activities to get deeper into the content in lecture and studio, so it is critical that you do the Get-Ready activities beforehand.
+\noindent\textit{Method 1:}
 
-Currently, Get-Ready activities are submitted after lecture. That way, you can add notes based on what you learned in lecture and add any new questions that arise from lecture. However, if it becomes apparent that the readings are not being done before lecture, I reserve the right to change this policy so that notes from Get-Ready activities must be turned in before lecture as well.
+Let us look at the beginning and end of the motion. Each object starts and ends at the same spot:
+\[
+\Delta\vec{r}_{1} = \Delta\vec{r}_{2} = \Delta\vec{r}.
+\]
+Object 2 takes more time to get to the final position:
+\[
+\Delta t_{2} > \Delta t_{1}.
+\]
+Now we have
+\[
+\vec{v}_{avg,1} = \frac{\Delta\vec{r}_{1}}{\Delta t_{1}}, \qquad \vec{v}_{avg,2} = \frac{\Delta\vec{r}_{2}}{\Delta t_{2}}.
+\]
+Since $\Delta\vec{r}$ is the same for both, a larger number in the denominator gives a smaller overall number. Therefore
+\[
+\left|\vec{v}_{avg,1}\right| > \left|\vec{v}_{avg,2}\right|.
+\]
 
-\noindent\textbf{Lab} Lab is an important experiential learning opportunity that will introduce you to proper experimental procedure, working with uncertainty in measurements, and clear scientific communication. There are six labs to do, and each one has an important lesson, so we want you to complete all six labs.
+\noindent\textit{Method 2:}
 
-The last lab will run in Week 7, and in Week 8, the lab rooms will be open at their scheduled times for make-up labs. If you missed one lab, you can attend one of the two sections to make it up. If you missed two, you will need to attend both sections to make up both labs. If you missed three, or cannot make it to both sections to complete two missed labs, come talk to me about your options.
+Since the velocity appears to be constant (that is, $\Delta\vec{r}$ between two adjacent spots is the same), we can also look at individual positions.
 
-\noindent\textbf{Homework} Homework problems will challenge you to really deepen your understanding of the content. There are two main formats that problems follow: \href{https://lipa.physics.oregonstate.edu/sec_what-is-motion.html}{\color{blue}Explanations} and \href{https://lipa.physics.oregonstate.edu/sec_real-world-context.html}{ARCS}. Both are in the online textbook and in Canvas. These formats are not just to help the instructional team follow your reasoning, but they train you to complete important steps in breaking down and explaining problems.
+For object 1, $\Delta\vec{r}$ between times 1 and 2 is greater than for object 2:
+\[
+\Delta\vec{r}_{1} > \Delta\vec{r}_{2}.
+\]
+The time between these two points is the same for both objects:
+\[
+\Delta t_{1} = \Delta t_{2} = \Delta _{t}.
+\]
+Now we have
+\[
+\vec{v}_{avg,1} = \frac{\Delta\vec{r}_{1}}{\Delta t}, \qquad \vec{v}_{avg,2} = \frac{\Delta\vec{r}_{2}}{\Delta t}.
+\]
+The denominators are the same, so having a larger number in the numerator gives a larger overall number. Therefore
+\[
+\left|\vec{v}_{avg,1}\right| > \left|\vec{v}_{avg,2}\right|.
+\]
 
-You are encouraged to work together to understand the homework. However, the work you submit should be your own. It is not acceptable to copy someone else's work. If you work with someone, you need to write down their name and acknowledge that you worked together. Giving proper credit to collaborators is extremely important, particularly in science.
+\noindent\textbf{Conclusion}
 
-Most assignments will be submitted through Canvas. Labs and other group assignments will be submitted through Gradescope, which you will learn more about in lab. If you continue on to PH 212, you will turn \textbf{everything} in on Gradescope, so you should get familiar with it now.
-
-\noindent\textbf{Quiz} We also have plans to have an in-class quiz on Monday of Week 4.
+The average speed of object 1 is \underline{greater than} the average speed of object 2:
+\[
+\left|\vec{v}_{avg,1}\right| > \left|\vec{v}_{avg,2}\right|.
+\]
 \end{TeacherMargin}
 \begin{PresentSpace}
-\begin{center}
-	\textbf{Science of Thinking}
-\end{center}
-Before class, I asked you to watch a video on the Science of Thinking. \\
-
-\noindent Talk with your neighbor about something you learned from the video.
-\vspace{0.5cm}
-%\vspace{5.5cm}
-\begin{center}
-	\textbf{Course Structure}
-\end{center}
-\noindent\textbf{Lecture and Studio}
-\begin{itemize}
-\item Time to practice the content; opportunity to ask questions; group work!
-\item Attendance and participation in lecture/studio is critical to learning in this course! (But stay home if you are sick; lecture slides will be posted to Canvas, and you can feel free to email me any questions you have. We will work with you to help you keep up!)
-\end{itemize}
-\noindent\textbf{Get-Ready Activities}
-\begin{itemize}
-	\item Readings, videos, and exercises to complete \textbf{before} Monday and Wednesday lectures.
-	\item Add notes based on lecture/studio and submit by the end of the day.
-	\item Prominently write questions you have about the reading and from lecture. We want to know what you are wondering about!
-\end{itemize}
-\noindent\textbf{Lab}
-\begin{itemize}
-	\item Opportunities to make up one or two missed labs in the last week.
-	\item If you cannot complete all labs, talk to me about your options.
-\end{itemize}
-\noindent\textbf{Homework}
-\begin{itemize}
-	\item Due at 10 p.m. on Fridays.
-	\item You may work with others, but \textbf{you must include their names} on your submission, and your \textbf{submitted work must be your own}, not a copy of someone else's work.
-\end{itemize}
-\end{PresentSpace}
-\newpage
-\begin{TeacherMargin}
-\noindent\textbf{Excerpt from \textit{Ungrading}, edited by Susan D. Blum}
-
-Several years ago I encountered the work of Dylan Wiliam, who researched the effect of teacher feedback on student improvement. In his book \textit{Embedded Formative Assessment}, he cites a study by Ruth Butler wherein she examines the three types of feedback teachers give: grades alone, both grades and comments, and comments alone.
-
-The results of Butler's research might seem counterintuitive: the students who showed the most growth were those who received comments alone. Even grades paired with comments---which at face value would seem to be the richest form of feedback---were just as ineffective as giving grades alone.
-
-Wiliam concludes: ``That most students virtually ignore \dots painstaking correction, advice, and praise is one of public education's best-kept secrets.''
-
-Not only do grades not encourage growth, they inhibit it. Grades take the focus off feedback.
-\begin{flushright}
-	---Arthur Chiaravalli
-	
-	\textit{Ungrading} Chapter 5
-\end{flushright}
-\end{TeacherMargin}
-\begin{PresentSpace}
-\begin{center}
-	\textbf{Ungrading Policy}
-\end{center}
-\textbf{You will not receive grades on individual assignments.}
-\begin{itemize}
-	\item You will receive feedback to help you think about your learning and improve your work.
-	\item There is no direct calculation from the points for completion and attendance in Canvas to your overall grade.
-\end{itemize}
-\textbf{You will propose your own final grade.}
-\begin{itemize}
-	\item As your final assignment of the term, you will write a reflection on your learning and your work and decide what grade you have earned.
-	\item Attendance, participation, and assignments factor into the proposal.
-	\item I have the right to change the grade you propose.
-\end{itemize}
-\textbf{You will get to practice before the final ungrading.}
-\begin{itemize}
-	\item At the end of Week 4, you will get to go through the ungrading process based on the work you have completed so far. If you have trouble assessing your own learning at this point, we will help fix any issues and prepare you for the final ungrading.
-	\item There are small reflections on learning at the end of each homework assignment.
-\end{itemize}
-\end{PresentSpace}
-\newpage
-\begin{TeacherMargin}
-\noindent I think physics is \dots
-\begin{itemize}
-	\item Collaborative \\ Physicists often work together to push the boundaries of knowledge. They trade ideas and try to find the answers to questions together. Even when working alone, a physicist is building on knowledge discovered by others.
-	\item Challenging \\ We need to develop our skill at examining physical situations, simplifying them, applying math to them, and recognizing the key concepts that are involved. There is a lot of translation, calculation, and interpretation.
-	\item Cumulative \\ New concepts build on old concepts at every step. Really interesting things can be discovered when tools from different areas are brought to a problem so it can be investigated in a new way.
-	\item Conceptual \textbf{and} Quantitative \\ We don't just calculate things and report numbers, though there is certainly a great deal of math we must do. We are also trying to understand the world better, and that means familiarizing ourselves with conceptual information about how the world works and building (and often rebuilding) our physical intuition.
-\end{itemize}
-\end{TeacherMargin}
-\begin{PresentSpace}
-\begin{center}
-	\textbf{What is physics?}
-\end{center}
-Come up with a sentence (or two) for each of the following questions:
-\begin{itemize}
-	\item What is physics?
-	\item What do you expect to learn from physics?
-\end{itemize}
-If someone asked you to describe physics using \underline{one word}, what would you choose?
-\end{PresentSpace}
-\newpage
-\begin{TeacherMargin}
-\noindent\textbf{Motion}
-
-We will examine how objects move through space.
-
-\noindent\textbf{Forces}
-
-We will describe how objects interact with each other by pushing and pulling.
-
-\noindent\textbf{Energy}
-
-We will talk about different forms of energy and how they transform, and how energy affects objects.
-
-\noindent\textbf{Momentum}
-
-We will take another perspective on changing the motion of objects, with a focus on collisions and explosions.
-
-\end{TeacherMargin}
-\begin{PresentSpace}
-\begin{center}
-	\textbf{Course Context}
-\end{center}
-The physical contexts we will study are:
-\begin{itemize}
-	\item Motion
-	\item Forces
-	\item Energy
-	\item Momentum
-\end{itemize}
-\vspace{3cm}
-\begin{center}
-	\textbf{What is motion?}
-\end{center}
-\begin{itemize}
-	\item Write down something you know about \textbf{motion}.
-	\item Turn to your neighbor and talk about what you each know.
-	\item Find another neighbor and talk about what you each know.
-	\item We will be building a model for describing the \textit{\textbf{motion}} of \textit{\textbf{objects}}.
-\end{itemize}
-\end{PresentSpace}
-\newpage
-\begin{TeacherMargin}
-Isaac Newton hypothesized that the force which kept celestial bodies in orbit was the force that caused objects to fall. He developed a theory of universal gravitation that explained earlier empirical observations of the motion of planets.
-
-Newtonian gravity is not perfect, but it is a good approximation to the world around us for most practical purposes. Albert Einstein's theory of general relativity (GR) explains such things as the effect of gravity on the flow of time and the shape of space. Plenty of modern experiments (such as gravitational wave astronomy) are currently testing its limits to see if we can find anything not explained by GR.
-
-We get a better understanding of the world around us by breaking and revising models!
-
-If you are concerned that you are not as smart as Newton and Einstein, don't worry. The average physicist is not nearly as smart as either of them, but can still make significant contributions to our knowledge of the world. There is an unfortunate mythology around physics that it is advanced by solitary geniuses, but remember, physics is \textbf{collaborative} and \textbf{cumulative}, built from many normal people working together and building on what came before.
-\end{TeacherMargin}
-\begin{PresentSpace}
-\begin{center}
-	\textbf{Model Building}
-\end{center}
-How do physicists do physics?
-\begin{itemize}
-	\item Make an observation
-	\item Take data
-	\item Come up with a model that explains the observation
-	\item Test the model
-	\item Repeat
-\end{itemize}
-The models we come up with will help us describe what we see around us!
+\vspace{-0.5cm}
+\section*{L2-1: Comparing Motion Diagrams}
+\vspace{-0.2cm}
+The diagrams below show the motion of two different objects. Is the average velocity of the upper object greater than, less than, or equal to the average velocity of the lower object? Explain your reasoning.
+\vspace{0.3cm}
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale=0.4]{BahnelementeEllipse_eng.pdf}
+	\begin{tikzpicture}
+		\node at (0.75,0) {Object 1};
+		\foreach \x in {1,2,3,4,5}
+			\filldraw (3*\x,0) circle (5pt);
+		\foreach \x in {1,2,3,4,5}
+			\node[anchor=north] at (3*\x,-0.2) {\x};
+		\begin{scope}
+			\node at (0.75,-1.5) {Object 2};
+			\foreach \x in {1,2,3,4,5,6}
+				\filldraw (2.4*\x+0.6,-1.5) circle (5pt);
+			\foreach \x in {1,2,3,4,5,6}
+				\node[anchor=north] at (2.4*\x+0.6,-1.7) {\x};
+		\end{scope}
+		\node at (7.5,-4) {\includegraphics[scale=0.4]{ExplanationsInPhysics.png}};
+	\end{tikzpicture}
 \end{figure}
+\end{PresentSpace}
+\newpage
+\begin{TeacherMargin}
+\noindent\textbf{L2-2 Thrown Ball}
 
-\begin{center}
-	\small Wikimedia Commons user Mliu92, released under CC-BY 4.0
-\end{center}
+The ball goes up, slows down, comes to a brief stop, turns around, and falls back down, increasing in speed.
+
+\noindent\textbf{Analyze and Represent}
+
+\noindent\textbf{1a: Understand the Problem}
+\begin{itemize}
+	\item $\vec{r}$: position of the ball
+	\item $t$: time
+	\item $\vec{v}_{i}$: initial velocity
+\end{itemize}
+\noindent\textbf{1b: Identify Assumptions}
+\begin{itemize}
+	\item The ball is thrown in a straight line.
+	\begin{itemize}
+		\item This simplification allows us to consider motion in only one dimension.
+	\end{itemize}
+	\item The ball is released and caught at the same spot.
+	\begin{itemize}
+		\item An actual toss and catch isn't going to be perfect, but small, random differences in starting and ending height are a minor detail that we don't need to bother with when looking at this general sort of motion.
+	\end{itemize}
+	\item Particle model.
+	\begin{itemize}
+		\item This assumption allows us to ignore any ambiguity in the object's position (we don't have to decide to measure from the center, top, or bottom), and to ignore any rotational motion the object may have about its own axis.
+	\end{itemize}
+\end{itemize}
+\noindent\textbf{1c: Represent Physically}
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale=0.4]{J0806.jpeg}
+	\begin{tikzpicture}
+		\begin{scope}[shift={(-3.7,0)}]
+			\foreach \t in {1,2,3,4}
+				\filldraw (0,{-0.5*(\t-4)*(\t-4)}) circle (3pt) node[anchor=east,shift={(-2pt,0)}] {$\t$};
+			\foreach \t in {1,2,3}
+				\draw[thick,->] (0.2,{-0.5*(\t-4)*(\t-4)}) node[anchor=west,shift={(0,0)}] {$\vec{v}_{\t}$} -- (0.2,{-0.5*(\t-3)*(\t-3)});
+		\end{scope}
+		\begin{scope}[shift={(-2.3,0)}]
+			\foreach \t in {4,5,6,7}
+				\filldraw (0,{-0.5*(\t-4)*(\t-4)}) circle (3pt) node[anchor=west,shift={(2pt,0)}] {$\t$};
+			\foreach \t in {4,5,6}
+				\draw[thick,->] (-0.2,{-0.5*(\t-4)*(\t-4)}) node[anchor=east,shift={(0,0)}] {$\vec{v}_{\t}$} -- (-0.2,{-0.5*(\t-3)*(\t-3)});
+		\end{scope}
+		\begin{scope}[shift={(-0.7,0)}]
+			\foreach \t in {1,2,3,4}
+				\filldraw (0,{-0.5*(\t-4)*(\t-4)}) circle (3pt) node[anchor=east,shift={(-2pt,0)}] {$\t$};
+			\foreach \t in {1,2,3,4}
+				\draw[thick,->] (0.2,{-0.5*(\t-4)*(\t-4)}) node[anchor=west,shift={(0,0)}] {$\vec{v}_{\t}$} -- (0.2,{-0.5*(\t-4)*(\t-4)});
+		\end{scope}
+		%\node at (0,0.3) {$\vec{v}_{4}=\vec{0}$};
+		\begin{scope}[shift={(0.7,0)}]
+			\foreach \t in {4,5,6,7}
+				\filldraw (0,{-0.5*(\t-4)*(\t-4)}) circle (3pt) node[anchor=west,shift={(2pt,0)}] {$\t$};
+			\foreach \t in {4,5,6,7}
+				\draw[thick,->] (-0.2,{-0.5*(\t-4)*(\t-4)}) node[anchor=east,shift={(0,0)}] {$\vec{v}_{\t}$} -- (-0.2,{-0.5*(\t-4)*(\t-4)});
+		\end{scope}
+		\begin{scope}[shift={(2.3,0)}]
+			\foreach \t in {1,2,3,4}
+				\filldraw (0,{-0.5*(\t-4)*(\t-4)}) circle (3pt) node[anchor=east,shift={(-2pt,0)}] {$\t$};
+			\foreach \t in {2,3}
+				\draw[thick,->] (0.1*\t,{-0.5*(\t-4)*(\t-4)}) node[anchor=west,shift={(0,0)}] {$\vec{v}_{\t}$} -- (0.1*\t,{-(\t-4)*(\t-4)+0.5*(\t-5)*(\t-5)});
+		\end{scope}
+		\begin{scope}[shift={(3.7,0)}]
+			\foreach \t in {4,5,6,7}
+				\filldraw (0,{-0.5*(\t-4)*(\t-4)}) circle (3pt) node[anchor=west,shift={(2pt,0)}] {$\t$};
+			\foreach \t in {4,5,6,7}
+				\draw[thick,->] (-0.2,{-0.5*(\t-4)*(\t-4)}) node[anchor=east,shift={(0,0)}] {$\vec{v}_{\t}$} -- (-0.2,{-(\t-4)*(\t-4)+0.5*(\t-5)*(\t-5)});
+		\end{scope}
+	\end{tikzpicture}
 \end{figure}
-
-\begin{center}
-	\small Credit: Tod Strohmayer (GSFC), CXC, NASA - Illustration: Dana Berry (CXC)
-\end{center}
+\end{TeacherMargin}
+\begin{PresentSpace}
+\vspace{-0.5cm}
+\section*{L2-2: Thrown Ball}
+\vspace{-0.2cm}
+A ball is thrown straight into the air.
+\begin{itemize}
+	\item Describe the motion in words (use complete sentences).
+	\item Identify any quantities of interest with a symbol.
+	\item Draw a motion diagram for the ball.
+	\item Discuss any assumptions or idealizations you want to make.
+\end{itemize}
+\vspace{12cm}
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.4]{AnalyzeAndRepresent.png}
+\end{figure}
 \end{PresentSpace}
 \newpage
 \begin{TeacherMargin}
-\noindent\textbf{Respect}
-
-This goes in all directions. Students need to respect each other---you are all learning the content, you each have your own pace, and you all will make mistakes. Students need to respect the instructional team, which is here to help, and the instructional team needs to respect the students. If you ever feel that you are not being respected, please tell us so we can try to resolve the issue.
-
-When I gather the entire class' attention to go over a concept or activity, noise and side conversations need to be kept to a minimum. If people talk over me, they are disrespecting me and those who are trying to listen to me. Even if I address an individual student, or if I stop talking to let a student talk instead, that does not mean you can stop giving your attention. It is disrespectful to the student who is trying to talk, as well as to me and anyone else trying to listen. The thoughts and questions of your classmates are just as important as mine.
-
-\noindent\textbf{Doing and Questioning}
-
-Remember, our class structure is build around active engagement, and you will not be getting the most out of this learning experience if you do not stay engaged with the activities and ask questions to deepen your understanding.
-
-\noindent\textbf{Making Sense}
-
-One of the most valuable skills we will learn is making sense of answers. Some day, you will be doing something for which there is not an answer key for reference, and you will need to be able to evaluate your own answer to determine whether or not it is reasonable.
-
-Another problem with scientific jargon is that we will often use words from regular speech in very specific ways. For example, energy and power are sometimes used interchangeably in conversation, but in physics, they mean very specific, distinct things.
-
-You will be generating a lot of your own representations. It is important to develop skill with making representations clear and informational, with enough annotation that you can organize a problem around your representations.
+\begin{figure}[h]
+	\centering
+	\begin{tikzpicture}
+		\begin{scope}[shift={(-0.7,0)}]
+			\foreach \t in {1,2,3,4}
+				\filldraw (0,{-0.5*(\t-4)*(\t-4)}) circle (3pt) node[anchor=east,shift={(-2pt,0)}] {$\t$};
+			\foreach \t in {1,2,3}
+				\draw[thick,->] (0.2,{-0.5*(\t-4)*(\t-4)}) node[anchor=west,shift={(0,0)}] {$\vec{v}_{\t}$} -- (0.2,{-0.5*(\t-4)-0.5*(\t-4)*(\t-4)});
+		\end{scope}
+		\node at (0,0.3) {$\vec{v}_{4}=\vec{0}$};
+		\begin{scope}[shift={(0.7,0)}]
+			\foreach \t in {4,5,6,7}
+				\filldraw (0,{-0.5*(\t-4)*(\t-4)}) circle (3pt) node[anchor=west,shift={(2pt,0)}] {$\t$};
+			\foreach \t in {5,6,7}
+				\draw[thick,->] (-0.2,{-0.5*(\t-4)*(\t-4)}) node[anchor=east,shift={(0,0)}] {$\vec{v}_{\t}$} -- (-0.2,{-0.5*(\t-4)-0.5*(\t-4)*(\t-4)});
+		\end{scope}
+	\end{tikzpicture}
+\end{figure}
 \end{TeacherMargin}
 \begin{PresentSpace}
-\begin{center}
-	\textbf{Principles for Success}
-\end{center}
-\textbf{Treat everyone with respect.}
+
+\end{PresentSpace}
+\newpage
+\begin{TeacherMargin}
+
+\end{TeacherMargin}
+\begin{PresentSpace}
+
+\end{PresentSpace}
+\newpage
+\begin{TeacherMargin}
+
+\end{TeacherMargin}
+\begin{PresentSpace}
+
+\end{PresentSpace}
+\newpage
+\begin{TeacherMargin}
+
+\end{TeacherMargin}
+\begin{PresentSpace}
+\textbf{Main Ideas}
 \begin{itemize}
-	\item Everyone's ideas matter.
-	\item Act professionally.
-\end{itemize}
-\textbf{Learn by doing and questioning.}
-\begin{itemize}
-	\item Everyone in your group is responsible for participating and working together.
-\end{itemize}
-\textbf{Make sense of everything.}
-\begin{itemize}
-	\item Jargon alert -- if you hear a term you don't understand, ask!
-	\item Representations -- if you don't understand what a picture or image is showing, ask!
+	\item The motion of an object can be characterized by quantities like position, velocity, and acceleration.
+	\item Velocity is defined as the time rate of change of position.
+	\item Acceleration is defined as the time rate of change of velocity.
 \end{itemize}
 \end{PresentSpace}
 \end{document}
