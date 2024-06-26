@@ -215,9 +215,13 @@ The ball goes up, slows down, comes to a brief stop, turns around, and falls bac
 
 \noindent\textbf{1a: Understand the Problem}
 \begin{itemize}
-	\item $\vec{r}$: position of the ball
+	\item $\vec{r}$: position of the ball (subscripts will denote which point in time the position corresponds to)
+	\item $\vec{v}$: velocity of the ball (subscripts will denote which point in time the position corresponds to)
+	\item $\vec{r}_{1}$: initial position
+	\item $\vec{v}_{1}$: initial velocity
+	\item $\vec{r}_{7}$: final position
+	\item $\vec{v}_{7}$: final velocity
 	\item $t$: time
-	\item $\vec{v}_{i}$: initial velocity
 \end{itemize}
 \noindent\textbf{1b: Identify Assumptions}
 \begin{itemize}
@@ -236,6 +240,8 @@ The ball goes up, slows down, comes to a brief stop, turns around, and falls bac
 \end{itemize}
 \noindent\textbf{1c: Represent Physically}
 
+A motion diagram can help us visualize the motion of the ball. The velocity vectors (added based on forward approximation) give us a sense of how fast the ball is moving at each time.
+
 \begin{figure}[h]
 	\centering
 	\begin{tikzpicture}
@@ -251,31 +257,36 @@ The ball goes up, slows down, comes to a brief stop, turns around, and falls bac
 			\foreach \t in {4,5,6}
 				\draw[thick,->] (-0.2,{-0.5*(\t-4)*(\t-4)}) node[anchor=east,shift={(0,0)}] {$\vec{v}_{\t}$} -- (-0.2,{-0.5*(\t-3)*(\t-3)});
 		\end{scope}
-		\begin{scope}[shift={(-0.7,0)}]
+		\begin{comment}[shift={(-0.8,0)}]
 			\foreach \t in {1,2,3,4}
 				\filldraw (0,{-0.5*(\t-4)*(\t-4)}) circle (3pt) node[anchor=east,shift={(-2pt,0)}] {$\t$};
-			\foreach \t in {1,2,3,4}
-				\draw[thick,->] (0.2,{-0.5*(\t-4)*(\t-4)}) node[anchor=west,shift={(0,0)}] {$\vec{v}_{\t}$} -- (0.2,{-0.5*(\t-4)*(\t-4)});
-		\end{scope}
-		%\node at (0,0.3) {$\vec{v}_{4}=\vec{0}$};
-		\begin{scope}[shift={(0.7,0)}]
+			\foreach \t in {1,2,3}
+				\draw[thick,->] (0.1*\t+0.1,{-0.5*(\t-4)*(\t-4)}) node[anchor=west,shift={(0,0)}] {$\vec{v}_{\t}$} -- (0.1*\t+0.1,{-0.25*(\t-3)*(\t-3)+0.25*(\t-5)*(\t-5)-0.5*(\t-4)*(\t-4)});
+		\end{comment}
+		%\node at (0.2,0.3) {$\vec{v}_{4}=\vec{0}$};
+		\begin{comment}[shift={(0.8,0)}]
 			\foreach \t in {4,5,6,7}
 				\filldraw (0,{-0.5*(\t-4)*(\t-4)}) circle (3pt) node[anchor=west,shift={(2pt,0)}] {$\t$};
-			\foreach \t in {4,5,6,7}
-				\draw[thick,->] (-0.2,{-0.5*(\t-4)*(\t-4)}) node[anchor=east,shift={(0,0)}] {$\vec{v}_{\t}$} -- (-0.2,{-0.5*(\t-4)*(\t-4)});
-		\end{scope}
-		\begin{scope}[shift={(2.3,0)}]
+			\foreach \t in {5,6,7}
+				\draw[thick,->] (-0.2,{-0.5*(\t-4)*(\t-4)}) node[anchor=east,shift={(0,0)}] {$\vec{v}_{\t}$} -- (-0.2,{-0.25*(\t-3)*(\t-3)+0.25*(\t-5)*(\t-5)-0.5*(\t-4)*(\t-4)});
+		\end{comment}
+		\begin{comment}[shift={(2.3,0)}]
 			\foreach \t in {1,2,3,4}
 				\filldraw (0,{-0.5*(\t-4)*(\t-4)}) circle (3pt) node[anchor=east,shift={(-2pt,0)}] {$\t$};
 			\foreach \t in {2,3}
 				\draw[thick,->] (0.1*\t,{-0.5*(\t-4)*(\t-4)}) node[anchor=west,shift={(0,0)}] {$\vec{v}_{\t}$} -- (0.1*\t,{-(\t-4)*(\t-4)+0.5*(\t-5)*(\t-5)});
-		\end{scope}
-		\begin{scope}[shift={(3.7,0)}]
+		\end{comment}
+		\begin{comment}[shift={(3.7,0)}]
 			\foreach \t in {4,5,6,7}
 				\filldraw (0,{-0.5*(\t-4)*(\t-4)}) circle (3pt) node[anchor=west,shift={(2pt,0)}] {$\t$};
 			\foreach \t in {4,5,6,7}
 				\draw[thick,->] (-0.2,{-0.5*(\t-4)*(\t-4)}) node[anchor=east,shift={(0,0)}] {$\vec{v}_{\t}$} -- (-0.2,{-(\t-4)*(\t-4)+0.5*(\t-5)*(\t-5)});
+		\end{comment}
+		\begin{scope}[shift={(-1,-2)}]
+			\draw[thick,<->] (0.5,0) node[anchor=west] {$\hat{x}$} -- (0,0) -- (0,0.5) node[anchor=south] {$\hat{y}$};
 		\end{scope}
+		\node[anchor=west] at (0,-1.5) {(Always establish a};
+		\node[anchor=west] at (0,-2) {coordinate system!)};
 	\end{tikzpicture}
 \end{figure}
 \end{TeacherMargin}
@@ -298,34 +309,184 @@ A ball is thrown straight into the air.
 \end{PresentSpace}
 \newpage
 \begin{TeacherMargin}
+\noindent\textbf{Forward Approximation}
+
+The velocity at time $t_{j}$ is approximated as the average velocity from $t_{j}$ to $t_{j+1}$:
+\[
+\vec{v}_{j} \approx \frac{\vec{r}_{j+1}-\vec{r}_{j}}{\Delta t}
+\]
+Note that this means we can't give a velocity to the final dot, as there is no next dot to get a final position from.
+
+\noindent\textbf{Backward Approximation}
+
+The velocity at time $t_{j}$ is approximated as the average velocity from $t_{j-1}$ to $t_{j}$:
+\[
+\vec{v}_{j} \approx \frac{\vec{r}_{j}-\vec{r}_{j-1}}{\Delta t}
+\]
+This time, we can't give a velocity to the first dot, as there is no previous dot to get an initial position from.
+
+\noindent\textbf{Balanced Approximation}
+
+The velocity at time $t_{j}$ is approximated as the average velocity from $t_{j-1}$ to $t_{j+1}$:
+\[
+\vec{v}_{j} \approx \frac{\vec{r}_{j+1}-\vec{r}_{j-1}}{2\Delta t}
+\]
+Now, we can't give a velocity to either the first or last dot. Note that we are looking two dots apart, so the time interval is doubled.
+
+\noindent\textbf{Instantaneous}
+
+Here, the velocity is actually calculated as the derivative of a known position equation. Note that the balanced approximation captures the stop at the top best, but it is still overestimating the other vectors.
+
+\noindent\textbf{Motion Graph}
+
+A motion diagram overlays snapshots of the object at different times into a single picture. A motion graph gives time an axis of its own. Each point on the graph has the same $y$ separation as the corresponding points in the motion diagram, but they now also have a separation in $t$ that clarifies at what point they happen in time.
+
+The forward and backward approximations are a bit rough, whereas the balanced approximation is close to the instantaneous velocity. It is still an approximation, though, so it is not perfect.
+
+The approximations of $\vec{v}_{2}$ were brought out from the graph for clarity. The backward approximation is too steep (giving too large of a velocity), and the forward approximation is not steep enough (giving too small of a velocity).
+
+\end{TeacherMargin}
+\begin{PresentSpace}
+\noindent\textbf{Motion Diagrams}
+
 \begin{figure}[h]
 	\centering
 	\begin{tikzpicture}
-		\begin{scope}[shift={(-0.7,0)}]
+		\node at (-3.9,1.25) {\textbf{Forward}};
+		\begin{scope}[shift={(-4.8,0)}]
 			\foreach \t in {1,2,3,4}
 				\filldraw (0,{-0.5*(\t-4)*(\t-4)}) circle (3pt) node[anchor=east,shift={(-2pt,0)}] {$\t$};
 			\foreach \t in {1,2,3}
-				\draw[thick,->] (0.2,{-0.5*(\t-4)*(\t-4)}) node[anchor=west,shift={(0,0)}] {$\vec{v}_{\t}$} -- (0.2,{-0.5*(\t-4)-0.5*(\t-4)*(\t-4)});
+				\draw[thick,->] (0.2,{-0.5*(\t-4)*(\t-4)}) node[anchor=west,shift={(0,0)}] {$\vec{v}_{\t}$} -- (0.2,{-0.5*(\t-3)*(\t-3)});
 		\end{scope}
-		\node at (0,0.3) {$\vec{v}_{4}=\vec{0}$};
-		\begin{scope}[shift={(0.7,0)}]
+		\begin{scope}[shift={(-3,0)}]
 			\foreach \t in {4,5,6,7}
 				\filldraw (0,{-0.5*(\t-4)*(\t-4)}) circle (3pt) node[anchor=west,shift={(2pt,0)}] {$\t$};
-			\foreach \t in {5,6,7}
-				\draw[thick,->] (-0.2,{-0.5*(\t-4)*(\t-4)}) node[anchor=east,shift={(0,0)}] {$\vec{v}_{\t}$} -- (-0.2,{-0.5*(\t-4)-0.5*(\t-4)*(\t-4)});
+			\foreach \t in {4,5,6}
+				\draw[thick,->] (-0.2,{-0.5*(\t-4)*(\t-4)}) node[anchor=east,shift={(0,0)}] {$\vec{v}_{\t}$} -- (-0.2,{-0.5*(\t-3)*(\t-3)});
+		\end{scope}
+		\node at (0,1.25) {\textbf{Balanced}};
+		\begin{scope}[shift={(-1,0)}]
+			\foreach \t in {1,2,3,4}
+				\filldraw (0,{-0.5*(\t-4)*(\t-4)}) circle (3pt) node[anchor=east,shift={(-2pt,0)}] {$\t$};
+			\foreach \t in {2,3}
+				\draw[thick,->] (0.1*\t+0.1,{-0.5*(\t-4)*(\t-4)}) node[anchor=west,shift={(0,0)}] {$\vec{v}_{\t}$} -- (0.1*\t+0.1,{-0.25*(\t-3)*(\t-3)+0.25*(\t-5)*(\t-5)-0.5*(\t-4)*(\t-4)});
+		\end{scope}
+		\node at (0.2,0.3) {$\vec{v}_{4}=\vec{0}$};
+		\begin{scope}[shift={(1,0)}]
+			\foreach \t in {4,5,6,7}
+				\filldraw (0,{-0.5*(\t-4)*(\t-4)}) circle (3pt) node[anchor=west,shift={(2pt,0)}] {$\t$};
+			\foreach \t in {5,6}
+				\draw[thick,->] (-0.2,{-0.5*(\t-4)*(\t-4)}) node[anchor=east,shift={(0,0)}] {$\vec{v}_{\t}$} -- (-0.2,{-0.25*(\t-3)*(\t-3)+0.25*(\t-5)*(\t-5)-0.5*(\t-4)*(\t-4)});
+		\end{scope}
+		\node at (3.9,1.25) {\textbf{Backward}};
+		\begin{scope}[shift={(3,0)}]
+			\foreach \t in {1,2,3,4}
+				\filldraw (0,{-0.5*(\t-4)*(\t-4)}) circle (3pt) node[anchor=east,shift={(-2pt,0)}] {$\t$};
+			\foreach \t in {2,3}
+				\draw[thick,->] (0.1*\t,{-0.5*(\t-4)*(\t-4)}) node[anchor=west,shift={(0,0)}] {$\vec{v}_{\t}$} -- (0.1*\t,{-(\t-4)*(\t-4)+0.5*(\t-5)*(\t-5)});
+		\end{scope}
+		\begin{scope}[shift={(4.8,0)}]
+			\foreach \t in {4,5,6,7}
+				\filldraw (0,{-0.5*(\t-4)*(\t-4)}) circle (3pt) node[anchor=west,shift={(2pt,0)}] {$\t$};
+			\foreach \t in {4,5,6,7}
+				\draw[thick,->] (-0.2,{-0.5*(\t-4)*(\t-4)}) node[anchor=east,shift={(0,0)}] {$\vec{v}_{\t}$} -- (-0.2,{-(\t-4)*(\t-4)+0.5*(\t-5)*(\t-5)});
+		\end{scope}
+		\begin{scope}[shift={(7.8,0)}]
+			\node at (0,1.25) {\textbf{Instantaneous}};
+			\begin{scope}[shift={(-1,0)}]
+				\foreach \t in {1,2,3,4}
+					\filldraw (0,{-0.5*(\t-4)*(\t-4)}) circle (3pt) node[anchor=east,shift={(-2pt,0)}] {$\t$};
+				\foreach \t in {1,2,3}
+					\draw[thick,->] (0.1*\t+0.1,{-0.5*(\t-4)*(\t-4)}) node[anchor=west,shift={(0,0)}] {$\vec{v}_{\t}$} -- (0.1*\t+0.1,{-1*(\t-4)-0.5*(\t-4)*(\t-4)});
+			\end{scope}
+			\node at (0.2,0.3) {$\vec{v}_{4}=\vec{0}$};
+			\begin{scope}[shift={(1,0)}]
+				\foreach \t in {4,5,6,7}
+					\filldraw (0,{-0.5*(\t-4)*(\t-4)}) circle (3pt) node[anchor=west,shift={(2pt,0)}] {$\t$};
+				\foreach \t in {5,6,7}
+					\draw[thick,->] (-0.2,{-0.5*(\t-4)*(\t-4)}) node[anchor=east,shift={(0,0)}] {$\vec{v}_{\t}$} -- (-0.2,{-1*(\t-4)-0.5*(\t-4)*(\t-4)});
+			\end{scope}
 		\end{scope}
 	\end{tikzpicture}
 \end{figure}
-\end{TeacherMargin}
-\begin{PresentSpace}
 
+\noindent\textbf{Motion Graph}
+
+\begin{figure}[h]
+	\centering
+	\begin{tikzpicture}
+		\draw[thick,<->] (0.5,0) node[anchor=south] {$y$} -- (0.5,-5) -- (5,-5) node[anchor=west] {$t$};
+		\draw[thick,domain=1:5,variable=\t] plot ({\t},{-0.5*(\t-4)*(\t-4)});
+		\foreach \t in {1,2,3,4,5}
+			\filldraw (\t,{-0.5*(\t-4)*(\t-4)}) node  (dot\t) {} circle (3pt) node[anchor=south,shift={(-2pt,0)}] {$\t$};
+		\draw[thick,dashed] (dot3) -- (dot4) -- (dot5) -- (dot3);
+		\draw[thick,dashed] (dot1) -- (dot2) -- (dot3) -- (dot1);
+		\draw[thick,dashed,domain=-0.75:0.75,variable=\t] plot ({\t+2},{2*\t-2});
+		\draw[thick,dashed] (dot1) -- (dot2) -- (dot3) -- (dot1);
+		\begin{scope}[shift={(-3,0)}]
+			\foreach \t in {1,2,3}
+				\filldraw (\t,{-0.5*(\t-4)*(\t-4)}) node  (ddot\t) {} circle (3pt) node[anchor=south,shift={(-2pt,0)}] {$\t$};
+			\draw[thick,dashed,domain=-0.75:0.75,variable=\t] plot ({\t+2},{2*\t-2});
+		\end{scope}
+		\draw[thick,dashed] (ddot1) -- (ddot2) -- (ddot3) -- (ddot1);
+	\end{tikzpicture}
+\end{figure}
 \end{PresentSpace}
 \newpage
 \begin{TeacherMargin}
+\noindent\textbf{L2-2 Thrown Ball}
+
+\noindent\textbf{Calculate}
+
+\noindent\textbf{2a: Represent Principles}
+
+Instantaneous velocity at a particular time can be approximated by the average velocity over a span of time containing that particular time:
+\[
+\vec{v} = \frac{d\vec{r}}{dt} \approx \vec{v}_{avg} = \frac{\Delta\vec{r}}{\Delta t}.
+\]
+
+\noindent\textbf{2b: Find unknown(s) Symbolically}
+
+For the entire motion, the average velocity from start to finish is
+\[
+\vec{v}_{avg} = \frac{\vec{r}_{7}-\vec{r}_{1}}{t_{7}-t_{1}} = 0,
+\]
+because it starts and ends at the same position ($\vec{r}_{7}=\vec{r}_{1}$)!
+
+For the first half, we can calculate the average velocity from the launch to the peak:
+\[
+\vec{v}_{avg} = \frac{\vec{r}_{4}-\vec{r}_{1}}{t_{4}-t_{1}}.
+\]
+
+For the second half, we can calculate the average velocity from the peak to the catch:
+\[
+\vec{v}_{avg} = \frac{\vec{r}_{7}-\vec{r}_{4}}{t_{7}-t_{4}}.
+\]
+
+\noindent\textbf{2c: Plug in Numbers}
+
 
 \end{TeacherMargin}
 \begin{PresentSpace}
-
+	\vspace{-0.5cm}
+	\section*{L2-2: Thrown Ball}
+	\vspace{-0.2cm}
+	A ball is thrown straight into the air.
+	\begin{itemize}
+		\item Estimate the average velocity of the ball:
+		\begin{itemize}
+			\item During the entire motion.
+			\item During the first half of the motion.
+			\item During the second half of the motion.
+		\end{itemize}
+		\item Is the velocity constant?
+	\end{itemize}
+	\vspace{11cm}
+	\begin{figure}[h]
+		\centering
+		\includegraphics[scale=0.4]{Calculate.png}
+	\end{figure}
 \end{PresentSpace}
 \newpage
 \begin{TeacherMargin}
