@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "aaab17d124939ea0",
+        "id": "5e38c9061706df6a",
         "type": "tabs",
         "children": [
           {
-            "id": "21e7524d00350232",
+            "id": "569a7a8bb14ab24b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "211 Summer/Lecture_and_Studio/Week_1_Class_2_L/Lecture 2.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "211 Summer/Lecture_and_Studio/Week_1_Class_2_L/Lecture 2.md",
+                "file": "211 Summer/Recitation/Week_1/PH 221 Week 1.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +98,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "211 Summer/Lecture_and_Studio/Week_1_Class_2_L/Lecture 2.md",
+                "file": "211 Summer/Recitation/Week_1/PH 221 Week 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +121,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "211 Summer/Lecture_and_Studio/Week_1_Class_2_L/Lecture 2.md"
+                "file": "211 Summer/Recitation/Week_1/PH 221 Week 1.md"
               }
             }
           }
@@ -146,46 +142,45 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "21e7524d00350232",
+  "active": "0ee81c010de32636",
   "lastOpenFiles": [
-    "211 Summer/Lecture_and_Studio/Week_1_Class_2_L/PH_211_Lecture_2.synctex(busy)",
-    "211 Summer/Lecture_and_Studio/Week_1_Class_2_L/PH_211_Lecture_2.tex.eJ6983",
-    "211 Summer/Lecture_and_Studio/Week_1_Class_2_L/PH_211_Lecture_2.tex.EG6983",
-    "211 Summer/Lecture_and_Studio/Week_1_Class_2_L/PH_211_Lecture_2.tex.zU6983",
-    "211 Summer/Lecture_and_Studio/Week_1_Class_2_L/PH_211_Lecture_2.tex.Vd6983",
-    "211 Summer/Lecture_and_Studio/Week_1_Class_2_L/PH_211_Lecture_2.tex.uI6983",
-    "211 Summer/Lecture_and_Studio/Week_1_Class_2_L/PH_211_Lecture_2.tex.fo6983",
-    "211 Summer/Lecture_and_Studio/Week_1_Class_2_L/PH_211_Lecture_2.tex.Nb6983",
-    "211 Summer/Lecture_and_Studio/Week_1_Class_2_L/PH_211_Lecture_2.tex.cH6983",
-    "211 Summer/Lecture_and_Studio/Week_1_Class_2_L/PH_211_Lecture_2.tex.Vr6983",
-    "211 Summer/Lecture_and_Studio/Week_1_Class_2_L/PH_211_Lecture_2.tex.xL6983",
+    "211 Summer/Recitation/Week_1/PH_221_Week_1-Solution.pdf",
+    "211 Summer/Recitation/Week_1/PH 221 Week 1.md",
+    "211 Summer/Recitation/Week_1/PH_221_Week_1.pdf",
+    "211 Summer/Recitation/Week_1/PH_221_Week_1.synctex(busy)",
+    "211 Summer/Recitation/Week_1/PH_221_Week_1.tex.cS2892",
+    "211 Summer/Recitation/Week_1/PH_221_Week_1.tex.qq2892",
+    "211 Summer/Recitation/Week_1/PH_221_Week_1.tmp",
+    "211 Summer/Recitation/Week_1/PH_221_Week_1.tex.VE2892",
+    "211 Summer/Recitation/Week_1/PH_221_Week_1.synctex.gz",
+    "211 Summer/Recitation/Week_1/PH_221_Week_1.aux",
+    "211 Summer/Recitation/Week_1/PH_221_Week_1.log",
+    "Activities/Visual_Vector_Addition/Visual Vector Addition.md",
+    "211/Recitation/Week_1/PH 221 Week 1.md",
+    "211 Summer/Lecture_and_Studio/Week_1_Class_2_L/Lecture 2.md",
+    "211 Summer/Lecture_and_Studio/Week_1_Class_1_S/Studio 1.md",
     "211 Summer/Lecture_and_Studio/Week_1_Class_2_L/Sensemake.png",
     "211 Summer/Lecture_and_Studio/Week_1_Class_2_L/Calculate.png",
     "211 Summer/Lecture_and_Studio/Week_1_Class_2_L/AnalyzeAndRepresent.png",
     "211 Summer/Lecture_and_Studio/Week_1_Class_2_L/ExplanationsInPhysics.png",
-    "211 Summer/Lecture_and_Studio/Week_1_Class_1_S/Studio 1.md",
     "Activities/Vectors_in_a_Garden/Vectors in a Garden.md",
-    "211 Summer/Lecture_and_Studio/Week_1_Class_2_L/Lecture 2.md",
     "211 Summer/Lecture_and_Studio/Week_1_Class_1_L/Lecture 1.md",
     "Activities/Driving_to_Portland/Driving to Portland.md",
     "Formats/Formats.md",
     "Activities/Representations_of_Vectors/Representations of Vectors.md",
     "Activities/Representations_of_Volume/Representations of Volume.md",
     "Activities/Two_Window_Toss/Two Window Toss.md",
-    "211 Summer/Recitation/Week_1/PH 221 Week 1.md",
     "211/Studio/Week_1/PH 211 Studio 01 Representations and Sensemaking.md",
     "Templates/Activity/Activity Template.md",
     "211 Summer/Lecture_and_Studio/Week_1_Class_1_L/PlayingCards.jpg",
     "Templates/Lecture/Lecture Template.md",
     "Templates/Problem Set/Problem Set Template.md",
-    "211/Recitation/Week_1/PH 221 Week 1.md",
     "211 Summer/Lecture_and_Studio/Untitled.md",
     "211/Recitation/Week_9/PH 221 Week 9.md",
     "Activities/Springloaded_Sled/Springloaded Sled.md",
     "Activities/Cliffside_Midair_Collision/Cliffside Midair Collision.md",
     "211/Recitation/Week_10/PH 221 Week 10.md",
     "211/Lecture/Week_9/Lecture 18.md",
-    "Activities/Visual_Vector_Addition/Visual Vector Addition.md",
     "211/Recitation/Week_8/PH 221 Week 8.md",
     "211/Recitation/Week_3/PH 221 Week 3.md",
     "211/Recitation/Week_2/PH 221 Week 2.md",

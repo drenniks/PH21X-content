@@ -31,16 +31,24 @@
 \begin{center}
 	\huge Lecture 2: Motion
 \end{center}
+\vspace{1cm}
+THREE IMPORTANT STEPS:
+\begin{enumerate}
+	\item Grab a small whiteboard for yourself! (These are by the doors.)
+	\item Sit at tables 2, 3, 6, and 7 (the four closest to the center).
+	\item Grab three large whiteboards for your table!
+\end{enumerate}
+\textbf{I will be randomizing your groups today.}
 \end{PresentSpace}
-\newpage
-\begin{TeacherMargin}
+%\newpage
+\begin{comment}
 \noindent\textbf{From the Syllabus}
 
 Projects are assignments where you will demonstrate and synthesize what you have learned over many weeks. Projects may take many different potential forms, including written, visual, or video. Almost every week (except for weeks with ungrading), there will be some milestone to complete in this project, such as setting group expectations (if you work in a group), proposing a project, submitting a rough draft, peer reviewing other classmates’ projects, and submitting a final draft. All project milestones are due on Fridays.
 
 The standard format for projects that you can expect if you continue on to 212 is a group assignment (usually 3 students), consisting of a 10-15 minute video solution to a physics problem, with a full calculation, sensemaking, and reflection. You may choose to get used to this format in preparation for continuing on in the sequence, or you can take this opportunity to be more creative in how you approach the project. I vehemently encourage you to find some idea for a project that excites you, be it creating an educational video or report, performing research, melding physics with something artistic, or even something I haven’t considered as a possible physics project yet.
-\end{TeacherMargin}
-\begin{PresentSpace}
+\end{comment}
+\begin{comment}
 \textbf{Project Information}
 \begin{itemize}
 	\item Demonstrate and synthesize what you have learned over many weeks.
@@ -75,7 +83,7 @@ The standard format for projects that you can expect if you continue on to 212 i
 	\end{itemize}
 	\item If it doesn't involve enough calculation, sensemaking, and reflection, I may request modifications.
 \end{itemize}
-\end{PresentSpace}
+\end{comment}
 \newpage
 \begin{TeacherMargin}
 
@@ -106,7 +114,7 @@ Motion Diagram
 		\foreach \x in {1,2,3}
 			\draw[thick,->] (2*\x,0.5) -- (2*\x+1,0.5);
 		\foreach \x in {1,2,3}
-			\node[anchor=south] at (2*\x+0.5,0.5) {$v_{\x}$};
+			\node[anchor=south] at (2*\x+0.5,0.5) {$\vec{v}_{\x}$};
 		\begin{scope}[shift={(-3,0)}]
 			\foreach \x in {4,5}
 				\filldraw (3*\x,0) circle (5pt);
@@ -240,7 +248,7 @@ The ball goes up, slows down, comes to a brief stop, turns around, and falls bac
 \end{itemize}
 \noindent\textbf{1c: Represent Physically}
 
-A motion diagram can help us visualize the motion of the ball. The velocity vectors (added based on forward approximation) give us a sense of how fast the ball is moving at each time.
+A motion diagram can help us visualize the motion of the ball. The velocity vectors (based on forward approximation) give us a sense of how fast the ball is moving at each time.
 
 \begin{figure}[h]
 	\centering
@@ -464,9 +472,23 @@ For the second half, we can calculate the average velocity from the peak to the 
 \vec{v}_{avg} = \frac{\vec{r}_{7}-\vec{r}_{4}}{t_{7}-t_{4}}.
 \]
 
+At this point, we can already tell that the velocity is not constant. Since $\vec{r}_{1} = \vec{r}_{7}$ and $t_{4}-t_{1} = t_{7}-t_{4}$, we can see that these two velocities are in opposite directions (and even if the vector stays the same magnitude, it is not constant if its direction changes).
+
 \noindent\textbf{2c: Plug in Numbers}
 
+We are not given numbers, so we should estimate some. If I toss an object such that it lands back in my hand after half of a second (so it reaches its maximum height after a quarter of a second), it looks like it gets maybe a foot (so a third of a meter) up in the air.
 
+For the first half of the motion, this gives us
+\[
+\Delta\vec{r} \approx \left(\frac{1}{3} \text{m}\right) \hat{y}, \qquad \Delta t \approx 0.5 \text{s},
+\]
+which means $\vec{v}_{avg} \approx \frac{1}{6}\frac{\text{m}}{\text{s}}\hat{y}$. For the second half, we get
+\[
+\Delta\vec{r} \approx \left(\frac{1}{3} \text{m}\right) \left(-\hat{y}\right), \qquad \Delta t \approx 0.5 \text{s},
+\]
+which means $\vec{v}_{avg} \approx \frac{1}{6}\frac{\text{m}}{\text{s}}\left(-\hat{y}\right)$.
+
+Note that the direction information is all in the unit vector, as seen by the negative sign. Also, the magnitude carries units, whereas the unit vector does not (which is admittedly a confusing naming issue).
 \end{TeacherMargin}
 \begin{PresentSpace}
 	\vspace{-0.5cm}
@@ -490,17 +512,34 @@ For the second half, we can calculate the average velocity from the peak to the 
 \end{PresentSpace}
 \newpage
 \begin{TeacherMargin}
-
+If you want to calculate an estimate of instantaneous acceleration by finding the average acceleration, it works just like calculating average velocity, except it is the difference in velocity that we divide by elapsed time. However, if you are calculating average acceleration from estimates of velocity, your approximation will get worse, since there is error associated wit both calculation results.
 \end{TeacherMargin}
 \begin{PresentSpace}
-
+\vspace{-0.5cm}
+\section*{Acceleration}
+\vspace{-0.2cm}
+\begin{itemize}
+	\item An object that changes in velocity is said to be accelerating.
+	\item Acceleration is defined as the change in velocity divided by the change in time.
+	\item Average:
+	\[
+	\vec{a}_{avg} = \frac{\Delta\vec{v}}{\Delta t}
+	\]
+	\item Instantaneous:
+	
+	\[
+	\vec{a} = \frac{d\vec{v}}{dt}
+	\]
+\end{itemize}
 \end{PresentSpace}
 \newpage
 \begin{TeacherMargin}
 
 \end{TeacherMargin}
 \begin{PresentSpace}
-\textbf{Main Ideas}
+\vspace{-0.5cm}
+\section*{Main Ideas}
+\vspace{-0.2cm}
 \begin{itemize}
 	\item The motion of an object can be characterized by quantities like position, velocity, and acceleration.
 	\item Velocity is defined as the time rate of change of position.
