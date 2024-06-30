@@ -1,12 +1,15 @@
 \documentclass[]{article}
 \newcommand{\FileDepth}{../../..}
 \input{\FileDepth/Formats/LectureBasics.tex}
-\usepackage{censor}
+\usepackage[shortlabels]{enumitem}
+\usepackage{multicol}
+\usepackage{vwcol}
 \usepackage{hyperref}
+\usepackage{wrapfig}
 %opening
 \newcommand{\SecType}{L}
-\newcommand{\Lec}{1}
-\title{PH 21X Lecture \Lec}
+\newcommand{\Week}{3}
+\title{PH 21X Lecture \Week}
 \author{Benjamin Bauml}
 \date{Term 2024}
 
@@ -24,398 +27,342 @@
 
 \begin{document}
 \begin{TeacherMargin}
-\noindent\textbf{Meetings with Benjamin}
 
-There are two surveys on Canvas in the Start Here module. Only do the one associated with your lab section. These surveys will help me determine when to schedule my regular drop-in and appointment hours most effectively.
-
-\noindent\textbf{Meetings with the TAs}
-
-The Wormhole is the central place in the Physics Department to get help on homework. It is on the third floor of Weniger Hall, in room 334, and it will be open 2-5pm Monday through Thursday, 10am-5pm on Fridays. Not all of the TAs in the Wormhole are on the teaching team for this course, but they can all help you with physics assignments.
 \end{TeacherMargin}
 \begin{PresentSpace}
 \begin{center}
-	\huge Welcome to PH 211!
+	\huge Lecture 3: Acceleration
 \end{center}
-\noindent\textbf{Instructor:} Benjamin Bauml
-
-\noindent\textbf{Drop-In and Appointment Hours:} To Be Determined (TBD)
-
-To book an individual appointment with me, see my \href{https://outlook.office.com/bookwithme/user/8a879d0af7bf45e890abd3d888d8bfe4@oregonstate.edu?anonymous&ep=plink}{\color{blue}Booking Page}. \\
-
-\noindent\textbf{Teaching Assistants (TAs):}
-
-\noindent Kevin Dimmitt (Tuesday lab) and Ben Hansen (Wednesday lab)
-
-\noindent\textbf{\href{https://wormhole.physics.oregonstate.edu/}{\color{blue}Wormhole} Hours:} Fridays
-
-10 a.m. - 12 p.m. (Kevin)
-
-1 p.m. to 3 p.m. (Ben) \\
-
-\noindent\textbf{Learning Assistants (LAs):}
-
-\noindent Austin Gugenheim, Matilda Pike, Ahmed Rashid
+\vspace{1cm}
+\underline{Warm-Up Activity} \\
+For an object moving in one dimension (in a straight line), what does it mean if the acceleration and the velocity are in opposite directions? The object is\dots
+\begin{enumerate}[(A)]
+	\item Slowing Down
+	\item Speeding Up
+	\item Staying Still
+	\item Not Enough Information
+\end{enumerate}
 \end{PresentSpace}
 \newpage
 \begin{TeacherMargin}
-\noindent\textbf{What is identity?}
-
-In social science, identity consists of traits that characterize a person, and these traits can be of various sorts and come from various aspects of one's life.
-
-For instance, I get certain aspects of my identity from my job. I think of myself as a physicist, a mathematician, and a teacher.
-
-I also get identity from my hobbies, interests, and preferences. I like to dance, play music and games, and write. I like cats. These traits can make up part of my identity as well.
-
-Identity can come from personal or societal sources as well, such as gender identity, national identity, ethnic identity, religious identity, political identity, and so on. A lot of these can be very personal, so you don't need to feel compelled to share them with me. Note that I blacked out one of my identities, because while I felt it was important, I didn't feel like sharing it at this time.
-
-\noindent\textbf{Priorities}
-
-Of course you have a life outside of this class! You should expect to put in time and hard work to keep up with the class, and you will need to balance your obligations to this class against your other responsibilities and interests. I absolutely don't expect you to sacrifice everything for this class, but I do expect you to take it seriously and put in effort.
-
-Your instructional team has other priorities as well. The TAs and I have research obligations to attend to that will occupy some of our time. Some of us have families to care for. We also have hobbies that help us refresh ourselves. For instance, I am definitely not missing an opportunity to dance Argentine tango tomorrow.
-
-That said, we are here to help you learn, and we will be putting a great deal of effort into that. You are a significant priority for us.
-
-\begin{center}
-	\Large The Getting to Know You assignment is due Friday. The online component is due at 8:00 p.m.
-\end{center}
+The members of the instructional team who are performing assessment have limits on their time. We cannot guarantee that we will be able to take time to assess late work, or that we will be able to give feedback on all parts of an assignment. We may elect to assess a subset of the problems in a given assignment.
 \end{TeacherMargin}
 \begin{PresentSpace}
-\begin{center}
-	\textbf{Getting to Know You}
-\end{center}
-\textbf{What is your preferred full name?}
-{\color{blue}\hrule}
-\begin{center}
-	Benjamin No\"{e} Bauml
-\end{center}
-\textbf{What do you want me to call you?}
-{\color{blue}\hrule}
-\begin{center}
-	You may call me Benjamin.
-	
-	If you don't want to call me by my first name, you may call me Mr. Bauml.
-\end{center}
-\textbf{What are your preferred pronouns?}
-{\color{blue}\hrule}
-\begin{center}
-	He/Him/His
-\end{center}
-\textbf{What identities do you associate with yourself? Include any that you feel are important to who you are, and that you are comfortable sharing with me.}
-{\color{blue}\hrule}
-\begin{center}
-	Physicist, Mathematician, Teacher, Social Dancer, Musician, Gamer, Writer, Cat Person, \censor{Bisexual}
-\end{center}
-\textbf{What are your interests? What do you want to learn? What do you do for fun?}
-{\color{blue}\hrule}
-\vspace{10pt}
-
-\noindent\textbf{Aside from this class, what are your priorities for the term? What goals (educational, professional, personal) do you have during this time?}
-{\color{blue}\hrule}
-\vspace{10pt}
-
-\noindent\textbf{Where does this class rank among your priorities for the term? If it helps, you can rank it twice; where would you rank it in terms of its actual importance to you, and where do you think it needs to be ranked in your priorities for you to be successful?}
-{\color{blue}\hrule}
-\vspace{10pt}
-
-\noindent\textbf{What is your major? What year in college is this for you? What are you studying to do?}
-{\color{blue}\hrule}
-\vspace{2pt}
+\section*{Homework}
+\begin{itemize}
+	\item Physics homework is not (just) about getting correct answers.
+	\item The homework format is designed to help you \textbf{communicate the depth of your physics knowledge and	understanding} and \textbf{learn how to break down a problem}.
+	\item Make sure you submit an organized and clear submission!
+\end{itemize}
+\vspace{2.5cm}
+\section*{Late Work}
+\begin{itemize}
+	\item If you need an extension, ask first.
+	\item If you miss a deadline, you should still turn it in when you are ready.
+	\item Assignments turned in after the deadline without an approved extension may not receive feedback.
+	\item If you need more feedback on a problem (even a problem that missed the deadline), reach out to us in the Wormhole and in office hours.
+\end{itemize}
 \end{PresentSpace}
-%\newpage
+\newpage
+\begin{TeacherMargin}
+
+\end{TeacherMargin}
+\begin{PresentSpace}
+\textbf{A Model for Motion}
+\begin{multicols}{2}
+	Quantities
+	\begin{itemize}
+		\item Position: $\vec{r}$
+		\item Velocity: $\vec{v}=\frac{d\vec{r}}{dt}$
+		\item Acceleration: $\vec{a}=\frac{d\vec{v}}{dt}$
+	\end{itemize}
+	\vspace{1cm}
+	Assumptions
+	\begin{itemize}
+		\item Use the Particle Model
+	\end{itemize}
+\end{multicols}
+Motion Diagram
+\begin{figure}[h]
+	\centering
+	\begin{tikzpicture}
+		\foreach \x in {1,2,3}
+			\filldraw (2*\x,0) circle (5pt);
+		\foreach \x in {1,2,3}
+			\node[anchor=north] at (2*\x,-0.2) {\x};
+		\foreach \x in {1,2,3}
+			\draw[thick,->] (2*\x,0.5) -- (2*\x+1,0.5);
+		\foreach \x in {1,2,3}
+			\node[anchor=south] at (2*\x+0.5,0.5) {$\vec{v}_{\x}$};
+		\begin{scope}[shift={(-3,0)}]
+			\foreach \x in {4,5}
+				\filldraw (3*\x,0) circle (5pt);
+			\foreach \x in {4,5}
+				\node[anchor=north] at (3*\x,-0.2) {\x};
+			\foreach \x in {4,5}
+				\draw[thick,->] (3*\x,0.5) -- (3*\x+1.5,0.5);
+			\foreach \x in {4,5}
+				\node[anchor=south] at (3*\x+0.75,0.5) {$v_{\x}$};
+		\end{scope}
+	\end{tikzpicture}
+\end{figure}
+\end{PresentSpace}
+\newpage
+\begin{TeacherMargin}
+\section*{L3-1: Direction of Velocity and Acceleration}
+\begin{center}
+	\begin{tikzpicture}
+		\foreach \x in {0,1,2,3,4}
+			\filldraw (2.4*\x,0) node[shift={(0,-10pt)}] (dot\x) {} circle (5pt);
+		\filldraw (0.8,0) node[shift={(0,-10pt)}] (dottwo) {} circle (5pt);
+		\filldraw (8.8,0) node[shift={(0,-10pt)}] (dotsix) {} circle (5pt);
+		\draw[thick,blue,->] (dot0) -- (dottwo);
+		\draw[thick,blue,->] (dottwo) -- (dot1);
+		\draw[thick,blue,->] (dot1) -- (dot2);
+		\draw[thick,blue,->] (dot2) -- (dot3);
+		\draw[thick,blue,->] (dot3) -- (dotsix);
+		\draw[thick,blue,->] (dotsix) -- (dot4);
+		\begin{scope}[shift=(dottwo)]
+			\draw[thick,red,->] (-0.4,-10pt) -- (0.4,-10pt);
+		\end{scope}
+		\begin{scope}[shift=(dot1)]
+			\draw[thick,red,->] (-0.4,-10pt) -- (0.4,-10pt);
+		\end{scope}
+		\begin{scope}[shift=(dot3)]
+			\draw[thick,red,->] (0.4,-10pt) -- (-0.4,-10pt);
+		\end{scope}
+		\begin{scope}[shift=(dotsix)]
+			\draw[thick,red,->] (0.4,-10pt) -- (-0.4,-10pt);
+		\end{scope}
+	\end{tikzpicture}
+\end{center}
+We can approximate the velocity vectors using the definition of average velocity:
+\[
+\vec{v}_{avg} = \frac{\Delta\vec{r}}{\Delta t}.
+\]
+Using a forward approximation, we will take $\Delta\vec{r}$ to be the displacement from one dot to the next, and estimate the velocity of the first dot to be the calculated average velocity.
+\begin{center}
+	\begin{tikzpicture}
+		\foreach \x in {1,2}
+			\filldraw (2.4*\x,0) node[shift={(0,-10pt)}] (dot\x) {\x} circle (5pt);
+		\draw[thick,blue,->] (dot1) -- (dot2);
+		\node[anchor=north] at (3.6,-10pt) {$\vec{v}_{1} \approx \frac{\vec{r}_{2}-\vec{r}_{1}}{\Delta t}$};
+	\end{tikzpicture}
+\end{center}
+We can approximate the acceleration vectors using the definition of average acceleration:
+\[
+\vec{a}_{avg} = \frac{\Delta\vec{v}}{\Delta t}.
+\]
+This will be a rougher approximation, as we are using approximate velocities instead of instantanous velocities. It appears rather natural to determine $\Delta\vec{v}$ at a dot by taking the vector pointing to it from the previous dot and subtracting it from the vector pointing from it to the next dot---which is technically a backward approximation.
+\begin{center}
+	\begin{tikzpicture}
+		\node at (2.4,10pt) {1};
+		\node at (3.2,10pt) {2};
+		\node at (4.8,10pt) {3};
+		\foreach \x in {1,2}
+			\filldraw (2.4*\x,0) node[shift={(0,-10pt)}] (dot\x) {$\vec{v}_{\x}$} circle (5pt);
+		\filldraw (3.2,0) node[shift={(0,-10pt)}] (dottwo) {} circle (5pt);
+		\draw[thick,blue,->] (dot1) -- (dottwo);
+		\draw[thick,blue,->] (dottwo) -- (dot2);
+		\begin{scope}[shift=(dottwo)]
+			\draw[thick,red,->] (-0.4,-10pt) -- (0.4,-10pt);
+		\end{scope}
+		\node[anchor=north] at (3.2,-20pt) {$\vec{a}_{2} \approx \frac{\vec{v}_{2}-\vec{v}_{1}}{\Delta t}$};
+	\end{tikzpicture}
+\end{center}
+\begin{enumerate}[(a)]
+	\item When acceleration is zero, the velocity does not change. This happens in the middle of the motion diagram.
+	\item When acceleration and velocity are in opposite directions, the object slows down (the velocity decreases in magnitude). This happens on the right side of the motion diagram.
+	\item When acceleration and velocity are in the same direction, the object speeds up (the velocity increases in magnitude). This happens on the left side of the motion diagram.
+\end{enumerate}
+%Motion graphs are a little up to interpretation, but the following are one possibility. Recall that $v=\frac{dx}{dt}$ and $a=\frac{dv}{dt}$.
 \begin{comment}
-	Instructor Notes
+	\begin{tikzpicture}
+		\begin{scope}
+			\draw[thick,<->] (0,3) node[anchor=south] {$x$} -- (0,0) -- (3,0) node[anchor=west] {$t$};
+			\draw[thick,domain=0:1.125,variable=\t] plot ({\t},{1.19*\t*\t});
+			\draw[thick,domain=1.825:3,variable=\t] plot ({\t},{5.25-1.19*(\t-3)*(\t-3)});
+			\draw[thick] (1.125,1.5) -- (1.825,3.6);
+			%\draw[thick,domain=0:3,variable=\t] plot ({\t},{3*\t*\t/4-\t*\t*\t/6});
+		\end{scope}
+		\begin{scope}[shift={(4,0)}]
+			\draw[thick,<->] (0,3) node[anchor=south] {$v$} -- (0,0) -- (3,0) node[anchor=west] {$t$};
+			\draw[thick,blue] (0,0) -- (1.125,1.125) -- (1.825,1.125) -- (3,0);
+			%\draw[thick,blue] (0,0) -- (1.125,1.125) .. controls (1.5,1.45) .. (1.825,1.125) -- (3,0);
+			%\draw[thick,domain=0:3,variable=\t] plot ({\t},{\t*(3-\t)/2});
+		\end{scope}
+		\begin{scope}[shift={(8,0)}]
+			\draw[thick,<->] (0,3) node[anchor=south] {$a$} -- (0,0) -- (0,1.5) -- (3,1.5) node[anchor=west] {$t$};
+			\draw[thick,red] (0,2.5) -- (1.125,2.5);
+			\draw[thick,dashed,red] (1.125,2.5) -- (1.125,1.5);
+			\draw[thick,red] (1.125,1.5) -- (1.825,1.5);
+			\draw[thick,dashed,red] (1.825,1.5) -- (1.825,0.5);
+			\draw[thick,red] (1.825,0.5) -- (3,0.5);
+			%\draw[thick,red] (0,2.5) -- (1.125,2.5) -- (1.825,0.5) -- (3,0.5);
+		\end{scope}
+	\end{tikzpicture}
 \end{comment}
+\end{TeacherMargin}
+\begin{PresentSpace}
+\section*{L3-1: Direction of Velocity and Acceleration}
+\begin{center}
+	\begin{tikzpicture}
+		\foreach \x in {0,1,2,3,4}
+			\filldraw (2.4*\x,0) circle (5pt);
+		\filldraw (0.8,0) circle (5pt);
+		\filldraw (8.8,0) circle (5pt);
+	\end{tikzpicture}
+\end{center}
+\vspace{0.25cm}
+\begin{itemize}
+	\item The motion diagram above shows a ball moving from left to right.
+	\begin{itemize}
+		\item Draw velocity and acceleration vectors at each instant.
+	\end{itemize}
+	\item For an object moving in one dimension (in a straight line), what does it mean if:
+	\begin{enumerate}[(a)]
+		\item The acceleration is zero?
+		\item The acceleration and the velocity are in opposite directions?
+		\item The acceleration and the velocity are in the same direction?
+	\end{enumerate}
+\end{itemize}
+\end{PresentSpace}
+\newpage
+\begin{TeacherMargin}
+
+\end{TeacherMargin}
+\begin{PresentSpace}
+\vspace{-10pt}
+\section*{L3-2: Vax'ildan's Acceleration}
+\vspace{-20pt}
+\begin{multicols}{2}
+\begin{itemize}
+	\item Vax'ildan Vessar is initially located at position $x_{i}$, running to the right with initial speed $v_{i}$.
+	\item At $t=0$, Vax clicks his \textit{boots of haste}, which provide an acceleration:
+	\vspace{-10pt}
+	\[
+	\vec{a}(t) = a_{0}\left(1-\frac{t}{T}\right)\hat{x}
+	\]
+	\vspace{-20pt}
+	\item Our goals are:
+	\begin{itemize}
+		\item Find how much time it takes for Vax to return to his initial velocity.
+		\item Find Vax's position at this time.
+	\end{itemize}
+\end{itemize}
+\begin{center}
+\reflectbox{\includegraphics[scale=0.15]{Vax-Linda_Lithen}}
+\end{center}
+\end{multicols}
+%\vspace{1.5cm}
+\section*{Solving an ARCS Problem}
+\begin{center}
+	\includegraphics[scale=0.4]{AnalyzeAndRepresent}
+	\includegraphics[scale=0.4]{Calculate}
+	\includegraphics[scale=0.4]{Sensemake}
+\end{center}
 \begin{comment}
-\begin{center}
-	\textbf{Getting to Know You}
-\end{center}
-\textbf{What are your interests? What do you want to learn? What do you do for fun?}
-{\color{blue}\hrule}
-\vspace{2pt}
-I am an avid dancer, with interest in ballroom dance, swing, and Argentine tango.
-
-I enjoy games, especially roleplaying games, such as \textit{Dungeons \& Dragons} (especially revised 3rd edition) and \textit{Call of Cthulhu}.
-
-I have played the French horn since 5th grade, and I have some experience with piano, baritone ukulele, and Native American flute. I am early in the process of teaching myself to play the English concertina.
-
-I like to read fantasy and science fiction, and I have some interest in creative writing.
-
-I took German for three years in high school.
-
-My research in physics has been focused on quantum mechanics. My undergraduate research focused on the consistent histories formulation, and my graduate research so far has focused on weak measurement. I find quantum computation and cryptography interesting, but I am not really in a position to change my research direction to those topics at this time.
-
-\noindent\textbf{Aside from this class, what are your priorities for the term? What goals (educational, professional, personal) do you have during this time?}
-{\color{blue}\hrule}
-\vspace{2pt}
-
-\noindent\textbf{Where does this class rank among your priorities for the term? If it helps, you can rank it twice; where would you rank it in terms of its actual importance to you, and where do you think it needs to be ranked in your priorities for you to be successful?}
-{\color{blue}\hrule}
-\vspace{2pt}
-
-\noindent\textbf{What is your major? What year in college is this for you? What are you studying to do?}
-{\color{blue}\hrule}
-\vspace{2pt}
+	\item \textbf{A}nalyze \& \textbf{R}epresent
+	\begin{center}
+		\includegraphics[scale=0.4]{AnalyzeAndRepresent}
+	\end{center}
+	\item \textbf{C}alculate
+	\item \textbf{S}ensemake
 \end{comment}
-\newpage
-\begin{TeacherMargin}
-\noindent\textbf{Playing Cards}
-
-Sharpie-like, felt tip, gel, or calligraphy pens are probably the best for this. The texture of a playing card does not work well with pencils or ballpoint pens. Some dry erase markers will leave good marks, but others will wipe away easily.
-
-I plan on using these to randomize groups and perhaps to call on people randomly. If I call on you at random, don't panic. I won't make you answer if you don't want to. I encourage you to ask a clarifying question if you don't have an answer, as it will help you and your classmates learn (and it will help me know what I need to make clearer to help you learn), but I also won't make you ask a question if you don't want to.
-
-I would like to keep these to remember you by, but if you feel really strongly about getting these back, you can ask at the end of the term.
-\end{TeacherMargin}
-\begin{PresentSpace}
-\begin{center}
-	\textbf{Getting to Know You -- In-Class Submission}
-\end{center}
-Write your preferred full name and pronouns on a blank playing card, along with any other drawings you want to add.
-
-\noindent These should be turned in during Friday's lecture. \\
-\begin{figure}[h]
-	\centering
-	\includegraphics[scale=0.1]{PlayingCards}
-\end{figure}
 \end{PresentSpace}
 \newpage
 \begin{TeacherMargin}
-%\footnotesize
-\noindent\textbf{Lecture and Studio} The science of thinking informs the structure for this course. Lecture and studio will consist largely of activities meant to stimulate your thinking in the course. It is critically important to be present and engaged in lecture and studio every week.
+We need $1-\frac{t}{T}$ to be unitless, because 1 is unitless, so $t/T$ must also be. Since $t$ is in seconds, it follows that $T$ must also be.
 
-Everyone's learning will suffer if illness spreads through our classroom. If you are sick, stay home and look over the posted lecture slides; work through the activities on your own. Notes from class will be posted later for you to see, and you can email me questions.
+Note that, when we plug in $t = T$, we find that $\vec{a}(T) = 0\hat{x}$, so the acceleration burst stops after $T$ passes, at which point the acceleration changes direction to bring Vax back to his initial velocity. As such, $T$ can be thought of as the duration of the acceleration burst.
 
-You will be working in groups in lecture. For the first couple of weeks, I will randomize the groups so you can meet as many of your classmates as possible. At the end of week two, you will be choosing your groups for your projects, and you will mostly be grouped with them in class after that. We will talk more about the projects later, but for now, focus on thinking about whom you might want to work with.
+Since $\left(1-\frac{t}{T}\right)\hat{x}$ is unitless, the overall units of the right hand side come from $a_{0}$. We need the right hand side to be an acceleration to match the left, so $a_{0}$ has units of m/s$^{2}$.
 
-\noindent\textbf{Get-Ready Activities} You will be introduced to content in the Get-Ready activities. It is alright to make mistakes and be confused at first. Write down any questions you have so you remember to ask about them in lecture! We will be exploring activities to get deeper into the content in lecture and studio, so it is critical that you do the Get-Ready activities beforehand.
+Note that, when we plug in $t=0$ s, we find that $\vec{a}(0\text{ s})=a_{0}\hat{x}$, so $a_{0}$ is the magnitude of the initial acceleration.
 
-Currently, Get-Ready activities are submitted after lecture. That way, you can add notes based on what you learned in lecture and add any new questions that arise from lecture. However, if it becomes apparent that the readings are not being done before lecture, I reserve the right to change this policy so that notes from Get-Ready activities must be turned in before lecture as well.
+The unit vector $\hat{x}$ carries all of the direction information. It tells us that the acceleration is in the $x$-direction (though left or right depends on the sign).
 
-\noindent\textbf{Lab} Lab is an important experiential learning opportunity that will introduce you to proper experimental procedure, working with uncertainty in measurements, and clear scientific communication. There are six labs to do, and each one has an important lesson, so we want you to complete all six labs.
-
-The last lab will run in Week 7, and in Week 8, the lab rooms will be open at their scheduled times for make-up labs. If you missed one lab, you can attend one of the two sections to make it up. If you missed two, you will need to attend both sections to make up both labs. If you missed three, or cannot make it to both sections to complete two missed labs, come talk to me about your options.
-
-\noindent\textbf{Homework} Homework problems will challenge you to really deepen your understanding of the content. There are two main formats that problems follow: \href{https://lipa.physics.oregonstate.edu/sec_what-is-motion.html}{\color{blue}Explanations} and \href{https://lipa.physics.oregonstate.edu/sec_real-world-context.html}{ARCS}. Both are in the online textbook and in Canvas. These formats are not just to help the instructional team follow your reasoning, but they train you to complete important steps in breaking down and explaining problems.
-
-You are encouraged to work together to understand the homework. However, the work you submit should be your own. It is not acceptable to copy someone else's work. If you work with someone, you need to write down their name and acknowledge that you worked together. Giving proper credit to collaborators is extremely important, particularly in science.
-
-Most assignments will be submitted through Canvas. Labs and other group assignments will be submitted through Gradescope, which you will learn more about in lab. If you continue on to PH 212, you will turn \textbf{everything} in on Gradescope, so you should get familiar with it now.
-
-\noindent\textbf{Quiz} We also have plans to have an in-class quiz on Monday of Week 4.
+\noindent\textbf{Understand and Plan}
+\vspace{-10pt}
+\begin{multicols}{2}
+	\noindent\textbf{Knowns}
+	\begin{itemize}
+		\item Initial Position: $x_{i} = 0$ m (simplifying assumption)
+		\item Initial Velocity: $v_{i} = 2$ m/s (a reasonable speed to estimate for a half-elf)
+		\item $T = 6$ s (rounds in \textit{Dungeons \& Dragons} last six seconds)
+		\item $a_{0} = 0.5$ m/s$^{2}$ (significantly less than free-fall acceleration)
+	\end{itemize}
+	\noindent\textbf{Unknowns}
+	\begin{itemize}
+		\item When Vax returns to his initial velocity: $t_{f}$
+		\item Vax's final position: $x_{f}$
+		\item Equations of motion for velocity and position: $\vec{v}(t)$ and $\vec{x}(t)$
+	\end{itemize}
+\end{multicols}
+\vspace{-10pt}
+\noindent\textbf{Identify Assumptions}
+\begin{itemize}
+	\item Particle Model
+	\begin{itemize}
+		\item We do not wish to handle the complexities of how Vax's arms, legs, and wings move as he runs, so we will treat him as a point mass.
+	\end{itemize}
+	\item 1-D Motion
+	\begin{itemize}
+		\item We will assume Vax is travelling over relatively level ground so we do not have to consider Vax's vertical motion.
+	\end{itemize}
+	\item Vax is not obstructed in his movement.
+	\begin{itemize}
+		\item If Vax were to bump into something, that brief interaction would alter his motion in additional ways that the acceleration of the boots does not account for.
+	\end{itemize}
+\end{itemize}
+\noindent\textbf{Represent Physically}
+\vspace{-10pt}
+\begin{center}
+	\begin{tikzpicture}
+		\draw[thick,->] (0,-2.2) -- (0,2.2) node[anchor=south] {$a(t)$};
+		\draw[thick,->] (0,0) -- (4.2,0) node[anchor=west] {$t$};
+		\draw[thick] (2,4pt) -- (2,-4pt) node[anchor=north] {$T$};
+		\draw[thick] (4,4pt) -- (4,-4pt) node[anchor=north] {$2T$};
+		\draw[thick] (-4pt,2) node[anchor=east] {$a_{0}$} -- (0,2);
+		\draw[thick,blue] (0,2) -- (4,-2);
+	\end{tikzpicture}
+\end{center}
 \end{TeacherMargin}
 \begin{PresentSpace}
-\begin{center}
-	\textbf{Science of Thinking}
-\end{center}
-Before class, I asked you to watch a video on the Science of Thinking. \\
-
-\noindent Talk with your neighbor about something you learned from the video.
-\vspace{0.5cm}
-%\vspace{5.5cm}
-\begin{center}
-	\textbf{Course Structure}
-\end{center}
-\noindent\textbf{Lecture and Studio}
+\vspace{-10pt}
+\section*{L3-2: Vax'ildan's Acceleration -- Analyze \& Represent}
+\vspace{-20pt}
+\begin{multicols}{2}
 \begin{itemize}
-\item Time to practice the content; opportunity to ask questions; group work!
-\item Attendance and participation in lecture/studio is critical to learning in this course! (But stay home if you are sick; lecture slides will be posted to Canvas, and you can feel free to email me any questions you have. We will work with you to help you keep up!)
+	\item Vax'ildan Vessar is initially located at position $x_{i}$, running to the right with initial speed $v_{i}$.
+	\item At $t=0$, Vax clicks his \textit{boots of haste}, which provide an acceleration:
+	\[
+	\vec{a}(t) = a_{0}\left(1-\frac{t}{T}\right)\hat{x}
+	\]
+	\vspace{40pt}
+	\item With your group:
+	\begin{itemize}
+		\item What are the units of $T$ and $a_{0}$? What do they represent physically?
+		\item What does $\hat{x}$ mean?
+		\item \textbf{Understand and Plan:} Identify quantities by symbol and number.
+		\item \textbf{Identify Assumptions}
+		\item \textbf{Represent Physically}
+		\begin{itemize}
+			\item What does $\vec{a}(t)$ look like?
+		\end{itemize}
+	\end{itemize}
 \end{itemize}
-\noindent\textbf{Get-Ready Activities}
-\begin{itemize}
-	\item Readings, videos, and exercises to complete \textbf{before} Monday and Wednesday lectures.
-	\item Add notes based on lecture/studio and submit by the end of the day.
-	\item Prominently write questions you have about the reading and from lecture. We want to know what you are wondering about!
-\end{itemize}
-\noindent\textbf{Lab}
-\begin{itemize}
-	\item Opportunities to make up one or two missed labs in the last week.
-	\item If you cannot complete all labs, talk to me about your options.
-\end{itemize}
-\noindent\textbf{Homework}
-\begin{itemize}
-	\item Due at 10 p.m. on Fridays.
-	\item You may work with others, but \textbf{you must include their names} on your submission, and your \textbf{submitted work must be your own}, not a copy of someone else's work.
-\end{itemize}
+\end{multicols}
 \end{PresentSpace}
 \newpage
 \begin{TeacherMargin}
-\noindent\textbf{Excerpt from \textit{Ungrading}, edited by Susan D. Blum}
-
-Several years ago I encountered the work of Dylan Wiliam, who researched the effect of teacher feedback on student improvement. In his book \textit{Embedded Formative Assessment}, he cites a study by Ruth Butler wherein she examines the three types of feedback teachers give: grades alone, both grades and comments, and comments alone.
-
-The results of Butler's research might seem counterintuitive: the students who showed the most growth were those who received comments alone. Even grades paired with comments---which at face value would seem to be the richest form of feedback---were just as ineffective as giving grades alone.
-
-Wiliam concludes: ``That most students virtually ignore \dots painstaking correction, advice, and praise is one of public education's best-kept secrets.''
-
-Not only do grades not encourage growth, they inhibit it. Grades take the focus off feedback.
-\begin{flushright}
-	---Arthur Chiaravalli
-	
-	\textit{Ungrading} Chapter 5
-\end{flushright}
-\end{TeacherMargin}
-\begin{PresentSpace}
-\begin{center}
-	\textbf{Ungrading Policy}
-\end{center}
-\textbf{You will not receive grades on individual assignments.}
-\begin{itemize}
-	\item You will receive feedback to help you think about your learning and improve your work.
-	\item There is no direct calculation from the points for completion and attendance in Canvas to your overall grade.
-\end{itemize}
-\textbf{You will propose your own final grade.}
-\begin{itemize}
-	\item As your final assignment of the term, you will write a reflection on your learning and your work and decide what grade you have earned.
-	\item Attendance, participation, and assignments factor into the proposal.
-	\item I have the right to change the grade you propose.
-\end{itemize}
-\textbf{You will get to practice before the final ungrading.}
-\begin{itemize}
-	\item At the end of Week 4, you will get to go through the ungrading process based on the work you have completed so far. If you have trouble assessing your own learning at this point, we will help fix any issues and prepare you for the final ungrading.
-	\item There are small reflections on learning at the end of each homework assignment.
-\end{itemize}
-\end{PresentSpace}
-\newpage
-\begin{TeacherMargin}
-\noindent I think physics is \dots
-\begin{itemize}
-	\item Collaborative \\ Physicists often work together to push the boundaries of knowledge. They trade ideas and try to find the answers to questions together. Even when working alone, a physicist is building on knowledge discovered by others.
-	\item Challenging \\ We need to develop our skill at examining physical situations, simplifying them, applying math to them, and recognizing the key concepts that are involved. There is a lot of translation, calculation, and interpretation.
-	\item Cumulative \\ New concepts build on old concepts at every step. Really interesting things can be discovered when tools from different areas are brought to a problem so it can be investigated in a new way.
-	\item Conceptual \textbf{and} Quantitative \\ We don't just calculate things and report numbers, though there is certainly a great deal of math we must do. We are also trying to understand the world better, and that means familiarizing ourselves with conceptual information about how the world works and building (and often rebuilding) our physical intuition.
-\end{itemize}
-\end{TeacherMargin}
-\begin{PresentSpace}
-\begin{center}
-	\textbf{What is physics?}
-\end{center}
-Come up with a sentence (or two) for each of the following questions:
-\begin{itemize}
-	\item What is physics?
-	\item What do you expect to learn from physics?
-\end{itemize}
-If someone asked you to describe physics using \underline{one word}, what would you choose?
-\end{PresentSpace}
-\newpage
-\begin{TeacherMargin}
-\noindent\textbf{Motion}
-
-We will examine how objects move through space.
-
-\noindent\textbf{Forces}
-
-We will describe how objects interact with each other by pushing and pulling.
-
-\noindent\textbf{Energy}
-
-We will talk about different forms of energy and how they transform, and how energy affects objects.
-
-\noindent\textbf{Momentum}
-
-We will take another perspective on changing the motion of objects, with a focus on collisions and explosions.
 
 \end{TeacherMargin}
 \begin{PresentSpace}
-\begin{center}
-	\textbf{Course Context}
-\end{center}
-The physical contexts we will study are:
+\section*{Main Ideas}
 \begin{itemize}
-	\item Motion
-	\item Forces
-	\item Energy
-	\item Momentum
-\end{itemize}
-\vspace{3cm}
-\begin{center}
-	\textbf{What is motion?}
-\end{center}
-\begin{itemize}
-	\item Write down something you know about \textbf{motion}.
-	\item Turn to your neighbor and talk about what you each know.
-	\item Find another neighbor and talk about what you each know.
-	\item We will be building a model for describing the \textit{\textbf{motion}} of \textit{\textbf{objects}}.
-\end{itemize}
-\end{PresentSpace}
-\newpage
-\begin{TeacherMargin}
-Isaac Newton hypothesized that the force which kept celestial bodies in orbit was the force that caused objects to fall. He developed a theory of universal gravitation that explained earlier empirical observations of the motion of planets.
-
-Newtonian gravity is not perfect, but it is a good approximation to the world around us for most practical purposes. Albert Einstein's theory of general relativity (GR) explains such things as the effect of gravity on the flow of time and the shape of space. Plenty of modern experiments (such as gravitational wave astronomy) are currently testing its limits to see if we can find anything not explained by GR.
-
-We get a better understanding of the world around us by breaking and revising models!
-
-If you are concerned that you are not as smart as Newton and Einstein, don't worry. The average physicist is not nearly as smart as either of them, but can still make significant contributions to our knowledge of the world. There is an unfortunate mythology around physics that it is advanced by solitary geniuses, but remember, physics is \textbf{collaborative} and \textbf{cumulative}, built from many normal people working together and building on what came before.
-\end{TeacherMargin}
-\begin{PresentSpace}
-\begin{center}
-	\textbf{Model Building}
-\end{center}
-How do physicists do physics?
-\begin{itemize}
-	\item Make an observation
-	\item Take data
-	\item Come up with a model that explains the observation
-	\item Test the model
-	\item Repeat
-\end{itemize}
-The models we come up with will help us describe what we see around us!
-\begin{figure}[h]
-	\centering
-	\includegraphics[scale=0.4]{BahnelementeEllipse_eng.pdf}
-\end{figure}
-
-\begin{center}
-	\small Wikimedia Commons user Mliu92, released under CC-BY 4.0
-\end{center}
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[scale=0.4]{J0806.jpeg}
-\end{figure}
-
-\begin{center}
-	\small Credit: Tod Strohmayer (GSFC), CXC, NASA - Illustration: Dana Berry (CXC)
-\end{center}
-\end{PresentSpace}
-\newpage
-\begin{TeacherMargin}
-\noindent\textbf{Respect}
-
-This goes in all directions. Students need to respect each other---you are all learning the content, you each have your own pace, and you all will make mistakes. Students need to respect the instructional team, which is here to help, and the instructional team needs to respect the students. If you ever feel that you are not being respected, please tell us so we can try to resolve the issue.
-
-When I gather the entire class' attention to go over a concept or activity, noise and side conversations need to be kept to a minimum. If people talk over me, they are disrespecting me and those who are trying to listen to me. Even if I address an individual student, or if I stop talking to let a student talk instead, that does not mean you can stop giving your attention. It is disrespectful to the student who is trying to talk, as well as to me and anyone else trying to listen. The thoughts and questions of your classmates are just as important as mine.
-
-\noindent\textbf{Doing and Questioning}
-
-Remember, our class structure is build around active engagement, and you will not be getting the most out of this learning experience if you do not stay engaged with the activities and ask questions to deepen your understanding.
-
-\noindent\textbf{Making Sense}
-
-One of the most valuable skills we will learn is making sense of answers. Some day, you will be doing something for which there is not an answer key for reference, and you will need to be able to evaluate your own answer to determine whether or not it is reasonable.
-
-Another problem with scientific jargon is that we will often use words from regular speech in very specific ways. For example, energy and power are sometimes used interchangeably in conversation, but in physics, they mean very specific, distinct things.
-
-You will be generating a lot of your own representations. It is important to develop skill with making representations clear and informational, with enough annotation that you can organize a problem around your representations.
-\end{TeacherMargin}
-\begin{PresentSpace}
-\begin{center}
-	\textbf{Principles for Success}
-\end{center}
-\textbf{Treat everyone with respect.}
-\begin{itemize}
-	\item Everyone's ideas matter.
-	\item Act professionally.
-\end{itemize}
-\textbf{Learn by doing and questioning.}
-\begin{itemize}
-	\item Everyone in your group is responsible for participating and working together.
-\end{itemize}
-\textbf{Make sense of everything.}
-\begin{itemize}
-	\item Jargon alert -- if you hear a term you don't understand, ask!
-	\item Representations -- if you don't understand what a picture or image is showing, ask!
+	\item If we know the acceleration of an object as a function of time, we can determine the velocity as a function of time.
+	\item If we know the velocity as a function of time, we can determine the position as a function of time.
 \end{itemize}
 \end{PresentSpace}
 \end{document}

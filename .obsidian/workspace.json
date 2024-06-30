@@ -11,8 +11,12 @@
             "id": "569a7a8bb14ab24b",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "211 Summer/Lecture_and_Studio/Week_2_Class_1_L/Lecture 4.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "211 Summer/Recitation/Week_1/PH 221 Week 1.md",
+                "file": "211 Summer/Lecture_and_Studio/Week_2_Class_1_L/Lecture 4.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "211 Summer/Recitation/Week_1/PH 221 Week 1.md",
+                "file": "211 Summer/Lecture_and_Studio/Week_2_Class_1_L/Lecture 4.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -121,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "211 Summer/Recitation/Week_1/PH 221 Week 1.md"
+                "file": "211 Summer/Lecture_and_Studio/Week_2_Class_1_L/Lecture 4.md"
               }
             }
           }
@@ -142,29 +146,38 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0ee81c010de32636",
+  "active": "569a7a8bb14ab24b",
   "lastOpenFiles": [
-    "211 Summer/Recitation/Week_1/PH_221_Week_1-Solution.pdf",
+    "211 Summer/Lecture_and_Studio/Week_2_Class_1_L/PH_211_Lecture_4.synctex(busy)",
+    "211 Summer/Lecture_and_Studio/Week_2_Class_1_L/PH_211_Lecture_4.tex.Ti7730",
+    "211 Summer/Lecture_and_Studio/Week_2_Class_1_L/PH_211_Lecture_4.tex.kn7730",
+    "211 Summer/Lecture_and_Studio/Week_2_Class_1_L/PH_211_Lecture_4.tex.nS7730",
+    "211 Summer/Lecture_and_Studio/Week_2_Class_1_L/PH_211_Lecture_4.synctex.gz",
+    "211 Summer/Lecture_and_Studio/Week_2_Class_1_L/PH_211_Lecture_4.pdf",
+    "211 Summer/Lecture_and_Studio/Week_2_Class_1_L/PH_211_Lecture_4.tex.Lh7730",
+    "211 Summer/Lecture_and_Studio/Week_2_Class_1_L/PH_211_Lecture_4.tex.XM7730",
+    "211 Summer/Lecture_and_Studio/Week_2_Class_1_L/PH_211_Lecture_4.out",
+    "211 Summer/Lecture_and_Studio/Week_2_Class_1_L/PH_211_Lecture_4.aux",
+    "211 Summer/Lecture_and_Studio/Week_2_Class_1_L/PH_211_Lecture_4.log",
+    "211 Summer/Lecture_and_Studio/Week_2_Class_1_L/Vax-Linda_Lithen.jpg",
+    "211 Summer/Lecture_and_Studio/Week_2_Class_1_L/Sensemake.png",
+    "211 Summer/Lecture_and_Studio/Week_2_Class_1_L/Calculate.png",
+    "211 Summer/Lecture_and_Studio/Week_2_Class_1_L/AnalyzeAndRepresent.png",
+    "211 Summer/Lecture_and_Studio/Week_1_Class_3_L/Lecture 3.md",
+    "211 Summer/Lecture_and_Studio/Week_2_Class_1_L/Lecture 4.md",
+    "211 Summer/Lecture_and_Studio/Week_1_Class_2_L/Lecture 2.md",
+    "211 Summer/Lecture_and_Studio/Week_1_Class_1_L/Lecture 1.md",
+    "211 Summer/Lecture_and_Studio/Week_1_Class_1_S/Studio 1.md",
+    "211 Summer/Lecture_and_Studio/Week_1_Class_3_L/Vax-Linda_Lithen.jpg",
+    "211 Summer/Lecture_and_Studio/Week_1_Class_3_L/Sensemake.png",
+    "211 Summer/Lecture_and_Studio/Week_1_Class_3_L/Calculate.png",
+    "211 Summer/Lecture_and_Studio/Week_1_Class_3_L/AnalyzeAndRepresent.png",
     "211 Summer/Recitation/Week_1/PH 221 Week 1.md",
-    "211 Summer/Recitation/Week_1/PH_221_Week_1.pdf",
-    "211 Summer/Recitation/Week_1/PH_221_Week_1.synctex(busy)",
-    "211 Summer/Recitation/Week_1/PH_221_Week_1.tex.cS2892",
-    "211 Summer/Recitation/Week_1/PH_221_Week_1.tex.qq2892",
-    "211 Summer/Recitation/Week_1/PH_221_Week_1.tmp",
-    "211 Summer/Recitation/Week_1/PH_221_Week_1.tex.VE2892",
-    "211 Summer/Recitation/Week_1/PH_221_Week_1.synctex.gz",
-    "211 Summer/Recitation/Week_1/PH_221_Week_1.aux",
-    "211 Summer/Recitation/Week_1/PH_221_Week_1.log",
     "Activities/Visual_Vector_Addition/Visual Vector Addition.md",
     "211/Recitation/Week_1/PH 221 Week 1.md",
-    "211 Summer/Lecture_and_Studio/Week_1_Class_2_L/Lecture 2.md",
-    "211 Summer/Lecture_and_Studio/Week_1_Class_1_S/Studio 1.md",
     "211 Summer/Lecture_and_Studio/Week_1_Class_2_L/Sensemake.png",
     "211 Summer/Lecture_and_Studio/Week_1_Class_2_L/Calculate.png",
-    "211 Summer/Lecture_and_Studio/Week_1_Class_2_L/AnalyzeAndRepresent.png",
-    "211 Summer/Lecture_and_Studio/Week_1_Class_2_L/ExplanationsInPhysics.png",
     "Activities/Vectors_in_a_Garden/Vectors in a Garden.md",
-    "211 Summer/Lecture_and_Studio/Week_1_Class_1_L/Lecture 1.md",
     "Activities/Driving_to_Portland/Driving to Portland.md",
     "Formats/Formats.md",
     "Activities/Representations_of_Vectors/Representations of Vectors.md",
@@ -172,7 +185,6 @@
     "Activities/Two_Window_Toss/Two Window Toss.md",
     "211/Studio/Week_1/PH 211 Studio 01 Representations and Sensemaking.md",
     "Templates/Activity/Activity Template.md",
-    "211 Summer/Lecture_and_Studio/Week_1_Class_1_L/PlayingCards.jpg",
     "Templates/Lecture/Lecture Template.md",
     "Templates/Problem Set/Problem Set Template.md",
     "211 Summer/Lecture_and_Studio/Untitled.md",
@@ -181,13 +193,6 @@
     "Activities/Cliffside_Midair_Collision/Cliffside Midair Collision.md",
     "211/Recitation/Week_10/PH 221 Week 10.md",
     "211/Lecture/Week_9/Lecture 18.md",
-    "211/Recitation/Week_8/PH 221 Week 8.md",
-    "211/Recitation/Week_3/PH 221 Week 3.md",
-    "211/Recitation/Week_2/PH 221 Week 2.md",
-    "Representations_and_Images/FBD_for_Box_Sliding_on_Ground_with_Mystery_Force.svg",
-    "Representations_and_Images/Vector_to_A_from_B.svg",
-    "Paul's_Images/PH_211_Figures/Vector_to_A_from_B.svg",
-    "Representations_and_Images/Velocity_Vectors_for_Two_Sprinters.svg",
-    "Representations_and_Images/Three_Vector_Zig-Zag_with_Fourth_Across.svg"
+    "211/Recitation/Week_8/PH 221 Week 8.md"
   ]
 }

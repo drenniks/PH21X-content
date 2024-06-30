@@ -7,6 +7,8 @@ tags:
   - content/energy
   - content/momentum
   - modality/in-person
+  - usage/PH211/quarter/Su2024/Week1
+  - usage/PH211/section_type/lecture
 ---
 # PH 211 2024 Summer Lecture 1
 ## Files

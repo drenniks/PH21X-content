@@ -3,6 +3,9 @@ tags:
   - format/assignment2024-06-14
   - format/lecture2024-06-15
   - modality/in-person
+  - to-do/tag
+  - usage/PH211/quarter/Su2024/Week1
+  - usage/PH211/section_type/studio
 ---
 # PH 211 2024 Summer Studio 1
 ## Files

@@ -1,0 +1,477 @@
+\documentclass[]{article}
+\newcommand{\FileDepth}{../../..}
+\input{\FileDepth/Formats/LectureBasics.tex}
+\usepackage[shortlabels]{enumitem}
+\usepackage{multicol}
+\usepackage{vwcol}
+\usepackage{hyperref}
+\usepackage{wrapfig}
+%opening
+\newcommand{\SecType}{L}
+\newcommand{\Week}{3}
+\title{PH 21X Lecture \Week}
+\author{Benjamin Bauml}
+\date{Term 2024}
+
+\newcommand{\Purpose}{4}
+\newcommand{\DefOnly}{0}
+
+\input{\FileDepth/Formats/Assignment20240614.tex}
+\input{\FileDepth/Formats/Lecture20240615.tex}
+
+%\input{\FileDepth/Formats/FBDCommands.tex}
+%\input{\FileDepth/Formats/MVDCommands.tex}
+
+%\input{\FileDepth/Activities/Activity_One/Activity_One.tex}
+%\input{\FileDepth/Activities/Activity_Two/Activity_Two.tex}
+
+\begin{document}
+\begin{TeacherMargin}
+
+\end{TeacherMargin}
+\begin{PresentSpace}
+\begin{center}
+	\huge Lecture 4: Using Integrals in Physics
+\end{center}
+\vspace{1cm}
+\underline{Warm-Up Activity} \\
+How is acceleration symbolically related to velocity?
+\begin{enumerate}[(A)]
+	\item Velocity is acceleration times $t$.
+	\item Acceleration is velocity times $t$.
+	\item Acceleration is the derivative of velocity.
+	\item Velocity is the derivative of acceleration.
+\end{enumerate}
+\end{PresentSpace}
+\newpage
+\begin{TeacherMargin}
+
+\end{TeacherMargin}
+\begin{PresentSpace}
+\vspace{-10pt}
+\section*{L4-1: Vax'ildan's Acceleration}
+\vspace{-20pt}
+\begin{multicols}{2}
+\begin{itemize}
+	\item Vax'ildan Vessar is initially located at position $x_{i}$, running to the right with initial speed $v_{i}$.
+	\item At $t=0$, Vax clicks his \textit{boots of haste}, which provide an acceleration:
+	\vspace{-10pt}
+	\[
+	\vec{a}(t) = a_{0}\left(1-\frac{t}{T}\right)\hat{x}
+	\]
+	\vspace{-20pt}
+	\item Our goals are:
+	\begin{itemize}
+		\item Find how much time it takes for Vax to return to his initial velocity.
+		\item Find Vax's position at this time.
+	\end{itemize}
+\end{itemize}
+\begin{center}
+\reflectbox{\includegraphics[scale=0.15]{Vax-Linda_Lithen}}
+\end{center}
+\end{multicols}
+%\vspace{1.5cm}
+\section*{Solving an ARCS Problem}
+\begin{center}
+	\includegraphics[scale=0.4]{AnalyzeAndRepresent}
+	\includegraphics[scale=0.4]{Calculate}
+	\includegraphics[scale=0.4]{Sensemake}
+\end{center}
+\end{PresentSpace}
+\newpage
+\begin{TeacherMargin}
+We need $1-\frac{t}{T}$ to be unitless, because 1 is unitless, so $t/T$ must also be. Since $t$ is in seconds, it follows that $T$ must also be.
+
+Note that, when we plug in $t = T$, we find that $\vec{a}(T) = 0\hat{x}$, so the acceleration burst stops after $T$ passes, at which point the acceleration changes direction to bring Vax back to his initial velocity. As such, $T$ can be thought of as the duration of the acceleration burst.
+
+Since $\left(1-\frac{t}{T}\right)\hat{x}$ is unitless, the overall units of the right hand side come from $a_{0}$. We need the right hand side to be an acceleration to match the left, so $a_{0}$ has units of m/s$^{2}$.
+
+Note that, when we plug in $t=0$ s, we find that $\vec{a}(0\text{ s})=a_{0}\hat{x}$, so $a_{0}$ is the magnitude of the initial acceleration.
+
+The unit vector $\hat{x}$ carries all of the direction information. It tells us that the acceleration is in the $x$-direction (though left or right depends on the sign).
+
+\noindent\textbf{Understand and Plan}
+\vspace{-10pt}
+\begin{multicols}{2}
+	\noindent\textbf{Knowns}
+	\begin{itemize}
+		\item Initial Position: $x_{i} = 0$ m (simplifying assumption)
+		\item Initial Velocity: $v_{i} = 2$ m/s (a reasonable speed to estimate for a half-elf)
+		\item $T = 6$ s (rounds in \textit{Dungeons \& Dragons} last six seconds)
+		\item $a_{0} = 0.5$ m/s$^{2}$ (significantly less than free-fall acceleration)
+	\end{itemize}
+	\noindent\textbf{Unknowns}
+	\begin{itemize}
+		\item When Vax returns to his initial velocity: $t_{f}$
+		\item Vax's final position: $x_{f}$
+		\item Equations of motion for velocity and position: $\vec{v}(t)$ and $\vec{x}(t)$
+	\end{itemize}
+\end{multicols}
+\vspace{-10pt}
+\noindent\textbf{Identify Assumptions}
+\begin{itemize}
+	\item Particle Model
+	\begin{itemize}
+		\item We do not wish to handle the complexities of how Vax's arms, legs, and wings move as he runs, so we will treat him as a point mass.
+	\end{itemize}
+	\item 1-D Motion
+	\begin{itemize}
+		\item We will assume Vax is travelling over relatively level ground so we do not have to consider Vax's vertical motion.
+	\end{itemize}
+	\item Vax is not obstructed in his movement.
+	\begin{itemize}
+		\item If Vax were to bump into something, that brief interaction would alter his motion in additional ways that the acceleration of the boots does not account for.
+	\end{itemize}
+\end{itemize}
+\noindent\textbf{Represent Physically}
+\vspace{-10pt}
+\begin{center}
+	\begin{tikzpicture}
+		\draw[thick,->] (0,-2.2) -- (0,2.2) node[anchor=south] {$a(t)$};
+		\draw[thick,->] (0,0) -- (4.2,0) node[anchor=west] {$t$};
+		\draw[thick] (2,4pt) -- (2,-4pt) node[anchor=north] {$T$};
+		\draw[thick] (4,4pt) -- (4,-4pt) node[anchor=north] {$2T$};
+		\draw[thick] (-4pt,2) node[anchor=east] {$a_{0}$} -- (0,2);
+		\draw[thick,blue] (0,2) -- (4,-2);
+	\end{tikzpicture}
+\end{center}
+\end{TeacherMargin}
+\begin{PresentSpace}
+\vspace{-10pt}
+\section*{L4-1: Vax'ildan's Acceleration -- Calculate}
+\vspace{-10pt}
+%\begin{multicols}{2}
+\begin{itemize}
+	\item At $t=0$, Vax clicks his \textit{boots of haste}, which provide an acceleration:
+	\[
+	\vec{a}(t) = a_{0}\left(1-\frac{t}{T}\right)\hat{x}
+	\]
+	%\vspace{40pt}
+	%\item With your group:
+	\begin{itemize}
+		\item First find a symbolic expression for Vax's velocity as a function of time.
+		\item Use your expression to find when Vax's velocity is equal to $v_{i}$.
+		\item Estimate any quantities to find numerical answers.
+	\end{itemize}
+\end{itemize}
+%\end{multicols}
+\end{PresentSpace}
+\newpage
+\begin{TeacherMargin}
+We need $1-\frac{t}{T}$ to be unitless, because 1 is unitless, so $t/T$ must also be. Since $t$ is in seconds, it follows that $T$ must also be.
+
+Note that, when we plug in $t = T$, we find that $\vec{a}(T) = 0\hat{x}$, so the acceleration burst stops after $T$ passes, at which point the acceleration changes direction to bring Vax back to his initial velocity. As such, $T$ can be thought of as the duration of the acceleration burst.
+
+Since $\left(1-\frac{t}{T}\right)\hat{x}$ is unitless, the overall units of the right hand side come from $a_{0}$. We need the right hand side to be an acceleration to match the left, so $a_{0}$ has units of m/s$^{2}$.
+
+Note that, when we plug in $t=0$ s, we find that $\vec{a}(0\text{ s})=a_{0}\hat{x}$, so $a_{0}$ is the magnitude of the initial acceleration.
+
+The unit vector $\hat{x}$ carries all of the direction information. It tells us that the acceleration is in the $x$-direction (though left or right depends on the sign).
+
+\noindent\textbf{Understand and Plan}
+\vspace{-10pt}
+\begin{multicols}{2}
+	\noindent\textbf{Knowns}
+	\begin{itemize}
+		\item Initial Position: $x_{i} = 0$ m (simplifying assumption)
+		\item Initial Velocity: $v_{i} = 2$ m/s (a reasonable speed to estimate for a half-elf)
+		\item $T = 6$ s (rounds in \textit{Dungeons \& Dragons} last six seconds)
+		\item $a_{0} = 0.5$ m/s$^{2}$ (significantly less than free-fall acceleration)
+	\end{itemize}
+	\noindent\textbf{Unknowns}
+	\begin{itemize}
+		\item When Vax returns to his initial velocity: $t_{f}$
+		\item Vax's final position: $x_{f}$
+		\item Equations of motion for velocity and position: $\vec{v}(t)$ and $\vec{x}(t)$
+	\end{itemize}
+\end{multicols}
+\vspace{-10pt}
+\noindent\textbf{Identify Assumptions}
+\begin{itemize}
+	\item Particle Model
+	\begin{itemize}
+		\item We do not wish to handle the complexities of how Vax's arms, legs, and wings move as he runs, so we will treat him as a point mass.
+	\end{itemize}
+	\item 1-D Motion
+	\begin{itemize}
+		\item We will assume Vax is travelling over relatively level ground so we do not have to consider Vax's vertical motion.
+	\end{itemize}
+	\item Vax is not obstructed in his movement.
+	\begin{itemize}
+		\item If Vax were to bump into something, that brief interaction would alter his motion in additional ways that the acceleration of the boots does not account for.
+	\end{itemize}
+\end{itemize}
+\noindent\textbf{Represent Physically}
+\vspace{-10pt}
+\begin{center}
+	\begin{tikzpicture}
+		\draw[thick,->] (0,-2.2) -- (0,2.2) node[anchor=south] {$a(t)$};
+		\draw[thick,->] (0,0) -- (4.2,0) node[anchor=west] {$t$};
+		\draw[thick] (2,4pt) -- (2,-4pt) node[anchor=north] {$T$};
+		\draw[thick] (4,4pt) -- (4,-4pt) node[anchor=north] {$2T$};
+		\draw[thick] (-4pt,2) node[anchor=east] {$a_{0}$} -- (0,2);
+		\draw[thick,blue] (0,2) -- (4,-2);
+	\end{tikzpicture}
+\end{center}
+\end{TeacherMargin}
+\begin{PresentSpace}
+\vspace{-10pt}
+\section*{L4-1: Vax'ildan's Acceleration -- Calculate}
+\vspace{-10pt}
+%\begin{multicols}{2}
+\begin{itemize}
+	\item At $t=0$, Vax clicks his \textit{boots of haste}, which provide an acceleration:
+	\[
+	\vec{a}(t) = a_{0}\left(1-\frac{t}{T}\right)\hat{x}
+	\]
+	\item His velocity as a function of time is
+	\[
+	\vec{v}(t) = \left[v_{i}+a_{0}\left(t-\frac{t^{2}}{2T}\right)\right]\hat{x},
+	\]
+	and he returns to his initial velocity at $t_{f}=2T$.
+	%\vspace{40pt}
+	%\item With your group:
+	\begin{itemize}
+		\item Now find a symbolic expression for Vax's position as a function of time and use it to find Vax's position at $t_{f}$.
+	\end{itemize}
+\end{itemize}
+%\end{multicols}
+\end{PresentSpace}
+\newpage
+\begin{TeacherMargin}
+We need $1-\frac{t}{T}$ to be unitless, because 1 is unitless, so $t/T$ must also be. Since $t$ is in seconds, it follows that $T$ must also be.
+
+Note that, when we plug in $t = T$, we find that $\vec{a}(T) = 0\hat{x}$, so the acceleration burst stops after $T$ passes, at which point the acceleration changes direction to bring Vax back to his initial velocity. As such, $T$ can be thought of as the duration of the acceleration burst.
+
+Since $\left(1-\frac{t}{T}\right)\hat{x}$ is unitless, the overall units of the right hand side come from $a_{0}$. We need the right hand side to be an acceleration to match the left, so $a_{0}$ has units of m/s$^{2}$.
+
+Note that, when we plug in $t=0$ s, we find that $\vec{a}(0\text{ s})=a_{0}\hat{x}$, so $a_{0}$ is the magnitude of the initial acceleration.
+
+The unit vector $\hat{x}$ carries all of the direction information. It tells us that the acceleration is in the $x$-direction (though left or right depends on the sign).
+
+\noindent\textbf{Understand and Plan}
+\vspace{-10pt}
+\begin{multicols}{2}
+	\noindent\textbf{Knowns}
+	\begin{itemize}
+		\item Initial Position: $x_{i} = 0$ m (simplifying assumption)
+		\item Initial Velocity: $v_{i} = 2$ m/s (a reasonable speed to estimate for a half-elf)
+		\item $T = 6$ s (rounds in \textit{Dungeons \& Dragons} last six seconds)
+		\item $a_{0} = 0.5$ m/s$^{2}$ (significantly less than free-fall acceleration)
+	\end{itemize}
+	\noindent\textbf{Unknowns}
+	\begin{itemize}
+		\item When Vax returns to his initial velocity: $t_{f}$
+		\item Vax's final position: $x_{f}$
+		\item Equations of motion for velocity and position: $\vec{v}(t)$ and $\vec{x}(t)$
+	\end{itemize}
+\end{multicols}
+\vspace{-10pt}
+\noindent\textbf{Identify Assumptions}
+\begin{itemize}
+	\item Particle Model
+	\begin{itemize}
+		\item We do not wish to handle the complexities of how Vax's arms, legs, and wings move as he runs, so we will treat him as a point mass.
+	\end{itemize}
+	\item 1-D Motion
+	\begin{itemize}
+		\item We will assume Vax is travelling over relatively level ground so we do not have to consider Vax's vertical motion.
+	\end{itemize}
+	\item Vax is not obstructed in his movement.
+	\begin{itemize}
+		\item If Vax were to bump into something, that brief interaction would alter his motion in additional ways that the acceleration of the boots does not account for.
+	\end{itemize}
+\end{itemize}
+\noindent\textbf{Represent Physically}
+\vspace{-10pt}
+\begin{center}
+	\begin{tikzpicture}
+		\draw[thick,->] (0,-2.2) -- (0,2.2) node[anchor=south] {$a(t)$};
+		\draw[thick,->] (0,0) -- (4.2,0) node[anchor=west] {$t$};
+		\draw[thick] (2,4pt) -- (2,-4pt) node[anchor=north] {$T$};
+		\draw[thick] (4,4pt) -- (4,-4pt) node[anchor=north] {$2T$};
+		\draw[thick] (-4pt,2) node[anchor=east] {$a_{0}$} -- (0,2);
+		\draw[thick,blue] (0,2) -- (4,-2);
+	\end{tikzpicture}
+\end{center}
+\end{TeacherMargin}
+\begin{PresentSpace}
+\vspace{-10pt}
+\section*{L4-1: Vax'ildan's Acceleration -- Sensemake}
+\vspace{-10pt}
+%\begin{multicols}{2}
+\begin{itemize}
+	\item At $t=0$, Vax clicks his \textit{boots of haste}, which provide an acceleration:
+	\[
+	\vec{a}(t) = a_{0}\left(1-\frac{t}{T}\right)\hat{x}
+	\]
+	%\vspace{40pt}
+	%\item With your group:
+	\begin{itemize}
+		\item How can we make sense of these equations?
+		\begin{align*}
+		\vec{v}(t) & = \left[v_{i}+a_{0}\left(t-\frac{t^{2}}{2T}\right)\right]\hat{x} & \vec{x}(t) & = \left[x_{i}+v_{i}t+a_{0}\left(\frac{t^{2}}{2}-\frac{t^{3}}{6T}\right)\right]\hat{x} \\
+		t_{f} & = 2T & \vec{x}_{f} & = \left[x_{i}+2v_{i}T+\frac{2}{3}a_{0}T^{2}\right]\hat{x}
+		\end{align*}
+	\end{itemize}
+\end{itemize}
+%\end{multicols}
+\end{PresentSpace}
+\newpage
+\begin{TeacherMargin}
+We need $1-\frac{t}{T}$ to be unitless, because 1 is unitless, so $t/T$ must also be. Since $t$ is in seconds, it follows that $T$ must also be.
+
+Note that, when we plug in $t = T$, we find that $\vec{a}(T) = 0\hat{x}$, so the acceleration burst stops after $T$ passes, at which point the acceleration changes direction to bring Vax back to his initial velocity. As such, $T$ can be thought of as the duration of the acceleration burst.
+
+Since $\left(1-\frac{t}{T}\right)\hat{x}$ is unitless, the overall units of the right hand side come from $a_{0}$. We need the right hand side to be an acceleration to match the left, so $a_{0}$ has units of m/s$^{2}$.
+
+Note that, when we plug in $t=0$ s, we find that $\vec{a}(0\text{ s})=a_{0}\hat{x}$, so $a_{0}$ is the magnitude of the initial acceleration.
+
+The unit vector $\hat{x}$ carries all of the direction information. It tells us that the acceleration is in the $x$-direction (though left or right depends on the sign).
+
+\noindent\textbf{Understand and Plan}
+\vspace{-10pt}
+\begin{multicols}{2}
+	\noindent\textbf{Knowns}
+	\begin{itemize}
+		\item Initial Position: $x_{i} = 0$ m (simplifying assumption)
+		\item Initial Velocity: $v_{i} = 2$ m/s (a reasonable speed to estimate for a half-elf)
+		\item $T = 6$ s (rounds in \textit{Dungeons \& Dragons} last six seconds)
+		\item $a_{0} = 0.5$ m/s$^{2}$ (significantly less than free-fall acceleration)
+	\end{itemize}
+	\noindent\textbf{Unknowns}
+	\begin{itemize}
+		\item When Vax returns to his initial velocity: $t_{f}$
+		\item Vax's final position: $x_{f}$
+		\item Equations of motion for velocity and position: $\vec{v}(t)$ and $\vec{x}(t)$
+	\end{itemize}
+\end{multicols}
+\vspace{-10pt}
+\noindent\textbf{Identify Assumptions}
+\begin{itemize}
+	\item Particle Model
+	\begin{itemize}
+		\item We do not wish to handle the complexities of how Vax's arms, legs, and wings move as he runs, so we will treat him as a point mass.
+	\end{itemize}
+	\item 1-D Motion
+	\begin{itemize}
+		\item We will assume Vax is travelling over relatively level ground so we do not have to consider Vax's vertical motion.
+	\end{itemize}
+	\item Vax is not obstructed in his movement.
+	\begin{itemize}
+		\item If Vax were to bump into something, that brief interaction would alter his motion in additional ways that the acceleration of the boots does not account for.
+	\end{itemize}
+\end{itemize}
+\noindent\textbf{Represent Physically}
+\vspace{-10pt}
+\begin{center}
+	\begin{tikzpicture}
+		\draw[thick,->] (0,-2.2) -- (0,2.2) node[anchor=south] {$a(t)$};
+		\draw[thick,->] (0,0) -- (4.2,0) node[anchor=west] {$t$};
+		\draw[thick] (2,4pt) -- (2,-4pt) node[anchor=north] {$T$};
+		\draw[thick] (4,4pt) -- (4,-4pt) node[anchor=north] {$2T$};
+		\draw[thick] (-4pt,2) node[anchor=east] {$a_{0}$} -- (0,2);
+		\draw[thick,blue] (0,2) -- (4,-2);
+	\end{tikzpicture}
+\end{center}
+\end{TeacherMargin}
+\begin{PresentSpace}
+\vspace{-10pt}
+\section*{L4-1: Vax'ildan's Acceleration -- Sensemake}
+\vspace{-10pt}
+\begin{itemize}
+	\item How can we make sense of these equations?
+	\begin{align*}
+		\vec{v}(t) & = \left[v_{i}+a_{0}\left(t-\frac{t^{2}}{2T}\right)\right]\hat{x} & \vec{x}(t) & = \left[x_{i}+v_{i}t+a_{0}\left(\frac{t^{2}}{2}-\frac{t^{3}}{6T}\right)\right]\hat{x} \\
+		t_{f} & = 2T & \vec{x}_{f} & = \left[x_{i}+2v_{i}T+\frac{2}{3}a_{0}T^{2}\right]\hat{x}
+	\end{align*}
+	\begin{itemize}
+		\item Are the units correct?
+		\item Which things are vectors?
+		\item What do the graphs of $\vec{v}(t)$ and $\vec{x}(t)$ look like?
+		\item What happens if you change $a_{0}$ or T?
+		\item Try plugging in some reasonable numbers: $v_{i} = 2 \text{ m/s},\ T = 8 \text{ s},\ a_{0} = 0.5 \text{ m/s}^{2}, x_{i} = 15 \text{ m}$.
+	\end{itemize}
+\end{itemize}
+\end{PresentSpace}
+\newpage
+\begin{TeacherMargin}
+We need $1-\frac{t}{T}$ to be unitless, because 1 is unitless, so $t/T$ must also be. Since $t$ is in seconds, it follows that $T$ must also be.
+
+Note that, when we plug in $t = T$, we find that $\vec{a}(T) = 0\hat{x}$, so the acceleration burst stops after $T$ passes, at which point the acceleration changes direction to bring Vax back to his initial velocity. As such, $T$ can be thought of as the duration of the acceleration burst.
+
+Since $\left(1-\frac{t}{T}\right)\hat{x}$ is unitless, the overall units of the right hand side come from $a_{0}$. We need the right hand side to be an acceleration to match the left, so $a_{0}$ has units of m/s$^{2}$.
+
+Note that, when we plug in $t=0$ s, we find that $\vec{a}(0\text{ s})=a_{0}\hat{x}$, so $a_{0}$ is the magnitude of the initial acceleration.
+
+The unit vector $\hat{x}$ carries all of the direction information. It tells us that the acceleration is in the $x$-direction (though left or right depends on the sign).
+
+\noindent\textbf{Understand and Plan}
+\vspace{-10pt}
+\begin{multicols}{2}
+	\noindent\textbf{Knowns}
+	\begin{itemize}
+		\item Initial Position: $x_{i} = 0$ m (simplifying assumption)
+		\item Initial Velocity: $v_{i} = 2$ m/s (a reasonable speed to estimate for a half-elf)
+		\item $T = 6$ s (rounds in \textit{Dungeons \& Dragons} last six seconds)
+		\item $a_{0} = 0.5$ m/s$^{2}$ (significantly less than free-fall acceleration)
+	\end{itemize}
+	\noindent\textbf{Unknowns}
+	\begin{itemize}
+		\item When Vax returns to his initial velocity: $t_{f}$
+		\item Vax's final position: $x_{f}$
+		\item Equations of motion for velocity and position: $\vec{v}(t)$ and $\vec{x}(t)$
+	\end{itemize}
+\end{multicols}
+\vspace{-10pt}
+\noindent\textbf{Identify Assumptions}
+\begin{itemize}
+	\item Particle Model
+	\begin{itemize}
+		\item We do not wish to handle the complexities of how Vax's arms, legs, and wings move as he runs, so we will treat him as a point mass.
+	\end{itemize}
+	\item 1-D Motion
+	\begin{itemize}
+		\item We will assume Vax is travelling over relatively level ground so we do not have to consider Vax's vertical motion.
+	\end{itemize}
+	\item Vax is not obstructed in his movement.
+	\begin{itemize}
+		\item If Vax were to bump into something, that brief interaction would alter his motion in additional ways that the acceleration of the boots does not account for.
+	\end{itemize}
+\end{itemize}
+\noindent\textbf{Represent Physically}
+\vspace{-10pt}
+\begin{center}
+	\begin{tikzpicture}
+		\draw[thick,->] (0,-2.2) -- (0,2.2) node[anchor=south] {$a(t)$};
+		\draw[thick,->] (0,0) -- (4.2,0) node[anchor=west] {$t$};
+		\draw[thick] (2,4pt) -- (2,-4pt) node[anchor=north] {$T$};
+		\draw[thick] (4,4pt) -- (4,-4pt) node[anchor=north] {$2T$};
+		\draw[thick] (-4pt,2) node[anchor=east] {$a_{0}$} -- (0,2);
+		\draw[thick,blue] (0,2) -- (4,-2);
+	\end{tikzpicture}
+\end{center}
+\end{TeacherMargin}
+\begin{PresentSpace}
+\vspace{-10pt}
+\section*{L4-2: Constant Acceleration}
+\vspace{-10pt}
+\begin{itemize}
+	\item What if Vax's acceleration had been constant?
+	\[
+	\vec{a}(t) = a\hat{x}
+	\]
+\end{itemize}
+\end{PresentSpace}
+\newpage
+\begin{TeacherMargin}
+
+\end{TeacherMargin}
+\begin{PresentSpace}
+\section*{Main Ideas}
+\begin{itemize}
+	\item If we know the acceleration of an object as a function of time, we can determine the velocity as a function of time.
+	\item If we know the velocity as a function of time, we can determine the position as a function of time.
+\end{itemize}
+\end{PresentSpace}
+\end{document}

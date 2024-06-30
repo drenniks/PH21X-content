@@ -3,6 +3,10 @@ tags:
   - format/assignment2024-06-14
   - format/lecture2024-06-15
   - modality/in-person
+  - to-do/tag
+  - to-do/format
+  - usage/PH211/quarter/Su2024/Week1
+  - usage/PH211/section_type/lecture
 ---
 # PH 211 2024 Summer Lecture 2
 ## Files
