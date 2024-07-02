@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "a84de4aabf594b42",
+        "id": "ad6c78ffad2950e1",
         "type": "tabs",
         "children": [
           {
-            "id": "70ce0b2c56cf0c3c",
+            "id": "d7cd96ef8b2616b7",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -81,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "211 Summer/Lecture_and_Studio/Week_2_Class_1_L/Lecture 4.md",
+                "file": "211 Summer/Lecture_and_Studio/Week_2_Class_1_S/Studio 2.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,7 +98,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "211 Summer/Lecture_and_Studio/Week_2_Class_1_L/Lecture 4.md",
+                "file": "211 Summer/Lecture_and_Studio/Week_2_Class_1_S/Studio 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -121,7 +121,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "211 Summer/Lecture_and_Studio/Week_2_Class_1_L/Lecture 4.md"
+                "file": "211 Summer/Lecture_and_Studio/Week_2_Class_1_S/Studio 2.md"
               }
             }
           }
@@ -144,25 +144,26 @@
   },
   "active": "0ee81c010de32636",
   "lastOpenFiles": [
-    "211 Summer/Lecture_and_Studio/Week_2_Class_1_L/PH_211_Lecture_4_Slides.synctex.gz",
-    "211 Summer/Lecture_and_Studio/Week_2_Class_1_L/PH_211_Lecture_4_Slides.pdf",
-    "211 Summer/Lecture_and_Studio/Week_2_Class_1_L/PH_211_Lecture_4_Slides.aux",
-    "211 Summer/Lecture_and_Studio/Week_2_Class_1_L/PH_211_Lecture_4_Slides.synctex(busy)",
-    "211 Summer/Lecture_and_Studio/Week_2_Class_1_L/PH_211_Lecture_4_Slides.log",
-    "211 Summer/Lecture_and_Studio/Week_2_Class_1_L/PH_211_Lecture_4_Slides.tex.eX7391",
+    "211 Summer/Lecture_and_Studio/Week_2_Class_1_S/PH_211_Studio_2_Slides.synctex.gz",
+    "211 Summer/Lecture_and_Studio/Week_2_Class_1_S/PH_211_Studio_2_Slides.pdf",
+    "211 Summer/Lecture_and_Studio/Week_2_Class_1_S/PH_211_Studio_2_Slides.aux",
+    "211 Summer/Lecture_and_Studio/Week_2_Class_1_S/PH_211_Studio_2_Slides.synctex(busy)",
+    "211 Summer/Lecture_and_Studio/Week_2_Class_1_S/PH_211_Studio_2_Slides.log",
+    "211 Summer/Lecture_and_Studio/Week_2_Class_1_S/PH_211_Studio_2_Slides.tex.XN4132",
+    "211 Summer/Lecture_and_Studio/Week_2_Class_1_S/PH_211_Studio_2.synctex(busy)",
+    "211 Summer/Lecture_and_Studio/Week_2_Class_1_S/PH_211_Studio_2.tex.ay4132",
+    "211 Summer/Lecture_and_Studio/Week_2_Class_1_S/PH_211_Studio_2.tex.xt4132",
+    "211 Summer/Lecture_and_Studio/Week_2_Class_1_S/PH_211_Studio_2.tex.nL4132",
+    "211 Summer/Lecture_and_Studio/Week_2_Class_1_S/PH_211_Studio_2.tex.Pb4132",
+    "211 Summer/Lecture_and_Studio/Week_1_Class_2_L/Lecture 2.md",
     "211 Summer/Lecture_and_Studio/Week_1_Class_3_L/Lecture 3.md",
-    "211 Summer/Lecture_and_Studio/Week_2_Class_1_L/PH_211_Lecture_4.synctex(busy)",
-    "211 Summer/Lecture_and_Studio/Week_2_Class_1_L/PH_211_Lecture_4.tex.DQ7391",
-    "211 Summer/Lecture_and_Studio/Week_2_Class_1_L/PH_211_Lecture_4.tex.cC7391",
-    "211 Summer/Lecture_and_Studio/Week_2_Class_1_L/PH_211_Lecture_4.tex.DF7391",
-    "211 Summer/Lecture_and_Studio/Week_2_Class_1_L/PH_211_Lecture_4.tex.xD7391",
     "211 Summer/Lecture_and_Studio/Week_2_Class_1_L/Lecture 4.md",
+    "211 Summer/Lecture_and_Studio/Week_2_Class_1_S/Studio 2.md",
     "211 Summer/Lecture_and_Studio/Week_1_Class_1_L/Lecture 1.md",
     "211 Summer/Lecture_and_Studio/Week_2_Class_1_L/Vax-Linda_Lithen.jpg",
     "211 Summer/Lecture_and_Studio/Week_2_Class_1_L/Sensemake.png",
     "211 Summer/Lecture_and_Studio/Week_2_Class_1_L/Calculate.png",
     "211 Summer/Lecture_and_Studio/Week_2_Class_1_L/AnalyzeAndRepresent.png",
-    "211 Summer/Lecture_and_Studio/Week_1_Class_2_L/Lecture 2.md",
     "211 Summer/Lecture_and_Studio/Week_1_Class_1_S/Studio 1.md",
     "211 Summer/Lecture_and_Studio/Week_1_Class_3_L/Vax-Linda_Lithen.jpg",
     "211 Summer/Lecture_and_Studio/Week_1_Class_3_L/Sensemake.png",
@@ -188,7 +189,6 @@
     "Activities/Springloaded_Sled/Springloaded Sled.md",
     "Activities/Cliffside_Midair_Collision/Cliffside Midair Collision.md",
     "211/Recitation/Week_10/PH 221 Week 10.md",
-    "211/Lecture/Week_9/Lecture 18.md",
-    "211/Recitation/Week_8/PH 221 Week 8.md"
+    "211/Lecture/Week_9/Lecture 18.md"
   ]
 }
