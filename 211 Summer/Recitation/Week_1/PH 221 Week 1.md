@@ -2,6 +2,10 @@
 tags:
   - to-do/tag
   - to-do/format
+  - format/assignment2024-02-21
+  - modality/in-person
+  - usage/PH211/quarter/Su2024/Week2
+  - usage/PH211/section_type/recitation
 ---
 # PH 221 2024 Summer Week 1
 ## Files
