@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "fc2118a35235dc90",
+        "id": "161cbe34e40d9d47",
         "type": "tabs",
         "children": [
           {
-            "id": "dd6dadbda0383acd",
+            "id": "03aa254ebbb7b058",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -81,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "211 Summer/Recitation/Week_2/PH 221 Week 2.md",
+                "file": "211_Summer/Lecture_and_Studio/Week_2_Class_2_L/Lecture 5.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,7 +98,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "211 Summer/Recitation/Week_2/PH 221 Week 2.md",
+                "file": "211_Summer/Lecture_and_Studio/Week_2_Class_2_L/Lecture 5.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -121,7 +121,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "211 Summer/Recitation/Week_2/PH 221 Week 2.md"
+                "file": "211_Summer/Lecture_and_Studio/Week_2_Class_2_L/Lecture 5.md"
               }
             }
           }
@@ -144,39 +144,43 @@
   },
   "active": "0ee81c010de32636",
   "lastOpenFiles": [
-    "211 Summer/Recitation/Week_1/PH 221 Week 1.md",
-    "211 Summer/Recitation/Week_2/PH 221 Week 2.md",
+    "211_Summer/Lecture_and_Studio/Week_2_Class_2_L/PH_211_Lecture_5.pdf",
+    "211_Summer/Lecture_and_Studio/Week_2_Class_2_L/Lecture 5.md",
+    "211_Summer/Lecture_and_Studio/Week_2_Class_1_L/Lecture 4.md",
+    "211_Summer/Lecture_and_Studio/Week_1_Class_3_L/Lecture 3.md",
+    "PH_211_Lecture_5.pdf.md",
+    "PH_211_Lecture_5.tex.md",
+    "211_Summer/Lecture_and_Studio/Week_2_Class_2_L/PH_211_Lecture_4_Slides.tex",
+    "211_Summer/Lecture_and_Studio/Week_2_Class_2_L/PH_211_Lecture_4.tex",
+    "211_Summer/Lecture_and_Studio/Week_3_Class_1_L",
+    "211_Summer/Lecture_and_Studio/Week_2_Class_3_L",
+    "211_Summer/Lecture_and_Studio/Week_2_Class_2_L",
+    "211_Summer/Recitation/Week_1/PH 221 Week 1.md",
+    "211_Summer/Recitation/Week_2/PH 221 Week 2.md",
     "211/Recitation/Week_3/PH 221 Week 3.md",
     "211/Recitation/Week_4/PH 221 Week 4.md",
     "211/Recitation/Week_2/PH 221 Week 2.md",
     "211/Recitation/Week_1/PH 221 Week 1.md",
-    "211 Summer/Recitation/Week_2/PH_221_Week_2-Teacher_Solution.pdf",
-    "211 Summer/Recitation/Week_2/PH_221_Week_2-Solution.pdf",
-    "211 Summer/Recitation/Week_2/PH_221_Week_2.pdf",
+    "211_Summer/Recitation/Week_2/PH_221_Week_2-Teacher_Solution.pdf",
+    "211_Summer/Recitation/Week_2/PH_221_Week_2-Solution.pdf",
+    "211_Summer/Recitation/Week_2/PH_221_Week_2.pdf",
     "211 Summer/Recitation/Week_2/PH_221_Week_2.synctex(busy)",
     "211 Summer/Recitation/Week_2/PH_221_Week_2.tex.kn6611",
-    "211 Summer/Recitation/Week_2/PH_221_Week_2.tmp",
-    "211 Summer/Recitation/Week_2/PH_221_Week_2.tex.nS6611",
-    "211 Summer/Recitation/Week_2/PH_221_Week_2.tex.Lh6611",
-    "211 Summer/Recitation/Week_2/PH_221_Week_2.tex.XM6611",
-    "211 Summer/Recitation/Week_2/PH_221_Week_2.tex.TJ6611",
-    "211 Summer/Lecture_and_Studio/Week_1_Class_2_L/Lecture 2.md",
-    "211 Summer/Lecture_and_Studio/Week_1_Class_3_L/Lecture 3.md",
-    "211 Summer/Lecture_and_Studio/Week_2_Class_1_L/Lecture 4.md",
-    "211 Summer/Lecture_and_Studio/Week_2_Class_1_S/Studio 2.md",
-    "211 Summer/Lecture_and_Studio/Week_1_Class_1_L/Lecture 1.md",
-    "211 Summer/Lecture_and_Studio/Week_2_Class_1_L/Vax-Linda_Lithen.jpg",
-    "211 Summer/Lecture_and_Studio/Week_2_Class_1_L/Sensemake.png",
-    "211 Summer/Lecture_and_Studio/Week_2_Class_1_L/Calculate.png",
-    "211 Summer/Lecture_and_Studio/Week_2_Class_1_L/AnalyzeAndRepresent.png",
-    "211 Summer/Lecture_and_Studio/Week_1_Class_1_S/Studio 1.md",
-    "211 Summer/Lecture_and_Studio/Week_1_Class_3_L/Vax-Linda_Lithen.jpg",
-    "211 Summer/Lecture_and_Studio/Week_1_Class_3_L/Sensemake.png",
-    "211 Summer/Lecture_and_Studio/Week_1_Class_3_L/Calculate.png",
-    "211 Summer/Lecture_and_Studio/Week_1_Class_3_L/AnalyzeAndRepresent.png",
+    "211_Summer/Lecture_and_Studio/Week_1_Class_2_L/Lecture 2.md",
+    "211_Summer/Lecture_and_Studio/Week_2_Class_1_S/Studio 2.md",
+    "211_Summer/Lecture_and_Studio/Week_1_Class_1_L/Lecture 1.md",
+    "211_Summer/Lecture_and_Studio/Week_2_Class_1_L/Vax-Linda_Lithen.jpg",
+    "211_Summer/Lecture_and_Studio/Week_2_Class_1_L/Sensemake.png",
+    "211_Summer/Lecture_and_Studio/Week_2_Class_1_L/Calculate.png",
+    "211_Summer/Lecture_and_Studio/Week_2_Class_1_L/AnalyzeAndRepresent.png",
+    "211_Summer/Lecture_and_Studio/Week_1_Class_1_S/Studio 1.md",
+    "211_Summer/Lecture_and_Studio/Week_1_Class_3_L/Vax-Linda_Lithen.jpg",
+    "211_Summer/Lecture_and_Studio/Week_1_Class_3_L/Sensemake.png",
+    "211_Summer/Lecture_and_Studio/Week_1_Class_3_L/Calculate.png",
+    "211_Summer/Lecture_and_Studio/Week_1_Class_3_L/AnalyzeAndRepresent.png",
     "Activities/Visual_Vector_Addition/Visual Vector Addition.md",
-    "211 Summer/Lecture_and_Studio/Week_1_Class_2_L/Sensemake.png",
-    "211 Summer/Lecture_and_Studio/Week_1_Class_2_L/Calculate.png",
+    "211_Summer/Lecture_and_Studio/Week_1_Class_2_L/Sensemake.png",
+    "211_Summer/Lecture_and_Studio/Week_1_Class_2_L/Calculate.png",
     "Activities/Vectors_in_a_Garden/Vectors in a Garden.md",
     "Activities/Driving_to_Portland/Driving to Portland.md",
     "Formats/Formats.md",
@@ -185,9 +189,6 @@
     "Activities/Two_Window_Toss/Two Window Toss.md",
     "211/Studio/Week_1/PH 211 Studio 01 Representations and Sensemaking.md",
     "Templates/Activity/Activity Template.md",
-    "Templates/Lecture/Lecture Template.md",
-    "Templates/Problem Set/Problem Set Template.md",
-    "211 Summer/Lecture_and_Studio/Untitled.md",
-    "211/Recitation/Week_9/PH 221 Week 9.md"
+    "Templates/Lecture/Lecture Template.md"
   ]
 }

@@ -10,11 +10,11 @@ tags:
 ---
 # PH 211 2024 Summer Lecture 4
 ## Files
-[PH 211 Lecture 4 TeX](PH_211_Lecture_4.tex)
+[PH 211 Lecture 4 TeX](211_Summer/Lecture_and_Studio/Week_2_Class_1_L/PH_211_Lecture_4.tex)
 [PH 211 Lecture 4 PDF](PH_211_Lecture_4.pdf)
-[PH 211 Lecture 4 Slides TeX](PH_211_Lecture_4_Slides.tex)
+[PH 211 Lecture 4 Slides TeX](211_Summer/Lecture_and_Studio/Week_2_Class_1_L/PH_211_Lecture_4_Slides.tex)
 [PH 211 Lecture 4 Slides PDF](PH_211_Lecture_4_Slides.pdf)
-![Vax'ildan](Vax-Linda_Lithen.jpg)
+![Vax'ildan](211_Summer/Lecture_and_Studio/Week_2_Class_1_L/Vax-Linda_Lithen.jpg)
 ## Activities
 Vax'ildan's Acceleration
 Constant Acceleration

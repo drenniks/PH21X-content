@@ -9,9 +9,9 @@ tags:
 ---
 # PH 221 2024 Summer Week 1
 ## Files
-[PH 221 Week 1 TeX](PH_221_Week_1.tex)
-[PH 221 Week 1 PDF](PH_221_Week_1.pdf)
-[PH 221 Week 1 Solution PDF](PH_221_Week_1-Solution.pdf)
+[PH 221 Week 1 TeX](211_Summer/Recitation/Week_1/PH_221_Week_1.tex)
+[PH 221 Week 1 PDF](211_Summer/Recitation/Week_1/PH_221_Week_1.pdf)
+[PH 221 Week 1 Solution PDF](211_Summer/Recitation/Week_1/PH_221_Week_1-Solution.pdf)
 ## Activities
 [[Visual Vector Addition]]
 [[Semi-Truck Unit Conversions]]

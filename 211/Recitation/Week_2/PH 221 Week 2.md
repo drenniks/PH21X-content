@@ -8,10 +8,10 @@ tags:
 ---
 # PH 221 2024 Spring Week 2
 ## Files
-[PH 221 Week 2 TeX](PH_221_Week_2.tex)
-[PH 221 Week 2 PDF](PH_221_Week_2.pdf)
-[PH 221 Week 2 Solution PDF](PH_221_Week_2-Solution.pdf)
-[PH 221 Week 2 Teacher Solution PDF](PH_221_Week_2-Teacher_Solution.pdf)
+[PH 221 Week 2 TeX](211/Recitation/Week_2/PH_221_Week_2.tex)
+[PH 221 Week 2 PDF](211/Recitation/Week_2/PH_221_Week_2.pdf)
+[PH 221 Week 2 Solution PDF](211/Recitation/Week_2/PH_221_Week_2-Solution.pdf)
+[PH 221 Week 2 Teacher Solution PDF](211/Recitation/Week_2/PH_221_Week_2-Teacher_Solution.pdf)
 ## Activities
 [[Toy Rocket Launch]]
 ## Notes

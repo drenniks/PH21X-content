@@ -14,7 +14,7 @@ tags:
 [PH 211 Lecture 3 PDF](PH_211_Lecture_3.pdf)
 [PH 211 Lecture 3 Slides TeX](PH_211_Lecture_3_Slides.tex)
 [PH 211 Lecture 3 Slides PDF](PH_211_Lecture_3_Slides.pdf)
-![Vax'ildan](Vax-Linda_Lithen.jpg)
+![Vax'ildan](211_Summer/Lecture_and_Studio/Week_1_Class_3_L/Vax-Linda_Lithen.jpg)
 ## Activities
 Direction of Velocity and Acceleration
 Vax'ildan's Acceleration
