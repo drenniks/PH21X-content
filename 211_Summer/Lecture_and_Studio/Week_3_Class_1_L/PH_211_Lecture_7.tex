@@ -33,290 +33,193 @@
 \begin{center}
 	\huge Lecture 7: Projectile Motion II
 \end{center}
-\vspace{0.5cm}
-\underline{Warm-Up Activity} \\
-Which of these equations are valid for an object moving with constant acceleration? Choose all that apply, and WRITE BIG!
-%\begin{multicols}{2}
-\begin{enumerate}[(A)]
-	\item $\vec{a}(t)=a\hat{x}$
-	%\vspace{6pt}
-	\item $\vec{v}(t) = \left[v_{i}+a_{0}\left(t-\frac{t^{2}}{T}\right)\right]\hat{x}$
-	%\vspace{15pt}
-	\item $v_{f}^{2}=v_{i}^{2}+2a\Delta x$
-	\item $\vec{x}(t) = \left[x_{i}+v_{i}t+\frac{1}{2}at^{2}\right]\hat{x}$
-	\item None of the above.
-\end{enumerate}
-%\end{multicols}
-\end{PresentSpace}
-\newpage
-\begin{TeacherMargin}
-
-\end{TeacherMargin}
-\begin{PresentSpace}
-\textbf{A Model for Motion}
-\begin{multicols}{2}
-	Quantities
+\vspace{-0.3cm}
+\underline{Announcements}
+\begin{itemize}
+	\item Group Expectations are due at 8pm tonight.
 	\begin{itemize}
-		\item Position: $\vec{r}$
-		\item Velocity: $\vec{v}=\frac{d\vec{r}}{dt}$
-		\item Acceleration: $\vec{a}=\frac{d\vec{v}}{dt}$
+		\item Only one submission per group.
+		\item Fill out the form even if you don't have a group. I will use it to assign you.
 	\end{itemize}
-	\vspace{1cm}
-	Assumptions
+	\item Project Proposal is due on Friday.
 	\begin{itemize}
-		\item Use the Particle Model
+		\item Not released yet (will be after I form the groups in Canvas).
+		\item Decide on a topic and a format with your group.
 	\end{itemize}
-\end{multicols}
-Motion Diagram
-\begin{figure}[h]
-	\centering
-	\begin{tikzpicture}
-		\foreach \x in {1,2,3}
-		\filldraw (2*\x,0) circle (5pt);
-		\foreach \x in {1,2,3}
-		\node[anchor=north] at (2*\x,-0.2) {\x};
-		\foreach \x in {1,2,3}
-		\draw[thick,->] (2*\x,0.5) -- (2*\x+1,0.5);
-		\foreach \x in {1,2,3}
-		\node[anchor=south] at (2*\x+0.5,0.5) {$\vec{v}_{\x}$};
-		\begin{scope}[shift={(-3,0)}]
-			\foreach \x in {4,5}
-			\filldraw (3*\x,0) circle (5pt);
-			\foreach \x in {4,5}
-			\node[anchor=north] at (3*\x,-0.2) {\x};
-			\foreach \x in {4,5}
-			\draw[thick,->] (3*\x,0.5) -- (3*\x+1.5,0.5);
-			\foreach \x in {4,5}
-			\node[anchor=south] at (3*\x+0.75,0.5) {$v_{\x}$};
-		\end{scope}
-	\end{tikzpicture}
-\end{figure}
-\end{PresentSpace}
-\newpage
-\begin{TeacherMargin}
-\noindent To smoothly derive the third kinematics equation, start with
-\[
-v_{f} = v_{i} + at,
-\]
-and square it to get
-\[
-v_{f}^{2} = v_{i}^{2} + 2v_{i}at + a^{2}t^{2}.
-\]
-You can factor out $2a$ from the last two terms to get
-\[
-v_{f}^{2} = v_{i}^{2} + 2a\left(v_{i}t + \frac{1}{2}at^{2}\right).
-\]
-Now you can substitute
-\[
-\Delta y = v_{i}t + \frac{1}{2}at^{2}
-\]
-cleanly into the prior equation to give
-\[
-v_{f}^{2} = v_{i}^{2} + 2a\Delta y.
-\]
-\end{TeacherMargin}
-\begin{PresentSpace}
-\vspace{-10pt}
-\section*{Constant Acceleration}
-\vspace{-10pt}
-The \textit{constant-acceleration} equations (kinematics):
-\begin{itemize}
-	\item $a(t)=a$
-	\item $v(t)=v_{i}+at$
-	\item $x(t) = x_{i}+v_{i}t+\frac{1}{2}at^{2}$
+	\item Make sure you can see your feedback on homework, labs, and Get-Ready assignments!
 \end{itemize}
 \end{PresentSpace}
 \newpage
 \begin{TeacherMargin}
-\noindent\textbf{Assumptions}
-\begin{itemize}
-	\item Particle Model
-	\item 1-D Motion
+	\noindent\textbf{1a) Understand the Problem}
 	\begin{itemize}
-		\item We will not complicate our calculations by worrying about minor amounts of horizontal motion, instead assuming all motion is vertical.
+		\item Known:
+		\begin{itemize}
+			\item $v_{0}=25$ m/s, $\theta = 45^{\circ}$
+			\item By assumption: $\vec{a}=+g\hat{y}$, $g\approx9.8$ m/s$^{2}$
+		\end{itemize}
+		\item Unknown:
+		\begin{itemize}
+			\item $\Delta x$ (horizontal distance traveled), $\Delta y$ (vertical distance traveled), $t_{f}$ (time of flight), $v_{f}$ final speed
+		\end{itemize}
 	\end{itemize}
-	\item Near Earth
+	\noindent\textbf{1b) Identify Assumptions}
 	\begin{itemize}
-		\item Near the surface of Earth, acceleration due to gravity is approximately constant, so we can use the constant acceleration equations to describe the motion.
+		\item The mountain has a perfectly smooth slope, and the arrow will not travel far enough to reach the bottom.
+		\begin{itemize}
+			\item While mountains are not really this smooth, this assumption reflects the picture, and makes it easier to mathematically describe the slope.
+			\item Mountains are really tall, and reaching the base of the mountain would complicate the problem.
+		\end{itemize}
+		\item The arrow is not affected by moving through air.
+		\begin{itemize}
+			\item An arrow is fast and aerodynamic, and we don't really know how to handle air resistance or the effects of wind, so we should ignore these effects to make the problem solvable.
+		\end{itemize}
+		\item Near Earth's surface ($g\approx9.8$ m/s$^{2}$)
+		\begin{itemize}
+			\item So far, all known archery occurs on Earth, and though we are farther up on this mountain, the arrow won't fall so far that the variations in gravity are significant.
+		\end{itemize}
+		\item $\vec{a}=+g\hat{y}$
+		\begin{itemize}
+			\item Since the object is in free-fall with no wind or air effects, and it isn't traveling far enough for the curvature of the Earth to matter, acceleration is straight down and purely gravitational.
+		\end{itemize}
 	\end{itemize}
-\end{itemize}
-\textbf{Interesting Quantities}
-\begin{itemize}
-	\item How long does it take to hit the water?
-	\item How fast is the rock moving when it hits the water?
-\end{itemize}
-\begin{center}
-	\begin{tikzpicture}
-		\draw (0,0) -- (1,0) -- (1,-2);
-		\draw[ultra thick, blue] (1,-2) -- (3,-2);
-		\filldraw (1.5,0) circle (2pt);
-		\begin{scope}[shift={(1.8,0)}]
-			\draw[thick] (-0.1,0) -- (0.1,0);
-			\draw[thick,->] (0,0) -- (0,-2);
-			\node[anchor=west] at (0,-1) {$y_{f}$};
-		\end{scope}
-		\begin{scope}[shift={(2.5,0)}]
-			\draw[thick,<->] (0,1) node[anchor=south] {$\hat{y}$} -- (0,0) -- (1,0) node[anchor=west] {$\hat{x}$};
-		\end{scope}
-	\end{tikzpicture}
-\end{center}
-\textbf{Identify Quantities by Symbol and Number}
-\begin{align*}
-	y_{i} & = 0\text{ m} & v_{i} & = 0\text{ m} & \vec{a}(t) & = -g\hat{y} \\
-	y_{f} & = -45\text{ m} & v_{f} & = ? & g & = 9.81\text{ m/s}^{2} \approx 10\text{ m/s}^{2}
-\end{align*}
-\textbf{Symbolic Solution} \\
-First, note that the kinematics equation for $y(t)$ simplifies quite a lot, as $y_{i}$ and $v_{i}$ are both zero:
-\[
-y(t) =  -\frac{g}{2}t^{2}.
-\]
-At $t_{f}$, we can rearrange this to find that
-\[
-t_{f} = \sqrt{-\frac{2y_{f}}{g}}
-\]
-This time is the only thing we are missing from the velocity kinematics equation:
-\[
-v_{f} = v_{i} - gt_{f} = -g\sqrt{-\frac{2y_{f}}{g}} = -\sqrt{-2gy_{f}}.
-\]
-\textbf{Plug in Numbers}
-\begin{align*}
-	v_{f} & = -\sqrt{-2(10\text{ m/s}^{2})(-45\text{ m})} = -\sqrt{900\text{ m}^{2}/\text{s}^{2}} = -30 \text{ m/s} \\
-	t_{f} & = \sqrt{\frac{-2(-45\text{ m})}{10\text{ m/s}^{2}}} = \sqrt{9\text{ s}^{2}} = 3\text{ s}
-\end{align*}
-\end{TeacherMargin}
-\begin{PresentSpace}
-\vspace{-10pt}
-\section*{L5-1: A Falling Rock}
-\vspace{-10pt}
-You drop a rock from a bridge that is 45 m above the water.
-\begin{itemize}
-	\item What assumptions should we make about the motion?
-	\item What interesting quantities can we ask about?
-\end{itemize}
-\end{PresentSpace}
-\newpage
-\begin{TeacherMargin}
-\noindent What if the acceleration in one direction is equal to zero? For constant acceleration, we can always turn our coordinate axes such that one axis (usually the $y$-axis) points along the acceleration vector, reducing our equations to:
-\begin{align*}
-	a_{x}(t) & = 0 & a_{y}(t) & = a_{y} \\
-	v_{x}(t) & = v_{ix} & v_{y}(t) & = v_{iy}+a_{y}t \\
-	x(t) & = x_{i}+v_{ix}t & y(t) & = y_{i}+v_{iy}t+\frac{1}{2}a_{y}t^{2}
-\end{align*}
-What if the acceleration in the $y$-direction is only due to gravity?
-\begin{align*}
-	a_{x}(t) & = 0 & a_{y}(t) & = -g \\
-	v_{x}(t) & = v_{ix} & v_{y}(t) & = v_{iy}-gt \\
-	x(t) & = x_{i}+v_{ix}t & y(t) & = y_{i}+v_{iy}t-\frac{1}{2}gt^{2}
-\end{align*}
-This assumes that $\hat{y}$ points upward, away from the surface of the Earth. We could choose a coordinate system such that down is positive, which would make $a_{y}(t) = g$.
-
-\noindent NOTE: $g\approx9.81$ m/s$^{2}$. The negative sign comes from the coordinate system, not the definition of the constant!
-\end{TeacherMargin}
-\begin{PresentSpace}
-\vspace{-10pt}
-\section*{Acceleration in Two Dimensions}
-\vspace{-10pt}
-\begin{itemize}
-	\item What if we have an object that moves (with constant acceleration) in two directions?
-	\item We can treat the motion in each direction independently!
-\end{itemize}
-\begin{align*}
-	a_{x}(t) & = a_{x} & a_{y}(t) & = a_{y} \\
-	v_{x}(t) & = v_{ix}+a_{x}t & v_{y}(t) & = v_{iy}+a_{y}t \\
-	x(t) & = x_{i}+v_{ix}t+\frac{1}{2}a_{x}t^{2} & y(t) & = y_{i}+v_{iy}t+\frac{1}{2}a_{y}t^{2}
-\end{align*}
-\begin{itemize}
-\item What if the acceleration in one direction is equal to zero?
-\item What if the acceleration in the $y$-direction is only due to gravity?
-\end{itemize}
-\end{PresentSpace}
-\newpage
-\begin{TeacherMargin}
-\noindent\textbf{(1)}
-\begin{center}
-	\begin{tikzpicture}[scale=2]
-		\foreach \x in {0,3}
-			\draw[thick] (\x,0) -- (\x,-8pt);
-		\draw[thick,<->] (0,-4pt) -- (3,-4pt);
-		\node[anchor=north] at (1.5,-4pt) {$d$};
-		\draw[thick,dashed,domain=0:3,variable=\x] plot (\x,3*\x-\x*\x);
-		\draw[ultra thick,blue,->] (0,0) -- (0.5,1.5);
-		\draw[thick,dashed,blue] (0,0) -- (0.5,0) -- (0.5,1.5);
-		\draw[blue] (0.25,0) arc (0:65:0.25);
-		\node[anchor=south] at (0.30,0) {$\theta$};
-		\draw[blue] (0.35,0) -- (0.35,-8pt) node[anchor=north] {$v_{ix}$};
-		\node[blue,anchor=west] at (0.5,0.75) {$v_{iy}$};
-	\end{tikzpicture}
-\end{center}
-\begin{multicols}{2}
-From the picture, we can determine that $v_{ix} = v\cos\theta$ and $v_{iy} = v\sin\theta$.
-
-\noindent\textbf{Identify Quantities by Symbol and Number}
-\begin{align*}
-	v_{i} & = v & t_{i} & = 0 & x_{i} & = 0 \\
-	v_{f} & = ? & t_{f} & = ? & x_{f} & = d
-\end{align*}
-
-\noindent\textbf{(2)} \\
-First, if we make the simplifying assumption that the rock starts and lands at the same height (ignoring the initial height from the person), then we can use $y_{i} = y_{f}$ write
-\begin{align*}
-	y_{f} & = y_{i}+v_{iy}t-\frac{1}{2}gt^{2} \\
-	0 & = 0 + v\sin\theta t - \frac{1}{2}gt^{2} \\
-	\frac{1}{2}gt^{2} & = v\sin\theta t
-\end{align*}
-Thus, the time of flight is
-\[
-t_{\text{ToF}} = \frac{2v\sin\theta}{g}.
-\]
-We also know that the rock travels a distance $d$ over the course of the time of flight, so
-\begin{align*}
-	x_{f} & = x_{i}+v_{ix}t \\
-	d & = v\cos\theta t_{\text{ToF}}.
-\end{align*}
-This gives us a second equation for time of flight,
-\[
-t_{\text{ToF}} = \frac{d}{v\cos\theta},
-\]
-which together with our previous expression gives us
-\[
-\frac{2v\sin\theta}{g} = \frac{d}{v\cos\theta},
-\]
-which may be useful in relating many different quantities.
-
-\noindent\textbf{(3)} \\
-At the highest point, $v_{y} = 0$ (and $v_{x}=v$). At the time it takes to reach the peak, we have
-\begin{align*}
-	v_{y}(t_{\text{peak}}) & = v_{iy} - gt_{\text{peak}} \\
-	0 & = v\sin\theta - gt_{\text{peak}} \\
-	t_{\text{peak}} & = \frac{v}{g}\sin\theta.
-\end{align*}
-The peak occurs half way through the motion ($t_{\text{peak}}=\frac{1}{2}t_{\text{ToF}}$)!
-\end{multicols}
+	\noindent\textbf{1c) Represent Physically} \\
+	Choosing $\hat{y}$ pointing down saves us a few negative signs in the process of the solution.
+	\begin{center}
+		\begin{tikzpicture}
+			\begin{scope}
+				\draw[blue,thick,<->] (0,-2) node[anchor=north] {$y$} -- (0,0) -- (2,0) node[anchor=west] {$x$};
+				\draw[blue,thick] (0,0.5) -- (0,0) -- (-2,0);
+				\draw[thick] (-2,-2) -- (0,0) -- (2,-2);
+				\draw[thick,->] (0,0) -- (1,0) node[anchor=south west] {$\vec{v}_{0} = v_{0}\hat{x}$};
+				\draw[thick] (0.6,0) node[anchor=north west] {$\theta$} arc (0:-45:0.6);
+				\begin{scope}[shift={(1.5,0)}]
+					\draw[thick] (0,0) -- (4pt,0) (2pt,0) -- (2pt,-0.55) node[anchor=north] {$\Delta y$} (2pt,-0.95) -- (2pt,-1.5) (0,-1.5) -- (4pt,-1.5);
+				\end{scope}
+				\begin{scope}[shift={(0,-1.5)}]
+					\draw[thick] (0,0) -- (0,-4pt) (0,-2pt) -- (0.4,-2pt) node[anchor=west] {$\Delta x$} (1.05,-2pt) -- (1.5,-2pt) (1.5,-4pt) -- (1.5,0);
+				\end{scope}
+				\draw[thick,->] (-1,-0.2) -- (-1,-0.5) node[anchor=east] {$\vec{a}=g\hat{y}$} -- (-1,-0.8);
+				\draw[thick,dashed,domain=0:1.5,variable=\x] plot (\x,{-2*\x*\x/3});
+			\end{scope}
+		\end{tikzpicture}
+	\end{center}
 \end{TeacherMargin}
 \begin{PresentSpace}
 	\vspace{-10pt}
-	\section*{L5-2: A Thrown Rock}
+	\section*{L7-1: Archer of the Peak}
 	\vspace{-10pt}
+	You (still a long-distance archer) move to the top of the mountain below. The initial speed of your arrow is now 25.0 m/s, and you release it horizontally to the right. Following the steps for solving an A*R*C*S problem, find where the arrow lands.
 	\begin{itemize}
-		\item You throw a rock across a flat field.
-		\item The rock's initial speed is $v$, thrown at an angle $\theta$ above the horizontal.
-		\item The rock lands a distance $d$ away from you.
-		\begin{enumerate}[(1)]
-			\item Sketch a diagram to help you find the $x$- and $y$-components of the rock's velocity in terms of $v$ and $\theta$.
-			\item Write an equation that would allow you to find the amount of time that the ball is in the air.
-			\item How is this time related to the amount of time the ball takes to reach its highest point above the ground?
-		\end{enumerate}
+		\item \textit{Hint 1:} You will still need to set up separate equations for the $x$- and $y$-directions.
+		\item \textit{Hint 2:} You can also relate the horizontal and vertical distances the arrow moves before striking the ground.
 	\end{itemize}
+	\begin{center}
+		\begin{tikzpicture}
+			\draw[thick,dashed] (-2,0) -- (2,0);
+			\draw[thick] (-2,-2) -- (0,0) node[anchor=north west,shift={(0.5,0)}] {$45^{\circ}$} -- (2,-2) -- cycle;
+		\end{tikzpicture}
+	\end{center}
 \end{PresentSpace}
 \newpage
 \begin{TeacherMargin}
-
+	\noindent\textbf{2a) Represent Principles}
+	
+	\noindent 2-D Kinematics: {\color{blue}Known} {\color{red}Unknown} {\color{purple}Wanted}
+	\begin{align*}
+		{\color{purple}\Delta x} & = {\color{blue}v_{0x}}{\color{red}t_{f}} + \frac{1}{2}{\color{blue}a_{x}}{\color{red}t_{f}}^{2} & {\color{red}\Delta y} & = {\color{blue}v_{0y}}{\color{red}t_{f}} + \frac{1}{2}{\color{blue}a_{y}}{\color{red}t_{f}}^{2} \\
+		{\color{red}v_{fx}} & = {\color{blue}v_{0x}} + {\color{blue}a_{x}}{\color{red}t_{f}} & {\color{red}v_{fy}} & = {\color{blue}v_{0y}}+{\color{blue}a_{y}}{\color{red}t_{f}} \\
+		{\color{red}v_{fx}}^{2} & = {\color{blue}v_{0x}}^{2} + 2{\color{blue}a_{x}}{\color{purple}\Delta x} & {\color{red}v_{fy}}^{2} & = {\color{blue}v_{0y}}^{2} + 2{\color{blue}a_{y}}{\color{red}\Delta y}
+	\end{align*}
+	We can avoid the bottom four equations, since we don't really want to know $v_{f}$. \\
+	Trigonometry: $\tan{\color{blue}\theta} = \frac{\color{red}\Delta y}{\color{purple}\Delta x}$ \\
+	\textbf{2b) Find Unknown(s) Symbolically} \\
+	Between ${\color{purple}\Delta x} = {\color{blue}v_{0x}}{\color{red}t_{f}} + \frac{1}{2}{\color{blue}a_{x}}{\color{red}t_{f}}^{2}$ and ${\color{red}\Delta y} = {\color{blue}v_{0y}}{\color{red}t_{f}} + \frac{1}{2}{\color{blue}a_{y}}{\color{red}t_{f}}^{2}$, we have three unknowns ($t_{f},\ \Delta x,\ \Delta y$). However, we can bring in our one trigonometric equation to relate two of the unknowns, giving us a solvable system of three equations.
+	\begin{align*}
+		{\color{purple}\Delta x} & = {\color{blue}v_{0x}}{\color{red}t_{f}} + \frac{1}{2}{\color{blue}a_{x}}{\color{red}t_{f}}^{2} & {\color{red}\Delta y} & = {\color{blue}v_{0y}}{\color{red}t_{f}} + \frac{1}{2}{\color{blue}a_{y}}{\color{red}t_{f}}^{2} \\
+		\Delta x & = v_{0}t_{f} & \Delta y & = \frac{1}{2}gt_{f}^{2}
+	\end{align*}
+	\[
+	\tan\theta = \frac{\Delta y}{\Delta x} = \frac{\frac{1}{2}gt_{f}^{2}}{v_{0}t_{f}} = \frac{g}{2v_{0}}t_{f} \implies t_{f} = \frac{2v_{0}}{g}\tan\theta
+	\]
+	\begin{align*}
+	\Delta x & = \frac{2v_{0}^{2}}{g}\tan\theta & \Delta y & = \frac{2v_{0}^{2}}{g}\tan^{2}\theta
+	\end{align*}
+	\textbf{2c) Plug in Numbers} \\
+	I will actually use $g\approx10$ m/s$^{2}$ for simplicity here:
+	\[
+	\Delta x \approx \frac{2(25\text{ m/s})^{2}}{10\text{ m/s}^{2}}\tan(45^{\circ}) = 125\text{ m}.
+	\]
 \end{TeacherMargin}
 \begin{PresentSpace}
-\section*{Main Ideas}
-\begin{itemize}
-	\item We can use the kinematics equations to solve for any quantity of interest when the acceleration is constant.
-	\item Motion in 2 dimensions can be broken down into independent motion in each dimension.
-\end{itemize}
+	\vspace{-10pt}
+	\section*{L7-1: Archer of the Peak}
+	\vspace{-10pt}
+	You (still a long-distance archer) move to the top of the mountain below. The initial speed of your arrow is now 25.0 m/s, and you release it horizontally to the right. Following the steps for solving an A*R*C*S problem, find where the arrow lands.
+	\begin{itemize}
+		\item \textit{Hint 1:} You will still need to set up separate equations for the $x$- and $y$-directions.
+		\item \textit{Hint 2:} You can also relate the horizontal and vertical distances the arrow moves before striking the ground.
+	\end{itemize}
+	\begin{center}
+		\begin{tikzpicture}
+			\draw[thick,dashed] (-2,0) -- (2,0);
+			\draw[thick] (-2,-2) -- (0,0) node[anchor=north west,shift={(0.5,0)}] {$45^{\circ}$} -- (2,-2) -- cycle;
+		\end{tikzpicture}
+	\end{center}
+\end{PresentSpace}
+\newpage
+\begin{TeacherMargin}
+	\noindent\textbf{3a) Units} \\
+	We want $[\Delta x] = \text{m}$, and we know $[v_{0}]=\frac{\text{m}}{\text{s}}$, $[g]=\frac{\text{m}}{\text{s}^{2}}$, and both $[\tan(\theta)]=1$ and $[2]=1$ (unitless), so
+	\[
+	[\Delta x] = \frac{[2][v_{0}]^{2}}{[g]}[\tan\theta] = \frac{\text{m}^{2}/\text{s}^{2}}{\text{m/s}^{2}} = \text{m}
+	\]
+	\textbf{3b) Numbers} \\
+	$\Delta x$ and $\Delta y$ are both 125 m, and $\sqrt{\Delta x^{2}+\Delta y^{2}} = 125\sqrt{2}\text{ m} \approx 176$ m, which is comparable to the distance we shot in L6-2: Long-Distance Archer. We achieved it at a lower speed here, since our arrow could fall toward its target (rather than having to keep itself above flat ground for the entire flight). \\
+	\textbf{3c) Symbols}
+	\begin{itemize}
+		\item $v_{0}$ increases
+		\begin{itemize}
+			\item If it is shot faster, the arrow will have more horizontal speed and have farther to fall (and hence more time in flight), so it should achieve more horizontal distance.
+			\item $\Delta x$ increases as $v_{0}$ increases, so our equation matches this prediction.
+		\end{itemize}
+		\item $g$ increases
+		\begin{itemize}
+			\item If $g$ increases (say we do archery on Jupiter), then the arrow will be dragged to the ground more quickly, so it will not travel as far.
+			\item $\Delta x$ decreases as $g$ increases, so our equation matches this prediction.
+		\end{itemize}
+		\item $\theta=0^{\circ}$
+		\begin{itemize}
+			\item In this special case, there is no mountain, and an arrow launched horizontally at ground level will hit the ground immediately, having no range.
+			\item $\Delta x = \frac{2v_{0}^{2}}{g}\tan(0^{\circ}) = 0$
+		\end{itemize}
+	\end{itemize}
+\end{TeacherMargin}
+\begin{PresentSpace}
+	\vspace{-10pt}
+	\section*{L7-1: Archer of the Peak}
+	\vspace{-10pt}
+	You (still a long-distance archer) move to the top of the mountain below. The initial speed of your arrow is now 25.0 m/s, and you release it horizontally to the right. Following the steps for solving an A*R*C*S problem, find where the arrow lands.
+	\begin{itemize}
+		\item \textit{Hint 1:} You will still need to set up separate equations for the $x$- and $y$-directions.
+		\item \textit{Hint 2:} You can also relate the horizontal and vertical distances the arrow moves before striking the ground.
+	\end{itemize}
+	\begin{center}
+		\begin{tikzpicture}
+			\draw[thick,dashed] (-2,0) -- (2,0);
+			\draw[thick] (-2,-2) -- (0,0) node[anchor=north west,shift={(0.5,0)}] {$45^{\circ}$} -- (2,-2) -- cycle;
+		\end{tikzpicture}
+	\end{center}
+\end{PresentSpace}
+\newpage
+\begin{TeacherMargin}
+	
+\end{TeacherMargin}
+\begin{PresentSpace}
+	\section*{Main Ideas}
+	\begin{itemize}
+		\item We can use the kinematics equations to solve for any quantity of interest when the acceleration is constant.
+		\item Motion in 2 dimensions can be broken down into independent motion in each dimension.
+	\end{itemize}
 \end{PresentSpace}
 \end{document}
