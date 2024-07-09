@@ -19,7 +19,7 @@
 \input{\FileDepth/Formats/Assignment20240614.tex}
 \input{\FileDepth/Formats/Lecture20240615.tex}
 
-%\input{\FileDepth/Formats/FBDCommands.tex}
+\input{\FileDepth/Formats/FBDCommands.tex}
 %\input{\FileDepth/Formats/MVDCommands.tex}
 
 %\input{\FileDepth/Activities/Activity_One/Activity_One.tex}
@@ -57,7 +57,24 @@ air for the most time?
 			\draw[ultra thick,->,rotate=-30] (0,0) -- (3,0) node[anchor=west] {$\vec{v}_{3}$};
 		\end{scope}
 	\end{tikzpicture}
-\end{textblock*}
+\end{textblock*}\newpage
+\begin{TeacherMargin}
+
+\end{TeacherMargin}
+\begin{PresentSpace}
+\vspace{-10pt}
+\section*{Projectile Motion}
+\vspace{-10pt}
+\begin{itemize}
+	\item Acceleration in the $x$-direction is equal to zero.
+	\item Acceleration in the $y$-direction is only due to gravity.
+\end{itemize}
+\begin{align*}
+	a_{x}(t) & = 0 & a_{y}(t) & = -g \\
+	v_{x}(t) & = v_{ix} & v_{y}(t) & = v_{iy} - gt \\
+	x(t) & = x_{i} + v_{ix}t & y(t) & = y_{i} + v_{iy}t -\frac{1}{2}gt^{2}
+\end{align*}
+\end{PresentSpace}
 \newpage
 \begin{TeacherMargin}
 
@@ -93,7 +110,60 @@ air for the most time?
 \end{textblock*}
 \newpage
 \begin{TeacherMargin}
-
+\begin{center}
+	\begin{tikzpicture}
+		\draw[ultra thick] (0,0) -- (2,0) -- (2,-1.5) -- (0,-1.5) -- cycle;
+		\filldraw (2,0.125) circle (0.125);
+		\begin{scope}[shift={(2,0.125)}]
+			\draw[ultra thick,->,rotate=30] (0,0) -- (1.5,0) node[anchor=west] {$\vec{v}_{1}$};
+			\draw[ultra thick,->] (0,0) -- (1.5,0) node[anchor=west] {$\vec{v}_{2}$};
+			\draw[ultra thick,->,rotate=-30] (0,0) -- (1.5,0) node[anchor=west] {$\vec{v}_{3}$};
+		\end{scope}
+		\begin{comment}%Marble 1
+			\draw[blue,thick,->] (-1,-1.5) -- (8,-1.5) node[anchor=west] {$x$};
+			\draw[thick,dashed,domain=0:5,variable=\x] plot ({\x+2},{0.125+0.7*\x-0.205*\x*\x});
+			\draw[blue,thick] (7,-1.5) -- (7,-1.6) node[anchor=north] {$d$};
+			\draw[thick] (2.5,0.125) node[anchor=south west,shift={(0,-1pt)}] {$\theta$} arc (0:30:0.5);
+			\node[anchor=west] at (5,1) {$\vec{v}_{1} = v\cos\theta\hat{x}+v\sin\theta\hat{y}$};
+		\end{comment}
+		\begin{scope}%Marble 2
+			\draw[blue,thick,->] (-1,-1.5) -- (5,-1.5) node[anchor=west] {$x$};
+			\draw[thick,dashed,domain=0:2.81,variable=\x] plot ({\x+2},{0.125-0.205*\x*\x});
+			\draw[blue,thick] (4.81,-1.5) -- (4.81,-1.6) node[anchor=north] {$d$};
+			\node[anchor=west] at (3.95,0.125) {$ = v\hat{x}$};
+		\end{scope}
+		\draw[blue,thick,->] (2,-2) -- (2,1.5) node[anchor=south] {$y$};
+		\draw[blue,thick] (2,0.125) -- (1.8,0.125) node[anchor=east] {$h$};
+	\end{tikzpicture}
+\end{center}
+To find the final time with the given information, it makes sense to use the position kinematics equations:
+\begin{align*}
+	x(t) & = vt & y(t) & = h - \frac{1}{2}gt^{2}
+\end{align*}
+\begin{multicols}{2}
+	The time of flight can be determined based on how far the marble has to fall.
+	\begin{align*}
+		0 = y(t_{f}) & = h - \frac{1}{2}gt_{f}^{2} \\
+		\frac{1}{2}gt_{f}^{2} & = h \\
+		t_{f} & = \sqrt{2\frac{h}{g}}
+	\end{align*}
+	The horizontal distance traveled can then be determined using this time.
+	\begin{align*}
+		d = x(t_{f}) & = vt_{f} \\
+		d = v\sqrt{2\frac{h}{g}}
+	\end{align*}
+\end{multicols}
+\begin{multicols}{2}
+\noindent We know $v_{x}(t) = v$, so $v_{fx} = v$. We also know
+\begin{align*}
+	v_{fy} = -gt_{f} = -g\sqrt{2\frac{h}{g}} = -\sqrt{2gh}.
+\end{align*}
+Therefore, the final speed is
+\begin{align*}
+	v_{f} & = \sqrt{v_{fx}^{2}+v_{fy}^{2}} \\
+	& = \sqrt{v^{2}+2gh}.
+\end{align*}
+\end{multicols}
 \end{TeacherMargin}
 \begin{PresentSpace}
 \vspace{-10pt}
@@ -128,7 +198,60 @@ air for the most time?
 \end{textblock*}
 \newpage
 \begin{TeacherMargin}
-
+\begin{center}
+	\begin{tikzpicture}
+		\draw[ultra thick] (0,0) -- (2,0) -- (2,-1.5) -- (0,-1.5) -- cycle;
+		\filldraw (2,0.125) circle (0.125);
+		\begin{scope}[shift={(2,0.125)}]
+			\draw[ultra thick,->,rotate=30] (0,0) -- (1.5,0) node[anchor=west] {$\vec{v}_{1}$};
+			\draw[ultra thick,->] (0,0) -- (1.5,0) node[anchor=west] {$\vec{v}_{2}$};
+			\draw[ultra thick,->,rotate=-30] (0,0) -- (1.5,0) node[anchor=west] {$\vec{v}_{3}$};
+		\end{scope}
+		\begin{scope}%Marble 1
+			\draw[blue,thick,->] (-1,-1.5) -- (8,-1.5) node[anchor=west] {$x$};
+			\draw[thick,dashed,domain=0:5,variable=\x] plot ({\x+2},{0.125+0.7*\x-0.205*\x*\x});
+			\draw[blue,thick] (7,-1.5) -- (7,-1.6) node[anchor=north] {$d$};
+			\draw[thick] (2.5,0.125) node[anchor=south west,shift={(0,-1pt)}] {$\theta$} arc (0:30:0.5);
+			\node[anchor=west] at (5,1) {$\vec{v}_{1} = v\cos\theta\hat{x}+v\sin\theta\hat{y}$};
+		\end{scope}
+		\begin{comment}%Marble 2
+			\draw[blue,thick,->] (-1,-1.5) -- (5,-1.5) node[anchor=west] {$x$};
+			\draw[thick,dashed,domain=0:2.81,variable=\x] plot ({\x+2},{0.125-0.205*\x*\x});
+			\draw[blue,thick] (4.81,-1.5) -- (4.81,-1.6) node[anchor=north] {$d$};
+			\node[anchor=west] at (3.95,0.125) {$ = v\hat{x}$};
+		\end{comment}
+		\draw[blue,thick,->] (2,-2) -- (2,1.5) node[anchor=south] {$y$};
+		\draw[blue,thick] (2,0.125) -- (1.8,0.125) node[anchor=east] {$h$};
+	\end{tikzpicture}
+\end{center}
+We use the same starting place as before, albeit with more complicated terms:
+\begin{align*}
+x(t) & = v\cos\theta t, & y(t) & = h + v\sin\theta t - \frac{1}{2}gt^{2}.
+\end{align*}
+%\begin{multicols}{2}
+The time of flight can be determined based on how far the marble has to fall. This time, we need the quadratic formula:
+\begin{align*}
+	0 = y(t_{f}) & = h + v\sin\theta t_{f} - \frac{1}{2}gt_{f}^{2} \\
+	t_{f} & = \frac{-v\sin\theta \pm \sqrt{v^{2}\sin^{2}\theta + 4\cdot\frac{1}{2}g\cdot h}}{-g} \\
+	t_{f} & = \frac{v}{g}\sin\theta \mp \sqrt{\frac{v^{2}}{g^{2}}\sin^{2}\theta + 2\frac{h}{g}}
+\end{align*}
+Which sign do we use? Note that $\sqrt{\frac{v^{2}}{g^{2}}\sin^{2}\theta + 2\frac{h}{g}} \geq |\frac{v}{g}\sin\theta|$, and $t_{f}$ occurs in the future, so we need to pick the sign that keeps the expression positive (a negative time does have a physical interpretation; this is the time the marble would have started at to undergo this motion, had it been launched from the ground). As such, we want to use $+$, as it is the only way to make $t_{f}$ positive:
+\begin{align*}
+	t_{f} = \frac{v}{g}\sin\theta + \sqrt{\frac{v^{2}}{g^{2}}\sin^{2}\theta + 2\frac{h}{g}}.
+\end{align*}
+\noindent The distance traveled is just $d = v\cos\theta t_{f}$, so the above expression can be plugged in. The final speed is much more interesting:
+\begin{align*}
+	v_{fx} & = v_{ix} = v\cos\theta & v_{fy} & = v\sin\theta - gt_{f} \\
+	& & & = v\sin\theta - g \left[\frac{v}{g}\sin\theta + \sqrt{\frac{v^{2}}{g^{2}}\sin^{2}\theta + 2\frac{h}{g}}\right] \\
+	& & & = - \sqrt{v^{2}\sin^{2}\theta + 2gh} \\
+\end{align*}
+\vspace{-1cm}
+\begin{align*}
+	v_{f} = \sqrt{v_{fx}^{2}+v_{fy}^{2}} & = \sqrt{v^{2}\cos^{2}\theta + v^{2}\sin^{2}\theta+2gh} \\
+	& = \sqrt{v^{2}\left(\cos^{2}\theta + \sin^{2}\theta\right)+2gh} = \sqrt{v^{2}+2gh}
+\end{align*}
+Final speed is independent of the angle! \\
+\noindent We also got marble 3 for free! Just plug in a negative quantity for $\theta$.
 \end{TeacherMargin}
 \begin{PresentSpace}
 \vspace{-10pt}
@@ -163,7 +286,35 @@ air for the most time?
 \end{textblock*}
 \newpage
 \begin{TeacherMargin}
+\begin{align*}
+	d & = v\cos\theta \left(\frac{v}{g}\sin\theta + \sqrt{\frac{v^{2}}{g^{2}}\sin^{2}\theta+\frac{2h}{g}}\right) \\
+	& = \frac{v^{2}}{g}\cos\theta\sin\theta + \sqrt{\frac{v^{4}}{g^{2}}\cos^{2}\theta\sin^{2}\theta+\frac{2hv^{2}}{g}\cos^{2}\theta} \\
+	& = \frac{v^{2}}{2g}\sin(2\theta) + \sqrt{\frac{v^{4}}{4g^{2}}\sin^{2}(2\theta)+\frac{2hv^{2}}{g}\cos^{2}\theta}
+\end{align*}
+\begin{center}
+	\begin{tikzpicture}
+		\begin{scope}
+			\draw[thick,<->] (0,2) node[anchor=south] {$d$} -- (0,0) -- (-4,0) -- (4,0) node[anchor=west] {$\theta$};
+			\draw[thick,domain=-90:90,variable=\th] plot (4*\th/90,{sin(2*\th)/2 + sqrt(sin(2*\th)*sin(2*\th)/4 + 2*cos(\th)*cos(\th))});
+			\foreach \th in {-90,-45,0,45,90}
+				\draw[thick] ({2*\th/45},2pt) -- ({2*\th/45},-2pt) node[anchor=north] {$\th^{\circ}$};
+			\draw[thick] (8pt,1.41) -- (-8pt,1.41) node[anchor=east] {$v\sqrt{2h/g}$};
+		\end{scope}
+		\begin{scope}[shift={(0,-5)}]
+			\draw[thick,<->] (0,3) node[anchor=south] {$d$} -- (0,0) -- (-4,0) -- (4,0) node[anchor=west] {$\theta$};
+			\draw[thick,domain=-90:90,variable=\th] plot (4*\th/90,{sin(2*\th)/2 + sqrt(sin(2*\th)*sin(2*\th)/4 + 2*cos(\th)*cos(\th))});
+			\draw[blue,thick,domain=-90:90,variable=\th] plot (4*\th/90,{sin(2*\th)/2 + sqrt(sin(2*\th)*sin(2*\th)/4 + 4*cos(\th)*cos(\th))});
+			\draw[violet,thick,domain=-90:90,variable=\th] plot (4*\th/90,{sin(2*\th)/2 + sqrt(sin(2*\th)*sin(2*\th)/4 + 8*cos(\th)*cos(\th))});
+			\draw[blue,dashed,thick,domain=-90:90,variable=\th] plot (4*\th/90,{sin(2*\th)/2 + sqrt(sin(2*\th)*sin(2*\th)/4 + 1*cos(\th)*cos(\th))});
+			\draw[violet,dashed,thick,domain=-90:90,variable=\th] plot (4*\th/90,{sin(2*\th)/2 + sqrt(sin(2*\th)*sin(2*\th)/4 + cos(\th)*cos(\th)/2)});
+			\foreach \th in {-90,-45,0,45,90}
+				\draw[thick] ({2*\th/45},2pt) -- ({2*\th/45},-2pt) node[anchor=north] {$\th^{\circ}$};
+		\end{scope}
+	\end{tikzpicture}
+\end{center}
+Each curve shows the distance $d$ as a function of the launch angle $\theta$. These plots assumed that $v = 1$ m/s and $g = 1$ m/s$^{2}$. The black curve is for $h=1$ m, while the solid blue and purple curves are for $h=2$ m and $h=4$ m, respectively, and the dashed blue and purple curves are for $h=0.5$ m and $h=0.25$ m, respectively. The distance always increases with increasing $h$, but the angle $\theta_{\text{max}}$ at which the maximum distance occurs decreases with increasing $h$.
 
+It appears that, as $h$ decreases, $\theta_{\text{max}}$ approaches 45$^{\circ}$, which is the angle for maximum range when the projectile starts and ends at the same height.
 \end{TeacherMargin}
 \begin{PresentSpace}
 \vspace{-10pt}
@@ -181,7 +332,7 @@ air for the most time?
 	\end{itemize}
 \end{itemize}
 \begin{align*}
-	t & = \frac{v}{g}\sin\theta \pm \sqrt{\frac{v^{2}}{g^{2}}\sin^{2}\theta+\frac{2h}{g}} & x & = vt\cos\theta & v_{f} & = \sqrt{v^{2}+2gh}
+	t_{f} & = \frac{v}{g}\sin\theta + \sqrt{\frac{v^{2}}{g^{2}}\sin^{2}\theta+\frac{2h}{g}} & d & = vt_{f}\cos\theta & v_{f} & = \sqrt{v^{2}+2gh}
 \end{align*}
 \end{PresentSpace}
 \begin{textblock*}{10cm}(18.5cm,1.5cm)
@@ -201,15 +352,15 @@ air for the most time?
 \begin{itemize}
 	\item What does it mean to say that two objects are interacting?
 	\begin{itemize}
-		\item 
+		\item We will be characterizing interactions in terms of forces between objects, which is to say we are looking at how objects push and pull each other.
 	\end{itemize}
 	\item What happens to objects when they interact?
 	\begin{itemize}
-		\item 
+		\item Interacting objects affect each other's motion. Objects that do not interact say at a constant velocity, while interacting objects may accelerate.
 	\end{itemize}
 	\item What if multiple objects interact with the same object?
 	\begin{itemize}
-		\item 
+		\item We associate each force with a pair of interacting objects, so we account for (at least) one force for each object interacting with the object of interest. All of these forces are added together (as vectors) to find the net force on the object of interest.
 	\end{itemize}
 \end{itemize}
 \end{TeacherMargin}
@@ -313,7 +464,52 @@ air for the most time?
 \end{textblock*}
 \newpage
 \begin{TeacherMargin}
-
+\noindent In all three cases, there are two forces acting on the bag of groceries:
+\begin{itemize}
+	\item $\vec{F}^{N}_{BH} = F^{N}\hat{y}$: normal force of the hand pushing up on the bag.
+	\item $\vec{F}^{g}_{BE} = F^{g}(-\hat{y})$: gravitational force of Earth pulling down on the bag.
+\end{itemize}
+In cases (A) and (C), the forces are equal in magnitude, as the motion of the bag is not changing. In (B), the bag is accelerating downward, so the normal force must be smaller than the gravitational force. \\
+\noindent\textbf{(A)} \\
+There isn't really a motion diagram in this case, as the bag is not moving.
+\begin{center}
+	\begin{tikzpicture}
+		\draw[thick] (-0.5,-0.5) -- (0,0) -- (0.5,-0.5) (0,0) -- (0,1) (-0.5,0.5) -- (0,1) -- (0.75,1) (0,1.3) circle (0.3) (0.6,1.05) rectangle (0.9,1.65);
+		\filldraw (2,1.35) circle (2pt);
+		\FBDaxes[1.5]{4.5,0.5}{0}{axes}
+		\FBDvectorXY{axes}{0,1}{FN}
+		\FBDvectorXY{axes}{0,-1}{FG}
+		\FBDdot{axes}
+	\end{tikzpicture}
+\end{center}
+\noindent\textbf{(B)}
+\begin{center}
+	\begin{tikzpicture}
+		\draw[thick] (-0.5,-0.5) -- (0,0) -- (0.5,-0.5) (0,0) -- (0,1) (-0.5,0.5) -- (0,1) -- (0.75,1) (0,1.3) circle (0.3) (0.6,1.05) rectangle (0.9,1.65);
+		\draw[thick,->] (1.1,1.65) -- (1.1,1.05);
+		\node[anchor=south] at (2,1.35) {$t_{0}$};
+		\foreach \t in {0,1,2,3}
+			\filldraw (2,{1.35-\t*\t/5}) circle (2pt);
+		\FBDaxes[1.5]{4.5,0.5}{0}{axes}
+		\FBDvectorXY{axes}{0,0.65}{FN}
+		\FBDvectorXY{axes}{0,-1}{FG}
+		\FBDdot{axes}
+	\end{tikzpicture}
+\end{center}
+\noindent\textbf{(C)}
+\begin{center}
+	\begin{tikzpicture}
+		\draw[thick] (-0.5,-0.5) -- (0,0) -- (0.5,-0.5) (0,0) -- (0,1) (-0.5,0.5) -- (0,1) -- (0.75,1) (0,1.3) circle (0.3) (0.6,1.05) rectangle (0.9,1.65);
+		\draw[thick,<-] (1.1,1.65) -- (1.1,1.05);
+		\node[anchor=north] at (2,1.35) {$t_{0}$};
+		\foreach \t in {0,1,2,3}
+			\filldraw (2,{1.35+\t/3}) circle (2pt);
+		\FBDaxes[1.5]{4.5,0.5}{0}{axes}
+		\FBDvectorXY{axes}{0,1}{FN}
+		\FBDvectorXY{axes}{0,-1}{FG}
+		\FBDdot{axes}
+	\end{tikzpicture}
+\end{center}
 \end{TeacherMargin}
 \begin{PresentSpace}
 \vspace{-10pt}
@@ -323,7 +519,7 @@ air for the most time?
 For each situation to the right:
 \begin{enumerate}[(1)]
 	\item Sketch a picture of the object of interest.
-	\item Make a motion diagram.
+	\item Make a strobe or motion diagram.
 	\item Identify and describe the forces acting on the object.
 	\item Draw a free-body diagram for the object.
 \end{enumerate}
