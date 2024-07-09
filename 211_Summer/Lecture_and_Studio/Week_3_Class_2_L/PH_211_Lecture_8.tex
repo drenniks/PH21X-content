@@ -19,7 +19,7 @@
 \input{\FileDepth/Formats/Assignment20240614.tex}
 \input{\FileDepth/Formats/Lecture20240615.tex}
 
-%\input{\FileDepth/Formats/FBDCommands.tex}
+\input{\FileDepth/Formats/FBDCommands.tex}
 %\input{\FileDepth/Formats/MVDCommands.tex}
 
 %\input{\FileDepth/Activities/Activity_One/Activity_One.tex}
@@ -27,41 +27,182 @@
 
 \begin{document}
 \begin{TeacherMargin}
-
+\noindent Friction is always parallel to the surface of contact, so (C) and (G) are the only possible answers. If we pick (G) and look at the free-body diagram,
+\begin{center}
+	\begin{tikzpicture}
+		\FBDaxes{0,0}{0}{axes}
+		\FBDvectorXY{0,0}{0,-1.5}{FG}
+		\node[anchor=north west] at (FGtip) {$\vec{F}^{g}_{CE}$};
+		\FBDvectorXY{0,0}{0,1}{FT}
+		\node[anchor=south west] at (FTtip) {$\vec{F}^{T}_{CR}$};
+		\FBDvectorMA{0,0}{0.85}{15}{FN}
+		\node[anchor=south west] at (FNtip) {$\vec{F}^{N}_{CM}$};
+		\FBDvectorMA{0,0}{0.75}{-75}{FF}
+		\node[anchor=west] at (FFtip) {$\vec{F}^{f}_{CM}$};
+	\end{tikzpicture}
+\end{center}
+we find that the $x$-component of the net force is positive, which would make the climber accelerate. We need friction to go in direction (C) if we want to balance the forces in the $x$-direction.
+\begin{center}
+	\begin{tikzpicture}
+		\FBDaxes{0,0}{0}{axes}
+		\FBDvectorXY{axes}{0,-1.5}{FG}
+		\node[anchor=north west] at (FGtip) {$\vec{F}^{g}_{CE}$};
+		\FBDvectorXY{axes}{0,1}{FT}
+		\node[anchor=south west] at (FTtip) {$\vec{F}^{T}_{CR}$};
+		\FBDvectorMA{axes}{0.85}{15}{FN}
+		\node[anchor=south west] at (FNtip) {$\vec{F}^{N}_{CM}$};
+		\FBDvectorMA{axes}{0.75}{105}{FF}
+		\node[anchor=east] at (FFtip) {$\vec{F}^{f}_{CM}$};
+	\end{tikzpicture}
+\end{center}
+This FBD is out of scale, as the $y$-components of the tension, normal force, and friction clearly add to be larger than the force of gravity, and we need the $x$-components of friction and the normal force to be equal in magnitude to cancel out.
 \end{TeacherMargin}
 \begin{PresentSpace}
 \begin{center}
-	\huge Lecture 8: Title
+	\huge Lecture 8: Free-Body Diagrams
 \end{center}
 \vspace{0.5cm}
-\underline{Warm-Up Activity} \\
-Question?
-%\begin{multicols}{2}
-\begin{enumerate}[(A)]
-	\item Answer?
+\begin{tikzpicture}
+	\node[anchor=west] at (0,0) {\underline{Warm-Up Activity}};
+	\node[anchor=west] at (0,-18pt) {What direction is the force};
+	\node[anchor=west] at (0,-36pt) {of friction in the Mountain};
+	\node[anchor=west] at (0,-54pt) {Climbing activity from};
+	\node[anchor=west] at (0,-72pt) {Get-Ready \#5?};
+	\foreach \th in {0,45,90,135}
+		\draw[ultra thick,<->,shift={(2.5,-5)},rotate={\th-75}] (-1,0) -- (1,0);
+	\foreach \th in {0,45,90,135}
+		\coordinate[shift={(2.5,-5)}] (ArL\th) at ({-1.5*cos(\th+75)},{1.5*sin(\th+75)});
+	\foreach \th in {0,45,90,135}
+		\coordinate[shift={(2.5,-5)}] (ArR\th) at ({1.5*cos(\th+75)},{-1.5*sin(\th+75)});
+	\node at (ArL0) {(C)};
+	\node at (ArR0) {(G)};
+	\node at (ArL45) {(B)};
+	\node at (ArR45) {(F)};
+	\node at (ArL90) {(A)};
+	\node at (ArR90) {(E)};
+	\node at (ArL135) {(D)};
+	\node at (ArR135) {(H)};
+	\begin{scope}[shift={(10,-8)}]
+		\draw[ultra thick] (0,0) -- ({-8*cos(75)},{8*sin(75)}) -- ({2-8*cos(75)},{8*sin(75)});
+		\draw[thick,brown] ({2-8*cos(75)},{8*sin(75)}) -- ({2-8*cos(75)},{8*sin(75)-5});
+	\end{scope}
+	\begin{scope}[shift={({12-8*cos(75)},{8*sin(75)-13})},rotate=-75,scale=0.6]
+		\draw (-0.5,-1) -- (0,-0.5) -- (0.5,-1) (0,-0.5) -- (0,0.5) (-0.5,0) -- (0,0.5) -- (0.5,0) (0,0.75) circle (0.25);
+	\end{scope}
+\end{tikzpicture}
+\end{PresentSpace}
+\newpage
+\begin{TeacherMargin}
+
+\end{TeacherMargin}
+\begin{PresentSpace}
+\vspace{-10pt}
+\section*{Free-Body Diagrams and Systems}
+\vspace{-10pt}
+\begin{itemize}
+	\item Choose a system.
+	\begin{itemize}
+		\large
+		\item Make sure you know what is internal to your system and what is external to your system.
+	\end{itemize}
+	\item Identify and describe each external force:
+	\begin{itemize}
+		\large
+		\item Say what kind of force it is.
+		\item Determine the object the force is being acted on.
+		\item Determine the object that is exerting the force.
+		\item Write a symbolic version of the force that includes the information above.
+		\item Represent all the forces acting on a single object or system using a \\
+		\textbf{\underline{free-body diagram}}.
+		\begin{itemize}
+			\item All forces on the same free body diagram should act on the same thing (same first subscript).
+		\end{itemize}
+	\end{itemize}
+\end{itemize}
+\end{PresentSpace}
+\begin{textblock*}{5cm}(22cm,3.5cm)
+	\Huge
+	\[
+	\vec{F}^{\text{\Large\ type}}_{\text{\Large on,by}}
+	\]
+\end{textblock*}
+\newpage
+\begin{TeacherMargin}
+
+\end{TeacherMargin}
+\begin{PresentSpace}
+\vspace{-10pt}
+\section*{(Newton's) Laws of Motion}
+\vspace{-10pt}
+\begin{enumerate}[(1)]
+	\item An object in motion (or at rest) stays in motion (or at rest) unless a net external force acts on it.
+	\item The net force on an object is equal to the object's mass times its acceleration.
+	\[
+	\vec{F}^{net} = m\vec{a}
+	\]
 \end{enumerate}
-%\end{multicols}
 \end{PresentSpace}
+\newpage
+\begin{TeacherMargin}
+\noindent\textbf{Idenfity All Forces}
+\begin{itemize}
+	\item Mike is pushing directly into the side of the box, so we need a normal force on the box by Mike: $\vec{F}^{N}_{BM}$.
+	\item The box has mass, so we need a force of gravity on the box from Earth: $\vec{F}^{g}_{BE}$.
+	\item The rope held by Lucas is pulling on the box (Lucas himself is not directly touching it), so we need a force of tension on the box by the rope: $\vec{F}^{T}_{BR}$.
+	\item The box is sitting on the ground and not budging, so we need a normal force on the box from the ground, and a force of static friction on the box from the ground: $\vec{F}^{N}_{BG}$ and $\vec{F}^{sf}_{BG}$.
+\end{itemize}
+\noindent\textbf{Free-Body Diagram}
+\begin{center}
+	\begin{tikzpicture}
+		\FBDaxes{0,0}{0}{axes}
+		\FBDbox{axes}{0}{box}{}
+		\FBDvectorXY{boxrtq}{0.75,0}{FNM}
+		\node[anchor=west] at (FNMtip) {$\vec{F}^{N}_{BM}$};
+		\FBDvectorXY{boxrbq}{0.5,0}{FTR}
+		\node[anchor=west] at (FTRtip) {$\vec{F}^{T}_{BR}$};
+		\FBDvectorXY{boxlcent}{-1.25,0}{FSF}
+		\node[anchor=south] at (FSFtip) {$\vec{F}^{sf}_{BG}$};
+		\FBDvectorXY{boxtcent}{0,0.75}{FNG}
+		\node[anchor=south east] at (FNGtip) {$\vec{F}^{N}_{BM}$};
+		\FBDvectorXY{boxbcent}{0,-0.75}{FG}
+		\node[anchor=north east] at (FGtip) {$\vec{F}^{g}_{BE}$};
+	\end{tikzpicture}
+\end{center}
+\end{TeacherMargin}
+\begin{PresentSpace}
+\vspace{-10pt}
+\section*{L8-1: Moving a Box}
+\vspace{100pt}
+Mike and Lucas are attempting to move a box, which does not move.
+\begin{itemize}
+	\item Identify all forces acting on the box.
+	\item Draw a free-body diagram for the box.
+	\item Indicate the acceleration.
+\end{itemize}
+\end{PresentSpace}
+\begin{textblock*}{5cm}(14cm,1.75cm)
+\centering
+\includegraphics[scale=1.5]{Mike_and_Lucas_Fruitlessly_Push_a_Box.pdf}
+\end{textblock*}
 \newpage
 \begin{TeacherMargin}
 
 \end{TeacherMargin}
 \begin{PresentSpace}
 \vspace{-10pt}
-\section*{L8-#: Title}
-\vspace{-10pt}
-
+\section*{L8-2: Moving a Box II}
+\vspace{100pt}
+El pushes the box with her mind, and it begins to speed up.
+\begin{itemize}
+	\item Modify your free-body diagram.
+	\item Indicate the acceleration.
+	\item Write a symbolic expression for the acceleration.
+\end{itemize}
 \end{PresentSpace}
-\newpage
-\begin{TeacherMargin}
-
-\end{TeacherMargin}
-\begin{PresentSpace}
-\vspace{-10pt}
-\section*{L8-#: Title}
-\vspace{-10pt}
-
-\end{PresentSpace}
+\begin{textblock*}{5cm}(12.5cm,1.75cm)
+\centering
+\includegraphics[scale=1.5]{Eleven_Helps_Mike_and_Lucas_Push_a_Box.pdf}
+\end{textblock*}
 \newpage
 \begin{TeacherMargin}
 	
@@ -69,7 +210,10 @@ Question?
 \begin{PresentSpace}
 \section*{Main Ideas}
 \begin{itemize}
-	\item 
+	\item Forces arise from interactions between objects.
+	\item There are many different kinds of forces that we can analyze differently.
+	\item Objects can only change their motion when acted upon by an external force.
+	\item The net force on an object is equal to its mass times its acceleration.
 \end{itemize}
 \end{PresentSpace}
 \end{document}

@@ -13,7 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "211_Summer/Lecture_and_Studio/Week_3_Class_2_L/Lecture 8.md",
+                "file": "211_Summer/Lecture_and_Studio/Week_3_Class_1_S/Studio 3.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b7ec84244caeb6df",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Formats/Formats.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "211_Summer/Lecture_and_Studio/Week_3_Class_2_L/Lecture 8.md",
+                "file": "211_Summer/Lecture_and_Studio/Week_3_Class_1_S/Studio 3.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "211_Summer/Lecture_and_Studio/Week_3_Class_2_L/Lecture 8.md",
+                "file": "211_Summer/Lecture_and_Studio/Week_3_Class_1_S/Studio 3.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "211_Summer/Lecture_and_Studio/Week_3_Class_2_L/Lecture 8.md"
+                "file": "211_Summer/Lecture_and_Studio/Week_3_Class_1_S/Studio 3.md"
               }
             }
           }
@@ -148,23 +160,23 @@
   },
   "active": "03aa254ebbb7b058",
   "lastOpenFiles": [
-    "211_Summer/Lecture_and_Studio/Week_3_Class_1_S/Studio 3.md",
-    "211_Summer/Lecture_and_Studio/Week_3_Class_1_S/PH_211_Studio_3_Slides.synctex.gz",
-    "211_Summer/Lecture_and_Studio/Week_3_Class_1_S/PH_211_Studio_3_Slides.pdf",
-    "211_Summer/Lecture_and_Studio/Week_3_Class_1_S/PH_211_Studio_3_Slides.aux",
-    "211_Summer/Lecture_and_Studio/Week_3_Class_1_S/PH_211_Studio_3_Slides.synctex(busy)",
-    "211_Summer/Lecture_and_Studio/Week_3_Class_1_S/PH_211_Studio_3_Slides.log",
     "Formats/Formats.md",
-    "211_Summer/Lecture_and_Studio/Week_3_Class_1_S/PH_211_Studio_3.synctex(busy)",
-    "211_Summer/Lecture_and_Studio/Week_3_Class_1_S/PH_211_Studio_3.tex.mQ5859",
-    "211_Summer/Lecture_and_Studio/Week_3_Class_1_S/PH_211_Studio_3.tex.BL5859",
-    "211_Summer/Lecture_and_Studio/Week_3_Class_1_S/PH_211_Studio_3.tex.EB5859",
-    "211_Summer/Lecture_and_Studio/Week_3_Class_1_S/PH_211_Studio_3.tex.Zm5859",
+    "211_Summer/Lecture_and_Studio/Week_3_Class_2_L/PH_211_Lecture_8.synctex(busy)",
+    "211_Summer/Lecture_and_Studio/Week_3_Class_2_L/PH_211_Lecture_8.tex.LP2432",
+    "211_Summer/Lecture_and_Studio/Week_3_Class_2_L/PH_211_Lecture_8.tex.br2432",
+    "211_Summer/Lecture_and_Studio/Week_3_Class_2_L/PH_211_Lecture_8.tex.Di2432",
+    "211_Summer/Lecture_and_Studio/Week_3_Class_2_L/PH_211_Lecture_8.tex.GV2432",
+    "211_Summer/Lecture_and_Studio/Week_3_Class_2_L/PH_211_Lecture_8.tex.ke2432",
+    "211_Summer/Lecture_and_Studio/Week_3_Class_2_L/PH_211_Lecture_8.tex.XD2432",
+    "211_Summer/Lecture_and_Studio/Week_3_Class_2_L/PH_211_Lecture_8.tex.QG2432",
+    "211_Summer/Lecture_and_Studio/Week_3_Class_2_L/PH_211_Lecture_8.tex.gc2432",
+    "211_Summer/Lecture_and_Studio/Week_3_Class_1_S/Studio 3.md",
+    "211_Summer/Lecture_and_Studio/Week_3_Class_2_L/PH_211_Lecture_8.tex.CD2432",
+    "211_Summer/Lecture_and_Studio/Week_3_Class_2_L/Lecture 8.md",
     "211_Summer/Lecture_and_Studio/Week_4_Class_2_L/Lecture 11.md",
     "211_Summer/Lecture_and_Studio/Week_4_Class_1_S/Studio 4.md",
     "211_Summer/Lecture_and_Studio/Week_4_Class_1_L/Lecture 10.md",
     "211_Summer/Lecture_and_Studio/Week_3_Class_3_L/Lecture 9.md",
-    "211_Summer/Lecture_and_Studio/Week_3_Class_2_L/Lecture 8.md",
     "211_Summer/Lecture_and_Studio/Week_3_Class_1_L/Lecture 7.md",
     "211_Summer/Lecture_and_Studio/Week_1_Class_3_L/Lecture 3.md",
     "211_Summer/Lecture_and_Studio/Week_3_Class_1_L/Sensemake.png",
