@@ -152,6 +152,7 @@ This FBD is out of scale, as the $y$-components of the tension, normal force, an
 	\item The box is sitting on the ground and not budging, so we need a normal force on the box from the ground, and a force of static friction on the box from the ground: $\vec{F}^{N}_{BG}$ and $\vec{F}^{sf}_{BG}$.
 \end{itemize}
 \noindent\textbf{Free-Body Diagram}
+\vspace{-0.75cm}
 \begin{center}
 	\begin{tikzpicture}
 		\FBDaxes{0,0}{0}{axes}
@@ -166,8 +167,39 @@ This FBD is out of scale, as the $y$-components of the tension, normal force, an
 		\node[anchor=south east] at (FNGtip) {$\vec{F}^{N}_{BM}$};
 		\FBDvectorXY{boxbcent}{0,-0.75}{FG}
 		\node[anchor=north east] at (FGtip) {$\vec{F}^{g}_{BE}$};
+		\node[anchor=west] at (1.5,1.5) {$\vec{F}^{net}=\vec{0}$};
+		\node[anchor=west] at (2,1) {$\vec{a}=\vec{0}$};
 	\end{tikzpicture}
 \end{center}
+\vspace{-0.75cm}
+\textbf{Notes}
+\begin{itemize}
+	\item The two vertical force vectors are equal in magnitude, so they cancel each other out.
+	\item The force of static friction points in the direction necessary to prevent motion. The other two horizontal forces are to the left, so static friction points to the right.
+	\item The vector for static friction is long enough to cancel both of the other horizontal forces.
+	\item In a basic FBD, we don't care about where the force acts. We put the tail on the box and the arrow points out.
+	\begin{itemize}
+		\item Using a box (instead of a dot) gives me space to offset $\vec{F}^{N}_{BM}$ and $\vec{F}^{T}_{BR}$. We don't want to overlap force vectors, as it makes the diagram unclear.
+		\item Some people indicate forces that push by putting the head of the arrow on the box, but this is not our convention.
+		\begin{center}
+			\begin{tikzpicture}
+				\FBDbox{0,0}{0}{box}{}
+				\draw[ultra thick,blue,->] (-1.5,0) -- (boxlcent);
+				\node[anchor=east] at (-1.5,0) {$\vec{F}^{N}_{BM}$};
+				\draw[ultra thick, red] (-1.5,0.5) -- (1,-0.5) (-1.5,-0.5) -- (1,0.5);
+			\end{tikzpicture}
+		\end{center}
+		\item We also don't want the arrow to overlap the interior of the box. We will do something like this when we get to rigid-body diagrams in PH 212, but for now, it is better to keep the arrows pointed away for clarity.
+		\begin{center}
+			\begin{tikzpicture}
+				\FBDbox{0,0}{0}{box}{}
+				\FBDvectorXY{boxlcent}{1.5,0}{}
+				\node[anchor=west] at (tip) {$\vec{F}^{N}_{BM}$};
+				\draw[ultra thick, red] (-1,0.5) -- (1,-0.5) (-1,-0.5) -- (1,0.5);
+			\end{tikzpicture}
+		\end{center}
+	\end{itemize}
+\end{itemize}
 \end{TeacherMargin}
 \begin{PresentSpace}
 \vspace{-10pt}
@@ -186,7 +218,62 @@ Mike and Lucas are attempting to move a box, which does not move.
 \end{textblock*}
 \newpage
 \begin{TeacherMargin}
-
+\noindent\textbf{Idenfity All Forces}
+\begin{itemize}
+	\item We still have most of the old forces: $\vec{F}^{N}_{BM},\ \vec{F}^{g}_{BE},\ \vec{F}^{T}_{BR},\ \vec{F}^{N}_{BG}$.
+	\item The box is sliding, so we have kinetic friction instead of static: $\vec{F}^{kf}_{BG}$.
+	\item We need to add the psychic force exerted on the box by Eleven: $\vec{F}^{ps}_{B11}$.
+	\item The box is sitting on the ground and not budging, so we need a normal force on the box from the ground, and a force of static friction on the box from the ground: $\vec{F}^{N}_{BG}$ and $\vec{F}^{sf}_{BG}$.
+\end{itemize}
+\noindent\textbf{Free-Body Diagram}
+\vspace{-0.75cm}
+\begin{center}
+	\begin{tikzpicture}
+		\FBDaxes{0,0}{0}{axes}
+		\FBDbox{axes}{0}{box}{}
+		\FBDvectorXY{boxrtq}{0.75,0}{FNM}
+		\node[anchor=south] at (FNMtip) {$\vec{F}^{N}_{BM}$};
+		\FBDvectorXY{boxrbq}{0.5,0}{FTR}
+		\node[anchor=north] at (FTRtip) {$\vec{F}^{T}_{BR}$};
+		\FBDvectorXY{boxrcent}{1,0}{FP}
+		\node[anchor=north] at (FPtip) {$\vec{F}^{ps}_{B11}$};
+		\FBDvectorXY{boxlcent}{-0.6,0}{FKF}
+		\node[anchor=south] at (FKFtip) {$\vec{F}^{kf}_{BG}$};
+		\FBDvectorXY{boxtcent}{0,0.75}{FNG}
+		\node[anchor=south east] at (FNGtip) {$\vec{F}^{N}_{BM}$};
+		\FBDvectorXY{boxbcent}{0,-0.75}{FG}
+		\node[anchor=north east] at (FGtip) {$\vec{F}^{g}_{BE}$};
+		\node[anchor=east] at (2,1.5) {$\vec{F}^{net}$};
+		\FBDvectorXY{2,1.5}{1.65,0}{Fnet}
+		\node[anchor=east] (ACCEL) at (2,1) {$\vec{a}$};
+		\draw[ultra thick,->] (ACCEL) -- (3,1);
+	\end{tikzpicture}
+\end{center}
+\vspace{-0.75cm}
+\textbf{Notes}
+\begin{itemize}
+	\item Kinetic friction is weaker than static friction; it is harder to start an object sliding than to keep it sliding.
+	\item $\vec{F}^{net}$ is nonzero, as the horizontal forces are no longer balanced.
+\end{itemize}
+\textbf{Symbolic Expression} \\
+The net force is the \textbf{vector} sum of all forces on the object. Each $\vec{F}$ contains direction information, so you should not put in minus signs at this point:
+\[
+\vec{F}^{net} = \vec{F}^{N}_{BG} + \vec{F}^{N}_{BM} + \vec{F}^{T}_{BR} + \vec{F}^{ps}_{B11} + \vec{F}^{g}_{BE} + \vec{F}^{kf}_{BG}.
+\]
+The components of a force are scalars \textbf{with signs}, so they also contain direction information specific to their particular coordinate axes. There is no need to add minus signs when breaking Newton's 2nd law into components. At this stage, it is appropriate to drop components that you know to be zero:
+\begin{align*}
+	F^{net}_{x} & = F^{N}_{BM,x} + F^{T}_{BR,x} + F^{ps}_{B11,x} + F^{kf}_{BG,x}, \\
+	F^{net}_{y} & = F^{N}_{BG,y} + F^{g}_{BE,y}.
+\end{align*}
+When I write the components in terms of the magnitudes of the vectors, I have to add signs, as magnitudes are always positive. In particular, $F^{kf}_{BG,x} = -F^{kf}_{BG}$, and $F^{g}_{BE,y} = -F^{g}_{BE}$. We also know that the box slides horizontally, so $a_{y}=0$:
+\begin{align*}
+	ma_{x} = F^{net}_{x} & = F^{N}_{BM} + F^{T}_{BR} + F^{ps}_{B11} - F^{kf}_{BG}, \\
+	0 = ma_{y} = F^{net}_{y} & = F^{N}_{BG} - F^{g}_{BE}.
+\end{align*}
+Therefore
+\[
+a_{x} = \frac{F^{N}_{BM} + F^{T}_{BR} + F^{ps}_{B11}-F^{kf}_{BG}}{m}.
+\]
 \end{TeacherMargin}
 \begin{PresentSpace}
 \vspace{-10pt}

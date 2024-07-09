@@ -24,7 +24,7 @@ tags:
 ---
 # PH 211 Studio 04 Free-Body Diagrams
 ## Files
-[PH 211 Studio 04 PDF](./PH211_ST_04_Free-body_Diagrams_240423_142805.pdf)
+[PH 211 Studio 04 PDF](./PH211_ST_04_Free-body_Diagrams_240709_160941.pdf)
 ## Activities
 Activity 4-1: Moving a Box
 Activity 4-2: Moving a Box II
@@ -35,3 +35,4 @@ Activity 4-4: Book on a Ramp (Special Case) (aka Tilted Table Sensemaking)
 	* solution document only
 	* no source file
 	* activities not split into their own files
+* Minor correction 2024 07 09
