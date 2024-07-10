@@ -15,8 +15,8 @@ tags:
 [PH 211 Lecture 9 Slides TeX](PH_211_Lecture_9_Slides.tex)
 [PH 211 Lecture 9 Slides PDF](PH_211_Lecture_9_Slides.pdf)
 ## Activities
-Book on a Ramp
-Book on a Ramp (Special Case)
+Textbook on a Tilted Table
+Tilted Table Sensemaking
 ## Notes
 * Added to Vault
 	* Assignment Format 2024-06-14

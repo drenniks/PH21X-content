@@ -19,7 +19,7 @@
 \input{\FileDepth/Formats/Assignment20240614.tex}
 \input{\FileDepth/Formats/Lecture20240615.tex}
 
-%\input{\FileDepth/Formats/FBDCommands.tex}
+\input{\FileDepth/Formats/FBDCommands.tex}
 %\input{\FileDepth/Formats/MVDCommands.tex}
 
 %\input{\FileDepth/Activities/Activity_One/Activity_One.tex}
@@ -31,7 +31,7 @@
 \end{TeacherMargin}
 \begin{PresentSpace}
 \begin{center}
-	\huge Lecture 9: Title
+	\huge Lecture 9: Static Special Cases
 \end{center}
 \vspace{0.5cm}
 \underline{Warm-Up Activity} \\
@@ -48,9 +48,12 @@ Question?
 \end{TeacherMargin}
 \begin{PresentSpace}
 \vspace{-10pt}
-\section*{L9-#: Title}
+\section*{In-Class Quizzes on Monday}
 \vspace{-10pt}
-
+\begin{itemize}
+	\item Two quizzes: Motion and Forces.
+	\item 
+\end{itemize}
 \end{PresentSpace}
 \newpage
 \begin{TeacherMargin}
@@ -58,10 +61,111 @@ Question?
 \end{TeacherMargin}
 \begin{PresentSpace}
 \vspace{-10pt}
-\section*{L9-#: Title}
+\section*{L9-1: Textbook on a Tilted Table}
 \vspace{-10pt}
-
+A physics textbook is on a tilted, frictionless table, supported by a string.
+\begin{enumerate}[(A)]
+	\item Sketch a free-body diagram for the system.
+	\item What coordinate system do you think will \\
+	make analyzing this situation easiest?
+	\item Should the net force on the book be \textit{zero} or \\
+	\textit{not zero}?
+	\item Write an expression for the magnitude of each force acting on the system in terms of the gravitational force $F^{g}$.
+\end{enumerate}
 \end{PresentSpace}
+\begin{textblock*}{5cm}(22cm,3cm)
+\centering
+\begin{tikzpicture}
+	\draw[thick] (-4,3) -- (-4,0) -- (0,0) -- (-4,{4*tan(20)});
+	\draw[thick] (-1,0) node[anchor=south east] {$\theta$} arc (180:160:1);
+	\draw[thick,rotate=-20] (-3.2,0) node[anchor=south west,rotate=-20] {\textit{Physics}} rectangle (-1.8,0.6);
+	\draw[thick,rotate=-20] (-3.2,0.6) -- (-4.5,0.6);
+\end{tikzpicture}
+\end{textblock*}
+\newpage
+\begin{TeacherMargin}
+
+\end{TeacherMargin}
+\begin{PresentSpace}
+\vspace{-10pt}
+\section*{Special-Case Analysis}
+\vspace{-10pt}
+After you solve for a quantity:
+\begin{itemize}
+	\item Choose a case that is special, not arbitrary.
+	%\begin{itemize}
+	%	\item \textit{Example: What if the ramp were vertical/horizontal?}
+	%\end{itemize}
+	\item Figure out what your quantity \textbf{should} be in the case you chose.
+	%\begin{itemize}
+	%	\item \textit{Example: What should the normal force be when the ramp is vertical/horizontal?}
+	%\end{itemize}
+	\item Identify the value of one or more other quantities that corresponds to your \textbf{case}.
+	%\begin{itemize}
+	%	\item \textit{Example: What is the value of $\theta$ if the ramp is vertical/horizontal?}
+	%\end{itemize}
+	\item Evaluate your answer in the special case.
+	\item Check whether or not your symbolic answer for the case matches what you expected the answer should be.
+\end{itemize}
+\end{PresentSpace}
+\newpage
+\begin{TeacherMargin}
+
+\end{TeacherMargin}
+\begin{PresentSpace}
+\vspace{-10pt}
+\section*{L9-2: Tilted Table Sensemaking}
+\vspace{-10pt}
+A physics textbook is on a tilted, frictionless table, supported by a string.
+\begin{itemize}
+	\item Suppose the table is slanted so that it becomes \textit{steeper}. What happens to the magnitudes of the normal force \\
+	and the tension force?% Do they \textit{increase}, \\
+	%\textit{decrease}, or \textit{stay the same}?
+	\begin{comment}
+		\large
+		\item Does the magnitude of the normal force \\
+		\textit{increase}, \textit{decrease}, or \textit{stay the same}?
+		\item Does the magnitude of the tension force \\ \textit{increase}, \textit{decrease}, or \textit{stay the same}?
+	\end{comment}
+	\item Consider the following special cases:
+	\begin{itemize}
+		\large
+		\item What if the table were horizontal?
+		\item What if the table were vertical?
+	\end{itemize}
+	\vspace{-8pt}
+	For each of these cases, answer the following questions:
+	\begin{itemize}
+		\large
+		\item How big \textbf{should} each force be?
+		\item What angle corresponds to this \textbf{case}?
+		\item Does our symbolic answer for the case match what the answer should be?
+	\end{itemize}
+	\begin{comment}
+	\item What if the table were horizontal?
+	\begin{itemize}
+		\item How big \textbf{should} each force be?
+		\item What angle corresponds to this \textbf{case}?
+		\item Does our symbolic answer for the case match what the answer should be?
+	\end{itemize}
+	\item What if the table were vertical?
+	\begin{itemize}
+		\item How big \textbf{should} each force be?
+		\item What angle corresponds to this \textbf{case}?
+		\item Does our symbolic answer for the case match what the answer should be?
+	\end{itemize}
+	\end{comment}
+\end{itemize}
+\end{PresentSpace}
+\begin{textblock*}{5cm}(22cm,3.25cm)
+\centering
+\begin{tikzpicture}
+	\draw[thick] (-4,3) -- (-4,0) -- (0,0) -- (-4,{4*tan(20)});
+	\draw[thick] (-1,0) node[anchor=south east] {$\theta$} arc (180:160:1);
+	\draw[thick,rotate=-20] (-3.2,0) node[anchor=south west,rotate=-20] {\textit{Physics}} rectangle (-1.8,0.6);
+	\draw[thick,rotate=-20] (-3.2,0.6) -- (-4.5,0.6);
+\end{tikzpicture}
+\end{textblock*}
 \newpage
 \begin{TeacherMargin}
 	
