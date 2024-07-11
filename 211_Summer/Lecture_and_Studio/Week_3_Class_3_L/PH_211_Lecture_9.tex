@@ -34,30 +34,92 @@
 	\huge Lecture 9: Static Special Cases
 \end{center}
 \vspace{0.5cm}
-\underline{Warm-Up Activity} \\
-Question?
-%\begin{multicols}{2}
-\begin{enumerate}[(A)]
-	\item Answer?
-\end{enumerate}
-%\end{multicols}
-\end{PresentSpace}
-\newpage
-\begin{TeacherMargin}
-
-\end{TeacherMargin}
-\begin{PresentSpace}
-\vspace{-10pt}
-\section*{In-Class Quizzes on Monday}
-\vspace{-10pt}
+\underline{In-Class Quizzes on Monday}
 \begin{itemize}
-	\item Two quizzes: Motion and Forces.
-	\item 
+	\item Two Quizzes: Motion and Forces
+	\begin{itemize}
+		\large
+		\item Formatted just like the practice quizzes in the Week 3 module.
+		\item Not just calculations; could be assumptions, sensemaking, explanations, etc.
+	\end{itemize}
+	\item One sheet (front and back) of notes allowed.
+	\item Scientific calculators only (no graphing calculators).
+	\begin{itemize}
+		\large
+		\item There will be some some numerical calculation, but it is not a major emphasis.
+	\end{itemize}
+	\item For simplicity, $g\approx 10$ m/s$^{2}$.
 \end{itemize}
 \end{PresentSpace}
 \newpage
 \begin{TeacherMargin}
+\noindent\textbf{(A)}
+\begin{center}
+	\begin{tikzpicture}
+		\FBDaxes{0,0}{-20}{axes}
+		\FBDvectorMA{axes}{1.5}{70}{FN}
+		\node[anchor=west] at (FNtip) {$\vec{F}^{N}_{BT}$};
+		\FBDvectorMA{axes}{1.6}{-90}{FG}
+		\node[anchor=west] at (FGtip) {$\vec{F}^{g}_{BE}$};
+		\FBDvectorMA{axes}{0.5}{160}{FT}
+		\node[anchor=north east] at (FTtip) {$\vec{F}^{T}_{BS}$};
+		\FBDdot{axes}
+	\end{tikzpicture}
+\end{center}
+\noindent\textbf{(B)} 
+In this problem, it makes sense to tilt the axes. By aligning the normal force with the $y$-axis and the tension force with the (negative) $x$-axis, we now don't have to break them into components: $F^{N}_{BT,y}=F^{N}_{BT}$ and $F^{T}_{BS,x}=-F^{T}_{BS}$. That leaves just one vector to break up: the force of gravity.
+\begin{center}
+	\begin{tikzpicture}
+		\draw[thick] (-6,0) -- (0,0) -- (-6,{6*tan(20)}) -- cycle;
+		\draw[thick] (-1.5,0) node[anchor=south east] {$\theta$} arc (180:160:1.5);
+		\draw[thick,rotate=-10] (-1.6,0) -- (-1.4,0);
+		\draw[thick,rotate=-20] (-4.8,0) node[anchor=south west,rotate=-20] {\textit{Physics}} rectangle (-3.4,0.6);
+		\draw[ultra thick,->] ({-4.1*cos(20)},{4.1*sin(20)}) -- ({-4.1*cos(20)},{4.1*sin(20)-1}) node[anchor=west] {$\vec{F}^{g}$};
+		\draw[thick,shift={({-4.1*cos(20)},{4.1*sin(20)})}] (0,-0.25) arc (270:340:0.25);
+		\draw[thick,shift={({-4.1*cos(20)},{4.1*sin(20)})},rotate=30] (0,-0.15) -- (0,-0.35);
+		\draw[thick,shift={({-4.1*cos(20)},{4.1*sin(20)})},rotate=40] (0,-0.15) -- (0,-0.35);
+		\draw[thick,dashed] ({-4.1*cos(20)},{4.1*sin(20)}) -- ({-4.1*cos(20)},0);
+		\draw[thick] ({-4.1*cos(20)},{4.1*sin(20)-0.6}) arc (90:70:0.4);
+		\draw[thick,shift={({-4.1*cos(20)},{4.1*sin(20)-1})},rotate=-10] (0,0.3) -- (0,0.5);
+		\draw[thick] ({-4.1*cos(20)},{4.1*sin(20)-0.4}) arc (270:250:0.4);
+		\draw[thick,shift={({-4.1*cos(20)},{4.1*sin(20)})},rotate=-10] (0,-0.3) -- (0,-0.5);
+		\draw[thick,dashed,rotate=-20] (-3.75,0) -- (-3.75,-1);
+		\draw[thick,dashed,rotate=-20] (-4.1,0) -- (-4.1,-1.5);
+		\draw[thick] (-4.05,0) arc (0:70:0.3);
+		\draw[thick] (-4.2,0.1) -- (-4.2,-0.3) -- (-4,-0.3) node[anchor=west] {$90^{\circ}-\theta$};
+		\draw[thick,shift={(-4.35,0)},rotate=40] (0.2,0) -- (0.4,0);
+		\draw[thick,shift={(-4.35,0)},rotate=30] (0.2,0) -- (0.4,0);
+		\begin{scope}[shift={(-1.55,0)}]
+			\draw[thick,->] ({-4.1*cos(20)},{4.1*sin(20)}) -- ({-4.1*cos(20)},{4.1*sin(20)-1}) node[anchor=east] {$\vec{F}^{g}$};
+			\draw[thick] ({-4.1*cos(20)},{4.1*sin(20)-0.6}) arc (90:70:0.4);
+			\draw[thick,shift={({-4.1*cos(20)},{4.1*sin(20)-1})},rotate=-10] (0,0.3) -- (0,0.5);
+			\draw[thick,dashed,rotate=-20,blue] (-3.75,0) node[anchor=north,shift={(5pt,-5pt)}] {$F^{g}_{y}$} -- (-3.75,-1);
+			\draw[thick,dashed,rotate=-20,violet] (-3.75,0) -- (-4.1,0) node[anchor=west,shift={(0,5pt)}] {$F^{g}_{x}$};
+		\end{scope}
+	\end{tikzpicture}
+\end{center}
+There are a number of right triangles in the figure above that can help us determine that
+\begin{align*}
+	F^{g}_{BE,x} & = F^{g}_{BE}\sin\theta, & F^{g}_{BE,y} & = -F^{g}_{BE}\cos\theta.
+\end{align*}
+We can also determine this with special-case analysis. We should get $\vec{F}^{g} = -F^{g}\hat{y}$ when $\theta=0^{\circ}$ (our standard coordinate system) and $\vec{F}^{g} = F^{g}\hat{x}$ when $\theta=90^{\circ}$ (tilted such that $\hat{x}$ points down). We can guess where the signs and trigonometric functions go and check these special cases, which will eliminate equations for $\vec{F}^{g}$ that don't behave correctly.
 
+\noindent\textbf{(C)} 
+The net force on the book should be zero, as the book is not accelerating. The string is keeping the book from moving along the surface, and the book doesn't fall through or leap off of the table.
+
+\noindent\textbf{(D)} 
+We know that $\vec{F}^{net} = \vec{0}$. In the $x$-direction, this tells us:
+\begin{align*}
+	0 = F^{net}_{x} & = F^{g}_{BE,x} + F^{T}_{BS,x} \\
+	& = F^{g}_{BE}\sin\theta - F^{T}_{BS} \\
+	& \implies F^{T}_{BS} = F^{g}_{BE}\sin\theta
+\end{align*}
+In the $y$-direction, this tells us:
+\begin{align*}
+	0 = F^{net}_{y} & = F^{g}_{BE,y} + F^{N}_{BT,y} \\
+	& = -F^{g}_{BE}\cos\theta + F^{N}_{BT} \\
+	& \implies F^{N}_{BT} = F^{g}_{BE}\cos\theta
+\end{align*}
 \end{TeacherMargin}
 \begin{PresentSpace}
 \vspace{-10pt}
@@ -110,7 +172,23 @@ After you solve for a quantity:
 \end{PresentSpace}
 \newpage
 \begin{TeacherMargin}
+\noindent\textbf{Increased Verticality (Covariational Sensemaking)} \\
+As the table tilts more, the string has to support the book more and more to keep it from sliding, and the surface of the table correspondingly needs to support the book less and less. Thus, the magnitude of the normal force will decrease, and the magnitude of the tension force will increase.
 
+Note that $\cos\theta$ decreases and $\sin\theta$ increases as $\theta$ increases, so our symbolic answers agree with our physical prediction.
+
+\noindent\textbf{Horizontal Case (Special-Case Analysis)} \\
+When the table is flat ($\theta=0^{\circ}$), the string does not need to pull on the book to keep it from sliding. The tension will be 0 N, and the normal force will be equal in magnitude to the force of gravity. Our symbolic answers agree with this expectation:
+\begin{align*}
+	F^{T}_{BS} & = F^{g}_{BE}\sin(0^{\circ}) = 0\text{ N} \\
+	F^{N}_{BT} & = F^{g}_{BE}\cos(0^{\circ}) = F^{g}_{BE}
+\end{align*}
+\textbf{Vertical Case (Special-Case Analysis)} \\
+When the table is vertical ($\theta=90^{\circ}$), the string is supporting the entire weight of the book, and the surface of the table does not support the boook at all (the book just hangs beside it from the string). The tension is equal in magnitude to the force of gravity, and the normal force will be 0 N. Our symbolic answers agree with this expectation:
+\begin{align*}
+	F^{T}_{BS} & = F^{g}_{BE}\sin(90^{\circ}) = F^{g}_{BE} \\
+	F^{N}_{BT} & = F^{g}_{BE}\cos(90^{\circ}) = 0\text{ N}
+\end{align*}
 \end{TeacherMargin}
 \begin{PresentSpace}
 \vspace{-10pt}
@@ -173,7 +251,8 @@ A physics textbook is on a tilted, frictionless table, supported by a string.
 \begin{PresentSpace}
 \section*{Main Ideas}
 \begin{itemize}
-	\item 
+	\item Tension and normal force don't have models with which to be directly calculated, so we need to find them via Newton's 2nd law.
+	\item Picking a special case for which the answer is clear by physical reasoning can be a powerful tool for checking symbolic solutions.
 \end{itemize}
 \end{PresentSpace}
 \end{document}

@@ -24,7 +24,7 @@ tags:
 ---
 # PH 211 Studio 04 Free-Body Diagrams
 ## Files
-[PH 211 Studio 04 PDF](./PH211_ST_04_Free-body_Diagrams_240709_160941.pdf)
+[PH 211 Studio 04 PDF](./PH211_ST_04_Free-body_Diagrams_240710_183318.pdf)
 ## Activities
 Activity 4-1: Moving a Box
 Activity 4-2: Moving a Box II
