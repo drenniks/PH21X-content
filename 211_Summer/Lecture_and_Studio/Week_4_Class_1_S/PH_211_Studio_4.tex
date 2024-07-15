@@ -19,7 +19,7 @@
 \input{\FileDepth/Formats/Assignment20240614.tex}
 \input{\FileDepth/Formats/Lecture20240615.tex}
 
-%\input{\FileDepth/Formats/FBDCommands.tex}
+\input{\FileDepth/Formats/FBDCommands.tex}
 %\input{\FileDepth/Formats/MVDCommands.tex}
 
 %\input{\FileDepth/Activities/Activity_One/Activity_One.tex}
@@ -31,11 +31,11 @@
 \end{TeacherMargin}
 \begin{PresentSpace}
 \begin{center}
-	\huge Studio 4: Title \\
+	\huge Studio 4: Gravity and Friction \\
 	\vspace{1cm}
 \end{center}
-%\underline{Warm-Up Activity} \\
-%How is acceleration symbolically related to velocity? WRITE BIG!
+\underline{Warm-Up Activity} \\
+%How do you feel about the quizzes? Which of the following is the magnitude of the friction on the book at the front of the room?
 \begin{comment}{2}
 \begin{enumerate}[(A)]
 	\item Velocity is acceleration times $t$.
@@ -53,9 +53,19 @@
 \end{TeacherMargin}
 \begin{PresentSpace}
 \vspace{-10pt}
-\section*{S4-#: Title}
+\section*{(Newton's) Laws of Motion}
 \vspace{-10pt}
-
+\begin{enumerate}[(1)]
+	\item An object in motion (or at rest) stays in motion (or at rest) unless a net external force acts on it.
+	\item The net force on an object is equal to the object's mass times its acceleration:
+	\[
+	\vec{F}^{net} = m\vec{a}.
+	\]
+	\item If A exerts a force on B, then B exerts a force of the same magnitude on A in the opposite direction:
+	\[
+	\vec{F}_{AB} = -\vec{F}_{BA}.
+	\]
+\end{enumerate}
 \end{PresentSpace}
 \newpage
 \begin{TeacherMargin}
@@ -63,9 +73,157 @@
 \end{TeacherMargin}
 \begin{PresentSpace}
 \vspace{-10pt}
-\section*{S4-#: Title}
+\section*{Types of Forces}
 \vspace{-10pt}
+\begin{itemize}
+	\item Gravity \qquad \qquad \qquad \qquad $\vec{F}^{g}_{AB} = m_{A}\vec{g}_{B}$
+	\begin{itemize}
+		\item Newtonian \qquad\ $\vec{g}_{B} = G\frac{M_{B}}{r^{2}}(-\hat{r})$, $G = 6.67408\times10^{-11}\text{ N}\cdot\text{m}^{2}/\text{kg}^{2}$
+		\item Near-Earth \qquad $\vec{g}_{E} = g(-\hat{y}),\ g=9.81\frac{\text{m}}{\text{s}^{2}} \approx 10\frac{\text{m}}{\text{s}^{2}}$
+	\end{itemize}
+	\item Normal \qquad $\vec{F}^{N}$ always $\bot$; varies in magnitude
+	\item Tension \qquad $\vec{F}^{T}$ uniform (massless, inextensible rope)
+	\item Spring
+	\item Friction
+	\begin{itemize}
+		\item Static Friction \qquad $F^{sf}\leq\mu_{s}|\vec{F}^{N}|$
+		\item Kinetic Friction \qquad $F^{kf}=\mu_{k}|\vec{F}^{N}|$
+	\end{itemize}
+\end{itemize}
+\end{PresentSpace}
+\newpage
+\begin{TeacherMargin}
 
+\end{TeacherMargin}
+\begin{PresentSpace}
+\vspace{-10pt}
+\section*{S4-1: The Elevator}
+\vspace{-10pt}
+\begin{itemize}
+	\item You attach a volleyball with mass 275 grams to a string and suspend it from the ceiling of an elevator.
+	\item The elevator is moving upward at constant speed 1.5 m/s.
+	\item Our goal is to determine the tension in the string.
+	\begin{itemize}
+		\item Choose a system and identify any assumptions you are making.
+		\item Sketch and label a free body diagram.
+		\item Determine the tension.
+		\item Make sense of your answer.
+	\end{itemize}
+\end{itemize}
+\end{PresentSpace}
+\newpage
+\begin{TeacherMargin}
+
+\end{TeacherMargin}
+\begin{PresentSpace}
+\vspace{-10pt}
+\section*{S4-2: The Accelerating Elevator}
+\vspace{-10pt}
+\begin{itemize}
+	\item You attach a volleyball with mass 275 grams to a string and suspend it from the ceiling of an elevator.
+	\item The elevator is moving upward at constant speed 1.5 m/s and accelerating upward at a constant rate of 2.5 m/s$^{2}$.
+	\begin{itemize}
+		\item Do you want to change your system or assumptions?
+		\item How (if at all) does your free body diagram change?
+		\item How (if at all) does the tension change?
+	\end{itemize}
+\end{itemize}
+\end{PresentSpace}
+\newpage
+\begin{TeacherMargin}
+
+\end{TeacherMargin}
+\begin{PresentSpace}
+\vspace{-10pt}
+\section*{S4-3: The Space Elevator}
+\vspace{-10pt}
+\begin{itemize}
+	\item You attach a volleyball with mass 275 grams to a string and suspend it from the ceiling of an elevator.
+	\item The elevator is located 400 km above the surface of the Earth and moving upward at constant speed.
+	\begin{itemize}
+		\item Do you want to change your system or assumptions?
+		\item How (if at all) does your free body diagram change?
+		\item How (if at all) does the tension change?
+	\end{itemize}
+\end{itemize}
+\end{PresentSpace}
+\newpage
+\begin{TeacherMargin}
+
+\end{TeacherMargin}
+\begin{PresentSpace}
+\vspace{-10pt}
+\section*{S4-4: The Crate on Top of the Truck I (Gaining Speed)}
+\vspace{-10pt}
+\begin{itemize}
+	\item A truck is initially moving to the right with speed $v_{i}$.
+	\item The driver left a crate on top of the truck. We know the mass of the crate ($m_{c}$) and the coefficients of friction ($\mu_{s}$ and $\mu_{k}$).
+	\item The truck begins \textit{speeding up}, but the driver wants to prevent the crate from sliding.
+	\begin{itemize}
+		\item Draw a free-body diagram for the crate.
+		\begin{itemize}
+			\item What kind of friction acts on the crate?
+			\item What direction is the force of friction?
+		\end{itemize}
+		\item What do we know about the truck's
+		\begin{itemize}
+			\item velocity?
+			\item acceleration?
+		\end{itemize}
+	\end{itemize}
+\end{itemize}
+\end{PresentSpace}
+\begin{textblock*}{5cm}(22cm,3cm)
+\centering
+\begin{tikzpicture}
+	\draw[thick] (-4,3) -- (-4,0) -- (0,0) -- (-4,{4*tan(20)});
+	\draw[thick] (-1,0) node[anchor=south east] {$\theta$} arc (180:160:1);
+	\draw[thick,rotate=-20] (-3.2,0) node[anchor=south west,rotate=-20] {\textit{Physics}} rectangle (-1.8,0.6);
+	\draw[thick,rotate=-20] (-3.2,0.6) -- (-4.5,0.6);
+\end{tikzpicture}
+\end{textblock*}
+\newpage
+\begin{TeacherMargin}
+
+\end{TeacherMargin}
+\begin{PresentSpace}
+\vspace{-10pt}
+\section*{S4-5: The Crate on Top of the Truck II (Slamming on the Brakes)}
+\vspace{-10pt}
+\begin{itemize}
+	\item A truck is initially moving to the right with speed $v_{i}$.
+	\item We know the mass of the crate ($m_{c}$) and the coefficients of friction ($\mu_{s}$ and $\mu_{k}$).
+	\item The driver suddenly has to slam on the brakes, causing the crate to begin sliding.
+	\begin{itemize}
+		\item Draw a free-body diagram for the crate.
+		\begin{itemize}
+			\item How is it different from before?
+		\end{itemize}
+		\item Determine the acceleration of the crate relative to the ground.
+	\end{itemize}
+\end{itemize}
+\end{PresentSpace}
+\newpage
+\begin{TeacherMargin}
+
+\end{TeacherMargin}
+\begin{PresentSpace}
+\vspace{-10pt}
+\section*{Solving Problems Using Forces}
+\vspace{-10pt}
+\begin{itemize}
+	\item Identify a system.
+	\item Identify the (external) forces acting on the system.
+	\begin{itemize}
+		\item Draw a free-body diagram.
+	\end{itemize}
+	\item Identify the acceleration (\textbf{not a force}).
+	\begin{itemize}
+		\item Static/dynamic equilibrium (acceleration = 0)
+		\item Dynamics (acceleration not 0)
+	\end{itemize}
+	\item Use the laws of motion.
+\end{itemize}
 \end{PresentSpace}
 \newpage
 \begin{TeacherMargin}
@@ -74,7 +232,13 @@
 \begin{PresentSpace}
 \section*{Main Ideas}
 \begin{itemize}
-	\item 
+	\item Forces arise from interactions between objects.
+	\item There are many different \textit{kinds} of forces that we can analyze differently.
+	\item Objects can only change their motion when acted upon by an external force.
+	\item The net force on an object is equal to its mass times its acceleration.
+	\item Forces are vectors.
+	\item When more than one force acts on an object, we can add all the forces together.
+	\item We can model forces quantitatively.
 \end{itemize}
 \end{PresentSpace}
 \end{document}

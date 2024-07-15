@@ -18,8 +18,8 @@ tags:
 The Elevator
 The Accelerating Elevator
 The Space Elevator
-The Crate on Top of the Truck
-The Crate on Top of the Truck 2
+The Crate on Top of the Truck I (Gaining Speed)
+The Crate on Top of the Truck II (Slamming on the Brakes)
 ## Notes
 * Added to Vault
 	* Assignment Format 2024-06-14
