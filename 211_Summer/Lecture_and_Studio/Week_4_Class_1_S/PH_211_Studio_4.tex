@@ -27,7 +27,9 @@
 
 \begin{document}
 \begin{TeacherMargin}
+\noindent One thing a teacher of mine liked to remind her students: how we perform on exams has nothing to do with our value as human beings. \\
 
+\noindent You should discuss the feedback from your quizzes on the ungrading assignments, and you can address how they went and whether you think they were a good measure of your learning.
 \end{TeacherMargin}
 \begin{PresentSpace}
 \begin{center}
@@ -35,17 +37,20 @@
 	\vspace{1cm}
 \end{center}
 \underline{Warm-Up Activity} \\
-%How do you feel about the quizzes? Which of the following is the magnitude of the friction on the book at the front of the room?
-\begin{comment}{2}
-\begin{enumerate}[(A)]
-	\item Velocity is acceleration times $t$.
-	\vspace{6pt}
-	\item Acceleration is velocity times $t$.
-	\vspace{15pt}
-	\item Acceleration is the derivative of velocity.
-	\item Velocity is the derivative of acceleration.
-\end{enumerate}
-\end{comment}
+How do you feel about the quizzes? \\
+\begin{center}
+\begin{tikzpicture}
+	\foreach \x in {-1,0,1}
+		\draw[ultra thick] (4*\x,0) circle (1.5) (4*\x-1,-0.25*\x-0.5) .. controls (4*\x-0.5,0.25*\x-0.5) and (4*\x+0.5,0.25*\x-0.5) .. (4*\x+1,-0.25*\x-0.5);
+	\foreach \x in {-1,0,1}
+		\filldraw (4*\x-0.5,0.5) circle (0.15) (4*\x+0.5,0.5) circle (0.15);
+	\node at (-4,2.5) {\Huge(A)};
+	\node at (-2,2.5) {\Huge(B)};
+	\node at (0,2.5) {\Huge(C)};
+	\node at (2,2.5) {\Huge(D)};
+	\node at (4,2.5) {\Huge(E)};
+\end{tikzpicture}
+\end{center}
 \end{PresentSpace}
 \newpage
 \begin{TeacherMargin}
@@ -93,7 +98,39 @@
 \end{PresentSpace}
 \newpage
 \begin{TeacherMargin}
+\noindent\textbf{System} \\
+We don't want to pick the Earth, the elevator, and the string and ball, as then there are no external forces in that case. Instead, let us choose just the ball, which has tension from the string and a gravitational force. \\
 
+\noindent\textbf{Assumptions}
+\begin{itemize}
+	\item Near-Earth gravity: $g\approx9.81\text{ m/s}^{2}$. Even if the elevator goes from the bottom to the highest point in the building, it remains near the surface of the Earth. Variation in gravitational acceleration will be negligible.
+	\item Particle model. The ball will not deform or spin while hanging from a string. In particular, it probably can't spin very much with a string wrapped around it.
+	\item No swinging. The problem ceases to be 1-D if the ball starts to swing side-to-side, and the swinging might affect the tension, so it is best to assume the ball hangs straight down as the elevator goes.
+	\item Ideal (massless, inextensible) string. We need to assume that the mass in the string is negligible in comparison to the volleyball (which is possible for a very light string), otherwise the tension in the string will not be uniform.
+\end{itemize}
+\begin{center}
+	\begin{tikzpicture}
+		\FBDaxes{0,0}{0}{axes}
+		\FBDvectorXY{axes}{0,-1}{FG}
+		\node[anchor=east] at (FGtip) {$\vec{F}^{g}$};
+		\FBDvectorXY{axes}{0,1}{FT}
+		\node[anchor=east] at (FTtip) {$\vec{F}^{T}$};
+		\FBDdot{axes}
+	\end{tikzpicture}
+\end{center}
+The speed is constant, so the net force is zero:
+\begin{align*}
+	m\vec{a} & = \vec{F}^{net} \\
+	\vec{0} & = \vec{F}^{T}+\vec{F}^{g} \\
+	0 & = F^{T}_{y} + F^{g}_{y} \\
+	& = F^{T} - F^{g} \\
+	F^{T} & = F^{g} = mg
+\end{align*}
+Plugging in the numbers, we get
+\[
+F^{T} = (0.275\text{ kg})(9.8\text{ m/s}^{2}) = 2.695\text{ N}.
+\]
+This number is just the force necessary to support the weight of the volleyball, which seems reasonable; we aren't trying to accelerate it, just to hold it up.
 \end{TeacherMargin}
 \begin{PresentSpace}
 \vspace{-10pt}
@@ -113,7 +150,27 @@
 \end{PresentSpace}
 \newpage
 \begin{TeacherMargin}
-
+\noindent The system and assumptions stay the same, as does the force of gravity, but the force of tension must increase to give a net force upward.
+\begin{center}
+	\begin{tikzpicture}
+		\FBDaxes{0,0}{0}{axes}
+		\FBDvectorXY{axes}{0,-1}{FG}
+		\node[anchor=east] at (FGtip) {$\vec{F}^{g}$};
+		\FBDvectorXY{axes}{0,1.5}{FT}
+		\node[anchor=east] at (FTtip) {$\vec{F}^{T}$};
+		\FBDdot{axes}
+	\end{tikzpicture}
+\end{center}
+\begin{align*}
+	m\vec{a} & = \vec{F}^{net} = \vec{F}^{T}+\vec{F}^{g} \\
+	ma\hat{y} & = F^{T}\hat{y}-F^{g}\hat{y} \\
+	ma & = F^{T} - F^{g} \\
+	F^{T} & = ma+F^{g} \\
+	& = m(a+g) \\
+	& = (0.275\text{ kg})(2.5\text{ m/s}^{2}+9.8\text{ m/s}^{2}) \\
+	& = (0.275\text{ kg})(12.3\text{ m/s}^{2}) \\
+	& = 3.3825\text{ N}.
+\end{align*}
 \end{TeacherMargin}
 \begin{PresentSpace}
 \vspace{-10pt}
@@ -131,7 +188,34 @@
 \end{PresentSpace}
 \newpage
 \begin{TeacherMargin}
+Here, our system stays the same, but we have to dispense with the near-Earth assumption and use full Newtonian gravity. The speed is constant, so the tension and force of gravity must be in balance again, though both will be weaker than before, since gravity gets weaker the farther from Earth one gets.
+\begin{center}
+	\begin{tikzpicture}
+		\FBDaxes{0,0}{0}{axes}
+		\FBDvectorXY{axes}{0,-0.8}{FG}
+		\node[anchor=east] at (FGtip) {$\vec{F}^{g}$};
+		\FBDvectorXY{axes}{0,0.8}{FT}
+		\node[anchor=east] at (FTtip) {$\vec{F}^{T}$};
+		\FBDdot{axes}
+	\end{tikzpicture}
+\end{center}
+We have $F^{T} = mg$, but now
+\[
+\vec{g} = \frac{GM_{E}}{r^{2}}(-\hat{r}),
+\]
+where $G = 6.675\times10^{-11}\text{ Nm}^{2}/\text{kg}^{2}$, the mass of Earth is $M_{E} = 6\times10^{24}\text{ kg}$, the radius of Earth is $R_{E} = 6.38\times10^{6}\text{ m}$, and
+\[
+r = R_{E} + 400\text{ km} = 6.38\times10^{6}\text{ m} + 0.4\times10^{6}\text{ m} \approx 6.8\times10^{6}\text{ m}.
+\]
+Plugging these in, we find
+\begin{align*}
+	\vec{g} & = \frac{GM_{E}}{r^{2}}(-\hat{r}) \\
+	& = \frac{(0.275\text{ kg})(6.675\times10^{-11}\text{ Nm}^{2}/\text{kg}^{2})(6\times10^{24}\text{ kg})}{(6.8\times10^{6}\text{m})^{2}}(-\hat{r}) \\
+	\approx 8.7\text{m/s}^{2}(-\hat{r}),
+\end{align*}
+and thus $F^{T} = mg \approx 2.38$. \\
 
+\noindent This is about at the height of the International Space Station, and yet the force of gravity up there isn't much smaller than it is on Earth's surface. How is it that things seem weightless up there? This force of gravity is actually what holds the space station in orbit around Earth; the station is constantly falling toward Earth (and things in free-fall experience the feeling of weightlessness), but it moves so quickly toward the horizon that it never descends. It just keeps changing direction and moving in a circle around Earth.
 \end{TeacherMargin}
 \begin{PresentSpace}
 \vspace{-10pt}
@@ -149,7 +233,39 @@
 \end{PresentSpace}
 \newpage
 \begin{TeacherMargin}
+\begin{center}
+	\begin{tikzpicture}
+		\FBDaxes{0,0}{0}{axes}
+		\FBDvectorXY{axes}{0,-1}{FG}
+		\node[anchor=east] at (FGtip) {$\vec{F}^{g}_{CE}$};
+		\FBDvectorXY{axes}{0,1}{FN}
+		\node[anchor=east] at (FNtip) {$\vec{F}^{N}_{CT}$};
+		\FBDvectorXY{axes}{1.25,0}{FSF}
+		\node[anchor=south] at (FSFtip) {$\vec{F}^{sf}_{CT}$};
+		\FBDdot{axes}
+	\end{tikzpicture}
+\end{center}
+\textbf{Type of Friction} \\
+The crate is not sliding against the roof of the truck (no relative motion), so any friction between it and the truck must be static. \\
 
+\noindent\textbf{Direction of Friction} \\
+For the crate to accelerate to the right, with the truck, the net force on it must also be to the right. Friction is the only horizontal force, so it must point to the right. If there were no friction, then the box would slide toward the back of the truck. Thus, the attempted relative motion would be to the left across the surface of the roof of the truck, and the force of static friction must oppose the attempted relative motion. \\
+
+\noindent\textbf{Motion of the Truck} \\
+If the ground is flat, then $\vec{a}=a\hat{x}$ (no vertical motion, which is assumed). We can see that
+\begin{align*}
+	F^{sf}_{CT} & = F^{net}_{x} = ma_{x} = ma, \\
+	F^{N}_{CT} - F^{g}_{CE} & = F^{net}_{y} = ma_{y} = 0 \implies F^{N}_{CT} = F^{g}_{CE}.
+\end{align*}
+Furthermore, we know that
+\[
+F^{sf}_{CT} \leq \mu_{s} F^{N}_{CT} = \mu_{s}F^{g}_{CE} = \mu_{s}mg.
+\]
+Combined with the above observation that $F^{sf}_{CT} = ma$, we find that
+\[
+ma \leq \mu_{s}mg \implies a\leq\mu_{s}g.
+\]
+The acceleration of the truck must be less than $\mu_{s}g$ in order for the crate to not slide (the velocities of the crate and the truck are equal) relative to each other as the truck speeds up.
 \end{TeacherMargin}
 \begin{PresentSpace}
 \vspace{-10pt}
@@ -162,29 +278,52 @@
 	\begin{itemize}
 		\item Draw a free-body diagram for the crate.
 		\begin{itemize}
-			\item What kind of friction acts on the crate?
-			\item What direction is the force of friction?
+			\item What kind of friction acts on it?
+			\item What direction is the friction?
 		\end{itemize}
-		\item What do we know about the truck's
-		\begin{itemize}
-			\item velocity?
-			\item acceleration?
-		\end{itemize}
+		\item What do we know about the truck's \\
+		velocity? What about its acceleration?
 	\end{itemize}
 \end{itemize}
 \end{PresentSpace}
-\begin{textblock*}{5cm}(22cm,3cm)
+\begin{textblock*}{5cm}(22cm,5cm)
 \centering
 \begin{tikzpicture}
-	\draw[thick] (-4,3) -- (-4,0) -- (0,0) -- (-4,{4*tan(20)});
-	\draw[thick] (-1,0) node[anchor=south east] {$\theta$} arc (180:160:1);
-	\draw[thick,rotate=-20] (-3.2,0) node[anchor=south west,rotate=-20] {\textit{Physics}} rectangle (-1.8,0.6);
-	\draw[thick,rotate=-20] (-3.2,0.6) -- (-4.5,0.6);
+	\filldraw[ultra thick,color=black,fill=gray] (0,0) rectangle (4,2);
+	\filldraw[ultra thick,color=black,fill=gray] (4,0) rectangle (5,1.5);
+	\filldraw[ultra thick,color=black,fill=gray] (0.5,0) circle (0.25);
+	\filldraw[ultra thick,color=black,fill=gray] (3.5,0) circle (0.25);
+	\filldraw[ultra thick,color=black,fill=gray] (4.5,0) circle (0.25);
+	\filldraw[ultra thick,color=black,fill=brown] (1.5,2) rectangle (2.5,2.75);
+	\draw[thick,->] (4.5,1.75) -- (5,1.75) node[anchor=south] {\Large$v_{i}$} -- (5.5,1.75);
 \end{tikzpicture}
 \end{textblock*}
 \newpage
 \begin{TeacherMargin}
+\begin{center}
+	\begin{tikzpicture}
+		\FBDaxes{0,0}{0}{axes}
+		\FBDvectorXY{axes}{0,-1}{FG}
+		\node[anchor=east] at (FGtip) {$\vec{F}^{g}_{CE}$};
+		\FBDvectorXY{axes}{0,1}{FN}
+		\node[anchor=east] at (FNtip) {$\vec{F}^{N}_{CT}$};
+		\FBDvectorXY{axes}{-1,0}{FKF}
+		\node[anchor=south] at (FKFtip) {$\vec{F}^{kf}_{CT}$};
+		\FBDdot{axes}
+	\end{tikzpicture}
+\end{center}
+\textbf{Differences} \\
+The force of gravity doesn't change, and nor does the normal force that balances it out. The friction has switched directions and is now kinetic, rather than static. As the crate slides toward the front of the truck, its motion relative to the roof of the truck is also to the right, and the new direction of friction opposes this motion. \\
 
+\noindent\textbf{Calculation}
+We know $\vec{F}^{net} = m\vec{a}$, and therefore
+\begin{align*}
+	ma_{A} & = F^{net}_{x} = -F^{kf} & 0 & = F^{net}_{y} = F^{N} - F^{g},
+\end{align*}
+which means,
+\begin{align*}
+	a_{A} = -\frac{F^{kf}}{m} = -\mu_{kf} \frac{F^{N}}{m} = -\mu_{kf} \frac{F^{g}}{m} = -\mu_{kf} g. 
+\end{align*}
 \end{TeacherMargin}
 \begin{PresentSpace}
 \vspace{-10pt}
@@ -199,10 +338,23 @@
 		\begin{itemize}
 			\item How is it different from before?
 		\end{itemize}
-		\item Determine the acceleration of the crate relative to the ground.
+		\item Determine the acceleration of the crate \\
+		relative to the ground.
 	\end{itemize}
 \end{itemize}
 \end{PresentSpace}
+\begin{textblock*}{5cm}(22cm,5cm)
+\centering
+\begin{tikzpicture}
+	\filldraw[ultra thick,color=black,fill=gray] (0,0) rectangle (4,2);
+	\filldraw[ultra thick,color=black,fill=gray] (4,0) rectangle (5,1.5);
+	\filldraw[ultra thick,color=black,fill=gray] (0.5,0) circle (0.25);
+	\filldraw[ultra thick,color=black,fill=gray] (3.5,0) circle (0.25);
+	\filldraw[ultra thick,color=black,fill=gray] (4.5,0) circle (0.25);
+	\filldraw[ultra thick,color=black,fill=brown] (1.5,2) rectangle (2.5,2.75);
+	\draw[thick,->] (4.5,1.75) -- (5,1.75) node[anchor=south] {\Large$v_{i}$} -- (5.5,1.75);
+\end{tikzpicture}
+\end{textblock*}
 \newpage
 \begin{TeacherMargin}
 
