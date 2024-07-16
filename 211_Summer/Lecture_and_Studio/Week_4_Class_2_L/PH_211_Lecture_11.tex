@@ -31,7 +31,7 @@
 \end{TeacherMargin}
 \begin{PresentSpace}
 \begin{center}
-	\huge Lecture \Week: Title
+	\huge Lecture \Week: Laws of Motion
 \end{center}
 \vspace{0.5cm}
 \underline{Warm-Up Activity} \\
@@ -44,13 +44,38 @@ Question?
 \end{PresentSpace}
 \newpage
 \begin{TeacherMargin}
-
+\begin{center}
+	\begin{tikzpicture}
+		\filldraw[gray] (0,-1.5) rectangle (0.75,1.5);
+		\draw[ultra thick] (0,1.5) -- (0,-1.5);
+		\draw[thick] (-0.5,-0.5) rectangle (0,0.5);
+		\node[rotate=90] at (-0.25,0) {Book};
+		\begin{scope}[shift={(-2,0)}]
+			\draw[thick] (-0.25,0.2) .. controls (-0.05,0.15) .. (0.15,0.2) .. controls (0.3,0.3) and (0.6,0.3) .. (0.9,0);
+			\draw[thick] (0.9,0) .. controls (1,-0.1) .. (0.9,-0.2);
+			\draw[thick,shift={(0,-0.2)}] (0.25,0) .. controls (0.3,0.3) and (0.6,0.3) .. (0.9,0);
+			\draw[thick] (0.25,-0.2) .. controls (0.35,-0.3) and (0.45,-0.3) .. (0.6,-0.2);
+			\draw[thick] (0.6,-0.2) .. controls (0.75,-0.2) .. (0.6,-0.35);
+			\draw[thick,shift={(0,-0.15)}] (0,-0.2) .. controls (0.35,-0.3) and (0.45,-0.3) .. (0.6,-0.2);
+			\draw[thick,shift={(0,-0.35)}] (-0.25,0.2) .. controls (-0.15,0.15) and (-0.1,0.1) .. (0,0);
+		\end{scope}
+	\end{tikzpicture}
+\end{center}
 \end{TeacherMargin}
 \begin{PresentSpace}
 \vspace{-10pt}
-\section*{L\Week-#: Title}
+\section*{L\Week-1: Book on the Wall -- Hold Still}
 \vspace{-10pt}
-
+\begin{itemize}
+	\item You push a book against a vertical wall so the book does not move.
+	\begin{itemize}
+		\item Sketch a picture of the book and the wall.
+		\item Identify and describe each force acting on the book.
+		\item Draw and label a free-body diagram for the book.
+	\end{itemize}
+	\item What do you know about the magnitudes of the forces acting on the book?
+	\item What happens to each force if you push harder?
+\end{itemize}
 \end{PresentSpace}
 \newpage
 \begin{TeacherMargin}
@@ -58,9 +83,17 @@ Question?
 \end{TeacherMargin}
 \begin{PresentSpace}
 \vspace{-10pt}
-\section*{L\Week-#: Title}
+\section*{L\Week-2: Book on the Wall -- Slide Down}
 \vspace{-10pt}
-
+\begin{itemize}
+	\item You push a different book horizontally against a vertical wall so that the book slides downward at constant speed.
+	\item You know the coefficients of friction are $\mu_{bw}$ (between the book and the wall) and \textit{zero} (between the book and your hand). You also know the mass $m$ of the book.
+	\begin{itemize}
+		\item Draw a free-body diagram for this situation.
+		\item Determine the magnitude of the force that your hand must exert on the book.
+		\item Make sense of your answer in at least three different ways.
+	\end{itemize}
+\end{itemize}
 \end{PresentSpace}
 \newpage
 \begin{TeacherMargin}
@@ -69,7 +102,13 @@ Question?
 \begin{PresentSpace}
 \section*{Main Ideas}
 \begin{itemize}
-	\item 
+	\item There are many different \textit{kinds} of forces that we can analyze differently.
+	\item Objects can only change their motion when acted upon by an external force.
+	\item The net force on an object is equal to its mass times its acceleration.
+	\item Forces are vectors.
+	\item When more than one force acts on an object, we can add all the forces together.
+	\item We can model forces quantitatively.
+	\item When an object is at rest or moving at constant speed, the forces balance and the object is in equilibrium.
 \end{itemize}
 \end{PresentSpace}
 \end{document}

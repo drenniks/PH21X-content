@@ -17,8 +17,6 @@ tags:
 ## Activities
 Book on the Wall
 Book on the Wall II
-Suitcase on a Ramp
-Missing Forces
 ## Notes
 * Added to Vault
 	* Assignment Format 2024-06-14
