@@ -19,7 +19,7 @@
 \input{\FileDepth/Formats/Assignment20240614.tex}
 \input{\FileDepth/Formats/Lecture20240615.tex}
 
-%\input{\FileDepth/Formats/FBDCommands.tex}
+\input{\FileDepth/Formats/FBDCommands.tex}
 %\input{\FileDepth/Formats/MVDCommands.tex}
 
 %\input{\FileDepth/Activities/Activity_One/Activity_One.tex}
@@ -50,17 +50,55 @@ Question?
 		\draw[ultra thick] (0,1.5) -- (0,-1.5);
 		\draw[thick] (-0.5,-0.5) rectangle (0,0.5);
 		\node[rotate=90] at (-0.25,0) {Book};
-		\begin{scope}[shift={(-2,0)}]
+		\begin{scope}[shift={(-1.28,-0.5)},rotate=45]
 			\draw[thick] (-0.25,0.2) .. controls (-0.05,0.15) .. (0.15,0.2) .. controls (0.3,0.3) and (0.6,0.3) .. (0.9,0);
 			\draw[thick] (0.9,0) .. controls (1,-0.1) .. (0.9,-0.2);
 			\draw[thick,shift={(0,-0.2)}] (0.25,0) .. controls (0.3,0.3) and (0.6,0.3) .. (0.9,0);
 			\draw[thick] (0.25,-0.2) .. controls (0.35,-0.3) and (0.45,-0.3) .. (0.6,-0.2);
-			\draw[thick] (0.6,-0.2) .. controls (0.75,-0.2) .. (0.6,-0.35);
+			\draw[thick] (0.6,-0.2) .. controls (0.75,-0.2) .. (0.6,-0.35);% -- (0.55,-0.3) -- cycle;
 			\draw[thick,shift={(0,-0.15)}] (0,-0.2) .. controls (0.35,-0.3) and (0.45,-0.3) .. (0.6,-0.2);
 			\draw[thick,shift={(0,-0.35)}] (-0.25,0.2) .. controls (-0.15,0.15) and (-0.1,0.1) .. (0,0);
 		\end{scope}
 	\end{tikzpicture}
 \end{center}
+We have the long-range force of gravity $\vec{F}^{g}_{BE}$ (pointing down), plus forces from two contact interactions:
+\begin{itemize}
+	\item Hand
+	\begin{itemize}
+		\item The hand exerts a normal force $\vec{F}^{N}_{BH}$ perpendicular to the cover of the book (pointing right) and a force of static friction $\vec{F}^{sf}_{BH}$ (because it is not sliding along the cover) parallel to the surface of the book.
+	\end{itemize}
+	\item Wall
+	\begin{itemize}
+		\item The wall exerts a normal force $\vec{F}^{N}_{BW}$ perpendicular to the cover of the book (pointing left) and a force of static friction $\vec{F}^{sf}_{BW}$ (because the book is not sliding along the wall) parallel to the surface of the book.
+	\end{itemize}
+\end{itemize}
+Both forces of static friction point upward to prevent the downward motion that would otherwise occur.
+\begin{center}
+	\begin{tikzpicture}
+		\FBDaxes{0,0}{0}{axes}
+		\FBDbox[0.6]{axes}{0}{box}{}
+		\FBDvectorXY{boxtlq}{0,1}{FSH}
+		\node[anchor=east] at (FSHtip) {$\vec{F}^{sf}_{BH}$};
+		\FBDvectorXY{boxtrq}{0,0.5}{FSW}
+		\node[anchor=west] at (FSWtip) {$\vec{F}^{sf}_{BW}$};
+		\FBDvectorXY{boxbcent}{0,-1.5}{FG}
+		\node[anchor=east] at (FGtip) {$\vec{F}^{g}_{BE}$};
+		\FBDvectorXY{boxrcent}{1.25,0}{FNH}
+		\node[anchor=south] at (FNHtip) {$\vec{F}^{N}_{BH}$};
+		\FBDvectorXY{boxlcent}{-1.25,0}{FNW}
+		\node[anchor=south] at (FNWtip) {$\vec{F}^{N}_{BW}$};
+	\end{tikzpicture}
+\end{center}
+To keep $F^{net}_{x} = 0$, we must have $F^{N}_{BH} = F^{N}_{BW}$. \\
+To keep $F^{net}_{y}=0$, we need $F^{g}_{BE} = F^{sf}_{BH} + F^{sf}_{BW}$. \\
+For static friction, we know $F^{sf}\leq\mu_{s}F^{N}$, so we can find the maximum possible static frictions, but that does not tell us what $F^{sf}_{BH}$ and $F^{sf}_{BW}$ are exactly. We don't even know if they are equal to each other (so I gave them two different arbitrary lengths in my FBD). \\
+
+\noindent\textbf{Pushing Harder}
+\begin{itemize}
+	\item $F^{g}=mg$, so it will remain constant.
+	\item $F^{N}_{BH}$ is the push, and $F^{N}_{BW} = F^{N}_{BH}$, so both must increase.
+	\item $F^{sf}_{BH}+F^{sf}_{BW} = F^{g}_{BE}$, so $F^{sf}_{BH}+F^{sf}_{BW}$ is constant, but we don't really know about $F^{sf}_{BH}$ and $F^{sf}_{BW}$ individually.
+\end{itemize}
 \end{TeacherMargin}
 \begin{PresentSpace}
 \vspace{-10pt}
@@ -79,7 +117,49 @@ Question?
 \end{PresentSpace}
 \newpage
 \begin{TeacherMargin}
+\noindent\textbf{Differences} \\
+We have one less force of friction, and the remaining friction is now kinetic. It still points up, as it opposes the downward motion along the wall.
+\begin{center}
+	\begin{tikzpicture}
+		\FBDaxes{0,0}{0}{axes}
+		\FBDbox[0.6]{axes}{0}{box}{}
+		%\FBDvectorXY{boxtlq}{0,1}{FSH}
+		%\node[anchor=east] at (FSHtip) {$\vec{F}^{sf}_{BH}$};
+		\FBDvectorXY{boxtcent}{0,1.5}{FKW}
+		\node[anchor=west] at (FKWtip) {$\vec{F}^{kf}_{BW}$};
+		\FBDvectorXY{boxbcent}{0,-1.5}{FG}
+		\node[anchor=east] at (FGtip) {$\vec{F}^{g}_{BE}$};
+		\FBDvectorXY{boxrcent}{1.25,0}{FNH}
+		\node[anchor=south] at (FNHtip) {$\vec{F}^{N}_{BH}$};
+		\FBDvectorXY{boxlcent}{-1.25,0}{FNW}
+		\node[anchor=south] at (FNWtip) {$\vec{F}^{N}_{BW}$};
+	\end{tikzpicture}
+\end{center}
+Speed is constant, so net force is still zero, and now we have an equality relating friction to the normal force: $F^{kf}_{BW} = \mu_{bw}F^{N}_{BW}$.  We can use this to solve for the required normal force.
+\begin{align*}
+	F^{net}_{x} & = F^{N}_{BH}-F^{N}_{BW} = 0 & F^{net}_{y} & = F^{kf}_{BW} - F^{g}_{BE} = 0 \\
+	& \implies F^{N}_{BH} = F^{N}_{BW} & & \implies F^{kf}_{BW} = F^{g}_{BE} \\
+	& & & \implies \mu_{bw}F^{N}_{BW} = mg \\
+	& & & \implies \mu_{bw}F^{N}_{BH} = mg
+\end{align*}
+The hand must exert a force of magnitude $F^{N}_{BH} = \frac{mg}{\mu_{bw}}$. \\
 
+\noindent\textbf{Unit check} \\
+We know $F^{N}_{BH}$ is a force, so its units are newtons. Therefore, we need $\frac{mg}{\mu_{bw}}$ to also be a force. We already know $mg$ has the proper units, and coefficients of friction are unitless, so $\frac{mg}{\mu_{bw}}$ is indeed a force. \\
+\textbf{Covariation}
+\begin{itemize}
+	\item If the book gets heavier ($m$ increases, or we do this on a planet with larger $g$ than Earth), then we should expect it to be harder to support.
+	\begin{itemize}
+		\item $F^{N}=\frac{mg}{\mu_{bw}}$, so if $mg$ increases, $F^{N}_{BH}$ increases, as we expect.
+	\end{itemize}
+	\item If the wall gets rougher or grippier ($\mu_{bw}$ increases), then it should be easier to keep the book from falling faster.
+	\begin{itemize}
+		\item $F^{N}=\frac{mg}{\mu_{bw}}$, so if $\mu_{bw}$ increases, $F^{N}_{BH}$ decreases, as we expect.
+	\end{itemize}
+\end{itemize}
+\textbf{Special Case} \\
+If the wall is frictionless ($\mu_{bw}=0$), then nothing will keep the book from accelerating downward, so it is impossible to push it hard enough. \\
+From our equation, $F^{N}_{BH} = \frac{mg}{0} = \infty$. Infinite force is impossible, so the equation is telling us what we expect.
 \end{TeacherMargin}
 \begin{PresentSpace}
 \vspace{-10pt}
