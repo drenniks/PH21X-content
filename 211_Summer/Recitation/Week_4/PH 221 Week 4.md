@@ -17,7 +17,7 @@ tags:
 [[Apparent Weight in an Elevator]]
 [[Steady Block on a Sliding Ramp]]
 [[Maximum Tilt]]
-[[Suspended Loudspeaker]]
+Cut due to redundancy with Lecture 12: [[Suspended Loudspeaker]]
 ## Notes
 * Added to Vault
 	* Assignment Format 2024-04-27
