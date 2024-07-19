@@ -16,9 +16,12 @@ tags:
 [PH 211 Lecture 12 Slides PDF](PH_211_Lecture_12_Slides.pdf)
 ## Activities
 The Gymnast
-The Gymnast II
+The Gymnast Reloaded
 ## Notes
 * Added to Vault
 	* Assignment Format 2024-06-14
 	* Lecture Format 2024-06-15
 	* Activities not broken into separate files yet.
+	* PDF conversions of SVGs:
+		* ![Gymnast Suspended with Equal Angles](Gymnast_Suspended_with_Equal_Angles.pdf)
+		* ![Gymnast Suspended with Unequal Angles](Gymnast_Suspended_with_Unequal_Angles.pdf)
