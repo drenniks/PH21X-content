@@ -138,16 +138,112 @@ unstretched/uncompressed length. Forces that try to return a system to equilibri
 \vspace{-10pt}
 \section*{A*R*C*S: Uh-Oh Dr. Paws}
 %\vspace{-10pt}
-In the video in Section 3.16 of our textbook, Paul pushes a footstool (mass $m_{1}$) across the floor with a constant force so that the footstool speeds up. Dr. Paws (a dog with mass $m_{2}$) is sitting on the footstool. The coefficient of static friction between the dog and the footstool is $\mu$ (assume no friction between the footstool and the ground). How much force can Paul exert on the footstool before the dog begins sliding?
+In the video in Section 3.16 of our textbook, Paul \\
+pushes a footstool (mass $m_{1}$) across the floor with \\
+a constant force so that the footstool speeds up. \\
+Dr. Paws (a dog with mass $m_{2}$) is sitting on the \\
+footstool. The coefficient of static friction between \\
+the dog and the footstool is $\mu$ (assume no friction \\
+between the footstool and the ground). How much \\
+force can Paul exert on the footstool before the dog \\
+begins sliding?
 \end{PresentSpace}
+\begin{textblock*}{4cm}(23cm,2cm)
+	\Large
+	\begin{tikzpicture}
+		\draw[thick,color=black,fill=brown] (-0.75,0) rectangle (0.75,1);
+		\begin{scope}[shift={(0,1)}]
+			\draw[thick,color=black,fill=gray,rotate=50] (0,0) rectangle (2,1);
+			\draw[thick,color=black,fill=gray,rotate=50] (0,0.4) arc (270:180:0.7) arc (180:292:0.5) -- cycle;
+			\draw[thick,color=black,fill=gray,rotate=50] (0.4,0) arc (0:-50:0.4) -- ({0.7*cos(50)},{-0.7*sin(50)}) arc (310:360:0.7) -- cycle;
+			\draw[thick,color=black,fill=gray,rotate=50,shift={(1,0)}] (0.4,0) arc (0:-50:0.4) -- ({0.7*cos(50)},{-0.7*sin(50)}) arc (310:360:0.7) -- cycle;
+			\draw[thick,color=black,fill=gray,rotate=50] (2,0.65) -- (2.2,0.65) -- (2.2,0.35) -- (2,0.35) -- cycle;
+			\draw[ultra thick,black] (1.1,2.4) arc (180:90:0.6);
+			\draw[thick,color=black,fill=violet] (1.5,2.5) circle (0.25 and 0.3);
+			\draw[thick,color=black,fill=gray] (1.6,2.2) ellipse (0.7 and 0.35);
+		\end{scope}
+	\end{tikzpicture}
+\end{textblock*}
 \newpage
 \begin{TeacherMargin}
-
+\noindent\textbf{(1a) Understand the Problem}
+\begin{itemize}
+	\item Mass of the dog: $m_{2}=30\text{ kg}$
+	\begin{itemize}
+		\item A typical golden retriever is 25-34 kg, so a nice round 30 kg is reasonable and helpful to us.
+	\end{itemize}
+	\item Mass of the footstool: $m_{1}=10\text{ kg}$
+	\begin{itemize}
+		\item A footstool can reasonably have less mass than a sizable dog.
+	\end{itemize}
+	\item Gravity: $g=10\text{ m/s}^{2}$
+	\begin{itemize}
+		\item This comes from our near-Earth approximation.
+	\end{itemize}
+	\item Coefficient of static friction: $\mu=0.4$
+	\begin{itemize}
+		\item This is a reasonable coefficient of static friction in general (wood-on-wood can range from 0.25-0.5, by some sources), and I don't have a better guess for the specific situation of dog-on-footstool.
+	\end{itemize}
+\end{itemize}
+\textbf{(1b) Identify Assumptions}
+%\begin{multicols}{2}
+\begin{itemize}
+	\item Near-Earth
+	\begin{itemize}
+		\item This can reasonably be expected to occur in a home on Earth's surface, where elevation does not appreciably affect gravitational acceleration.
+	\end{itemize}
+	\item Neglect air-resistance
+	\begin{itemize}
+		\item Air resistance is a much weaker effect at low speeds, and we probably are not going to get the dog truly racing in our living room.
+	\end{itemize}
+	\item Dr. Paws doesn't move.
+	\begin{itemize}
+		\item This is probably the weakest assumption (we saw what Dr. Paws did in the video), but it is necessary, as the problem becomes far more difficult if the dog and the stool do not move perfectly together. With this, we can say that $\vec{a}_{D} = \vec{a}_{S} = a\hat{x}$.
+	\end{itemize}
+	\item Particle model
+	\begin{itemize}
+		\item If the dog doesn't move, then its shape doesn't change, and it doesn't rotate, so we can ignore those complicated aspects of motion and just concentrate on the motion of the dog's center of mass.
+	\end{itemize}
+\end{itemize}
+%\end{multicols}
+\textbf{(1c) Represent Physically}
+%\begin{multicols}{2}
+\begin{center}
+	\begin{tikzpicture}
+		\FBDaxes{0,0}{0}{dogaxes}
+		\FBDbox[0.6]{dogaxes}{0}{dogbox}{$D$}
+		\FBDvectorXY{dogboxtcent}{0,1}{FNDS}
+		\node[anchor=east] at (FNDStip) {$\vec{F}^{N}_{DS}$};
+		\FBDvectorXY{dogboxbcent}{0,-1}{FGDE}
+		\node[anchor=east] at (FGDEtip) {$\vec{F}^{g}_{DE}$};
+		\FBDvectorXY{dogboxrcent}{1,0}{FSFDS}
+		\node[anchor=south] at (FSFDStip) {$\vec{F}^{sf}_{DS}$};
+		\FBDaxes{5,0}{0}{stoolaxes}
+		\FBDbox[0.6]{stoolaxes}{0}{stoolbox}{$S$}
+		\FBDvectorXY{stoolboxtcent}{0,1.33}{FNSG}
+		\node[anchor=west] at (FNSGtip) {$\vec{F}^{N}_{SG}$};
+		\FBDvectorXY{stoolboxblq}{0,-1}{FNSD}
+		\node[anchor=east] at (FNSDtip) {$\vec{F}^{N}_{SD}$};
+		\FBDvectorXY{stoolboxbrq}{0,-0.33}{FGSE}
+		\node[anchor=west] at (FGSEtip) {$\vec{F}^{g}_{SE}$};
+		\FBDvectorXY{stoolboxlcent}{-1,0}{FSFTSD}
+		\node[anchor=south] at (FSFTSDtip) {$\vec{F}^{sf}_{SD}$};
+		\FBDvectorXY{stoolboxrcent}{1.33,0}{FNSP}
+		\node[anchor=south] at (FNSPtip) {$\vec{F}^{N}_{SP}$};
+		\node[anchor=north west] at (0.75,2.25) {\parbox{4cm}{Our 3rd law pairs are
+				\begin{itemize}
+					\item $\vec{F}^{N}_{DS}$ and $\vec{F}^{N}_{SD}$;
+					\item $\vec{F}^{sf}_{DS}$ and $\vec{F}^{sf}_{SD}$.
+		\end{itemize}}};
+		\node[anchor=north west] at (0.75,-0.25) {\parbox{3cm}{(The vectors in each of these pairs were not equal in magnitude in the diagrams on the right.)}};
+	\end{tikzpicture}
+\end{center}
+%\end{multicols}
 \end{TeacherMargin}
 \begin{PresentSpace}
 \vspace{-10pt}
 \section*{L\Week-1: Uh-Oh Dr. Paws -- Analyze and Represent}
-\vspace{-10pt}
+\vspace{-20pt}
 \begin{multicols}{2}
 	\textbf{(1a) Understand the Problem}
 	\begin{itemize}
@@ -169,30 +265,160 @@ In the video in Section 3.16 of our textbook, Paul pushes a footstool (mass $m_{
 	\begin{center}
 		\begin{tikzpicture}
 			\FBDaxes{0,0}{0}{dogaxes}
+			\FBDbox[0.6]{dogaxes}{0}{dogbox}{$D$}
+			\FBDvectorXY{dogboxtcent}{0,1}{FNDS}
+			\node[anchor=east] at (FNDStip) {$\vec{F}^{N}_{DS}$};
+			\FBDvectorXY{dogboxbcent}{0,-1}{FGDE}
+			\node[anchor=east] at (FGDEtip) {$\vec{F}^{g}_{DE}$};
+			\FBDvectorXY{dogboxrcent}{1.5,0}{FSFDS}
+			\node[anchor=south] at (FSFDStip) {$\vec{F}^{sf}_{DS}$};
 			\FBDaxes{3,-2}{0}{stoolaxes}
+			\FBDbox[0.6]{stoolaxes}{0}{stoolbox}{$S$}
+			\FBDvectorXY{stoolboxtcent}{0,1.33}{FNSG}
+			\node[anchor=west] at (FNSGtip) {$\vec{F}^{N}_{SG}$};
+			\FBDvectorXY{stoolboxblq}{0,-0.5}{FNSD}
+			\node[anchor=east] at (FNSDtip) {$\vec{F}^{N}_{SD}$};
+			\FBDvectorXY{stoolboxbrq}{0,-0.83}{FGSE}
+			\node[anchor=west] at (FGSEtip) {$\vec{F}^{g}_{SE}$};
+			\FBDvectorXY{stoolboxlcent}{-1,0}{FSFTSD}
+			\node[anchor=south] at (FSFTSDtip) {$\vec{F}^{sf}_{SD}$};
+			\FBDvectorXY{stoolboxrcent}{1.33,0}{FNSP}
+			\node[anchor=south] at (FNSPtip) {$\vec{F}^{N}_{SP}$};
 		\end{tikzpicture}
 	\end{center}
 \end{multicols}
+\hrule
+\begin{itemize}
+	\large
+	\item Why are the assumptions reasonable?
+	\item Identify any problems with these free body diagrams.
+	\item Identify the third-law pairs.
+\end{itemize}
 \end{PresentSpace}
 \newpage
 \begin{TeacherMargin}
-
+\noindent None of these equations is correct, and we can figure this out with different sensemaking techniques.
+\begin{enumerate}[(A)]
+	\item $F^{N}_{SP} = \mu\frac{m_{1}}{m_{1}+m_{2}}g$ \\
+	Unit Check: The fraction $\frac{m_{1}}{m_{1}+m_{2}}$ is unitless (kilograms in the numerator and denominator cancel), so the right hand side has units of m/s$^{2}$, which is not a force.
+	\item $F^{N}_{SP} = \mu(m_{2}-m_{1})g$ \\
+	Special-Case Analysis: If the dog and the footstool are equal in mass ($m_{1}=m_{2}$), then $F^{N}_{SP} = 0$, which means pushing with any force will cause the dog to slide. It does not seem reasonable that even the smallest amount of force would break the bonds of static friction.
+	\item $F^{N}_{SP} = \mu\frac{m_{1}m_{2}}{m_{1}+m_{2}}g$ \\
+	Special-Case Analysis: Suppose that the dog is much more massive than the footstool ($m_{1} \gg m_{2}$). That would mean that
+	\[
+	\frac{m_{1}m_{2}}{m_{1}+m_{2}} \approx \frac{m_{1}m_{2}}{m_{1}} = m_{2}.
+	\]
+	As such, in this special case, $F^{N}_{SP} = \mu m_{2}g$. It does not seem reasonable that increasing the mass of the dog (which proportionally increases the maximum static friction between the dog and the stool) would eventually cease to have an effect on the feasibility of pushing the stool out from under the dog.
+\end{enumerate}
+\textbf{Sensemaking for the Correct Answer} \\
+The actual answer is $F^{N}_{SP} \leq \mu(m_{1}+m_{2})g$ (see the next page for the Calculate steps that obtain this). \\
+\noindent\textbf{(3a) Units} $\left[F^{N}_{SP}\right] = \left[\mu\right]\left[(m_{1}+m_{2})\right]\left[g\right] = 1 \cdot (\text{kg}+\text{kg}) \cdot \frac{\text{m}}{\text{s}^{2}} = \frac{\text{kg m}}{\text{s}^{2}} = \text{N}$ \\
+\textbf{(3b) Numbers} Is a 160 N force reasonable?
+\begin{itemize}
+	\item To hold the dog and the stool stationary in the air, Paul would have to exert a normal force equal to the force of gravity on the stool-dog system: $F^{N}_{SD,P} = F^{g}_{SD,E} = (m_{1}+m_{2})g = 40\text{ kg} \cdot 10\frac{\text{m}}{\text{s}^{2}} = 400\text{ N}$. \\
+	A force of 160 N is much less than the force required to hold the stool-dog system stationary in the air. This is reasonable---it would be easier to push on the stool than to hold everything up.
+\end{itemize}
+\textbf{(3c) Symbols}
+\begin{itemize}
+	\item If either the mass of the dog or the stool increase, the maximum allowable force increases.
+	\begin{itemize}
+		\item Increasing the mass of the dog increases the maximum static friction between the dog and the stool, which should make it harder for the dog to slide.
+		\item Increasing the mass of the stool makes the dog-stool system more resistant to changes to its motion, so a push that would have caused the dog to slide off of a less massive stool would not accelerate the system as much when applied to a more massive stool, and less friction would be required to give the dog the new, lesser acceleration.
+	\end{itemize}
+	\item If the coefficient of friction increases, the maximum allowable force increases.
+	\begin{itemize}
+		\item Increasing the coefficient of friction means that the dog and stool are grippier to each other, making it harder for the dog to slide off.
+	\end{itemize}
+\end{itemize}
 \end{TeacherMargin}
 \begin{PresentSpace}
 \vspace{-10pt}
 \section*{L\Week-2: Uh-Oh Dr. Paws -- Sensemake}
 \vspace{-10pt}
-
+You have three friends who each come up with a different equation for the maximum allowable force that Paul can apply:
+\begin{enumerate}[(A)]
+	\item $F^{N}_{SP} = \mu\frac{m_{1}}{m_{1}+m_{2}}g$
+	\item $F^{N}_{SP} = \mu(m_{2}-m_{1})g$
+	\item $F^{N}_{SP} = \mu\frac{m_{1}m_{2}}{m_{1}+m_{2}}g$
+\end{enumerate}
+Which of the above equations, if any, are correct? How can you tell?
 \end{PresentSpace}
 \newpage
 \begin{TeacherMargin}
-
+\noindent\textbf{(2a) Represent Principles}
+\begin{itemize}
+	\item Newton's 2nd law: $\vec{F}^{net}=m\vec{a}$
+	\item Newton's 3rd law: $\vec{F}_{AB} = -\vec{F}_{BA}$
+	\item Static friction: $F^{sf} \leq \mu F^{N}$
+	\item Gravity: $\vec{F}^{g} = m\vec{g}$
+\end{itemize}
+\textbf{(2b) Solve Symbolically} \\
+For the dog,
+\begin{align*}
+	m_{2}a & = F^{net}_{x} = F^{sf}_{DS}, \\
+	0 & = F^{net}_{y} = F^{N}_{DS}-F^{g}_{DE} \\
+	& F^{N}_{DS}=F^{g}_{DE}=m_{2}g.
+\end{align*}
+By the nature of static friction, this means that
+\begin{align*}
+	m_{2}a = F^{sf}_{DS} & \leq \mu F^{N}_{DS} = \mu m_{2}g \\
+	a & \leq \mu g.
+\end{align*}
+For the stool,
+\begin{align*}
+	F^{net}_{x} & = m_{1}a \\
+	F^{N}_{SP} - F^{sf}_{SD} & = m_{1}a.
+\end{align*}
+If we solve for $F^{N}_{SP}$, use the fact that $\vec{F}^{sf}_{SD}$ and $\vec{F}^{sf}_{DS}$ are an action-reaction pair, and recall what we know about the static friction on the dog, we find
+\begin{align*}
+	F^{N}_{SP} & = m_{1}a + F^{sf}_{SD} \\
+	& = m_{1}a + F^{sf}_{DS} \\
+	& = m_{1}a + m_{2}a \\
+	& = (m_{1}+m_{2})a.
+\end{align*}
+Now, recall that we found $a\leq\mu g$, so
+\[
+F^{N}_{SP} \leq (m_{1}+m_{2})\mu g.
+\]
+\textbf{(2c) Plug in Numbers}
+\begin{itemize}
+	\item Mass of the footstool: $m_{1}=10\text{ kg}$
+	\item Mass of the dog: $m_{2}=30\text{ kg}$
+	\item Gravity: $g=10\text{ m/s}^{2}$
+	\item Coefficient of static friction: $\mu=0.4$
+\end{itemize}
+\begin{align*}
+	F^{N}_{SP} & \leq (m_{1}+m_{2})\mu g \\
+	& = (10\text{ kg}+30\text{ kg})(0.4)\left(10\frac{\text{m}}{\text{s}^{2}}\right) \\
+	& = 160\text{ N}
+\end{align*}
 \end{TeacherMargin}
 \begin{PresentSpace}
 \vspace{-10pt}
-\section*{L\Week-3: Uh-Oh Dr. Paws -- Calculate}
+\section*{Uh-Oh Dr. Paws -- Calculate}
 \vspace{-10pt}
-
+\textbf{(2a) Represent Principles}
+\begin{align*}
+	\vec{F}^{net}&=m\vec{a} & \vec{F}_{AB} &= -\vec{F}_{BA} & F^{sf} &\leq \mu F^{N} & \vec{F}^{g} & = m\vec{g}
+\end{align*}
+\textbf{(2b) Solve Symbolically} \\
+\phantom{\_}\hspace{1cm}\underline{Dog}\hspace{6.5cm}\underline{Stool}
+\begin{align*}
+	m_{2}a & = F^{net}_{x} = F^{sf}_{DS} & F^{net}_{x} & = m_{1}a \\
+	0 & = F^{net}_{y} = F^{N}_{DS} - F^{g}_{DE} & F^{N}_{SP}-F^{sf}_{SD} & = m_{1}a \\
+	& F^{N}_{DS} = m_{2}g & F^{N}_{SP} & = m_{1}a + F^{sf}_{SD} = m_{1}a+F^{sf}_{DS} \\
+	& & F^{N}_{SP} & = m_{1}a+m_{2}a = (m_{1}+m_{2})a \\
+	& & & \\
+	F^{sf}_{DS} & \leq \mu F^{N}_{DS} = \mu m_{2}g & F^{N}_{SP} & \leq (m_{1}+m_{2})\mu g \\
+	m_{2}a & \leq \mu m_{2}g & & \\
+	a & \leq \mu g & &
+\end{align*}
+\textbf{(2c) Plug in Numbers}
+\begin{align*}
+	F^{N}_{SP} & \leq (m_{1}+m_{2})\mu g \\
+	& = (10\text{ kg}+30\text{ kg})(0.4)\left(10\frac{\text{m}}{\text{s}^{2}}\right) \\
+	& = 160\text{ N}
+\end{align*}
 \end{PresentSpace}
 \newpage
 \begin{TeacherMargin}
