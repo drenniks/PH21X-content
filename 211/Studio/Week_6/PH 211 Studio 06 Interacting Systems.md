@@ -24,7 +24,7 @@ tags:
 ---
 # PH 211 Studio 06 Interacting Systems
 ## Files
-[PH 211 Studio 06 PDF](./PH211_ST_06_Interacting_Systems_240506_213233.pdf)
+[PH 211 Studio 06 PDF](./PH211_ST_06_Interacting_Systems_240723_001353.pdf)
 ## Activities
 Activity 6-1: Book Stack
 Activity 6-2: Moving Bricks (aka Three Bricks, Two Systems)

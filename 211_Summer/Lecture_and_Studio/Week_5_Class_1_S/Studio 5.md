@@ -16,7 +16,7 @@ tags:
 [PH 211 Studio 5 Slides PDF](PH_211_Studio_5_Slides.pdf)
 ## Activities
 Book Stack
-Moving Bricks
+Moving Bricks I
 Moving Bricks II
 Angled Ramp
 Horizontal Pulley
