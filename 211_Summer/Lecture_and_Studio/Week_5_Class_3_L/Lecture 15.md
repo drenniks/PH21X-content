@@ -15,10 +15,9 @@ tags:
 [PH 211 Lecture 15 Slides TeX](PH_211_Lecture_15_Slides.tex)
 [PH 211 Lecture 15 Slides PDF](PH_211_Lecture_15_Slides.pdf)
 ## Activities
-The Drop and Bounce (Energy System Diagram)
+The Drop and Bounce
 The Drop
-The Winch I (Energy System Diagram)
-The Winch II
+The Winch
 ## Notes
 * Added to Vault
 	* Assignment Format 2024-06-14
