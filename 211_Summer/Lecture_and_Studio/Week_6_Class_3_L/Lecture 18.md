@@ -15,8 +15,9 @@ tags:
 [PH 211 Lecture 18 Slides TeX](PH_211_Lecture_18_Slides.tex)
 [PH 211 Lecture 18 Slides PDF](PH_211_Lecture_18_Slides.pdf)
 ## Activities
-Block on a Spring - Forces
-Block on a Spring - Energy
+Potential Energy Diagrams for Spring
+Astronaut Energy I
+Astronaut Energy II
 ## Notes
 * Added to Vault
 	* Assignment Format 2024-06-14

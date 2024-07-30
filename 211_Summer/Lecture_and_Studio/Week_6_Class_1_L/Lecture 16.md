@@ -15,11 +15,7 @@ tags:
 [PH 211 Lecture 16 Slides TeX](PH_211_Lecture_16_Slides.tex)
 [PH 211 Lecture 16 Slides PDF](PH_211_Lecture_16_Slides.pdf)
 ## Activities
-Gravitational Potential Energy
-Stretch vs. Compression
-Second Floor vs. Basement
-Waterslide Exercise
-Spring Exercise
+The Winch
 ## Notes
 * Added to Vault
 	* Assignment Format 2024-06-14

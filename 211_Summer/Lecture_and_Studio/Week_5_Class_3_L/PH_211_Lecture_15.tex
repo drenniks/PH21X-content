@@ -35,7 +35,7 @@ where $\theta$ is the angle between the two vectors (when they are tail-to-tail)
 \end{TeacherMargin}
 \begin{PresentSpace}
 \begin{center}
-	\huge Lecture \Week: Energy and Power
+	\huge Lecture \Week: Energy
 \end{center}
 \vspace{0.5cm}
 \underline{Warm-Up Activity} \\
@@ -217,134 +217,6 @@ Starting from rest ($v_{i}=0$), this means $v_{f}=\sqrt{2gh}$. \\
 	\item Laws
 	\begin{itemize}
 		\item Work-energy theorem \quad $W_{\text{net,ext}} = \Delta E_{\text{total}}$
-	\end{itemize}
-\end{itemize}
-\end{PresentSpace}
-\newpage
-\begin{TeacherMargin}
-
-\end{TeacherMargin}
-\begin{PresentSpace}
-\vspace{-10pt}
-\section*{Power}
-\vspace{-10pt}
-\begin{itemize}
-	\item When the energy of a system changes, we sometimes want to know how \textit{fast} it changes.
-	\item \textit{Power} is the time rate of change of energy:
-	\[
-	P=\frac{dE}{dt}.
-	\]
-	\item Power is measured in watts (W).
-\end{itemize}
-\end{PresentSpace}
-\newpage
-\begin{TeacherMargin}
-\begin{center}
-	\begin{tikzpicture}
-		\draw[thick] (0,0) -- (4,0);
-		\draw[thick,->] (4.2,0) -- (4.5,0) node[anchor=west] {$\hat{x}$};
-		\node[anchor=north] at (1.5,0) {$d\vec{x} = dx\hat{x}$};
-		\draw[thick] (1,0) rectangle (2,1);
-		\draw[thick,->] (2,0.5) -- (3,0.5) node[anchor=west] {$\vec{F} = F_{0}\hat{x}$};
-	\end{tikzpicture}
-\end{center}
-\textbf{Total Energy} \\
-The block can have kinetic energy, so its change in total energy is the difference of its final and initial kinetic energies. Its initial speed is 0 m/s, so
-\[
-\Delta E = K_{f}-K_{i} = \frac{1}{2}mv_{f}^{2} - \frac{1}{2}mv_{i}^{2} = \frac{1}{2}mv_{f}^{2}.
-\]
-Plugging in numbers, we obtain $\Delta E = 9000$ J. \\
-\textbf{Distance} \\
-By the work-energy theorem, $W_{\text{net,ext}} = \Delta E$, so if there is no friction and the winch is the only thing doing work, then we can calculate the distance $d$ from the work it did:
-\[
-W = \int_{0}^{d}\vec{F}\cdot d\vec{x} = F_{0} d = \Delta E = \frac{1}{2}mv_{f}^{2}.
-\]
-Solving for $d$ gives us $d = \frac{m}{2F_{0}}v_{f}^{2}$, and plugging in numbers gives us $d = 0.5$ m. \\
-\textbf{Power} \\
-We know how much energy the winch put into this endeavor, so all we need to find out is the time it took to move the block. For constant acceleration (which we have in this situation of constant force), we know $a = \frac{\Delta v}{\Delta t} = \frac{F_{0}}{m}$, so $\Delta t = \frac{v_{f}m}{F_{0}} = \frac{1}{6}$ s. This means that the power is
-\[
-P = \frac{\Delta E}{\Delta t} = \frac{F_{0}d}{v_{f}m/F_{0}} = \frac{F_{0}^{2}d}{v_{f}m}.
-\]
-Given what we know about the distance, this simplifies to
-\[
-P = \frac{F_{0}^{2}}{v_{f}m}\frac{m}{2F_{0}}v_{f}^{2} = \frac{F_{0}v_{f}}{2} = 54,000\text{ W}.
-\]
-For comparison, the light bulb in my desk lamp in my apartment consumes 9 W while on (this is much more efficient than an equivalently bright incandescent bulb, which would take about 60 W). This much power could light 6,000 desk lamps (or 900 if using an incandescent bulb)!
-\end{TeacherMargin}
-\begin{PresentSpace}
-\vspace{-10pt}
-\section*{L\Week-3: The Winch -- Part 1}
-\vspace{-10pt}
-A winch acts a constant force $F_{0}=18,000$ N on a metal block ($m=500$ kg) to accelerate it across level ground from rest to a final speed of $v_{f}=6$ m/s.
-\begin{itemize}
-	\item What is the block's change in total energy?
-	\item How far did the winch move the block?
-	\item How much power does this winch use?
-\end{itemize}
-\end{PresentSpace}
-\newpage
-\begin{TeacherMargin}
-\noindent\textbf{Force} \\
-To keep the block at constant speed, the winch must exert a force equal in magnitude to the force of gravity on the block:
-\begin{center}
-	\begin{tikzpicture}
-		\FBDbox{0,0}{0}{block}{500 kg}
-		\FBDvectorXY{blocktcent}{0,1}{FT}
-		\node[anchor=south] at (FTtip) {$\vec{F}^{T}$};
-		\FBDvectorXY{blockbcent}{0,-1}{FG}
-		\node[anchor=north] at (FGtip) {$\vec{F}^{g}$};
-	\end{tikzpicture}
-\end{center}
-\[
-F^{T} = F^{g} = mg \approx (500\text{ kg})(10\text{ m/s}^{2}) = 5000\text{ N}
-\]
-\textbf{Distance Lifted} \\
-We know the speed of the block and how long it is in motion, so we can calculate its displacement directly from this:
-\[
-\Delta y = v\Delta t = (2\text{ m/s})(30\text{ s}) = 60\text{ m}.
-\]
-\textbf{Work}
-\begin{align*}
-	W & = \int_{y_{i}}^{y_{f}}\vec{F}\cdot d\vec{y} = \int_{y_{i}}^{y_{f}}\left(F\hat{y}\right)\cdot\left(dy\hat{y}\right) = \int_{y_{i}}^{y_{f}}Fdy \\
-	& = F\Delta y = (5000\text{ N})(60\text{ m}) = 300,000\text{ J}
-\end{align*}
-Note that the speed is not changing, so the total energy of the block is not changing. That means $W_{\text{net,ext}}=\Delta E_{\text{total}} = 0$. Something else must be doing work to remove energy from the system! This is being done by gravity. \\
-\textbf{Power} \\
-The winch is transferring 300,000 J of energy over the course of 30 s, so the power is
-\[
-P = \frac{\Delta E}{\Delta t} = \frac{300,000\text{ J}}{30\text{ s}} = 10,000\text{ W}.
-\]
-This much power could light about 1,111 desk lamps (or about 166 if using an incandescent bulb)!
-\end{TeacherMargin}
-\begin{PresentSpace}
-\vspace{-10pt}
-\section*{L\Week-3: The Winch -- Part 2}
-\vspace{-10pt}
-You want to use the winch to lift the block into the air at a constant speed: $v=2$ m/s.
-\begin{itemize}
-	\item What force should you set the winch for?
-	\item How far does the winch move the block from $t=0$ s to $t=30$ s?
-	\item How much work does the winch do in $\Delta t = 30$ s?
-	\begin{itemize}
-		\item Is anything else doing work on the block?
-	\end{itemize}
-	\item How much power does the winch use now?
-\end{itemize}
-\end{PresentSpace}
-\newpage
-\begin{TeacherMargin}
-
-\end{TeacherMargin}
-\begin{PresentSpace}
-\vspace{-10pt}
-\section*{Energy Analysis}
-\vspace{-10pt}
-\begin{itemize}
-	\item Understanding: Identify a system and the types of energy within the system.
-	\item Calculating: Is your system's energy conserved or not? Once you know, use the work-energy theorem!
-	\item Sensemaking: All the sensemaking strategies you have will work, but a new strategy is sometimes useful: Solve Multiple Ways.
-	\begin{itemize}
-		\item You have kinematics and force techniques at your disposal, so you can solve problems with these and compare their results to the results of your energy approach.
 	\end{itemize}
 \end{itemize}
 \end{PresentSpace}

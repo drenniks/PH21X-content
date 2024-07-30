@@ -15,8 +15,9 @@ tags:
 [PH 211 Lecture 19 Slides TeX](PH_211_Lecture_19_Slides.tex)
 [PH 211 Lecture 19 Slides PDF](PH_211_Lecture_19_Slides.pdf)
 ## Activities
+Block on a Spring - Forces
+Block on a Spring - Energy
 Equilibrium on a Track
-Stunt Car
 ## Notes
 * Added to Vault
 	* Assignment Format 2024-06-14

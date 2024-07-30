@@ -15,9 +15,11 @@ tags:
 [PH 211 Lecture 17 Slides TeX](PH_211_Lecture_17_Slides.tex)
 [PH 211 Lecture 17 Slides PDF](PH_211_Lecture_17_Slides.pdf)
 ## Activities
-Potential Energy Diagrams for Spring
-Astronaut Energy I
-Astronaut Energy II
+Gravitational Potential Energy
+Stretch vs. Compression
+Second Floor vs. Basement
+Waterslide Exercise
+Spring Exercise
 ## Notes
 * Added to Vault
 	* Assignment Format 2024-06-14

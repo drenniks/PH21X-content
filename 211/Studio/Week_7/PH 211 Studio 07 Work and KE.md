@@ -30,7 +30,7 @@ tags:
 ---
 # PH 211 Studio 07 Work and KE
 ## Files
-[PH 211 Studio 07 PDF](./PH211_ST_07_Work_and_KE_240515_150350.pdf)
+[PH 211 Studio 07 PDF](./PH211_ST_07_Work_and_KE_240730_023800.pdf)
 ## Activities
 Warm-Up: Pushing Blocks Along
 Activity 7-1: Reversing a Block

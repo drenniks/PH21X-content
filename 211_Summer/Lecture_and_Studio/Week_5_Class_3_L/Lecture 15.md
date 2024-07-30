@@ -17,7 +17,6 @@ tags:
 ## Activities
 The Drop and Bounce
 The Drop
-The Winch
 ## Notes
 * Added to Vault
 	* Assignment Format 2024-06-14
