@@ -214,12 +214,157 @@ If you can change to a lower height, you can always decrease gravitational poten
 \end{PresentSpace}
 \newpage
 \begin{TeacherMargin}
+
+\end{TeacherMargin}
+\begin{PresentSpace}
+\vspace{-10pt}
+\section*{Solving Problems with Energy}
+\vspace{-10pt}
+\begin{itemize}
+	\item The energy of a system depends on:
+	\begin{itemize}
+		\item \textit{where} each object is located (potential),
+		\item \textit{how fast} each object is moving (kinetic).
+	\end{itemize}
+	\item The \textbf{change} in a system's energy is often easy to calculate.
+\end{itemize}
+\end{PresentSpace}
+\newpage
+\begin{TeacherMargin}
+\noindent \textbf{System} \\
+Your system should be you and the Earth. If the Earth is outside of our system, then gravity does work on you. We can solve the problem this way, but that is not the method of conservation of energy. By putting you and the Earth in the system, there is no work done, and you and the Earth share gravitational potential energy. \\
+
+\noindent It can be very helpful to organize our energies into a table. Each row is a different point in time, and each column is a type of energy in the system, written as a symbolic equation. The right column is the total energy, each entry of which is obtained by summing all of the different energy equations in that row.
+\begin{center}
+\Large
+\begin{tabular}{|c|c|c||c|}
+	\hline
+	& $K$ & $U_{g}$ & $E_{\text{total}}$ \\ \hline
+	Initial & 0 & $mgh$ & $mgh$ \\ \hline
+	Final & $\frac{1}{2}mv^{2}$ & 0 & $\frac{1}{2}mv^{2}$ \\ \hline
+\end{tabular}
+\end{center}
+The work energy theorem tells us that
+\begin{align*}
+	\Delta E & = W_{\text{net,ext}} \\
+	E_{f}-E_{i} & = 0 \\
+	E_{f} & = E_{i}.
+\end{align*}
+As such, if we know there is no work done between two times in our table, we can set the total energy entries of those rows equal to each other. In particular:
+\begin{align*}
+	\frac{1}{2}mv^{2} & = mgh \\
+	v & = \sqrt{2gh}.
+\end{align*}
+Note that the angle of the waterslide doesn't matter! The change in height is important, but how exactly we get from the top to the bottom doesn't matter. This is an aspect of gravity being a conservative force.
+\end{TeacherMargin}
+\begin{PresentSpace}
+\vspace{-10pt}
+\section*{L\Week-4: Down a Waterslide}
+\vspace{-10pt}
+\begin{itemize}
+	\item You (mass $m$) slide down a frictionless waterslide (height $h$) that makes an angle $\theta$.
+	\item How fast are you moving at the bottom of the waterslide?
+	\begin{itemize}
+		\item What system do you want to choose?
+		\item What kinds of energy do we have?
+	\end{itemize}
+\end{itemize}
+\end{PresentSpace}
+\newpage
+\begin{TeacherMargin}
+\noindent \textbf{System} \\
+The system should be the spring and the rock. This makes the spring force internal, so we can use spring potential energy instead of work done by the spring.
+\begin{center}
+	\begin{tikzpicture}
+		\begin{scope}
+			\node[anchor=east] at (0,0.5) {$t_{i}$};
+			\draw[thick] (0,1) -- (0,0) -- (4,0);
+			\foreach \s in {0,1,2,3,4,5,6,7,8,9,10}
+				\draw[thick] (\s*0.1+0.15,0.5) circle (0.15 and 0.3);
+			\node[anchor=south] at (0.65,0.8) {$k$};
+			\draw[thick,color=black,fill=gray,shift={(1.3,0)}] (0,0.5) -- (0,0.75) -- (0.25,1) -- (0.75,1) -- (1,0.75) -- (1,0.25) -- (0.75,0) -- (0.25,0) -- (0,0.25) -- cycle;
+			\node at (1.8,0.5) {$m$};
+			\node[anchor=south] at (1.8,1) {$v_{i}=0$};
+			\draw[thick] (1.8,-0.1) -- (1.8,-0.3) node[anchor=north] {$x_{i}$};
+			\draw[thick] (2.8,-0.1) -- (2.8,-0.3) node[anchor=north] {$x_{eq}=0$};
+		\end{scope}
+		\begin{scope}[shift={(5,0)}]
+			\node[anchor=east] at (0,0.5) {$t_{f}$};
+			\draw[thick] (0,1) -- (0,0) -- (4,0);
+			\foreach \s in {0,1,2,3,4,5,6,7,8,9,10}
+				\draw[thick] (\s*0.2+0.15,0.5) circle (0.15 and 0.3);
+			\node[anchor=south] at (1.3,0.8) {$k$};
+			\draw[thick,color=black,fill=gray,shift={(2.3,0)}] (0,0.5) -- (0,0.75) -- (0.25,1) -- (0.75,1) -- (1,0.75) -- (1,0.25) -- (0.75,0) -- (0.25,0) -- (0,0.25) -- cycle;
+			\node at (2.8,0.5) {$m$};
+			\draw[thick,->,shift={(2.3,0)}] (0.25,1.25) -- (0.5,1.25) -- (0.75,1.25);
+			\node[anchor=south] at (2.8,1.25) {$v_{f}=v$};
+			\draw[thick] (1.8,-0.1) -- (1.8,-0.3) node[anchor=north] {$x_{i}$};
+			\draw[thick] (2.8,-0.1) -- (2.8,-0.3) node[anchor=north] {$x_{eq}=0$};
+		\end{scope}
+	\end{tikzpicture}
+	\Large
+	\begin{tabular}{|c|c|c||c|}
+		\hline
+		& $K$ & $U_{sp}$ & $E_{\text{total}}$ \\ \hline
+		$t_{i}$ & 0 & $\frac{1}{2}kx_{i}^{2}$ & $\frac{1}{2}kx_{i}^{2}$ \\ \hline
+		$t_{f}$ & $\frac{1}{2}mv^{2}$ & 0 & $\frac{1}{2}mv^{2}$ \\ \hline
+	\end{tabular}
+\end{center}
+There is no external work being done on this system, so $\Delta E_{\text{total}}=0$ by the work-energy theorem. As such, the total energy is conserved, and $E_{f} = E_{i}$:
+\begin{align*}
+	\frac{1}{2}mv^{2} & = \frac{1}{2}kx_{i}^{2} \\
+	v^{2} & = \frac{k}{m}x_{i}^{2} \\
+	v & = x_{i}\sqrt{\frac{k}{m}}.
+\end{align*}
+\end{TeacherMargin}
+\begin{PresentSpace}
+\vspace{-10pt}
+\section*{L\Week-5: Rock with a Spring}
+\vspace{-10pt}
+\begin{itemize}
+	\item A rock (mass $m$) is compressing a horizontal spring with constant $k$ by an amount $x_{i}$.
+	\item If you release the rock from rest, how fast is the rock moving when the spring returns to equilibrium?
+	\begin{itemize}
+		\item What system do you want to choose?
+		\item What kinds of energy do we have?
+		\item Draw a diagram to help!
+		\item Find the speed of the rock.
+	\end{itemize}
+\end{itemize}
+\end{PresentSpace}
+\newpage
+\begin{TeacherMargin}
+
+\end{TeacherMargin}
+\begin{PresentSpace}
+\vspace{-10pt}
+\section*{Solving Problems with Energy}
+\vspace{-10pt}
+\begin{itemize}
+	\item The \textbf{change} in a system's energy is often easy to calculate.
+	\begin{itemize}
+		\item Choose a system.
+		\item Identify all forms of energy.
+		\item Draw energy bar diagrams.
+		\begin{itemize}
+			\item A simple, descriptive before-and-after sketch is also good for setting up the problem.
+			\item An energy bar diagram helps you translate from the positions and velocities of the objects into what you expect the energies to be doing over time.
+		\end{itemize}
+		\item Identify each energy symbolically.
+		\begin{itemize}
+			\item Organize them in a table!
+		\end{itemize}
+	\end{itemize}
+\end{itemize}
+\end{PresentSpace}
+\newpage
+\begin{TeacherMargin}
 	
 \end{TeacherMargin}
 \begin{PresentSpace}
 \section*{Main Ideas}
 \begin{itemize}
-	\item 
+	\item We can solve physics problems from an \textit{energy approach} instead of from a \textit{force approach}.
 \end{itemize}
 \end{PresentSpace}
 \end{document}

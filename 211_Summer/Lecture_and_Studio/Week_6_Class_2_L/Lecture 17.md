@@ -18,8 +18,8 @@ tags:
 Gravitational Potential Energy
 Stretch vs. Compression
 Second Floor vs. Basement
-Waterslide Exercise
-Spring Exercise
+Down a Waterslide
+Rock with a Spring
 ## Notes
 * Added to Vault
 	* Assignment Format 2024-06-14
