@@ -1,6 +1,6 @@
 ---
 tags:
-  - usage/PH211/quarter/Sp2024/Week7
+  - usage/PH211/quarter/Sp2024/Week6
   - usage/PH211/section_type/recitation
   - format/assignment2024-04-27
   - modality/in-person
@@ -8,11 +8,11 @@ tags:
 ---
 # PH 221 2024 Spring Week 7
 ## Files
-[PH 221 Week 7 TeX](PH_221_Week_7.tex)
-[PH 221 Week 7 PDF](PH_221_Week_7.pdf)
-[PH 221 Week 7 Worksheet PDF](PH_221_Week_7-Worksheet.pdf)
-[PH 221 Week 7 Solution PDF](PH_221_Week_7-Solution.pdf)
-[PH 221 Week 7 Teacher Solution PDF](PH_221_Week_7-Teacher_Solution.pdf)
+[PH 221 Week 6 TeX](PH_221_Week_6.tex)
+[PH 221 Week 6 PDF](PH_221_Week_6.pdf)
+[PH 221 Week 6 Worksheet PDF](PH_221_Week_6-Worksheet.pdf)
+[PH 221 Week 6 Solution PDF](PH_221_Week_6-Solution.pdf)
+[PH 221 Week 6 Teacher Solution PDF](PH_221_Week_6-Teacher_Solution.pdf)
 ## Activities
 [[Visual Dot Product Practice]]
 [[Lifting Boxes]]

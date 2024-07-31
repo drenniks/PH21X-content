@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "211_Summer/Lecture_and_Studio/Week_6_Class_2_L/Lecture 17.md",
+                "file": "211_Summer/Recitation/Week_6/PH 221 Week 6.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "211_Summer/Lecture_and_Studio/Week_6_Class_2_L/Lecture 17.md",
+                "file": "211_Summer/Recitation/Week_6/PH 221 Week 6.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "211_Summer/Lecture_and_Studio/Week_6_Class_2_L/Lecture 17.md",
+                "file": "211_Summer/Recitation/Week_6/PH 221 Week 6.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "211_Summer/Lecture_and_Studio/Week_6_Class_2_L/Lecture 17.md"
+                "file": "211_Summer/Recitation/Week_6/PH 221 Week 6.md"
               }
             }
           }
@@ -160,6 +160,20 @@
   },
   "active": "03aa254ebbb7b058",
   "lastOpenFiles": [
+    "211/Recitation/Week_7/PH 221 Week 7.md",
+    "211/Recitation/Week_7/PH_221_Week_7-Teacher_Solution.pdf",
+    "211_Summer/Recitation/Week_6/PH 221 Week 6.md",
+    "211_Summer/Recitation/Week_6/PH_221_Week_6.tex",
+    "211_Summer/Recitation/Week_6/PH_221_Week_6.tex.Lh4854",
+    "211/Recitation/Week_9/PH 221 Week 9.md",
+    "211/Recitation/Week_8/PH 221 Week 8.md",
+    "211_Summer/Lecture_and_Studio/Week_6_Class_3_L/Lecture 18.md",
+    "211_Summer/Lecture_and_Studio/Week_7_Class_1_L/Lecture 19.md",
+    "211_Summer/Lecture_and_Studio/Week_7_Class_1_S/Studio 7.md",
+    "211_Summer/Lecture_and_Studio/Week_7_Class_2_L/Lecture 20.md",
+    "211_Summer/Lecture_and_Studio/Week_7_Class_3_L/Lecture 21.md",
+    "211/Recitation/Week_6/PH 221 Week 6.md",
+    "211_Summer/Lecture_and_Studio/Week_6_Class_2_L/Lecture 17.md",
     "211_Summer/Lecture_and_Studio/Week_6_Class_2_L/PH_211_Lecture_17.synctex(busy)",
     "211_Summer/Lecture_and_Studio/Week_6_Class_2_L/PH_211_Lecture_17.tex.cH5279",
     "211_Summer/Lecture_and_Studio/Week_6_Class_2_L/PH_211_Lecture_17.tex.Vr5279",
@@ -167,21 +181,11 @@
     "211_Summer/Lecture_and_Studio/Week_6_Class_2_L/PH_211_Lecture_17.tex.Wl5279",
     "211_Summer/Lecture_and_Studio/Week_6_Class_2_L/PH_211_Lecture_17.tex.xv5279",
     "211_Summer/Lecture_and_Studio/Week_6_Class_2_L/PH_211_Lecture_17.tex.rA5279",
-    "211_Summer/Lecture_and_Studio/Week_6_Class_2_L/PH_211_Lecture_17.tex.Ds5279",
-    "211_Summer/Lecture_and_Studio/Week_6_Class_2_L/PH_211_Lecture_17.tex.Qb5279",
-    "211_Summer/Lecture_and_Studio/Week_6_Class_2_L/PH_211_Lecture_17.tex.hc5279",
-    "211_Summer/Lecture_and_Studio/Week_6_Class_2_L/PH_211_Lecture_17.tex.FV5279",
     "211_Summer/Lecture_and_Studio/Week_6_Class_1_S/Studio 6.md",
-    "211_Summer/Lecture_and_Studio/Week_6_Class_2_L/Lecture 17.md",
     "211/Studio/Week_7/PH 211 Studio 07 Work and KE.md",
     "211_Summer/Lecture_and_Studio/Week_5_Class_3_L/Lecture 15.md",
     "211_Summer/Lecture_and_Studio/Week_6_Class_1_L/Lecture 16.md",
-    "211_Summer/Lecture_and_Studio/Week_7_Class_1_S/Studio 7.md",
-    "211_Summer/Lecture_and_Studio/Week_7_Class_2_L/Lecture 20.md",
     "211_Summer/Lecture_and_Studio/Week_8_Class_1_L/Lecture 22.md",
-    "211_Summer/Lecture_and_Studio/Week_7_Class_3_L/Lecture 21.md",
-    "211_Summer/Lecture_and_Studio/Week_7_Class_1_L/Lecture 19.md",
-    "211_Summer/Lecture_and_Studio/Week_6_Class_3_L/Lecture 18.md",
     "211_Summer/Recitation/Week_5/PH 221 Week 5.md",
     "211_Summer/Lecture_and_Studio/Week_5_Class_2_L/Lecture 14.md",
     "PH_211_Lecture_14_Slides.pdf.md",
@@ -191,11 +195,6 @@
     "211/Studio/Week_6/PH 211 Studio 06 Interacting Systems.md",
     "211_Summer/Lecture_and_Studio/Week_5_Class_1_S/Studio 5.md",
     "Formats/Formats.md",
-    "211_Summer/Lecture_and_Studio/Week_4_Class_3_L/Lecture 12.md",
-    "211_Summer/Lecture_and_Studio/Week_4_Class_1_S/Studio 4.md",
-    "211_Summer/Lecture_and_Studio/Week_4_Class_2_L/Lecture 11.md",
-    "211_Summer/Recitation/Week_4/PH 221 Week 4.md",
-    "211_Summer/Lecture_and_Studio/Week_3_Class_3_L/Lecture 9.md",
     "211_Summer/Lecture_and_Studio/Week_3_Class_1_L/Sensemake.png",
     "211_Summer/Lecture_and_Studio/Week_3_Class_1_L/Calculate.png",
     "211_Summer/Lecture_and_Studio/Week_3_Class_1_L/AnalyzeAndRepresent.png",
