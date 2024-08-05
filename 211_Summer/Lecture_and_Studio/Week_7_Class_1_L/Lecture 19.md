@@ -17,9 +17,10 @@ tags:
 ## Activities
 Block on a Spring - Forces
 Block on a Spring - Energy
-Equilibrium on a Track
+Undulant Track
 ## Notes
 * Added to Vault
 	* Assignment Format 2024-06-14
 	* Lecture Format 2024-06-15
+		* FBDbox and FBDvectorXY renewed to not specify color; could cause compatibility issues.
 	* Activities not broken into separate files yet.
