@@ -18,8 +18,7 @@ tags:
 Stunt Car
 The Ball and the Ground I
 The Ball and the Ground II
-Two Rocks Collide
-The Sled
+[[Colliding Rocks]]
 ## Notes
 * Added to Vault
 	* Assignment Format 2024-06-14

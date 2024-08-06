@@ -20,32 +20,228 @@
 \input{\FileDepth/Formats/Lecture20240615.tex}
 
 %\input{\FileDepth/Formats/FBDCommands.tex}
-%\input{\FileDepth/Formats/MVDCommands.tex}
+\input{\FileDepth/Formats/MVDCommands.tex}
 
+\input{\FileDepth/Activities/Colliding_Rocks/Colliding_Rocks.tex}
 %\input{\FileDepth/Activities/Activity_One/Activity_One.tex}
 %\input{\FileDepth/Activities/Activity_Two/Activity_Two.tex}
 
 \begin{document}
 \begin{TeacherMargin}
-
+\noindent (C) is true, as this condition makes the net impulse on the object zero. If the net force is nonzero, but very weak, or lasting only for a very short while, then we can also say that the impulse is approximately equal.
 \end{TeacherMargin}
 \begin{PresentSpace}
 \begin{center}
-	\huge Studio 7: Title \\
+	\huge Studio 7: Impulse and Conservation of Momentum \\
+	\large (and some energy too)
 	\vspace{1cm}
 \end{center}
-%\underline{Warm-Up Activity} \\
-%How is acceleration symbolically related to velocity? WRITE BIG!
-\begin{comment}{2}
+\underline{Warm-Up Activity} \\
+Momentum is conserved when\dots
 \begin{enumerate}[(A)]
-	\item Velocity is acceleration times $t$.
-	\vspace{6pt}
-	\item Acceleration is velocity times $t$.
-	\vspace{15pt}
-	\item Acceleration is the derivative of velocity.
-	\item Velocity is the derivative of acceleration.
+	\item The kinetic energy is zero.
+	%\vspace{6pt}
+	\item The net external work is zero.
+	%\vspace{15pt}
+	\item The net force is zero.
+	\item There is no change in potential energy.
 \end{enumerate}
-\end{comment}
+\end{PresentSpace}
+\newpage
+\begin{TeacherMargin}
+\noindent We want to include the Earth and the spring in our system with the seat and passenger in order to use conservation of energy. If we don't, then we have to go to the trouble  of calculating work done by gravity and the spring. \\
+
+\noindent At $t_{1}$, the person and seat are stationary, and the spring is compressed beneath them. All energy is spring potential energy.
+\begin{center}
+	\begin{tikzpicture}
+		\begin{scope}
+			\draw[thick] (-0.5,0) -- (0,0) node[anchor=north] {Spring} -- (0.5,0);
+			\foreach \s in {0,1,2,3}
+				\draw[thick] (0,0.1*\s+0.1) circle (0.2 and 0.1);
+			\draw[thick,shift={(0,0.5)}] (-0.5,0) -- (-0.5,1)  node[anchor=east] {Seat} -- (0,1) -- (0,0.5) -- (0.5,0.5) -- (0.5,0) -- cycle;
+			\draw[thick,shift={(0,0.5)}] (0.6,0.25) node[anchor=west] {$v=0$} -- (0.6,0.6) -- (0.1,0.6) -- (0.1,1.3) arc (270:-90:0.25) -- (0.4,0.8) node[anchor=west] {Person};
+			\draw[thick] (-0.6,0.8) -- (-0.8,0.8) node[anchor=east] {$x=0$};
+			\draw[thick] (-0.6,0.5) -- (-0.8,0.5) node[anchor=east] {$x=x_{eq}$};
+		\end{scope}
+		\begin{scope}[shift={(2.5,0)}]
+			\draw[thick] (-1.5,0) -- (-0.75,0) node[anchor=north] {$U_{sp}$} -- (0,0) node[anchor=north] {$U_{g}$} -- (0.75,0) node[anchor=north] {$K$} -- (1.5,0);
+			\filldraw[blue] (-0.9,0) rectangle (-0.6,1.5);
+			\filldraw[blue] (-0.3,0) rectangle (0.3,0);
+			\filldraw[blue] (0.6,0) rectangle (0.9,0);
+		\end{scope}
+	\end{tikzpicture}
+\end{center}
+Here, I define the amount by which the spring was compressed as $x_{c}$, and I set $x=0$ at the top of the spring. \\
+
+\noindent At $t_{2}$, the spring is at its equilibrium length, and the person and seat have been lifted up slightly and now have some speed. The spring potential energy has all been transformed into kinetic energy and a little bit of gravitational potential energy.
+\begin{center}
+	\begin{tikzpicture}
+		\begin{scope}
+			\draw[thick] (-0.5,0) -- (0,0) node[anchor=north] {Spring} -- (0.5,0);
+			\foreach \s in {0,1,2,3}
+			\draw[thick] (0,0.2*\s+0.1) circle (0.2 and 0.1);
+			\draw[thick,shift={(0,0.8)}] (-0.5,0) -- (-0.5,1) -- (0,1) -- (0,0.5) -- (0.5,0.5) -- (0.5,0) -- cycle;
+			\draw[thick,shift={(0,0.8)}] (0.6,0.25) -- (0.6,0.6) -- (0.1,0.6) -- (0.1,1.3) arc (270:-90:0.25) -- (0.4,0.8);
+			\draw[thick,->] (0.8,0.95) -- (0.8,1.3) node[anchor=west] {$\vec{v}_{2}$} -- (0.8,1.65);
+			\draw[thick] (-0.6,0.8) -- (-0.8,0.8) node[anchor=east] {$x=0$};
+			\draw[thick] (-0.6,0.5) -- (-0.8,0.5) node[anchor=east] {$x=x_{eq}$};
+		\end{scope}
+		\begin{scope}[shift={(2.5,0)}]
+			\draw[thick] (-1.5,0) -- (-0.75,0) node[anchor=north] {$U_{sp}$} -- (0,0) node[anchor=north] {$U_{g}$} -- (0.75,0) node[anchor=north] {$K$} -- (1.5,0);
+			\filldraw[blue] (-0.9,0) rectangle (-0.6,0);
+			\filldraw[blue] (-0.15,0) rectangle (0.15,0.15);
+			\filldraw[blue] (0.6,0) rectangle (0.9,1.35);
+		\end{scope}
+	\end{tikzpicture}
+\end{center}
+I use the label $v_{2}$ fr the speed at this moment. It is not $v_{max}$, which would actually happen before the spring reaches equilibrium. \\
+
+At $t_{3}$, the person and seat stop momentarily at their maximum height. The kinetic energy has all been transformed into gravitational potential energy.
+\begin{center}
+	\begin{tikzpicture}
+		\begin{scope}
+			\draw[thick] (-0.5,0) -- (0,0) node[anchor=north] {Spring} -- (0.5,0);
+			\foreach \s in {0,1,2,3}
+			\draw[thick] (0,0.2*\s+0.1) circle (0.2 and 0.1);
+			\draw[thick,shift={(0,1.8)}] (-0.5,0) -- (-0.5,1) -- (0,1) -- (0,0.5) -- (0.5,0.5) -- (0.5,0) -- cycle;
+			\draw[thick,shift={(0,1.8)}] (0.6,0.25) node[anchor=west] {$v=0$} -- (0.6,0.6) -- (0.1,0.6) -- (0.1,1.3) arc (270:-90:0.25) -- (0.4,0.8);
+			\draw[thick] (-0.6,1.8) -- (-0.8,1.8) node[anchor=east] {$h_{max}=0$};
+			\draw[thick] (-0.6,0.8) -- (-0.8,0.8) node[anchor=east] {$x=0$};
+			\draw[thick] (-0.6,0.5) -- (-0.8,0.5) node[anchor=east] {$x=x_{eq}$};
+		\end{scope}
+		\begin{scope}[shift={(2.5,0)}]
+			\draw[thick] (-1.5,0) -- (-0.75,0) node[anchor=north] {$U_{sp}$} -- (0,0) node[anchor=north] {$U_{g}$} -- (0.75,0) node[anchor=north] {$K$} -- (1.5,0);
+			\filldraw[blue] (-0.9,0) rectangle (-0.6,0);
+			\filldraw[blue] (-0.15,0) rectangle (0.15,1.5);
+			\filldraw[blue] (0.6,0) rectangle (0.9,0);
+		\end{scope}
+	\end{tikzpicture}
+\end{center}
+\begin{center}
+	\begin{tabular}{c||c|c|c||c}
+		& $U_{sp}$ & $U_{g}$ & $K$ & $E_{\text{total}}$ \\ \hline
+		$t_{1}$ & $\frac{1}{2}kx_{c}^{2}$ & 0 & 0 & $\frac{1}{2}kx_{c}^{2}$ \\ \hline
+		$t_{2}$ & 0 & $mgx_{c}$ & $\frac{1}{2}mv_{2}^{2}$ & $mgx_{c}+\frac{1}{2}mv_{2}^{2}$ \\ \hline
+		$t_{3}$ & 0 & $mgh_{max}$ & 0 & $mgh_{max}$
+	\end{tabular}
+\end{center}
+\end{TeacherMargin}
+\begin{PresentSpace}
+\vspace{-10pt}
+\section*{S7-1: Ejector Seat}
+\vspace{-10pt}
+\begin{itemize}
+	\large
+	\item A stationary stunt car driver has an ejector seat that rests on a compressed vertical spring.
+	\item When the spring is released, the seat with its passenger is launched out of the car and into the air.
+	\begin{itemize}
+		\normalsize
+		\item Explain why you might want to include the Earth and the spring in your system.
+	\end{itemize}
+	\item Consider three instants in time: (1) just before the seat is released, (2) when the spring is at equilibrium, and (3) the person reaches maximum height.
+	\begin{itemize}
+		\normalsize
+		\item Write a qualitative description of how the energy of the system transforms through these three instants.
+	\end{itemize}
+	\item For each instant:
+	\begin{itemize}
+		\normalsize
+		\item Draw a physical diagram.
+		\item Construct an energy bar chart.
+		\item Write each energy symbolically.
+	\end{itemize}
+	\item How high does the person go?
+	\item What is the person's speed when the ejector seat leaves the spring?
+	\begin{itemize}
+		\item Don't forget to make sense of your answers!
+	\end{itemize}
+\end{itemize}
+\end{PresentSpace}
+\newpage
+\begin{TeacherMargin}
+\begin{center}
+	\begin{tabular}{c||c|c|c||c}
+		& $U_{sp}$ & $U_{g}$ & $K$ & $E_{\text{total}}$ \\ \hline
+		$t_{1}$ & $\frac{1}{2}kx_{c}^{2}$ & 0 & 0 & $\frac{1}{2}kx_{c}^{2}$ \\ \hline
+		$t_{2}$ & 0 & $mgx_{c}$ & $\frac{1}{2}mv_{2}^{2}$ & $mgx_{c}+\frac{1}{2}mv_{2}^{2}$ \\ \hline
+		$t_{3}$ & 0 & $mgh_{max}$ & 0 & $mgh_{max}$
+	\end{tabular}
+\end{center}
+If there is no external work between any two times, then the $E_{\text{total}}$ entries for those times are equal!
+%\begin{multicols}{2}
+\begin{align*}
+	E_{\text{total,1}} = E_{\text{total,3}} \implies \frac{1}{2}kx_{c}^{2} = mgh_{max} \implies h_{max}=\frac{kx_{c}^{2}}{2mg}
+\end{align*}
+\begin{align*}
+	E_{\text{total,1}} = E_{\text{total,2}} \implies
+	\frac{1}{2}kx_{c}^{2} = mghx_{c} + \frac{1}{2}mv_{2}^{2} & \implies
+	\left(\frac{k}{m}x_{c}-2g\right)x_{c} = v_{2}^{2} \\
+	& \implies
+	v_{2} = \sqrt{\left(\sqrt{\frac{k}{m}}-2g\right)x_{c}}
+\end{align*}
+%\end{multicols}
+\vspace{-1.8cm} \\
+\textbf{Sensemaking} \\
+\begin{itemize}
+	\item $h_{max}=\frac{kx_{c}^{3}}{2mg}$
+	\begin{itemize}
+		\item Unit Check: $[h_{max}]=\frac{[k][x_{c}]^{2}}{[mg]} = \frac{\frac{\text{N}}{\text{m}}\cdot\text{m}^{2}}{\text{N}} = m$
+		\item Covariation
+		\begin{itemize}
+			\item $k$ increases or $x_{c}$ increases $\implies$ $h_{max}$ increases. \\
+			A stiffer spring, (higher $k$) stores more energy for the same compression, and a more compressed spring (higher $x_{c}$) stores more energy. Imparting more kinetic energy to the seat and person will allow them to go higher.
+			\item $m$ increases or $g$ increases $\implies$ $h_{max}$ decreases. \\
+			A more massive object will store more gravitational potential energy in less of an elevation change, as would an object in stronger gravity. As such, the object would transform its kinetic energy entirely at a smaller maximum height.
+		\end{itemize}
+	\end{itemize}
+	\item $v_{2}=\sqrt{\left(\frac{k}{m}x_{c}-2g\right)x_{c}}$
+	\begin{itemize}
+		\item Unit Check:
+		\begin{align*}
+		[v_{2}] & = \sqrt{\left(\frac{[k]}{[m]}[x_{c}]-[g]\right)[x_{c}]} = \sqrt{\left(\frac{\text{N}/\text{m}}{\text{kg}}\cdot\text{m}-\frac{\text{m}}{\text{s}^{2}}\right)\cdot\text{m}} \\
+		& = \sqrt{\frac{\text{N}\cdot\text{m}}{\text{kg}}-\frac{\text{m}^{2}}{\text{s}^{2}}} = \sqrt{\frac{\text{m}^{2}}{\text{s}^{2}}-\frac{\text{m}^{2}}{\text{s}^{2}}} = \frac{\text{m}}{\text{s}}
+		\end{align*}
+		\item Special Cases
+		\begin{itemize}
+			\item What if $\frac{k}{m}x_{c} = 2g$? \\
+			The equation would say $v_{2}=0$, so the seat does not leave the spring. Rearranging, we can see that $x_{c} = \frac{2mg}{k}$, and when we plug this into our equation for $h_{max}$, we get $h_{max}=x_{c}$, so our equations are consistent with each other.
+			\item What if $\frac{k}{m}x_{c} < 2g$? \\
+			Then $v_{2}$ is not real (we are talking about the square root of an imaginary number). \\
+			Physically, if $x_{c} < \frac{2mg}{k}$, then the spring never fully decompresses, and $v_{2}$ is defined based on the assumption that it does, so it makes sense that we would get an invalid answer.
+		\end{itemize}
+	\end{itemize}
+\end{itemize}
+\end{TeacherMargin}
+\begin{PresentSpace}
+\vspace{-10pt}
+\section*{S7-1: Ejector Seat}
+\vspace{-10pt}
+\begin{itemize}
+	\large
+	\item A stationary stunt car driver has an ejector seat that rests on a compressed vertical spring.
+	\item When the spring is released, the seat with its passenger is launched out of the car and into the air.
+	\begin{itemize}
+		\normalsize
+		\item Explain why you might want to include the Earth and the spring in your system.
+	\end{itemize}
+	\item Consider three instants in time: (1) just before the seat is released, (2) when the spring is at equilibrium, and (3) the person reaches maximum height.
+	\begin{itemize}
+		\normalsize
+		\item Write a qualitative description of how the energy of the system transforms through these three instants.
+	\end{itemize}
+	\item For each instant:
+	\begin{itemize}
+		\normalsize
+		\item Draw a physical diagram.
+		\item Construct an energy bar chart.
+		\item Write each energy symbolically.
+	\end{itemize}
+	\item How high does the person go?
+	\item What is the person's speed when the ejector seat leaves the spring?
+	\begin{itemize}
+		\item Don't forget to make sense of your answers!
+	\end{itemize}
+\end{itemize}
 \end{PresentSpace}
 \newpage
 \begin{TeacherMargin}
@@ -53,9 +249,14 @@
 \end{TeacherMargin}
 \begin{PresentSpace}
 \vspace{-10pt}
-\section*{S7-#: Title}
-\vspace{-10pt}
-
+\section*{Impulse and Momentum}
+\vspace{-5pt}
+We rewrote Newton's 2nd law in a new way, which we will call the impulse-momentum theorem.
+\begin{align*}
+	\text{Impulse} & = \text{Change in Momentum} \\
+	\vec{J}_{net} & = \Delta\vec{p} \\
+	\int_{t_{i}}^{t_{f}}\vec{F}^{net}dt & = m\vec{v}_{f}-m\vec{v}_{i}
+\end{align*}
 \end{PresentSpace}
 \newpage
 \begin{TeacherMargin}
@@ -63,9 +264,181 @@
 \end{TeacherMargin}
 \begin{PresentSpace}
 \vspace{-10pt}
-\section*{S7-#: Graphing Acceleration, Velocity, Position}
+\section*{A Deeper Model for Interactions}
 \vspace{-10pt}
+\begin{itemize}
+	\item Quantities
+	\begin{itemize}
+		\item Energy \qquad \qquad \qquad \quad \ \ $E$
+		\item Work \qquad \qquad \qquad \quad \ \ \ \ $W = \int_{r_{i}}^{r_{f}}\vec{F}\cdot d\vec{r}$
+		\item Kinetic Energy \qquad \qquad $K=\frac{1}{2}mv^{2}$
+		\item Potential Energy \qquad \quad \ $U=$ depends on interaction \\
+		You have to tell everyone where zero $PE$ is!
+		\begin{itemize}
+			\item Gravity \qquad $U_{g} = mgy$
+			\item Spring \qquad \ $U_{sp} = \frac{1}{2}kx^{2}$
+		\end{itemize}
+		\item Momentum \qquad \qquad \qquad $\vec{p}=m\vec{v}$
+		\item Impulse \qquad \qquad \quad \quad \ \ $\vec{J}_{net}=\int_{t_{i}}^{t_{f}}\vec{F}^{net}dt$
+	\end{itemize}
+	\item Laws
+	\begin{itemize}
+		\item Work-energy theorem \qquad $W_{\text{net,ext}} = \Delta E_{\text{total}}$
+		\item Impulse-momentum theorem \qquad $\vec{J}_{net} = \Delta\vec{p}$
+	\end{itemize}
+\end{itemize}
+\end{PresentSpace}
+\newpage
+\begin{TeacherMargin}
+\begin{center}
+	\begin{tikzpicture}
+		\MVDRows[1.5]{B}
+		\MVDCol{DropB}{Ball}{B}
+		\MDot{DropBinit}
+		\MVec[270]{DropBdelt}{1}
+		\MVec[270]{DropBfin}{1}
+	\end{tikzpicture}
+\end{center}
+This problem gives us the simple momentum vector diagram above. We know that $\vec{F}^{net} =\vec{F}^{g}$ during the fall, so the impulse is
+\begin{align*}
+	\vec{J}_{net} = \int_{t_{i}}^{t_{f}}\vec{F}^{net}dt & = m\vec{v}_{f} - m\vec{v}_{i} \\
+	-mg\Delta t & = mv_{f} \\
+	-g\Delta t & = v_{f}.
+\end{align*}
+Plugging in numbers ($g\approx 10$ m/s$^{2}$ and $\Delta t = 0.5$ s) gives us $v_{f} = -5\text{m}/\text{s}$
+\end{TeacherMargin}
+\begin{PresentSpace}
+\vspace{-10pt}
+\section*{S7-2: The Ball and the Ground I}
+\vspace{-10pt}
+\begin{itemize}
+	\item You drop a 0.05 kg tennis ball from rest and it takes 0.5 s to hit the ground.
+	\item Use the impulse-momentum theorem to find the velocity of the ball just before impact with the ground.
+\end{itemize}
+\end{PresentSpace}
+\newpage
+\begin{TeacherMargin}
+\begin{center}
+	\begin{tikzpicture}
+		\MVDRows[1.5]{B}
+		\MVDCol{DropB}{Ball}{B}
+		\MVec[270]{DropBinit}{0.4}
+		\MVec[90]{DropBdelt}{0.8}
+		\MVec[90]{DropBfin}{0.4}
+	\end{tikzpicture}
+\end{center}
+Let the velocities before and after the bounce be $\vec{v}_{i} = -5\text{ m}/\text{s}\hat{y}$ and $\vec{v}_{f} = 5\text{ m}/\text{s}\hat{y}$. The change in momentum is
+\[
+\Delta\vec{p} = m\vec{v}_{f} - m\vec{v_{i}} = m \left(\vec{v}_{f} - m\vec{v_{i}}\right) = (0.05\text{ kg})(5\text{ m}/\text{s} - (-5\text{ m}/\text{s}))\hat{y} = 0.5 \text{kg m/s}^{2}\hat{y}.
+\]
+We can simplify the impulse integral by writing it in terms of the net force:
+\[
+\int_{t_{i}}^{t_{f}}\vec{F}^{net}dt = \vec{F}^{net}_{avg}\Delta t.
+\]
+As such,
+\[
+\vec{F}^{net}_{avg}\Delta t = \Delta\vec{p} \implies \vec{F}^{net}_{avg} = \frac{m}{\Delta t}\left(\vec{v}_{f}-\vec{v}_{i}\right).
+\]
+With numbers, this becomes
+\[
+\vec{F}^{net}_{avg} = \frac{0.05\text{ kg}}{0.01\text{ s}}\left(5\text{ m}/\text{s}-(-5\text{ m}/\text{s})\right)\hat{y} = (50\text{ N})\hat{y}.
+\]
+If we subtract off the force of gravity (-0.5 N $\hat{y}$), we can find out the average normal force (50.5 N).
+\end{TeacherMargin}
+\begin{PresentSpace}
+\vspace{-10pt}
+\section*{S7-2: The Ball and the Ground II}
+\vspace{-10pt}
+\begin{itemize}
+	\item  You drop a 0.05 kg tennis ball from rest and it takes 0.5 s to hit the ground.
+	\item The tennis ball rebounds from the ground with the same speed as impact. The collision takes 0.01 s.
+	\item Find the average net force on the tennis ball.
+\end{itemize}
+\end{PresentSpace}
+\newpage
+\begin{TeacherMargin}
 
+\end{TeacherMargin}
+\begin{PresentSpace}
+\vspace{-10pt}
+\section*{Conservation of Momentum}
+\vspace{-5pt}
+If the net force on a system is zero, then the impulse is zero.
+\begin{align*}
+	\vec{J} & = \Delta\vec{p} \\
+	\vec{0} & = \Delta\vec{p}
+\end{align*}
+Under this condition, we say that the momentum of the system is \textit{conserved}---it does not change!
+\end{PresentSpace}
+\newpage
+\begin{TeacherMargin}
+\CollRockConsSol
+\CollRocksSpecSol
+%\CollRockCalc
+%\CollRockSense
+\end{TeacherMargin}
+\begin{PresentSpace}
+\vspace{-10pt}
+\section*{S7-3: Two Rocks Collide}
+\vspace{-10pt}
+\begin{itemize}
+	\item A small rock (mass $m$) is moving to the right on a frictionless table with speed $v$.
+	\item It hits a second rock (mass $M$) that is initially at rest on the table. The rocks do not stick together.
+	\begin{itemize}
+		\item Is momentum conserved? For what system?
+		\item Is energy conserved? For what system?
+	\end{itemize}
+	\item Our goal is to find the final speed of each rock, but don't try to solve it yet.
+	\begin{itemize}
+		\item Instead, what special cases do you want to think about for this situation? What makes these special cases easier to think about than the general problem?
+	\end{itemize}
+\end{itemize}
+\end{PresentSpace}
+\newpage
+\begin{TeacherMargin}
+%\CollRockConsSol
+%\CollRocksSpecSol
+\begin{multicols}{2}
+\CollRockCalc
+\CollRockSense
+\end{multicols}
+\end{TeacherMargin}
+\begin{PresentSpace}
+\vspace{-10pt}
+\section*{S7-3: Two Rocks Collide}
+\vspace{-10pt}
+\begin{itemize}
+	\item A small rock (mass $m$) is moving to the right on a frictionless table with speed $v$.
+	\item It hits a second rock (mass $M$) that is initially at rest on the table. The rocks do not stick together.
+	\begin{itemize}
+		\item Is momentum conserved? For what system?
+		\item Is energy conserved? For what system?
+	\end{itemize}
+	\item Our goal is to find the final speed of each rock, but don't try to solve it yet.
+	\begin{itemize}
+		\item Instead, what special cases do you want to think about for this situation? What makes these special cases easier to think about than the general problem?
+	\end{itemize}
+\end{itemize}
+\end{PresentSpace}
+\newpage
+\begin{TeacherMargin}
+
+\end{TeacherMargin}
+\begin{PresentSpace}
+\vspace{-10pt}
+\section*{Energy and Collisions}
+\vspace{-10pt}
+\begin{itemize}
+	\item Collisions where kinetic energy is conserved are known as \textit{elastic collisions}.
+	\item Collisions where the energy of the system decreases are known as \textit{inelastic collisions}.
+	\begin{itemize}
+		\item When two things stick together, this is a \textit{perfectly inelastic collision}.
+	\end{itemize}
+	\item Collisions where the energy of the system increases are known as \textit{superelastic collisions}.
+	\begin{itemize}
+		\item Think explosions.
+	\end{itemize}
+\end{itemize}
 \end{PresentSpace}
 \newpage
 \begin{TeacherMargin}
@@ -74,7 +447,9 @@
 \begin{PresentSpace}
 \section*{Main Ideas}
 \begin{itemize}
-	\item 
+	\item Momentum and impulse are useful quantities for solving dynamics problems.
+	\item The impulse is always equal to the change in momentum for a system.
+	\item When the impulse is zero (because the net force is zero), the momentum of the system is constant---it is \textit{conserved}.
 \end{itemize}
 \end{PresentSpace}
 \end{document}
