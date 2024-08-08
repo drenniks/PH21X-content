@@ -4,9 +4,7 @@
 	\end{scope}
 }
 \newcommand{\MDot}[1]{%Creates a dot at #1 to represent a zero vector.
-	\begin{scope}[shift={(#1)}]
-		\filldraw (#1) circle (1pt);
-	\end{scope}
+	\filldraw (#1) circle (1pt);
 }
 \newcommand{\MVDRows}[2][4.5]{%Creates the rows (initial, delta, final) of a momentum vector diagram. The optional argument determines the width of the table, and defaults to a good length for three columns (two objects and the total system). The non-optional argument gives a coordinate name (not displayed) to the diagram.
 	\begin{scope}

@@ -1,12 +1,12 @@
 ---
 tags:
-  - usage/PH211/quarter/Sp2024/Week5
+  - usage/PH211/quarter/Su2024/Week4
   - usage/PH211/section_type/recitation
   - format/assignment2024-04-27
   - modality/in-person
   - time/long
 ---
-# PH 221 2024 Spring Week 4
+# PH 221 2024 Summer Week 4
 ## Files
 [PH 221 Week 4 TeX](PH_221_Week_4.tex)
 [PH 221 Week 4 PDF](PH_221_Week_4.pdf)

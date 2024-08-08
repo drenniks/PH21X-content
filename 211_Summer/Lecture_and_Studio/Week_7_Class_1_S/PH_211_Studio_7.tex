@@ -60,8 +60,8 @@ Momentum is conserved when\dots
 				\draw[thick] (0,0.1*\s+0.1) circle (0.2 and 0.1);
 			\draw[thick,shift={(0,0.5)}] (-0.5,0) -- (-0.5,1)  node[anchor=east] {Seat} -- (0,1) -- (0,0.5) -- (0.5,0.5) -- (0.5,0) -- cycle;
 			\draw[thick,shift={(0,0.5)}] (0.6,0.25) node[anchor=west] {$v=0$} -- (0.6,0.6) -- (0.1,0.6) -- (0.1,1.3) arc (270:-90:0.25) -- (0.4,0.8) node[anchor=west] {Person};
-			\draw[thick] (-0.6,0.8) -- (-0.8,0.8) node[anchor=east] {$x=0$};
-			\draw[thick] (-0.6,0.5) -- (-0.8,0.5) node[anchor=east] {$x=x_{eq}$};
+			\draw[thick] (-0.6,0.8) -- (-0.8,0.8) node[anchor=east] {$x=x_{c}$};
+			\draw[thick] (-0.6,0.5) -- (-0.8,0.5) node[anchor=east] {$x=0$};
 		\end{scope}
 		\begin{scope}[shift={(2.5,0)}]
 			\draw[thick] (-1.5,0) -- (-0.75,0) node[anchor=north] {$U_{sp}$} -- (0,0) node[anchor=north] {$U_{g}$} -- (0.75,0) node[anchor=north] {$K$} -- (1.5,0);
@@ -71,9 +71,10 @@ Momentum is conserved when\dots
 		\end{scope}
 	\end{tikzpicture}
 \end{center}
-Here, I define the amount by which the spring was compressed as $x_{c}$, and I set $x=0$ at the top of the spring. \\
+Here, I define the amount by which the spring was compressed as $x_{c}$, and I set $x=0$ at the top of the spring (so the spring is compressed to $x=0$, and its equilibrium is at $x=x_{c}$). \\
 
 \noindent At $t_{2}$, the spring is at its equilibrium length, and the person and seat have been lifted up slightly and now have some speed. The spring potential energy has all been transformed into kinetic energy and a little bit of gravitational potential energy.
+\vspace{-15pt}
 \begin{center}
 	\begin{tikzpicture}
 		\begin{scope}
@@ -83,8 +84,8 @@ Here, I define the amount by which the spring was compressed as $x_{c}$, and I s
 			\draw[thick,shift={(0,0.8)}] (-0.5,0) -- (-0.5,1) -- (0,1) -- (0,0.5) -- (0.5,0.5) -- (0.5,0) -- cycle;
 			\draw[thick,shift={(0,0.8)}] (0.6,0.25) -- (0.6,0.6) -- (0.1,0.6) -- (0.1,1.3) arc (270:-90:0.25) -- (0.4,0.8);
 			\draw[thick,->] (0.8,0.95) -- (0.8,1.3) node[anchor=west] {$\vec{v}_{2}$} -- (0.8,1.65);
-			\draw[thick] (-0.6,0.8) -- (-0.8,0.8) node[anchor=east] {$x=0$};
-			\draw[thick] (-0.6,0.5) -- (-0.8,0.5) node[anchor=east] {$x=x_{eq}$};
+			\draw[thick] (-0.6,0.8) -- (-0.8,0.8) node[anchor=east] {$x=x_{c}$};
+			\draw[thick] (-0.6,0.5) -- (-0.8,0.5) node[anchor=east] {$x=0$};
 		\end{scope}
 		\begin{scope}[shift={(2.5,0)}]
 			\draw[thick] (-1.5,0) -- (-0.75,0) node[anchor=north] {$U_{sp}$} -- (0,0) node[anchor=north] {$U_{g}$} -- (0.75,0) node[anchor=north] {$K$} -- (1.5,0);
@@ -97,6 +98,7 @@ Here, I define the amount by which the spring was compressed as $x_{c}$, and I s
 I use the label $v_{2}$ fr the speed at this moment. It is not $v_{max}$, which would actually happen before the spring reaches equilibrium. \\
 
 At $t_{3}$, the person and seat stop momentarily at their maximum height. The kinetic energy has all been transformed into gravitational potential energy.
+\vspace{-15pt}
 \begin{center}
 	\begin{tikzpicture}
 		\begin{scope}
@@ -105,9 +107,9 @@ At $t_{3}$, the person and seat stop momentarily at their maximum height. The ki
 			\draw[thick] (0,0.2*\s+0.1) circle (0.2 and 0.1);
 			\draw[thick,shift={(0,1.8)}] (-0.5,0) -- (-0.5,1) -- (0,1) -- (0,0.5) -- (0.5,0.5) -- (0.5,0) -- cycle;
 			\draw[thick,shift={(0,1.8)}] (0.6,0.25) node[anchor=west] {$v=0$} -- (0.6,0.6) -- (0.1,0.6) -- (0.1,1.3) arc (270:-90:0.25) -- (0.4,0.8);
-			\draw[thick] (-0.6,1.8) -- (-0.8,1.8) node[anchor=east] {$h_{max}=0$};
-			\draw[thick] (-0.6,0.8) -- (-0.8,0.8) node[anchor=east] {$x=0$};
-			\draw[thick] (-0.6,0.5) -- (-0.8,0.5) node[anchor=east] {$x=x_{eq}$};
+			\draw[thick] (-0.6,1.8) -- (-0.8,1.8) node[anchor=east] {$x=h_{max}$};
+			\draw[thick] (-0.6,0.8) -- (-0.8,0.8) node[anchor=east] {$x=x_{c}$};
+			\draw[thick] (-0.6,0.5) -- (-0.8,0.5) node[anchor=east] {$x=0$};
 		\end{scope}
 		\begin{scope}[shift={(2.5,0)}]
 			\draw[thick] (-1.5,0) -- (-0.75,0) node[anchor=north] {$U_{sp}$} -- (0,0) node[anchor=north] {$U_{g}$} -- (0.75,0) node[anchor=north] {$K$} -- (1.5,0);
@@ -183,7 +185,7 @@ If there is no external work between any two times, then the $E_{\text{total}}$ 
 \vspace{-1.8cm} \\
 \textbf{Sensemaking} \\
 \begin{itemize}
-	\item $h_{max}=\frac{kx_{c}^{3}}{2mg}$
+	\item $h_{max}=\frac{kx_{c}^{2}}{2mg}$
 	\begin{itemize}
 		\item Unit Check: $[h_{max}]=\frac{[k][x_{c}]^{2}}{[mg]} = \frac{\frac{\text{N}}{\text{m}}\cdot\text{m}^{2}}{\text{N}} = m$
 		\item Covariation
@@ -327,9 +329,9 @@ Plugging in numbers ($g\approx 10$ m/s$^{2}$ and $\Delta t = 0.5$ s) gives us $v
 		\MVec[90]{DropBfin}{0.4}
 	\end{tikzpicture}
 \end{center}
-Let the velocities before and after the bounce be $\vec{v}_{i} = -5\text{ m}/\text{s}\hat{y}$ and $\vec{v}_{f} = 5\text{ m}/\text{s}\hat{y}$. The change in momentum is
+Let the velocities before and after the bounce be $\vec{v}_{i} = (-5\text{ m}/\text{s})\hat{y}$ and $\vec{v}_{f} = (5\text{ m}/\text{s})\hat{y}$. The change in momentum is
 \[
-\Delta\vec{p} = m\vec{v}_{f} - m\vec{v_{i}} = m \left(\vec{v}_{f} - m\vec{v_{i}}\right) = (0.05\text{ kg})(5\text{ m}/\text{s} - (-5\text{ m}/\text{s}))\hat{y} = 0.5 \text{kg m/s}^{2}\hat{y}.
+\Delta\vec{p} = m\vec{v}_{f} - m\vec{v}_{i} = m \left(\vec{v}_{f} - \vec{v}_{i}\right) = (0.05\text{ kg})(5\text{ m}/\text{s} - (-5\text{ m}/\text{s}))\hat{y} = 0.5 \text{kg m/s}^{2}\hat{y}.
 \]
 We can simplify the impulse integral by writing it in terms of the net force:
 \[

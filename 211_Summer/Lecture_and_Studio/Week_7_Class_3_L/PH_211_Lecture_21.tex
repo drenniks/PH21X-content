@@ -31,24 +31,87 @@
 \end{TeacherMargin}
 \begin{PresentSpace}
 \begin{center}
-	\huge Lecture \Week: Title
+	\huge Lecture \Week: Collisions
 \end{center}
 \vspace{0.5cm}
-\underline{Warm-Up Activity} \\
-Question?
+\underline{Prediction}
+\begin{itemize}
+	\item Experiment 1 is conducted with two carts, $\text{A}_{1}$ and $\text{B}_{1}$, on a level, frictionless track. The mass of cart $\text{B}_{1}$ is greater than that of cart $\text{A}_{1}$ (\textit{i.e.} $m_{\text{B}_{1}} > m_{\text{A}_{1}}$).
+	\item In experiment 1, cart $\text{A}_{1}$ moves toward cart $\text{B}_{1}$, which is initially at rest. Magnets are attached to the carts so that the carts repel each other without touching. After the collision, cart $\text{A}_{1}$ has reversed direction and cart $\text{B}_{1}$ moves to the right.
+	\item \textit{Predict} whether the magnitude of the final momentum of cart $\text{B}_{1}$ is \textit{greater than}, \textit{less than}, or \textit{equal to} that of the system $\text{S}_{1}$ of both carts. Briefly explain.
+\end{itemize}
+\begin{center}
+\Large
+\begin{tikzpicture}
+	\newcommand{\CollExp}[1][0]{
+		\filldraw[gray] (0,0) rectangle (4,-0.25);
+		\draw[ultra thick] (0,0) -- (4,0);
+		\draw[thick] (-0.5,-0.5) rectangle (4.5,2.5);
+		\if3#1
+		\draw[thick] (0.5,0) rectangle (1.25,0.5);
+		\node at (0.875,0.25) {A$_{3}$};
+		\draw[thick] (2.25,0) rectangle (3.9,1.24);
+		\node at (3.075,0.62) {B$_{3}$};
+		\node[anchor=west] at (4.75,1) {Experiment 3};
+		\draw[ultra thick,->] (1.25,0.7) -- (0,0.7);
+		\node[anchor=south] at (1.25,0.7) {$\vec{v}_{\text{A}_{3}\text{f}}$};
+		\draw[ultra thick,->] (2.25,1.44) -- (2.75,1.44);
+		\node[anchor=south] at (2.25,1.44) {$\vec{v}_{\text{B}_{3}\text{f}}$};
+		\else
+		\if2#1
+		\draw[thick] (0.5,0) rectangle (1.25,0.5);
+		\node at (0.875,0.25) {A$_{2}$};
+		\draw[thick] (2.25,0) rectangle (3.5,0.94);
+		\node at (2.875,0.47) {B$_{2}$};
+		\node[anchor=west] at (4.75,1) {Experiment 2};
+		\draw[ultra thick,->] (1.25,0.7) -- (0.3,0.7);
+		\node[anchor=south] at (1.25,0.7) {$\vec{v}_{\text{A}_{2}\text{f}}$};
+		\draw[ultra thick,->] (2.25,1.15) -- (3,1.15);
+		\node[anchor=south] at (2.25,1.15) {$\vec{v}_{\text{B}_{2}\text{f}}$};
+		\else
+		\draw[thick] (0.5,0) rectangle (1.25,0.5);
+		\node at (0.875,0.25) {A$_{1}$};
+		\draw[thick] (2.25,0) rectangle (3.25,0.75);
+		\node at (2.75,0.375) {B$_{1}$};
+		\fi
+		\fi
+		\if1#1
+		\node[anchor=west] at (4.75,1) {Experiment 1};
+		\draw[ultra thick,->] (1.25,0.7) -- (0.7,0.7);
+		\node[anchor=south] at (1.25,0.7) {$\vec{v}_{\text{A}_{1}\text{f}}$};
+		\draw[ultra thick,->] (2.25,0.95) -- (3.5,0.95);
+		\node[anchor=south] at (2.25,0.95) {$\vec{v}_{\text{B}_{1}\text{f}}$};
+		\fi
+		\if0#1
+		\draw[ultra thick,->] (0.5,0.7) -- (2,0.7);
+		\node[anchor=south] at (0.5,0.7) {$\vec{v}_{\text{A}_{1}\text{i}}$};
+		\node[anchor=south] at (2.75,0.95) {$|\vec{v}_{\text{B}_{1}\text{i}}|=0$};
+		\fi
+	}
+	\CollExp[0]
+	\begin{scope}[shift={(5,0)}]
+		\CollExp[1]
+	\end{scope}
+\end{tikzpicture}
+\end{center}
 %\begin{multicols}{2}
 \begin{enumerate}[(A)]
-	\item Answer?
+	\item Greater than
+	\item Less than
+	\item Equal to
+	\item Not enough information
 \end{enumerate}
 %\end{multicols}
 \end{PresentSpace}
+%\begin{textblock*}{5cm}(18cm,2cm)
+%\end{textblock*}
 \newpage
 \begin{TeacherMargin}
 
 \end{TeacherMargin}
 \begin{PresentSpace}
 \vspace{-10pt}
-\section*{L\Week-#: Title}
+\section*{L\Week-1: Collision Experiments}
 \vspace{-10pt}
 
 \end{PresentSpace}
@@ -58,7 +121,7 @@ Question?
 \end{TeacherMargin}
 \begin{PresentSpace}
 \vspace{-10pt}
-\section*{L\Week-#: Title}
+\section*{L\Week-2: Carnival Game}
 \vspace{-10pt}
 
 \end{PresentSpace}
@@ -69,7 +132,9 @@ Question?
 \begin{PresentSpace}
 \section*{Main Ideas}
 \begin{itemize}
-	\item 
+	\item Momentum and impulse are useful quantities for solving dynamics problems.
+	\item The impulse is always equal to the change in momentum for a system.
+	\item When the impulse is zero (because the net force is zero), the momentum of the system is constant---it is \textit{conserved}.
 \end{itemize}
 \end{PresentSpace}
 \end{document}
