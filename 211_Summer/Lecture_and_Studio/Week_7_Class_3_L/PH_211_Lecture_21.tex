@@ -20,14 +20,25 @@
 \input{\FileDepth/Formats/Lecture20240615.tex}
 
 %\input{\FileDepth/Formats/FBDCommands.tex}
-%\input{\FileDepth/Formats/MVDCommands.tex}
+\input{\FileDepth/Formats/MVDCommands.tex}
 
 %\input{\FileDepth/Activities/Activity_One/Activity_One.tex}
 %\input{\FileDepth/Activities/Activity_Two/Activity_Two.tex}
 
 \begin{document}
 \begin{TeacherMargin}
-
+\noindent Since there is no net force on the system of the two carts, momentum is conserved:
+\begin{align*}
+	\vec{p}_{\text{S}_{1}} & = \vec{p}_{\text{A}_{1}\text{i}} = \vec{p}_{\text{A}_{1}\text{f}} + \vec{p}_{\text{B}_{1}\text{f}} \\
+	p_{\text{S}_{1}} & = p_{\text{A}_{1}\text{i}} = -p_{\text{A}_{1}\text{f}} + p_{\text{B}_{1}\text{f}} < p_{\text{B}_{1}\text{f}}
+\end{align*}
+\begin{comment}
+	\vec{p}_{f} & = \vec{p}_{i} \\
+	\left(m_{\text{B}_{1}}v_{\text{B}_{1}\text{f}}-m_{\text{A}_{1}}v_{\text{A}_{1}\text{f}}\right)\hat{x} & = m_{\text{A}_{1}}v_{\text{A}_{1}\text{i}} \hat{x} \\
+	m_{\text{B}_{1}}v_{\text{B}_{1}\text{f}} & = m_{\text{A}_{1}}v_{\text{A}_{1}\text{f}} + m_{\text{A}_{1}}v_{\text{A}_{1}\text{i}} \\
+	p_{\text{B}_{1}\text{f}} = m_{\text{B}_{1}}v_{\text{B}_{1}\text{f}} & > m_{\text{A}_{1}}v_{\text{A}_{1}\text{i}} = p_{\text{S}_{1}}.
+\end{comment}
+When A$_{1}$ reverses direction, its change in momentum has a larger magnitude than its initial momentum (which was the entire system's momentum). The change in the momentum of B$_{1}$ is equal and opposite the change in the momentum of A$_{1}$, so A$_{1}$ gives B$_{1}$ an amount of momentum which is greater than the initial momentum of the system.
 \end{TeacherMargin}
 \begin{PresentSpace}
 \begin{center}
@@ -81,11 +92,13 @@
 		\node[anchor=south] at (1.25,0.7) {$\vec{v}_{\text{A}_{1}\text{f}}$};
 		\draw[ultra thick,->] (2.25,0.95) -- (3.5,0.95);
 		\node[anchor=south] at (2.25,0.95) {$\vec{v}_{\text{B}_{1}\text{f}}$};
+		\node[anchor=south] at (2,2.5) {After Collision};
 		\fi
 		\if0#1
 		\draw[ultra thick,->] (0.5,0.7) -- (2,0.7);
 		\node[anchor=south] at (0.5,0.7) {$\vec{v}_{\text{A}_{1}\text{i}}$};
 		\node[anchor=south] at (2.75,0.95) {$|\vec{v}_{\text{B}_{1}\text{i}}|=0$};
+		\node[anchor=south] at (2,2.5) {Before Collision};
 		\fi
 	}
 	\CollExp[0]
@@ -107,23 +120,221 @@
 %\end{textblock*}
 \newpage
 \begin{TeacherMargin}
+\begin{multicols}{2}
+\newcommand{\ExpMVD}[1]{
+\MVDRows{EO}
+\MVDCol{AO}{A$_{#1}$}{EO}
+\MVec{AOinit}{0.75}
+\MVDCol{BO}{B$_{#1}$}{AO}
+\MDot{BOinit}
+\MVDCol{SO}{A$_{#1}$ \& B$_{#1}$}{BO}
+\MVec{SOinit}{0.75}
+\MDot{SOdelt}
+\MVec{SOfin}{0.75}
+}
+\newcommand{\Quart}[2]{
+\begin{scope}[violet]
+	\MVec[180]{AOfin}{#1}
+\end{scope}
+\begin{scope}[blue]
+	\MVec[180]{AOdelt}{#2}
+	\MVec{BOdelt}{#2}
+	\MVec{BOfin}{#2}
+\end{scope}
+}
+\noindent\textbf{Experiment 1}
+\begin{center}
+	\begin{tikzpicture}
+		\ExpMVD{1}
+		\Quart{0.15}{0.9}
+	\end{tikzpicture}
+\end{center}
+\textbf{Experiment 2}
+\begin{center}
+	\begin{tikzpicture}
+		\ExpMVD{2}
+		\Quart{0.3}{1.05}
+	\end{tikzpicture}
+\end{center}
+\textbf{Experiment 3}
+\begin{center}
+	\begin{tikzpicture}
+		\ExpMVD{3}
+		\Quart{0.45}{1.2}
+	\end{tikzpicture}
+\end{center}
+\vspace{7cm}
+From the diagrams, we can see that
+\[
+p_{\text{B}_{1}\text{f}} < p_{\text{B}_{2}\text{f}} < p_{\text{B}_{3}\text{f}}.
+\]
+Even though $v_{\text{Bf}}$ is decreasing with each experiment, $p_{\text{Bf}}$ is increasing. \\
 
+\noindent The increase in $m_{\text{B}}$ must be faster than the decrease in $v_{\text{Bf}}$ to keep $p_{\text{Bf}}=m_{\text{B}}v_{\text{Bf}}$ increasing. Still, $v_{\text{Bf}}$ could be decreasing fast enough that $K_{\text{Bf}} = \frac{1}{2}m_{\text{B}}v_{\text{Bf}}^{2}$ would decrease, thanks to the square. \\
+
+\noindent If $m_{\text{B}} \gg m_{\text{A}}$, object A will reflect at its original speed and object B will barely move. ($v_{\text{Bf}}\to0$ at minimum, and $v_{\text{Af}}\to v_{\text{Ai}}$ at most, otherwise energy would not be conserved.)
+\end{multicols}
 \end{TeacherMargin}
 \begin{PresentSpace}
 \vspace{-10pt}
 \section*{L\Week-1: Collision Experiments}
 \vspace{-10pt}
-
+\begin{itemize}
+	\large
+	\item Two additional experiments are performed that are identical to experiment 1 with one exception: the mass of the target cart is larger in each subsequent experiment (\textit{i.e.} $m_{\text{B}_{3}}>m_{\text{B}_{2}}>m_{\text{B}_{1}}$).
+	\item In each experiment, cart A moves \\
+	toward cart B, which is initially at rest.
+	\item The incoming carts A$_{1}$--A$_{3}$ are identical \\
+	and have the same initial velocity to \\
+	the right.
+	\begin{itemize}
+		\item Create momentum vector diagrams \\
+		for experiments 1, 2, and 3 (your \\
+		vectors only need to be \\
+		qualitatively accurate).
+		\item Use your vector diagrams to rank \\
+		the final momenta of the B carts \\
+		according to magnitude.
+		\item Consider what would happen in \\
+		the special case that the mass of \\
+		cart B is made \textit{very large}.
+	\end{itemize}
+\end{itemize}
 \end{PresentSpace}
+\begin{textblock*}{5cm}(20cm,2.25cm)
+	\newcommand{\CollExp}[1][0]{
+		\filldraw[gray] (0,0) rectangle (4,-0.25);
+		\draw[ultra thick] (0,0) -- (4,0);
+		\draw[thick] (-0.5,-0.5) rectangle (4.5,2.5);
+		\if3#1
+		\draw[thick] (0.5,0) rectangle (1.25,0.5);
+		\node at (0.875,0.25) {A$_{3}$};
+		\draw[thick] (2.25,0) rectangle (3.9,1.24);
+		\node at (3.075,0.62) {B$_{3}$};
+		\node[anchor=west] at (4.75,1) {Experiment 3};
+		\draw[ultra thick,->] (1.25,0.7) -- (0,0.7);
+		\node[anchor=south] at (1.25,0.7) {$\vec{v}_{\text{A}_{3}\text{f}}$};
+		\draw[ultra thick,->] (2.25,1.44) -- (2.75,1.44);
+		\node[anchor=south] at (2.25,1.44) {$\vec{v}_{\text{B}_{3}\text{f}}$};
+		\else
+		\if2#1
+		\draw[thick] (0.5,0) rectangle (1.25,0.5);
+		\node at (0.875,0.25) {A$_{2}$};
+		\draw[thick] (2.25,0) rectangle (3.5,0.94);
+		\node at (2.875,0.47) {B$_{2}$};
+		\node[anchor=west] at (4.75,1) {Experiment 2};
+		\draw[ultra thick,->] (1.25,0.7) -- (0.3,0.7);
+		\node[anchor=south] at (1.25,0.7) {$\vec{v}_{\text{A}_{2}\text{f}}$};
+		\draw[ultra thick,->] (2.25,1.15) -- (3,1.15);
+		\node[anchor=south] at (2.25,1.15) {$\vec{v}_{\text{B}_{2}\text{f}}$};
+		\else
+		\draw[thick] (0.5,0) rectangle (1.25,0.5);
+		\node at (0.875,0.25) {A$_{1}$};
+		\draw[thick] (2.25,0) rectangle (3.25,0.75);
+		\node at (2.75,0.375) {B$_{1}$};
+		\fi
+		\fi
+		\if1#1
+		\node[anchor=west] at (4.75,1) {Experiment 1};
+		\draw[ultra thick,->] (1.25,0.7) -- (0.7,0.7);
+		\node[anchor=south] at (1.25,0.7) {$\vec{v}_{\text{A}_{1}\text{f}}$};
+		\draw[ultra thick,->] (2.25,0.95) -- (3.5,0.95);
+		\node[anchor=south] at (2.25,0.95) {$\vec{v}_{\text{B}_{1}\text{f}}$};
+		\node[anchor=south] at (2,2.5) {After Collision};
+		\fi
+		\if0#1
+		\draw[ultra thick,->] (0.5,0.7) -- (2,0.7);
+		\node[anchor=south] at (0.5,0.7) {$\vec{v}_{\text{A}_{1}\text{i}}$};
+		\node[anchor=south] at (2.75,0.95) {$|\vec{v}_{\text{B}_{1}\text{i}}|=0$};
+		\node[anchor=south] at (2,2.5) {Before Collision};
+		\fi
+	}
+	\begin{center}
+	\begin{tikzpicture}
+	\CollExp[1]
+	\begin{scope}[shift={(0,-3)}]
+		\CollExp[2]
+	\end{scope}
+	\begin{scope}[shift={(0,-6)}]
+		\CollExp[3]
+	\end{scope}
+	\end{tikzpicture}
+	\end{center}
+\end{textblock*}
 \newpage
 \begin{TeacherMargin}
+\noindent We should choose the bouncy ball, as it will have a greater momentum change when rebounding, which means it will impart more momentum to the post. \\
 
+\noindent In this momentum vector diagram, I will assume there is no significant external impulse during the brief collision. Also, I will assume the clay ball comes to a stop after the collision (in keeping with the in-class demonstration).
+\begin{center}
+	\newcommand{\EntrySplit}[1]{
+	\coordinate[shift={(0,0.25)}] (#1up) at (#1);
+	\coordinate[shift={(0,-0.25)}] (#1dn) at (#1);
+	}
+	\begin{tikzpicture}
+		\MVDRows{RubberClay}
+		\MVDCol{RC}{\parbox{2cm}{\centering Ball\\{\tiny{\color{blue}Clay} {\color{violet}Rubber}}}}{RubberClay}
+		\MVec{RCinit}{0.75}
+		\EntrySplit{RCdelt}
+		\EntrySplit{RCfin}
+		\MVDCol{Post}{Post}{RC}
+		\MDot{Postinit}
+		\EntrySplit{Postdelt}
+		\EntrySplit{Postfin}
+		\MVDCol{Sys}{System}{Post}
+		\MVec{Sysinit}{0.75}
+		\MDot{Sysdelt}
+		\MVec{Sysfin}{0.75}
+		\begin{scope}[blue]
+			\MVec[180]{RCdeltup}{0.75}
+			\MDot{RCfinup}
+			\MVec{Postdeltup}{0.75}
+			\MVec{Postfinup}{0.75}
+		\end{scope}
+		\begin{scope}[violet]
+			\MVec[180]{RCdeltdn}{1}
+			\MVec[180]{RCfindn}{0.25}
+			\MVec{Postdeltdn}{1}
+			\MVec{Postfindn}{1}
+		\end{scope}
+	\end{tikzpicture}
+\end{center}
+Looking at $\vec{p}_{f}$ for the post, the rubber ball gives more momentum to the post, making it more likely to tip over. \\
+
+\noindent If the ball were to stick to the post and move with it after the collision, the diagram would instead look like this:
+\begin{center}
+	\newcommand{\EntrySplit}[1]{
+		\coordinate[shift={(0,0.25)}] (#1up) at (#1);
+		\coordinate[shift={(0,-0.25)}] (#1dn) at (#1);
+	}
+	\begin{tikzpicture}
+		\MVDRows{RubberClay}
+		\MVDCol{RC}{Ball}{RubberClay}
+		\MVec{RCinit}{0.75}
+		\MVec[180]{RCdelt}{0.5}
+		\MVec{RCfin}{0.25}
+		\MVDCol{Post}{Post}{RC}
+		\MDot{Postinit}
+		\MVec{Postdelt}{0.5}
+		\MVec{Postfin}{0.5}
+		\MVDCol{Sys}{System}{Post}
+		\MVec{Sysinit}{0.75}
+		\MDot{Sysdelt}
+		\MVec{Sysfin}{0.75}
+	\end{tikzpicture}
+\end{center}
+The poste gets even less speed from the collision, as the momentum is shared between both masses.
 \end{TeacherMargin}
 \begin{PresentSpace}
 \vspace{-10pt}
 \section*{L\Week-2: Carnival Game}
-\vspace{-10pt}
-
+\vspace{-5pt}
+A carnival game requires you to knock over a wood post by throwing a ball at it. You're offered a very bouncy rubber ball and a very sticky clay ball of equal mass. Assume that you can throw them with equal speed and equal accuracy. You only get one throw.
+\begin{itemize}
+	\item Which ball do you choose? Why?
+	\item Create a momentum vector diagram for this situation to defend your answer.
+	\item Ask someone on the instructional team to help you check your answers.
+\end{itemize}
 \end{PresentSpace}
 \newpage
 \begin{TeacherMargin}
