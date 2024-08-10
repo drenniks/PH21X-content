@@ -20,9 +20,9 @@
 \input{\FileDepth/Formats/Lecture20240615.tex}
 
 %\input{\FileDepth/Formats/FBDCommands.tex}
-%\input{\FileDepth/Formats/MVDCommands.tex}
+\input{\FileDepth/Formats/MVDCommands.tex}
 
-%\input{\FileDepth/Activities/Activity_One/Activity_One.tex}
+\input{\FileDepth/Activities/Springloaded_Sled/Springloaded_Sled.tex}
 %\input{\FileDepth/Activities/Activity_Two/Activity_Two.tex}
 
 \begin{document}
@@ -31,36 +31,189 @@
 \end{TeacherMargin}
 \begin{PresentSpace}
 \begin{center}
-	\huge Lecture \Week: Title
+	\huge Lecture \Week: Inelastic and Superelastic Collisions
 \end{center}
 \vspace{0.5cm}
-\underline{Warm-Up Activity} \\
-Question?
-%\begin{multicols}{2}
-\begin{enumerate}[(A)]
-	\item Answer?
-\end{enumerate}
-%\end{multicols}
+\underline{Announcements}
+\begin{itemize}
+	\item End-of-Term Individual Meetings Open
+	\begin{itemize}
+		\item 30 minute time slots to discuss anything before the final ungrading.
+		\begin{itemize}
+			\item Wednesday: 10:00 -- 11:30 a.m., 3:30 -- 5:00 p.m.
+			\item Thursday: 10:00 a.m. -- 2:00 p.m., 4:00 p.m. -- 5:30 p.m.
+			\item Friday: 11:00 -- 11:30 a.m., 3:30 -- 5:00 p.m.
+		\end{itemize}
+		\item Must be booked at least 5 hours in advance (recommended to book far sooner).
+		\item Only 21 slots; ask me if you need to meet and nothing is available.
+	\end{itemize}
+\end{itemize}
 \end{PresentSpace}
 \newpage
 \begin{TeacherMargin}
-
+\noindent\textbf{Case 1} \\
+To set up a momentum vector diagram for case 1, I began with entering the initial momenta for the two cars, which told me the initial momentum for the whole system. I also assumed that momentum was conserved (by the reasoning listed in L20-1), which allowed me to fill in the 1 \& 2 column. Since the cars get tangled at the end, I know they have the same speed, and I know Car 2 is twice as big as Car 1, so it should have twice the momentum (which means it will have two thirds of the momentum of the whole system). This allowed me to fill in the rest of the final momentum row. The last two entries in the change in momentum row are now determined by the other entries in their columns.
+\begin{center}
+	\Large
+	\begin{tikzpicture}
+		\draw[ultra thick,->] (0,0) node[anchor=north] {S} -- (0,0.5) node[anchor=west] {$\hat{y}$} -- (0,1) node[anchor=south] {N};
+		\begin{scope}[shift={(2,-2.25)}]
+			\MVDRows{Caseone}
+			\MVDCol{Carone}{Car 1}{Caseone}
+			\MVec[90]{Caroneinit}{0.6}
+			\MVec[270]{Caronedelt}{0.7}
+			\MVec[270]{Caronefin}{0.1}
+			\MVDCol{Cartwo}{Car 2}{Carone}
+			\MVec[270]{Cartwoinit}{0.9}
+			\MVec[90]{Cartwodelt}{0.7}
+			\MVec[270]{Cartwofin}{0.2}
+			\MVDCol{Cars}{1 \& 2}{Cartwo}
+			\MVec[270]{Carsinit}{0.3}
+			\MDot{Carsdelt}
+			\MVec[270]{Carsfin}{0.3}
+		\end{scope}
+	\end{tikzpicture}
+\end{center}
+Already, I know that my cars should go south after the collision. Let us calculate the velocity.
+\begin{align*}
+	m_{1} & = 100\text{ kg} & m_{2} & = 200\text{ kg} & m_{f} & = m_{1}+m_{2} \\
+	\vec{v}_{1} & = (4\text{ m/s})\hat{y} & \vec{v}_{2} & = -(3\text{ m/s})\hat{y} & \vec{v}_{f} & = v_{f}\hat{y} = ?
+\end{align*}
+\begin{align*}
+	\vec{p}_{i} & = m_{1}\vec{v}_{1} + m_{2}\vec{v}_{2} = (m_{1}v_{1}-m_{2}v_{2})\hat{y} \\
+	\vec{p}_{f} & = (m_{1} + m_{2})\vec{v}_{f} = (m_{1}+m_{2})v_{f}\hat{y}
+\end{align*}
+\begin{align*}
+	\vec{p}_{i} & = \vec{p}_{f} & v_{f} & = \frac{m_{1}v_{1}-m_{2}v_{2}}{m_{1}+m_{2}} \\
+	m_{1}v_{1} - m_{2}v_{2} & = (m_{1}+m_{2})v_{f} &  & = \frac{(100\text{ kg})(4\text{ m/s})-(200\text{ kg})(3\text{ m/s})}{100\text{ kg}+200\text{ kg}} \\
+	& & & = \frac{400-600}{300}\text{ m/s} = -\frac{2}{3}\text{ m/s}
+\end{align*}
+\begin{align*}
+	K_{i} & = \frac{1}{2}m_{1}v_{1}^{2} + \frac{1}{2}m_{2}v_{2}^{2} \\
+	& = \frac{1}{2}(100\text{ kg})(4\text{ m/s})^{2} + \frac{1}{2}(200\text{ kg})(3\text{ m/s})^{2} = 800\text{ J} + 900\text{ J} = 1700\text{ J} \\
+	K_{f} & = \frac{1}{2}(m_{1}+m_{2})v_{f}^{2} = \frac{1}{2}(300\text{ kg})\left(\frac{2}{3}\text{ m/s}\right)^{2} = \frac{200}{3}\text{ J} \approx 66.7\text{ J}
+\end{align*}
+A lot of energy is lost to heat and deformation of metal.
 \end{TeacherMargin}
 \begin{PresentSpace}
 \vspace{-10pt}
-\section*{L\Week-#: Title}
+\section*{L\Week-1: Bumper Cars}
 \vspace{-10pt}
-
+\begin{itemize}
+	\item Two bumper cars collide with each other and get tangled together.
+	\item Car 1 ($m_{1}$) moves north at $v_{1}$. Car 2 ($m_{2}$) moves south at $v_{2}$.
+\end{itemize}
+\begin{multicols}{2}
+	\begin{itemize}
+		\item Case 1
+		\begin{itemize}
+			\large
+			\item Car 1 (100 kg) moves north at 4 m/s.
+			\item Car 2 (200 kg) moves south at 3 m/s.
+			\item Find the final velocity of the cars.
+			\item Determine the initial and final kinetic energies of the cars.
+			\item Compare the total kinetic energy before and after the collision.
+		\end{itemize}
+		\item Case 2
+		\begin{itemize}
+			\large
+			\item Car 1 (100 kg) moves north at 4 m/s.
+			\item Car 2 (200 kg) moves south.
+			\item Find the initial velocity of Car 2 assuming they both end at rest.
+			\item Determine the initial and final kinetic energies of the cars.
+			\item Compare the total kinetic energy before and after the collision.
+		\end{itemize}
+	\end{itemize}
+\end{multicols}
 \end{PresentSpace}
 \newpage
 \begin{TeacherMargin}
-
+\noindent\textbf{Case 2} \\
+To set up a momentum vector diagram for case 2, I began with entering the initial momentum for Car 1, along with the entire final momentum row (which is all zero). for the two cars, which told me the initial momentum for the whole system. I also assumed that momentum was conserved (by the reasoning listed in L20-1), which allowed me to fill in the 1 \& 2 column with more zeros. The zero final momentum in the Car 1 column let me fill in the first car's change in momentum, then the zeros in the 1 \& 2 column helped me to fill in the momenta for Car 2.
+\begin{center}
+	\Large
+	\begin{tikzpicture}
+		\draw[ultra thick,->] (0,0) node[anchor=north] {S} -- (0,0.5) node[anchor=west] {$\hat{y}$} -- (0,1) node[anchor=south] {N};
+		\begin{scope}[shift={(2,-2.25)}]
+			\MVDRows{Caseone}
+			\MVDCol{Carone}{Car 1}{Caseone}
+			\MVec[90]{Caroneinit}{0.6}
+			\MVec[270]{Caronedelt}{0.6}
+			\MDot{Caronefin}
+			\MVDCol{Cartwo}{Car 2}{Carone}
+			\MVec[270]{Cartwoinit}{0.6}
+			\MVec[90]{Cartwodelt}{0.6}
+			\MDot{Cartwofin}
+			\MVDCol{Cars}{1 \& 2}{Cartwo}
+			\MDot{Carsinit}
+			\MDot{Carsdelt}
+			\MDot{Carsfin}
+		\end{scope}
+	\end{tikzpicture}
+\end{center}
+Already, I know that the second car must have equal and opposite initial momentum to the first car.
+\begin{align*}
+	m_{1} & = 100\text{ kg} & m_{2} & = 200\text{ kg} & m_{f} & = m_{1}+m_{2} \\
+	\vec{v}_{1} & = (4\text{ m/s})\hat{y} & \vec{v}_{2} & = -v_{2}\hat{y} = ? & \vec{v}_{f} & = \vec{0}
+\end{align*}
+\begin{align*}
+	\vec{p}_{i} & = m_{1}\vec{v}_{1} + m_{2}\vec{v}_{2} = (m_{1}v_{1}-m_{2}v_{2})\hat{y} \\
+	\vec{p}_{f} & = (m_{1} + m_{2})\vec{v}_{f} = \vec{0}
+\end{align*}
+\begin{align*}
+	\vec{p}_{i} & = \vec{p}_{f} & v_{2} & = \frac{m_{1}}{m_{2}}v_{1} \\
+	m_{1}v_{1} - m_{2}v_{2} & = 0 &  & = \frac{1}{2}v_{1} \\
+	& & & = 2\text{ m/s}
+\end{align*}
+Car 2 was going 2 m/s (to the south). They both end at rest, so $K_{f}=0$ J.
+\begin{align*}
+	K_{i} & = \frac{1}{2}m_{1}v_{1}^{2} + \frac{1}{2}m_{2}v_{2}^{2} \\
+	& = \frac{1}{2}(100\text{ kg})(4\text{ m/s})^{2} + \frac{1}{2}(200\text{ kg})(2\text{ m/s})^{2} = 800\text{ J} + 400\text{ J} = 1200\text{ J}
+\end{align*}
+All of the energy was lost to heat and deformation of metal.
 \end{TeacherMargin}
 \begin{PresentSpace}
 \vspace{-10pt}
-\section*{L\Week-#: Title}
+\section*{L\Week-1: Bumper Cars}
 \vspace{-10pt}
-
+\begin{itemize}
+	\item Two bumper cars collide with each other and get tangled together.
+	\item Car 1 ($m_{1}$) moves north at $v_{1}$. Car 2 ($m_{2}$) moves south at $v_{2}$.
+\end{itemize}
+\begin{multicols}{2}
+	\begin{itemize}
+		\item Case 1
+		\begin{itemize}
+			\large
+			\item Car 1 (100 kg) moves north at 4 m/s.
+			\item Car 2 (200 kg) moves south at 3 m/s.
+			\item Find the final velocity of the cars.
+			\item Determine the initial and final kinetic energies of the cars.
+			\item Compare the total kinetic energy before and after the collision.
+		\end{itemize}
+		\item Case 2
+		\begin{itemize}
+			\large
+			\item Car 1 (100 kg) moves north at 4 m/s.
+			\item Car 2 (200 kg) moves south.
+			\item Find the initial velocity of Car 2 assuming they both end at rest.
+			\item Determine the initial and final kinetic energies of the cars.
+			\item Compare the total kinetic energy before and after the collision.
+		\end{itemize}
+	\end{itemize}
+\end{multicols}
+\end{PresentSpace}
+\newpage
+\setcounter{ActNumber}{1}
+\begin{TeacherMargin}
+\begin{multicols}{2}
+\SpringSledSol
+\end{multicols}
+\end{TeacherMargin}
+\begin{PresentSpace}
+\SpringSled
+\SpringSledMomEn
+\SpringSledFig
 \end{PresentSpace}
 \newpage
 \begin{TeacherMargin}
@@ -69,7 +222,11 @@ Question?
 \begin{PresentSpace}
 \section*{Main Ideas}
 \begin{itemize}
-	\item 
+	\item When kinetic energy is lost in a collision, the collision is \textit{inelastic}.
+	\begin{itemize}
+		\item A collision in which the objects stick together and move with the same velocity is \textit{perfectly inelastic}.
+	\end{itemize}
+	\item When kinetic energy increases in a collision, the collision is \textit{superelastic}.
 \end{itemize}
 \end{PresentSpace}
 \end{document}

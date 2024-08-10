@@ -18,6 +18,8 @@ tags:
   - learning_objectives/critical_thinking/sensemaking
   - learning_objectives/Newton_and_conservation_laws
   - learning_objectives/point_model
+  - usage/PH211/quarter/Su2024/Week7
+  - usage/PH211/section_type/studio
 ---
 # Colliding Rocks
 ## Spring 2024
@@ -26,3 +28,5 @@ tags:
 [Colliding Rocks Preview PDF](./Colliding_Rocks_Preview.pdf)
 * Added to Vault
 	* Assignment Format Version 2024-05-19
+## Summer 2024
+* Compatible with Assignment Format Version 2024-06-14

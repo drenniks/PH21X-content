@@ -19,6 +19,7 @@ tags:
   - learning_objectives/critical_thinking/sensemaking
   - learning_objectives/Newton_and_conservation_laws
   - learning_objectives/point_model
+  - usage/PH211/quarter/Su2024/Week8
 ---
 # Springloaded Sled
 ## Spring 2024
@@ -29,3 +30,6 @@ tags:
 	* Assignment Format Version 2024-05-19
 	* The spring seems to confuse students. Perhaps the activity should be split apart, with a sled that separates without any explanation as the first part, then introduce the spring as the mechanism in a later synthesis activity.
 	* Mention of the capstone lab on elasticity should be removed; that is not what they do in capstone labs anymore.
+## Summer 2024
+* Compatible with (and updated to) Assignment Format Version 2024-06-14
+* Removed mention of capstone lab.
