@@ -283,16 +283,27 @@ frictionless track to \\predict \textbf{which ball} \\
 		\node at (-2,0) {$m_{\text{B}}>m_{\text{A}}$};
 	\end{tikzpicture}
 \end{center}
-\textbf{Three Students}
+\textbf{Three Students} \\
+A brief recap of what the students said is given in black, and the colored text discusses their logic.
 \begin{enumerate}[(1)]
 	\item Same force, $m_{\text{B}}>m_{\text{A}}$, therefore $m_{\text{A}}$ goes faster than $m_{\text{B}}$. \\
 	{\color{blue}True by application of Newton's second law.} \\
 	$\vec{p}=m\vec{v}$ {\color{blue} True (definition of momentum).}
 	\item Speed compensates for mass, so $p_{\text{A},f} = p_{\text{B},f}$. \\
-	{\color{violet}False. $m_{\text{A}}$ goes faster, so $\Delta t_{\text{A}} < \Delta t_{\text{B}}$ to reach the end. $\vec{J} = \int_{t_{i}}^{t_{f}}\vec{F}^{net}dt$, so for the same force, $J_{\text{A}} < J_{\text{B}}$, and since $p_{i}=0$ for both, this means $p_{\text{A},f} < p_{\text{B},f}$.}
+	{\color{violet}False. $m_{\text{A}}$ goes faster, so B will take longer to travel between the two marks. Symbolically, this can be written as $\Delta t_{\text{A}} < \Delta t_{\text{B}}$. $\vec{J} = \int_{t_{i}}^{t_{f}}\vec{F}^{net}dt$, so for the same force over these two different times, $J_{\text{A}} < J_{\text{B}}$, and since $p_{i}=0$ for both, this means $p_{\text{A},f} < p_{\text{B},f}$.}
 	\item $K$ is proportional to $m$ and to $v^{2}$, so a bigger speed will have more effect than a smaller mass, thus $K_{\text{A}}>K_{\text{B}}$. \\
 	{\color{violet} False. $W = \int_{\vec{r}_{i}}^{\vec{r}_{f}}\vec{F}\cdot d\vec{r}$ means $W_{\text{A}} = W_{\text{B}}$, as the blocks have the same force and displacement. The work-energy theorem then tells us that $K_{\text{A}}=K_{\text{B}}$.} \\
-	{\color{violet}Also, note that $K=\frac{1}{2}mv^{2}=\frac{p^{2}}{2m}$, so if $K_{\text{A}} = K_{\text{B}}$, then $\frac{p_{\text{A}}^{2}}{2m_{\text{A}}} = \frac{p_{\text{B}}^{2}}{2m_{\text{B}}}$, which can be rearranged into}
+	{\color{violet}Also, note that $K=\frac{1}{2}mv^{2}=\frac{p^{2}}{2m}$, so if $K_{\text{A}} = K_{\text{B}}$, then}
+	\begin{align*}
+		\color{violet}
+		\frac{p_{\text{A}}^{2}}{2m_{\text{A}}} = \frac{p_{\text{B}}^{2}}{2m_{\text{B}}},
+	\end{align*}
+	{\color{violet}which can be rearranged to get}
+	\begin{align*}
+		\color{violet}
+		\frac{m_{\text{A}}}{m_{\text{B}}} = {p_{\text{A}}^{2}}{p_{\text{B}}^{2}}.
+	\end{align*}
+	{\color{violet}Since $\frac{m_{\text{A}}}{m_{\text{B}}} < 1$, this tells us that $p_{\text{A}}<p_{\text{B}}$, giving extra confirmation that (2) is wrong.}
 \end{enumerate}
 \end{TeacherMargin}
 \begin{PresentSpace}
