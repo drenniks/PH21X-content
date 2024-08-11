@@ -8,7 +8,7 @@ tags:
   - usage/PH211/quarter/Su2024/Week8
   - usage/PH211/section_type/studio
 ---
-# PH 211 2024 Summer Studio 8
+)# PH 211 2024 Summer Studio 8
 ## Files
 [PH 211 Studio 8 TeX](PH_211_Studio_8.tex)
 [PH 211 Studio 8 PDF](PH_211_Studio_8.pdf)
@@ -25,3 +25,5 @@ Angled Ramps
 	* Assignment Format 2024-06-14
 	* Lecture Format 2024-06-15
 	* Activities not broken into separate files yet.
+	* 
+	* ![Four Frictionless Tracks](FourFrictionless.png)
