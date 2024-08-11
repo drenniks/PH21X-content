@@ -27,33 +27,174 @@
 
 \begin{document}
 \begin{TeacherMargin}
-
+\noindent\textbf{Energy is (C)} \\
+The work-energy theorem ($W_{\text{net,ext}} = \Delta E_{\text{total}}$) determines whether energy is conserved. Everything that can do significant amounts of work is in our system. \\
+\textbf{Momentum is (B)} \\
+The impulse-momentum theorem ($\int_{t_{i}}^{t_{f}}\vec{F}^{net}dt = \vec{J}_{net} = \Delta\vec{p}$) determines whether momentum is conserved. Everything that exerts a significant force is in our system.
 \end{TeacherMargin}
 \begin{PresentSpace}
 \begin{center}
-	\huge Studio 8: Title \\
-	\vspace{1cm}
+	\huge Studio 8: Combining Physics Concepts \\
+	\vspace{0.5cm}
 \end{center}
-%\underline{Warm-Up Activity} \\
-%How is acceleration symbolically related to velocity? WRITE BIG!
-\begin{comment}{2}
+\underline{Warm-Up Activity}
+\begin{itemize}
+	\item A tennis ball and a basketball are dropped from a \\
+	height $h$ as shown.
+	\item Our system is the tennis ball, the basketball, and \\
+	the Earth.
+\end{itemize}
+Energy/Momentum is \dots \\
+(answer twice; once for energy and once for momentum)
 \begin{enumerate}[(A)]
-	\item Velocity is acceleration times $t$.
-	\vspace{6pt}
-	\item Acceleration is velocity times $t$.
-	\vspace{15pt}
-	\item Acceleration is the derivative of velocity.
-	\item Velocity is the derivative of acceleration.
+	\item \dots conserved, because energy/momentum is \\
+	\phantom{\dots}always conserved.
+	\item \dots conserved, because the net force on the system is zero.
+	\item \dots conserved, because the work done on the system is zero.
+	\item \dots not conserved, because energy is never conserved.
+	\item \dots not conserved, because the net force on the system is not zero.
+	\item \dots not conserved, because the work done on the system is not zero.
+\end{enumerate}
+\begin{comment}{2}
+Energy is\dots
+\begin{enumerate}[(A)]
+	\item \dots conserved, because energy is always conserved.
+	\item \dots conserved, because the net force on the system is zero.
+	\item \dots conserved, because the work done on the system is zero.
+	\item \dots not conserved, because energy is never conserved.
+	\item \dots not conserved, because the net force on the system is not zero.
+	\item \dots not conserved, because the work done on the system is not zero.
+\end{enumerate}
+\vspace{2cm}
+Momentum is\dots
+\begin{enumerate}[(A)]
+	\item \dots conserved, \\
+	because momentum \\
+	is always \\
+	conserved.
+	\item \dots conserved, because the net force on the system is zero.
+	\item \dots conserved, because the work done on the system is zero.
+	\item \dots not conserved, because momentum is never conserved.
+	\item \dots not conserved, because the net force on the system is not zero.
+	\item \dots not conserved, because the work done on the system is not zero.
 \end{enumerate}
 \end{comment}
 \end{PresentSpace}
+\begin{textblock*}{4cm}(23cm,2cm)
+\begin{center}
+	\Huge
+	\begin{tikzpicture}
+		\draw[ultra thick] (-1.5,0) -- (1.5,0);
+		\draw[ultra thick,<->] (1.5,0) -- (1.5,1.75) node[anchor=west] {$h$} -- (1.5,3.5);
+		\draw[ultra thick,color=black,fill=gray] (0,4.5) circle (1cm);
+		\draw[ultra thick,color=black,fill=gray] (0,6) circle (0.5cm);
+	\end{tikzpicture}
+\end{center}
+\end{textblock*}
+\newpage
+\begin{TeacherMargin}
+\begin{center}
+\begin{tabular}{c||c|c|c|c||c}
+	& $U_{gTB}$ & $K_{TB}$ & $U_{gBB}$ & $K_{BB}$ & $E_{\text{total}}$ \\ \hline
+	$t_{i}$ & $mg(h+2R)$ & $0$ & $Mgh$ & $0$ & $mg(h+2R)+Mgh$ \\ \hline
+	$t_{f}$ & $mgh_{max}$ & $0$ & $0$ & $0$ & $mgh_{max}$
+\end{tabular}
+\end{center}
+\begin{align*}
+	mgh_{max} & = mg(h+2R) + Mgh \\
+	h_{max} & = h + 2R + \frac{M}{m}h \\
+	& = \left(\frac{M}{m}+1\right)h+2R
+\end{align*}
+You don't necessarily need to include the radius of the basketball, as the tennis ball never gets lower than $2R$. If you leave off $2R$, you are effectively setting the zero of potential for the tennis ball at $2R$ above the ground, and so the $h_{max}$ you would find would actually be measured from this higher point. \\
+
+\noindent Plugging in the given numbers, note that $\frac{M}{m}=15$, so $h_{max} = 8.23$ m. Now, this would exceed the ceiling height in our classroom, but when we actually do the demonstration, the non-negligible bounce of the basketball leads to this being a large overestimate; the tennis ball won't hit the ceiling after being dropped from this height. \\
+
+\noindent However, if you wanted to find out the maximum drop height in the ideal case, it would only take a small rearrangement of the equation:
+\begin{align*}
+	h = \frac{h_{max}-2R}{\frac{M}{m}+1}.
+\end{align*}
+Assuming a ceiling height of 3 m, we should drop the ball from less than $h \approx 0.17$ m. In practice, this will be nowhere near the ceiling.
+\end{TeacherMargin}
+\begin{PresentSpace}
+\vspace{-10pt}
+\section*{S8-1: Ball Drop -- Height}
+\vspace{-10pt}
+\begin{itemize}
+	\item A tennis ball and a basketball are dropped from a \\
+	height $h$ as shown.
+	\item Our system is the tennis ball, the basketball, and \\
+	the Earth.
+	\item If the basketball does not bounce at all, how high does the tennis ball go?
+	\begin{itemize}
+		\item Basketball Mass: $M=0.6$ kg
+		\item Basketball Radius: $R \approx 11.5$ cm
+		\item Tennis Ball Mass: $m=0.04$ kg
+		\item Drop Height: $h=0.5$ m
+	\end{itemize}
+\end{itemize}
+\end{PresentSpace}
+\newpage
+\begin{TeacherMargin}
+\noindent Let us add two times to our table: $t_{bb}$ (right before the bounce) and $t_{ab}$ (right after the bounce).
+\begin{center}
+\begin{tabular}{c||c|c|c|c||c}
+	& $U_{gTB}$ & $K_{TB}$ & $U_{gBB}$ & $K_{BB}$ & $E_{\text{total}}$ \\ \hline
+	$t_{i}$ & $mg(h+2R)$ & $0$ & $Mgh$ & $0$ & $mg(h+2R)+Mgh$ \\ \hline
+	$t_{bb}$ & $mg(2R)$ & $\frac{1}{2}mv_{bb}^{2}$ & $0$ & $\frac{1}{2}Mv_{bb}^{2}$ & $mg(2R) + \frac{1}{2}(m+M)v_{bb}^{2}$ \\ \hline
+	$t_{ab}$ & $mg(2R)$ & $\frac{1}{2}mv_{ab}^{2}$ & $0$ & $0$ & $mg(2R) + \frac{1}{2}mv_{ab}^{2}$ \\ \hline
+	$t_{f}$ & $mgh_{max}$ & $0$ & $0$ & $0$ & $mgh_{max}$
+\end{tabular}
+\end{center}
+Note that the extra starting height of the tennis ball really doesn't matter in some of these calculations. It drops the same height as the basketball, and that change in height is what provides the kinetic energy; the extra $2R$ that remains does nothing. This can be seen in how it will cancel out in equations relating $E_{i}$ to $E_{bb}$ or $E_{ab}$. \\
+
+\noindent To find the pre-collision speed, I will choose to set $E_{i}=E_{bb}$ (which isn't the only choice I could make), which gives
+\begin{align*}
+	mg(h+2R) + Mgh & = mg(2R) + \frac{1}{2}(m+M)v_{bb}^{2} \\
+	(m+M)gh & = \frac{1}{2}(m+M)v_{bb}^{2} \\
+	v_{bb} & = \sqrt{2gh}.
+\end{align*}
+To find the post-collision speed, I will choose to set $E_{f}=E_{ac}$ (which isn't the only choice I could make), which gives
+\begin{align*}
+	mgh_{max} & = mg(2R) + \frac{1}{2}mv_{ab}^{2} \\
+	v_{ab} & = \sqrt{2g(h_{max}-2R)} = \sqrt{2gh\left(\frac{M}{m}+1\right)}
+\end{align*}
+Now, from the impulse-momentum theorem (simplifying the impulse as $\vec{J}_{net} = \vec{F}^{net}_{avg}\Delta t$, and choosing a coordinate system with $\hat{y}$ pointing upward), we have
+\begin{align*}
+	\vec{F}^{net}_{avg}\Delta t & = \vec{p}_{ab} - \vec{p}_{bb} \\
+	F^{net}_{avg}\Delta t& = mv_{ab} - \left(-(m+M)v_{bb}\right) \\
+	& = m\sqrt{\frac{M}{m}+1}\sqrt{2gh} + (m+M)\sqrt{2gh} \\
+	F^{net}_{avg} & = \frac{\sqrt{\frac{M}{m}+1} + (m+M)}{\Delta t}m\sqrt{2gh}.
+\end{align*}
+If we want to get just the normal force from the ground, we need to know the force of gravity (which is constant, and therefore equal to its average). Since our system is both balls, the force should be on both, meaning
+\begin{align*}
+	F^{net}_{avg} & = F^{N}_{avg} - F^{g} \\
+	& = F^{N}_{avg} - (m+M)g \\
+	F^{N}_{avg} & = F^{net}_{avg} + (m+M)g \\
+	& = \frac{\sqrt{\frac{M}{m}+1} + (m+M)}{\Delta t}m\sqrt{2gh} + (m+M)g.
+\end{align*}
+\end{TeacherMargin}
+\begin{PresentSpace}
+\vspace{-10pt}
+\section*{S8-2: Ball Drop -- Force}
+\vspace{-10pt}
+\begin{itemize}
+	\item A tennis ball and a basketball are dropped from a \\
+	height $h$ as shown.
+	\item During the collision with the ground, which takes 0.2 s, you may want to choose a different system.
+	\begin{itemize}
+		\item What is the speed of each ball right before the basketball hits the ground?
+		\item What is the speed of the tennis ball right after it leaves the basketball?
+		\item What force did the ground exert on the basketball?
+	\end{itemize}
+\end{itemize}
+\end{PresentSpace}
 \newpage
 \begin{TeacherMargin}
 
 \end{TeacherMargin}
 \begin{PresentSpace}
 \vspace{-10pt}
-\section*{S8-#: Title}
+\section*{S8-3: Frictionless Track}
 \vspace{-10pt}
 
 \end{PresentSpace}
@@ -63,7 +204,7 @@
 \end{TeacherMargin}
 \begin{PresentSpace}
 \vspace{-10pt}
-\section*{S8-#: Graphing Acceleration, Velocity, Position}
+\section*{S8-4: Carts on a Track}
 \vspace{-10pt}
 
 \end{PresentSpace}
@@ -74,7 +215,7 @@
 \begin{PresentSpace}
 \section*{Main Ideas}
 \begin{itemize}
-	\item 
+	\item The work-energy and impulse-momentum theorems can be used to solve a broad array of problems.
 \end{itemize}
 \end{PresentSpace}
 \end{document}
