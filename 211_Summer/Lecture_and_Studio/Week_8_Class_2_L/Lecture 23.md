@@ -15,13 +15,11 @@ tags:
 [PH 211 Lecture 23 Slides TeX](PH_211_Lecture_23_Slides.tex)
 [PH 211 Lecture 23 Slides PDF](PH_211_Lecture_23_Slides.pdf)
 ## Activities
-Warm-Up: Most Interesting Topic in 211
-Choosing a Model: Dart
-Choosing a Model: The Ramp
-Choosing a Model: Arrow
-Choosing a Model: Force
+Rolling a Ball
+Angled Ramps
 ## Notes
 * Added to Vault
 	* Assignment Format 2024-06-14
 	* Lecture Format 2024-06-15
 	* Activities not broken into separate files yet.
+	* ![Rolling a Ball](WedgeRamp.png)

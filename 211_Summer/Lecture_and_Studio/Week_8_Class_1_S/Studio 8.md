@@ -18,8 +18,6 @@ tags:
 Ball Drop
 Frictionless Track
 Carts on a Track
-Rolling a Ball
-Angled Ramps
 ## Notes
 * Added to Vault
 	* Assignment Format 2024-06-14
