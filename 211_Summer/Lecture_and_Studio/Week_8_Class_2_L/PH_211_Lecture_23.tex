@@ -19,7 +19,7 @@
 \input{\FileDepth/Formats/Assignment20240614.tex}
 \input{\FileDepth/Formats/Lecture20240615.tex}
 
-%\input{\FileDepth/Formats/FBDCommands.tex}
+\input{\FileDepth/Formats/FBDCommands.tex}
 %\input{\FileDepth/Formats/MVDCommands.tex}
 
 %\input{\FileDepth/Activities/Activity_One/Activity_One.tex}
@@ -34,13 +34,8 @@
 	\huge Lecture \Week: Combining Physics Concepts II
 \end{center}
 \vspace{0.5cm}
-\underline{Warm-Up Activity} \\
-Question?
-%\begin{multicols}{2}
-\begin{enumerate}[(A)]
-	\item Answer?
-\end{enumerate}
-%\end{multicols}
+\underline{Announcements} \\
+We have learned a lot of topics in this class (kinematics, forces, energy, momentum, and all of their associated equations), and one of the hardest parts of physics can be choosing which method to use. On Friday, we will be going through activities centered around deciding when to choose a particular method.
 \end{PresentSpace}
 \newpage
 \begin{TeacherMargin}
@@ -141,14 +136,14 @@ From a work perspective, the work done on the ball in motion 1 is just $W_{1} = 
 			\draw[thick,color=black,fill=lightgray] (-2,0) rectangle (-1,1);
 			\node at (-1.5,0.5) {$m_{1}$};
 			\draw[thick] (-1,0.5) -- (0,0.5);
-			\draw[thick,<-] (-0.25,0.15) -- (-0.25,-0.5) node[anchor=north west,shift={(-0.2,0.2)}] {$\theta_{1}$};
+			\draw[thick,<-] (-0.25,0.15) -- (-0.25,-0.5) node[anchor=north west,shift={(-0.1,0.1)}] {$\theta_{1}$};
 		\end{scope}
 		\begin{scope}[shift={(7.5,0)},rotate=-20]
 			\draw[thick] (0,0) -- (2.5,0);
 			\draw[thick] (1,0.5) -- (0.15,0.5);
 			\draw[thick,color=black,fill=lightgray] (1,0) rectangle (2,1);
 			\node at (1.5,0.5) {$m_{3}$};
-			\draw[thick,<-] (0.5,0.15) -- (0.5,-0.5) node[anchor=north east,shift={(0.2,0.2)}] {$\theta_{3}$};
+			\draw[thick,<-] (0.5,0.15) -- (0.5,-0.5) node[anchor=north east,shift={(0.1,0.1)}] {$\theta_{3}$};
 		\end{scope}
 	\end{tikzpicture}
 \end{center}
@@ -156,30 +151,46 @@ If we wanted to know about acceleration, forces would make sense, but we just wa
 
 \noindent I will do the calculation assuming the boxes slide to the right, {\color{violet}but I will mark all changes for sliding left in violet.} \\
 \newcommand{\Vpm}{
-\begin{tikzpicture}
-	\node[violet] at (0,0) {$+$};
-	\node at (0,-0.1) {$-$};
-\end{tikzpicture}
+{\color{violet}+}\hspace{-7pt}\raisebox{-3pt}{$-$}\,
 }
 \newcommand{\Vmp}{
-	\begin{tikzpicture}
-		\node at (0,0) {$+$};
-		\node[violet] at (0,0.1) {$-$};
-	\end{tikzpicture}
++\hspace{-9pt}\raisebox{3pt}{\color{violet}$-$}\,
 }
 
 \noindent Conservation of Energy: $0 = \Delta E_{\text{total}} = \Delta K + \Delta U_{g1} + \Delta U_{g2}$ \\
 $\Delta K = K_{f}-K_{i} = K_{f} = \frac{1}{2}(m_{1}+m_{2}+m_{3})v^{2}$ \\
 $\Delta U_{g1} = {\color{violet}-}m_{1}gL\sin\theta_{1}$ \quad Box 1 rises {\color{violet}(lowers)} by $h={\color{violet}-}L\sin\theta_{1}$. \\
-$\Delta U_{g1} = \Vpm m_{1}gL\sin\theta_{3}$ \quad Box 3 lowers {\color{violet}(rises)} by $h={\color{violet}+}/-L\sin\theta_{3}$. \\
+$\Delta U_{g1} = \Vpm m_{1}gL\sin\theta_{3}$ \quad Box 3 lowers {\color{violet}(rises)} by $h=\Vpm L\sin\theta_{3}$. \\
 Our conservation of energy equation becomes
 \[
-\frac{1}{2}(m_{1}+m_{2}+m_{3})v^{2} {\color{violet}-}/+ m_{1}gL\sin\theta_{1} {\color{violet}+}/- m_{3}gL\sin\theta_{3} = 0,
+\frac{1}{2}(m_{1}+m_{2}+m_{3})v^{2} \Vmp m_{1}gL\sin\theta_{1} \Vpm m_{3}gL\sin\theta_{3} = 0,
 \]
 and therefore
-\[
-v=\sqrt{\frac{{\color{violet}-}2m_{3}gL\sin\theta_{3} {\color{violet}+}/-2m_{1}gL\sin\theta_{1}}{m_{1}+m_{2}+m_{3}}}
-\]
+\begin{align*}
+	v & = \sqrt{\frac{{\color{violet}-}2m_{3}gL\sin\theta_{3} \Vpm 2m_{1}gL\sin\theta_{1}}{m_{1}+m_{2}+m_{3}}} \\
+	& =\sqrt{\frac{2gL}{m_{1}+m_{2}+m_{3}}}\sqrt{{\color{violet}-}m_{3}\sin\theta_{3}\Vpm m_{1}\sin\theta_{1}}
+\end{align*}
+We need ${\color{violet}-}m_{3}\sin\theta_{3}\Vpm m_{1}\sin\theta_{1}\geq0$ (otherwise we are taking the square root of a negative number).
+\vspace{-10pt}
+\begin{multicols}{2}
+	\noindent Slides Right: $m_{3}\sin\theta_{3} > m_{1}\sin\theta_{1}$
+	
+	{\color{violet}Slides Left: $m_{1}\sin\theta_{1} > m_{3}\sin\theta_{3}$}
+\end{multicols}
+\vspace{-10pt}
+\noindent If $m_{3}\sin\theta_{3} = m_{1}\sin\theta_{1}$, then the boxes stay still. No kinetic energy is gained by sliding, so potential energy is constant, and thus there is no force pushing the system. \\
+\textbf{Special Cases}
+\begin{itemize}
+	\item $\theta_{1}=0^{\circ},\ \theta_{3}=90^{\circ} \implies v = \sqrt{\frac{2gLm_{3}}{m_{1}+m_{2}+m_{3}}}$ sliding right
+	\item $\theta_{1}=90^{\circ},\ \theta_{3}=0^{\circ} \implies v = \sqrt{\frac{2gLm_{1}}{m_{1}+m_{2}+m_{3}}}$ {\color{violet}sliding left}
+	\begin{itemize}
+		\item In both of these cases, we have a single block hanging while two are on a flat surface. There is no condition to keep them stationary, as there is no way to balance the force on the one hanging block. We have also done single hanging block problems that we can compare this to.
+	\end{itemize}
+	\item $m_{1}=m_{3} \implies v = \sqrt{\frac{2gLm_{1}}{2m_{1}+m_{2}}}\sqrt{{\color{violet}-}\sin\theta_{3}\Vpm\sin\theta_{1}}$
+	\begin{itemize}
+		\item In this case, the condition for the boxes to remain stationary is $\theta_{3}=\theta_{1}$, which makes sense, as for equal masses, the forces on $m_{2}$ will be balanced if the other two masses hang symmetrically.
+	\end{itemize}
+\end{itemize}
 \end{TeacherMargin}
 \begin{PresentSpace}
 \vspace{-10pt}
@@ -225,7 +236,51 @@ v=\sqrt{\frac{{\color{violet}-}2m_{3}gL\sin\theta_{3} {\color{violet}+}/-2m_{1}g
 \end{PresentSpace}
 \newpage
 \begin{TeacherMargin}
-	
+\textbf{Solving L\Week-2: Angled Ramps with Forces}
+\newcommand{\Vpm}{
+	{\color{violet}+}\hspace{-7pt}\raisebox{-3pt}{$-$}\,
+}
+\begin{center}
+	\begin{tikzpicture}
+		\draw[lightgray,dashed] (0,0) -- (10,0);
+		\draw[thick] (2.35,0.3) -- (2.5,0) -- (7.5,0) -- (7.65,0.3);
+		\draw[thick] (2.4,0.5) -- (7.6,0.5);
+		\draw[thick,color=black,fill=lightgray] (4.5,0) rectangle (5.5,1);
+		\node at (5,0.5) {$m_{2}$};
+		\draw[thick,->] (5,1.1) -- (5,1.3) -- (5,1.2) -- (6,1.2) node[anchor=west] {$+x$};
+		\draw[thick] (2.35,0.3) circle (0.2);
+		\draw[thick] (7.65,0.3) circle (0.2);
+		\begin{scope}[shift={(2.5,0)},rotate=40]
+			\draw[thick] (-2.5,0) -- (0,0);
+			\draw[thick,color=black,fill=lightgray] (-2,0) rectangle (-1,1);
+			\node at (-1.5,0.5) {$m_{1}$};
+			\draw[thick,->] (-1.5,1.1) -- (-1.5,1.3) -- (-1.5,1.2) -- (-0.5,1.2) node[anchor=west] {$+x$};
+			\draw[thick] (-1,0.5) -- (0,0.5);
+			\draw[thick,<-] (-0.25,0.15) -- (-0.25,-0.5) node[anchor=north west,shift={(-0.1,0.1)}] {$\theta_{1}$};
+		\end{scope}
+		\begin{scope}[shift={(7.5,0)},rotate=-20]
+			\draw[thick] (0,0) -- (2.5,0);
+			\draw[thick] (1,0.5) -- (0.15,0.5);
+			\draw[thick,color=black,fill=lightgray] (1,0) rectangle (2,1);
+			\node at (1.5,0.5) {$m_{3}$};
+			\draw[thick,->] (1.5,1.1) -- (1.5,1.3) -- (1.5,1.2) -- (2.5,1.2) node[anchor=west] {$+x$};
+			\draw[thick,<-] (0.5,0.15) -- (0.5,-0.5) node[anchor=north east,shift={(0.1,0.1)}] {$\theta_{3}$};
+		\end{scope}
+	\end{tikzpicture}
+\end{center}
+\textbf{Forces}
+\begin{align*}
+	(m_{1}+m_{2}+m_{3})a\hat{x} & = \vec{F}^{net} = (-m_{1}g\sin\theta_{1}+m_{3}g\sin\theta_{3})\hat{x} \\
+	a & = \frac{g}{m_{1}+m_{2}+m_{3}}(-m_{1}\sin\theta_{1}+m_{3}\sin\theta_{3})
+\end{align*}
+\textbf{Kinematics}
+\begin{align*}
+	v_{f}^{2} & = v_{i}^{2} + 2a\Delta x \qquad \Delta x = {\color{violet}-}L \\
+	& = {\color{violet}-}2aL \\
+	& = {\color{violet}-}\frac{2gL}{m_{1}+m_{2}+m_{3}}(-m_{1}\sin\theta_{1}+m_{3}\sin\theta_{3}) \\
+	v & = \sqrt{\frac{2gL}{m_{1}+m_{2}+m_{3}}}\sqrt{{\color{violet}-}m_{3}\sin\theta_{3}\Vpm m_{1}\sin\theta_{1}}
+\end{align*}
+Same answer!
 \end{TeacherMargin}
 \begin{PresentSpace}
 \section*{Main Ideas}

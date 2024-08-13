@@ -49,3 +49,5 @@ Activity 10-4: Angled Ramps
 	* solution document only
 	* no source file
 	* activities not split into their own files
+* 2024 08 13
+	* Relatively sure I spotted some typos, but I cannot seem to find them again.
