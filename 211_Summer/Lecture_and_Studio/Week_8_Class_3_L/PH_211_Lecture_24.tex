@@ -220,7 +220,18 @@ Motion Diagram
 \end{PresentSpace}
 \newpage
 \begin{TeacherMargin}
+\noindent We already know that the dart is traveling under the influence of gravity, so this is a projectile motion problem. We have nothing more to prove with forces. Momentum would also be overkill, as solving this problem with impulse (which itself depends on forces) would just reproduce results that are already possible with kinematics. We want to find out how far the dart falls, which depends on how long it is in the air. Our energy equations don't really deal with how long things take, just the state of the total energy at specific times. \\
 
+\noindent\textbf{Kinematics} \\
+We know that
+\[
+\Delta x = v_{ix} t,
+\]
+and we know both how far away the target is ($\Delta x = 2.4$ m) and how fast the dart is moving initially in this direction ($v_{ix} = 10$ m/s). We can solve this for time (obtaining $t=\frac{\Delta x}{v_{ix}}=0.24$ s) and see how far the dart falls in that time. In the vertical direction, there is no initial velocity ($v_{iy}=0$), so
+\[
+\Delta y = v_{iy}t-\frac{1}{2}gt^{2} = -\frac{1}{2}gt^{2} = -\frac{1}{2}g\left(\frac{\Delta x}{v_{ix}}\right)^{2} \approx -0.29\text{ m}.
+\]
+The dart fell almost an entire foot below the bullseye; based on how big a dartboard typically is, I would wager the dart missed the board entirely.
 \end{TeacherMargin}
 \begin{PresentSpace}
 \vspace{-10pt}
@@ -230,9 +241,41 @@ A dart is thrown horizontally at a speed of 10 m/s directly at the bullseye of a
 
 \noindent Where does the dart strike the board?
 \end{PresentSpace}
+\begin{textblock*}{5cm}(20cm,3cm)
+	\includegraphics[scale=0.4]{DartThrow.png}
+\end{textblock*}
 \newpage
 \begin{TeacherMargin}
+\noindent The jump over the cars is projectile motion, so it is probably a kinematics problem. We are just missing the launch speed off of the ramp. The shape of the ramp makes it too complicated for the simplest forms of kinematics, and a force analysis across a curving surface as an object moves would be prohibitively difficult. We have an initial and final height, which means we know the change in potential energy, so energy methods would be natural here. \\
 
+\noindent\textbf{Energy} \\
+Let us set the zero for gravitational potential energy at the height of the launch ramp. Thus, $U_{gi} = mgH_{0}$ and $U_{gf} = 0$. The cyclist starts at rest, so $K_{i} = 0$, which leaves $K_{f}=\frac{1}{2}mv^{2}$ to be found. The total final energy is equal to the total initial energy if we put the cyclist and the Earth into the system, as there will be no net external work:
+\begin{align*}
+	E_{f} & = E_{i} \\
+	U_{gf} + K_{f} & = U_{gi} + K_{i} \\
+	\frac{1}{2}mv^{2} & = mgH_{0} \\
+	v & = \sqrt{2mH_{0}}.
+\end{align*}
+This is the launch speed. \\
+
+\noindent\textbf{Kinematics} \\
+In vector form, at angle $\theta$ from the horizontal, we have that the launch velocity is
+\[
+\vec{v}_{i} = \sqrt{2gH_{0}}(\cos\theta_{0}\hat{x}+\sin\theta_{0}\hat{y}).
+\]
+The jump is complete when the bicycle returns to its original launch height:
+\[
+0 = \Delta y = v_{iy}t-\frac{1}{2}gt^{2} \implies v_{iy}=\frac{1}{2}gt \implies t = 2\frac{\sqrt{2gH_{0}}}{g}\sin\theta_{0}.
+\]
+At this time, the bicycle has covered horizontal distance $X_{0}$:
+\begin{align*}
+	X_{0} & = v_{ix}t = \sqrt{2gH_{0}}\cos\theta_{0} \cdot 2\frac{\sqrt{2gH_{0}}}{g}\sin\theta_{0} \\
+	& = 4H_{0}\cos\theta_{0}\sin\theta_{0}.
+\end{align*}
+If you remember your double-angle formulae, this is
+\[
+X_{0} = 2H_{0}\sin(2\theta_{0}).
+\]
 \end{TeacherMargin}
 \begin{PresentSpace}
 \vspace{-10pt}
@@ -242,12 +285,16 @@ A stunt cyclist builds a ramp that will allow the cyclist to coast down the ramp
 
 \noindent Goal: Derive an expression for $X_{0}$.
 \begin{center}
+	\includegraphics[scale=0.2]{JumpRamp.png} \\
 	\small
 	Problem Credit: College Board \textcopyright 2021
 \end{center}
 \end{PresentSpace}
 \newpage
 \begin{TeacherMargin}
+\noindent We begin with a collision between the arrow and the block. The forces between them during the embedding are likely too complicated for the models we understand, and we wouldn't be able to obtain an acceleration that would be usable for kinematics. Collisions suggest using momentum. After the collision, the block has some speed, and it ends at rest after compressing a spring by a known distance. That suggests that we know the final kinetic and potential energies of the system, so energy conservation would allow us to infer the combined velocity of the arrow and block. \\
+
+\noindent\textbf{Momentum}
 \begin{center}
 	\begin{tikzpicture}
 		\node at (-3.5,0) {$t_{1}$};
@@ -304,6 +351,30 @@ A stunt cyclist builds a ramp that will allow the cyclist to coast down the ramp
 		\end{scope}
 	\end{tikzpicture}
 \end{center}
+Our system is the arrow and block. If we assume the collision is very fast, then the impulse from gravity on the arrow is negligible, and therefore momentum is conserved:
+\[
+mv_{1} = (m+M)v_{2} \implies v_{1} = \frac{m+M}{m}v_{2}.
+\]
+\textbf{Energy} \\
+Our system is the arrow, block and spring.
+\begin{center}
+	\begin{tabular}{c||c|c||c}
+		& $K$ & $U_{sp}$ & $E_{\text{total}}$ \\ \hline
+		$t_{2}$ & $\frac{1}{2}(m+M)v_{2}^{2}$ & 0 & $\frac{1}{2}(m+M)v_{2}^{2}$ \\ \hline
+		$t_{3}$ & 0 & $\frac{1}{2}kx^{2}$& $\frac{1}{2}kx^{2}$
+	\end{tabular}
+\end{center}
+Without friction between the block and the surface, there is no net external work being done on this system, so
+\[
+\frac{1}{2}(m+M)v_{2}^{2} = \frac{1}{2}kx^{2} \implies v_{2} = \sqrt{\frac{k}{m+M}}x.
+\]
+Putting this together with our answer for the momentum portion, we find that the initial speed of the arrow was
+\begin{align*}
+	v_{1} & = \frac{m+M}{m}\sqrt{\frac{k}{m+M}}x = \frac{x}{m}\sqrt{k(m+M)} \\
+	& = \frac{0.1\text{ m}}{0.05\text{ kg}}\sqrt{(4000\text{ N/m})(0.4\text{ kg})} \\
+	& = 2\frac{\text{m}}{\text{kg}} \sqrt{1600\frac{\text{kg}^{2}}{\text{s}^{2}}} \\
+	& = 80\text{ m/s}.
+\end{align*}
 \end{TeacherMargin}
 \begin{PresentSpace}
 \vspace{-10pt}
@@ -320,7 +391,22 @@ You fire a 0.05 kg arrow at an unknown speed. It embeds in a 0.35 kg block that 
 \end{PresentSpace}
 \newpage
 \begin{TeacherMargin}
+We are looking for a final speed, but we know our force in terms of position, not time, so kinematics and impulse are not going to help, as we are missing a key piece of information. Instead, we will want to use energy, as force and distance together tell us about the energy being added to or removed from a system, which will tell us how much kinetic energy the particle has at the final position. \\
 
+\noindent\textbf{Energy} \\
+\begin{align*}
+	K_{i} & = \frac{1}{2}mv_{i}^{2} = \frac{1}{2}(2\text{ kg})(6\text{ m/s})^{2} = 36\text{ J}; \\
+	W_{\text{net,ext}} & = \int_{0\text{ m}}^{4.0\text{ m}} F(x) dx = (-5\text{ N})(3\text{ m}) + \frac{1}{2}(-5\text{ N})(1.0\text{ m}) = -\frac{35}{2}\text{ J}.
+\end{align*}
+By the work-energy theorem:
+\begin{align*}
+	\Delta E & = W_{\text{net,ext}} \\
+	\frac{1}{2}mv_{f}^{2} - \frac{1}{2}mv_{i}^{2} & = W_{\text{net,ext}} \\
+	v_{f} & = \sqrt{\frac{2\left(W+\frac{1}{2}mv_{i}^{2}\right)}{m}} \\
+	& = \sqrt{\frac{2\left(-\frac{35}{2}\text{ J}+36\text{ J}\right)}{2\text{ kg}}} \\
+	& = \sqrt{\frac{37}{2}\frac{\text{m}^{2}}{\text{s}^{2}}} \\
+	& \approx 4.3\text{ m/s}.
+\end{align*}
 \end{TeacherMargin}
 \begin{PresentSpace}
 \vspace{-10pt}
