@@ -38,7 +38,7 @@ tags:
 ---
 # PH 211 Studio 10 Physics
 ## Files
-[PH 211 Studio 10 PDF](./PH211_ST_10_Physics_240603_235441.pdf)
+[PH 211 Studio 10 PDF](./PH211_ST_10_Physics_240816_184018.pdf)
 ## Activities
 Activity 10-1: Frictionless Track
 Activity 10-2: Carts on a Track

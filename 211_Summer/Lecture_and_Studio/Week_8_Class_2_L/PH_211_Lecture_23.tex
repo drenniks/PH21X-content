@@ -160,7 +160,7 @@ If we wanted to know about acceleration, forces would make sense, but we just wa
 \noindent Conservation of Energy: $0 = \Delta E_{\text{total}} = \Delta K + \Delta U_{g1} + \Delta U_{g2}$ \\
 $\Delta K = K_{f}-K_{i} = K_{f} = \frac{1}{2}(m_{1}+m_{2}+m_{3})v^{2}$ \\
 $\Delta U_{g1} = {\color{violet}-}m_{1}gL\sin\theta_{1}$ \quad Box 1 rises {\color{violet}(lowers)} by $h={\color{violet}-}L\sin\theta_{1}$. \\
-$\Delta U_{g1} = \Vpm m_{1}gL\sin\theta_{3}$ \quad Box 3 lowers {\color{violet}(rises)} by $h=\Vpm L\sin\theta_{3}$. \\
+$\Delta U_{g3} = \Vpm m_{3}gL\sin\theta_{3}$ \quad Box 3 lowers {\color{violet}(rises)} by $h=\Vpm L\sin\theta_{3}$. \\
 Our conservation of energy equation becomes
 \[
 \frac{1}{2}(m_{1}+m_{2}+m_{3})v^{2} \Vmp m_{1}gL\sin\theta_{1} \Vpm m_{3}gL\sin\theta_{3} = 0,
@@ -269,8 +269,12 @@ We need ${\color{violet}-}m_{3}\sin\theta_{3}\Vpm m_{1}\sin\theta_{1}\geq0$ (oth
 	\end{tikzpicture}
 \end{center}
 \textbf{Forces}
+The forces in the $y$-direction of each coordinate system are balanced, so I will leave those off. Let the tension in the rope attached to $m_{1}$ be $F^{T}_{1}$, and the tension in the rope attached to $m_{3}$ be $F^{T}_{3}$
 \begin{align*}
-	(m_{1}+m_{2}+m_{3})a\hat{x} & = \vec{F}^{net} = (-m_{1}g\sin\theta_{1}+m_{3}g\sin\theta_{3})\hat{x} \\
+	m_{1}a\hat{x} & = \vec{F}^{net}_{1} = \left(F^{T}_{1} - m_{1}g\sin\theta_{1}\right)\hat{x} \\
+	m_{2}a\hat{x} & = \vec{F}^{net}_{2} = \left(F^{T}_{3} - F^{T}_{1}\right)\hat{x} \\
+	m_{3}a\hat{x} & = \vec{F}^{net}_{3} = \left(m_{3}g\sin\theta_{3} - F^{T}_{3}\right)\hat{x} \\
+	(m_{1}+m_{2}+m_{3})a\hat{x} & = (-m_{1}g\sin\theta_{1}+m_{3}g\sin\theta_{3})\hat{x} \\
 	a & = \frac{g}{m_{1}+m_{2}+m_{3}}(-m_{1}\sin\theta_{1}+m_{3}\sin\theta_{3})
 \end{align*}
 \textbf{Kinematics}
