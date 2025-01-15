@@ -4,15 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "2b8b9b7d465b0c9b",
+        "id": "5fbc6af813d10b6b",
         "type": "tabs",
         "children": [
           {
-            "id": "0a8d793e71a941f8",
+            "id": "5737decfd375a335",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "211/Recitation/Week_2/PH 221 Week 2.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "PH 221 Week 2"
             }
           }
         ]
@@ -35,7 +41,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -44,13 +52,15 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#format/assignment2024-06-14",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -58,7 +68,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
@@ -81,7 +93,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "211/Studio/Week_10/PH 211 Studio 10 Physics.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,7 +100,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
             }
           },
           {
@@ -98,10 +111,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "211/Studio/Week_10/PH 211 Studio 10 Physics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
             }
           },
           {
@@ -112,7 +126,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -120,9 +136,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "211/Studio/Week_10/PH 211 Studio 10 Physics.md"
-              }
+              "state": {},
+              "icon": "lucide-list",
+              "title": "Outline"
             }
           }
         ],
@@ -142,20 +158,36 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0ee81c010de32636",
+  "active": "5737decfd375a335",
   "lastOpenFiles": [
-    "211/Studio/Week_10/PH211_ST_10_Physics_240603_235441.pdf",
-    "211/Studio/Week_10/PH211_ST_10_Physics_240816_184018.pdf",
+    "211/Recitation/Week_2/PH_221_Week_2-Solution.pdf",
+    "211/Recitation/Week_2/PH 221 Week 2.md",
+    "211/Recitation/Week_2/PH_221_Week_2.pdf",
+    "211/Recitation/Week_2/PH_221_Week_2.synctex(busy)",
+    "211/Recitation/Week_2/PH_221_Week_2.tex.jG5179",
+    "211/Recitation/Week_2/PH_221_Week_2-Worksheet.pdf",
+    "211/Recitation/Week_2/PH_221_Week_2.tex.Sm5179",
+    "211/Recitation/Week_2/PH_221_Week_2.synctex.gz",
+    "211/Recitation/Week_2/PH_221_Week_2.aux",
+    "211/Recitation/Week_2/PH_221_Week_2.log",
+    "Activities/Force_versus_Net_Force/Force versus Net Force.md",
+    "Activities/Suitcase_Pull/Suitcase Pull.md",
+    "Activities/Crate_Brick_Box_Car_FBDs/Crate Brick Box Car FBDs.md",
+    "Activities/Force_versus_Net_Force/Force_versus_Net_Force_Preview.pdf",
+    "Activities/Free_Fall_from_FBD/Free Fall from FBD.md",
+    "211/Recitation/Week_10/PH 221 Week 10.md",
+    "Formats/Formats.md",
+    "211/Recitation/Week_1/PH 221 Week 1.md",
+    "Activities/Visual_Vector_Addition/Visual Vector Addition.md",
+    "Activities/Representations_of_Volume/Representations of Volume.md",
+    "Activities/Vectors_in_a_Garden/Vectors in a Garden.md",
+    "211/Recitation/Week_4/PH 221 Week 4.md",
+    "211/Recitation/Week_5/PH 221 Week 5.md",
+    "Activities/Net_Zero_Vectors/Net Zero Vectors.md",
+    "Activities/Two_Vector_Hike/Two Vector Hike.md",
+    "Activities/Semi-Truck_Unit_Conversions/Semi-Truck Unit Conversions.md",
+    "Activities/Vector_Addition_and_Subtraction/Vector Addition and Subtraction.md",
     "211/Studio/Week_10/PH 211 Studio 10 Physics.md",
-    "211_Summer/Lecture_and_Studio/Week_8_Class_3_L/PH_211_Lecture_24_Slides.synctex(busy)",
-    "211_Summer/Lecture_and_Studio/Week_8_Class_3_L/PH_211_Lecture_24_Slides.synctex.gz",
-    "211_Summer/Lecture_and_Studio/Week_8_Class_3_L/PH_211_Lecture_24_Slides.pdf",
-    "211_Summer/Lecture_and_Studio/Week_8_Class_3_L/PH_211_Lecture_24_Slides.aux",
-    "211_Summer/Lecture_and_Studio/Week_8_Class_3_L/PH_211_Lecture_24_Slides.log",
-    "211_Summer/Lecture_and_Studio/Week_8_Class_3_L/PH_211_Lecture_24.synctex(busy)",
-    "211_Summer/Lecture_and_Studio/Week_8_Class_3_L/PH_211_Lecture_24.tex.Vd6655",
-    "211_Summer/Lecture_and_Studio/Week_8_Class_3_L/PH_211_Lecture_24.tex.uI6655",
-    "211_Summer/Lecture_and_Studio/Week_8_Class_3_L/PH_211_Lecture_24.tex.fo6655",
     "211_Summer/Lecture_and_Studio/Week_8_Class_3_L/JumpRamp.png",
     "211_Summer/Lecture_and_Studio/Week_8_Class_3_L/DartThrow.png",
     "211_Summer/Lecture_and_Studio/Week_2_Class_3_L/Lecture 6.md",
@@ -165,25 +197,8 @@
     "211_Summer/Lecture_and_Studio/Week_8_Class_2_L/Lecture 23.md",
     "211_Summer/Lecture_and_Studio/Week_5_Class_1_L/Lecture 13.md",
     "211_Summer/Lecture_and_Studio/Week_4_Class_3_L/Lecture 12.md",
-    "211_Summer/Lecture_and_Studio/Week_5_Class_2_L/Lecture 14.md",
-    "211_Summer/Lecture_and_Studio/Week_5_Class_3_L/Lecture 15.md",
-    "211_Summer/Lecture_and_Studio/Week_5_Class_1_S/Studio 5.md",
-    "211_Summer/Lecture_and_Studio/Week_2_Class_2_L/Lecture 5.md",
-    "211_Summer/Lecture_and_Studio/Week_3_Class_1_S/Studio 3.md",
-    "Formats/Formats.md",
-    "211_Summer/Recitation/Week_8/PH 221 Week 8.md",
     "211_Summer/Lecture_and_Studio/Week_8_Class_2_L/WedgeRamp.png",
-    "211_Summer/Lecture_and_Studio/Week_1_Class_3_L/Lecture 3.md",
-    "211_Summer/Lecture_and_Studio/Week_7_Class_1_S/Studio 7.md",
     "211_Summer/Lecture_and_Studio/Week_8_Class_1_S/FourFrictionless.png",
-    "211_Summer/Lecture_and_Studio/Week_6_Class_3_L/Lecture 18.md",
-    "211_Summer/Lecture_and_Studio/Week_7_Class_2_L/Lecture 20.md",
-    "211_Summer/Lecture_and_Studio/Week_8_Class_1_L/Lecture 22.md",
-    "Activities/Springloaded_Sled/Springloaded Sled.md",
-    "Activities/Colliding_Rocks/Colliding Rocks.md",
-    "Activities/Comparing_Pushed_Particles/Comparing Pushed Particles.md",
-    "211_Summer/Lecture_and_Studio/Week_7_Class_3_L/Lecture 21.md",
-    "211_Summer/Lecture_and_Studio/Week_7_Class_1_L/Lecture 19.md",
     "211_Summer/Lecture_and_Studio/Week_3_Class_1_L/Sensemake.png",
     "211_Summer/Lecture_and_Studio/Week_3_Class_1_L/Calculate.png",
     "211_Summer/Lecture_and_Studio/Week_3_Class_1_L/AnalyzeAndRepresent.png",

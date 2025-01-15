@@ -15,10 +15,10 @@
 %opening
 \title{PH 221 Week 1}
 \author{Benjamin Bauml}
-\date{Spring 2024}
+\date{Winter 2025}
 \pagestyle{fancy}
 \rhead{PH 221}
-\chead{Spring 2024}
+\chead{Winter 2025}
 \lhead{Week 1}
 
 % Version 2024-02-21
@@ -114,7 +114,7 @@
 \begin{document}
 \begin{Title}
 \begin{center}
-	This material is borrowed/adapted from PH 201 Tutorial 1 for Fall 2020.
+	This material is borrowed/adapted from PH 201 Tutorial 1 for Fall 2020 and the \textit{Learning Introductory Physics with Activities} textbook.
 \end{center}
 \end{Title}
 
@@ -207,6 +207,102 @@ In the solutions below, the first vector is colored {\color{blue}blue}, the seco
 \end{PassFig}
 
 \begin{Problem}{Activity 2}
+	In the following figure, the magnitudes of the vectors are $|\vec{a}| = 5$ and $|\vec{b}|=5$. Assume that $\vec{c}=\vec{a}+\vec{b}$ and $\vec{d}=\vec{a}-\vec{b}$.
+\end{Problem}
+\begin{PassFig}
+	\centering
+	\begin{tikzpicture}
+		\draw[<->] (0,2) node[anchor=south] {$y$} -- (0,0) -- (2,0) node[anchor=west] {$x$};
+		\draw[->,ultra thick,rotate=20] (0,0) -- (1.8,0) node[anchor=west] {$\vec{b}$};
+		\draw[->,ultra thick,rotate=255] (0,0) -- (1.8,0) node[anchor=east] {$\vec{a}$};
+		\draw[dotted] (0,0) -- (-1,0);
+		\draw[thick] (-0.25,0) arc (180:255:0.25);
+		\node[anchor=north] at (-0.5,0) {$75^{\circ}$};
+		\draw[thick] (0.5,0) arc (0:20:0.5);
+		\node[anchor=south] at (1.25,0) {$20^{\circ}$};
+	\end{tikzpicture}
+\end{PassFig}
+\begin{ProblemSub}
+	Determine the magnitude of the vectors $\vec{c}$ and $\vec{d}$. What is the angle to each vector from the positive $x$-axis?
+\end{ProblemSub}
+To begin, let us make some visual representations of vector addition. We can estimate the quantities in question and use them to validate our final answers.
+\begin{figure}[h]
+	\centering
+	\begin{tikzpicture}
+		\begin{scope}
+		\draw[<->] (0,2) node[anchor=south] {$y$} -- (0,0) -- (2,0) node[anchor=west] {$x$};
+		\draw[->,ultra thick,rotate=255,gray] (0,0) -- (1.8,0) node (atip) {};
+		\node[anchor=east,gray] at (atip) {$\vec{a}$};
+		\begin{scope}[shift={(atip)}]
+		\draw[->,ultra thick,rotate=20,gray] (0,0) -- (1.8,0) node (btip) {};
+		\node[anchor=west,gray] at (btip) {$\vec{b}$};
+		\draw[thick] (0.5,0) arc (0:20:0.5);
+		\node[anchor=south] at (1.25,0) {$20^{\circ}$};
+		\draw[dotted] (0,0) -- (1,0);
+		\end{scope}
+		\draw[dotted] (0,0) -- (-1,0);
+		\draw[thick] (-0.25,0) arc (180:255:0.25);
+		\node[anchor=north] at (-0.5,0) {$75^{\circ}$};
+		\draw[->,ultra thick,rotate=-42.5] (0,0) -- (0.82,0) node[anchor=south west] {$\vec{c}$} -- (1.66,0);
+		\end{scope}
+		\begin{scope}[shift={(7,0)}]
+			\draw[<->] (0,2) node[anchor=south] {$y$} -- (0,0) -- (2,0) node[anchor=west] {$x$};
+			\draw[->,ultra thick,rotate=255,gray] (0,0) -- (1.8,0) node (atip) {};
+			\node[anchor=south east,gray] at (atip) {$\vec{a}$};
+			\begin{scope}[shift={(atip)}]
+				\draw[->,ultra thick,rotate=200,gray] (0,0) -- (1.8,0) node (btip) {};
+				\node[anchor=north,gray] at (btip) {$-\vec{b}$};
+				\draw[thick] (0.5,0) arc (0:200:0.5);
+				\node[anchor=south] at (1,0) {$200^{\circ}$};\draw[dotted] (0,0) -- (1,0);
+			\end{scope}
+			\draw[dotted] (0,0) -- (-1,0);
+			\draw[thick] (-0.25,0) arc (180:255:0.25);
+			\node[anchor=north] at (-0.5,0) {$75^{\circ}$};
+			\draw[->,ultra thick,rotate=227.5] (0,0) -- (1.6,0) node[anchor=south east] {$\vec{d}$} -- (3.19,0);
+		\end{scope}
+	\end{tikzpicture}
+\end{figure}
+
+We can see that $\vec{c}$ will be slightly smaller than 5 units long, and nearly 45$^{\circ}$ below the positive $x$-axis, while $\vec{d}$ will be probably close to 9 units long (almost twice 5, based on my visual estimate) and around 135$^{\circ}$ below the positive $x$-axis.
+
+To begin, let us break down the known vectors into their components. Note that the angle $\vec{a}$ makes is with respect to the negative $x$-axis and below it, so an explicit negative sign will be added both components.
+\[
+\begin{split}
+	a_{x} & = -5\cos(75^{\circ}) \approx -1.29, \\
+	a_{y} & = -5\sin(75^{\circ}) \approx -4.83, \\
+	b_{x} & = 5\cos(20^{\circ}) \approx 4.70, \\
+	b_{y} & = 5\sin(20^{\circ}) \approx 1.71.
+\end{split}
+\]
+Adding the vectors componentwise, we obtain
+\[
+\begin{split}
+	\vec{c} & = \vec{a}+\vec{b} \approx 3.41 \hat{x} - 3.12 \hat{y}, \\
+	\vec{d} & = \vec{a}-\vec{b} \approx -5.99 \hat{x} - 6.54 \hat{y}.
+\end{split}
+\]
+We can then use the Pythagorean theorem to calculate the magnitudes of these vectors:
+\[
+\begin{split}
+	|\vec{c}| & \approx \sqrt{3.41^{2}+3.12^{2}} \approx 4.62, \\
+	|\vec{d}| & \approx \sqrt{5.99^{2}+6.54^{2}} \approx 8.87.
+\end{split}
+\]
+Trigonometry can be used to find the directions of these vectors. For $\vec{c}$, let the angle from the positive $x$-axis be
+\[
+\gamma \approx \arctan\left(\frac{-3.12}{3.14}\right) \approx -42.5^{\circ},
+\]
+therefore $\vec{c}$ points 42.5$^{\circ}$ below the positive $x$-axis. For $\vec{d}$, let the angle from the positive $x$-axis be
+\[
+\delta^{*} = \approx \arctan\left(\frac{-6.54}{-5.99}\right) \approx 47.5^{\circ}.
+\]
+However, this points into the first quadrant, which we know is incorrect. The tangent function is tricky that way. It has a period of 180$^{\circ}$, so there is more than one angle that gives the same result, and the inverse tangent is not guaranteed to give you the right one. We can subtract the period to get another valid answer:
+\[
+\delta = \delta^{*} - 180^{\circ} \approx -132.5^{\circ},
+\]
+therefore $\vec{d}$ points 132.5$^{\circ}$ below the positive $x$-axis.
+
+\begin{Problem}{Activity 3}
 	A semi-truck travels 11 km in 7.5 minutes.
 \end{Problem}
 \begin{ProblemSub}
@@ -236,43 +332,6 @@ Side Note: Notice that I truncated 24.444 to just 24. When figuring out how many
 \text{time per meter} = \frac{7.5\text{ min}}{11\text{ km}} = \frac{7.5\text{ min}}{11\text{ km}} \left(\frac{1\text{ km}}{1000\text{ m}}\right) \left(\frac{60\text{ s}}{1\text{ min}}\right) = \frac{1}{24.444\text{ m/s}} \approx 0.041\text{ s/m}
 \]
 Side Note: 0.041 has two ``significant figures,'' since we do not count the leading zeros.
-
-\begin{Problem}[1]{Activity 3}
-	You are about to play a game of pool, so you and your opponent are lagging for the first shot. To lag, you must bounce the cue ball off of the far end of the table, and get it as close to the near end as possible without touching it. While preparing to strike, you accidentally give the cue ball a light tap, setting it in motion.
-	
-	Uh-oh! Through some bizarre accident, the pool table has become entirely frictionless! The cue ball slides toward the opposite end without rolling or slowing down.
-	
-	A spectator across the table from you decides that the midpoint is $ x=0 $ cm. Relative to her, the edge near you is at $ x = 127 $ cm, and the far edge is at $ x = -127 $ cm.
-	
-	It takes the cue ball 4 s to slide at constant velocity from $ x = 89 $ cm to $ x = 17 $ cm.
-\end{Problem}
-\begin{ProblemSub}
-	a) What is its velocity?
-\end{ProblemSub}
-Since the ball is traveling at constant speed, we can find its velocity exactly by dividing the ball's displacement (from 89 cm to 17 cm) by the time it takes to undergo that displacement:
-\[
-v = \frac{\Delta x}{\Delta t} = \frac{x_{f}-x_{i}}{\Delta t} = \frac{17\text{ cm} - 89\text{ cm}}{4\text{ s}} = \frac{-72\text{ cm}}{4\text{ s}} = -18\text{ cm/s.}
-\]
-Note the sign; velocity is a vector, so it has magnitude (the speed, 18 cm/s) and direction (the negative sign, indicating that it is moving toward the negative side of the pool table, away from you). This is also seen in the displacement, which is negative.
-\begin{ProblemSub}
-	b) How long does it take the cue ball to slide from $ x = 17 $ cm to $ x = -127 $ cm?
-\end{ProblemSub}
-We can start with the same relationship between velocity, displacement, and elapsed time, and rearrange:
-\[
-v = \frac{\Delta x}{\Delta t} \implies \Delta t = \frac{\Delta x}{v} = \frac{x_{f}-x_{i}}{v} = \frac{-127\text{ cm}-17\text{ cm}}{-18\text{ cm/s}} = \frac{-144\text{ cm}}{-18\text{ cm}} = 8\text{ s.}
-\]
-\begin{ProblemSub}
-	c) The cue rebounds from the far edge without losing speed. What is its position 10 s after it is at $ x = -127 $ cm?
-\end{ProblemSub}
-Note that $ v = +18\text{ cm/s} $ now. We once again take our expression for velocity and rearrange:
-\[
-\begin{split}
-	v & = \frac{x_{f}-x_{i}}{\Delta t} \\
-	x_{f}-x_{i} & = v\Delta t \\
-	x_{f} & = x_{i} + v\Delta t = -127\text{ cm} + (18\text{ cm/s})(10\text{ s}) = 53\text{ cm.}
-\end{split}
-\]
-Position is also a vector, so this positive number tells us that the ball is on the positive end of the table (on the near side of the midpoint, relative to you).
 
 
 \begin{Problem}{Activity 4}
@@ -344,58 +403,46 @@ Maria's displacement was 23.8 km at an angle of 7.50$ ^{\circ} $ south of east. 
 In adding vectors by components, it is important to keep track of their signs. If we hadn’t had the negative sign in the north component of Maria’s second hike, our answer would have been much different (and wrong).
 
 \begin{Problem}{Activity 5}
-	Mary runs east at 6.0 km/h for 0.50 hr. She then turns around and runs west at 4.0 km/h for 1.0 h. Let east be the positive direction.
+	Three vectors add together to equal 0. One vector has magnitude 3 and points in the positive $x$-direction; a second vector has magnitude 5 and points at 120$^{\circ}$ from the positive $x$-axis. Determine the third vector as a magnitude and direction.
 \end{Problem}
-\begin{ProblemSub}
-	a) Draw a motion diagram for Mary. Assume turning around takes negligible time.
-\end{ProblemSub}
+Below, I have drawn the two vectors---I'm calling the first vector along the $x$-axis $\vec{a}$, and the angled vector $\vec{b}$. A cyan copy of $\vec{b}$ has been placed at the tip of $\vec{a}$ to illustrate the sum $\vec{a}+\vec{b}$. The red vector is what the third vector needs to be for the three to sum to zero.
 \begin{figure}[h]
 	\centering
-	\begin{tikzpicture}[scale=1.5]
-		\node[anchor=south] at (0,0) {\phantom{,}0\phantom{,}};
-		\filldraw[black] (0,0) circle (2pt);
-		\node[anchor=south] at (1,0) {1,6};
-		\filldraw[black] (1,0) circle (2pt);
-		\node[anchor=south] at (2,0) {\phantom{,}2\phantom{,}};
-		\filldraw[black] (2,0) circle (2pt);
-		\node[anchor=south] at (3,0) {\phantom{,}3\phantom{,}};
-		\filldraw[black] (3,0) circle (2pt);
-		\node[anchor=south] at (2.33,0) {\phantom{,}4\phantom{,}};
-		\filldraw[black] (2.33,0) circle (2pt);
-		\node[anchor=south] at (1.66,0) {\phantom{,}5\phantom{,}};
-		\filldraw[black] (1.66,0) circle (2pt);
-		%\node[anchor=south] at (1,0) {6};
-		%\filldraw[black] (1,0) circle (2pt);
-		\node[anchor=south] at (0.33,0) {\phantom{,}7\phantom{,}};
-		\filldraw[black] (0.33,0) circle (2pt);
-		\node[anchor=south] at (-0.33,0) {\phantom{,}8\phantom{,}};
-		\filldraw[black] (-0.33,0) circle (2pt);
-		\node[anchor=south] at (-1,0) {\phantom{,}9\phantom{,}};
-		\filldraw[black] (-1,0) circle (2pt);
+	\begin{tikzpicture}
+		\draw[<->] (0,2) node[anchor=south] {$y$} -- (0,0) -- (2,0) node[anchor=west] {$x$};
+		\draw[->,ultra thick] (0,0) -- (1.2,0) node[anchor=south] {$\vec{a}$};
+		\draw[->,ultra thick,rotate=120] (0,0) -- (2,0) node[anchor=south] {$\vec{b}$};
+		\draw[->,ultra thick,shift={(1.2,0)},rotate=120,cyan] (0,0) -- (2,0) node[anchor=south] (btip) {$\vec{b}$};
+		\draw[->,ultra thick,red] (btip) -- (0,0);
 	\end{tikzpicture}
 \end{figure}
+Based on this representation, we can see that the third vector must be a little shorter than $\vec{b}$, and it will point a little more than 90$^{\circ}$ clockwise from the positive $x$-axis.
 
-Here, we have chosen $ \Delta t = 10 $ min. Other choices are also acceptable.
-\begin{ProblemSub}
-	b) How far does Mary run?
-\end{ProblemSub}
-To find how far she runs, we want the total distance she ran. Distance doesn't include directional information, so we just find how far she ran east and how far she ran west (two positive numbers) and add them together:
+Let's break $\vec{b}$ into components:
 \[
 \begin{split}
-	d_{E} & = (6.0 \text{ km/h})(0.50\text{ h}) = 3.0\text{ km} \\
-	d_{W} & = (4.0 \text{ km/h})(1.0\text{ h}) = 4.0\text{ km} \\
-	d & = d_{E} + d_{W} = 3.0\text{ km} + 4.0\text{ km} = 7.0\text{ km.}
+	b_{x} & = 5\cos(120^{0}) =-2.5, \\
+	b_{y} & = 5\sin(120^{0}) \approx 4.33.
 \end{split}
 \]
-\begin{ProblemSub}
-	c) What is Mary’s displacement?
-\end{ProblemSub}
-Displacement is a vector, so we need to add the displacement of her eastward run (a positive number) to the displacement of her westward run (a negative number) to get the total displacement:
+Adding $\vec{a}$ and $\vec{b}$ componentwise gives us
 \[
-\begin{split}
-	\vec{d}_{E} & = (6.0 \text{ km/h})(0.50\text{ h}) = 3.0\text{ km} \\
-	\vec{d}_{W} & = (-4.0 \text{ km/h})(1.0\text{ h}) = -4.0\text{ km} \\
-	\vec{d} & = \vec{d}_{E} + \vec{d}_{W} = 3.0\text{ km} + (-4.0\text{ km}) = -1.0\text{ km}, \text{ i.e. } 1.0\text{ km, west.}
-\end{split}
+\vec{a}+\vec{b} \approx 3\hat{x} + \left(-2.5\hat{x} + 4.33\hat{y}\right) = 0.5\hat{x} + 4.33\hat{y},
+\]
+so the third vector (let's call it $\vec{c}$) will be the negative of this:
+\[
+\vec{c} = -\left(\vec{a}+\vec{b}\right) = -0.5\hat{x} -4.33\hat{y}.
+\]
+We can get the magnitude via the Pythagorean Theorem:
+\[
+|\vec{c}| \approx \sqrt{0.5^{2}+4.33^{2}} \approx 4.36.
+\]
+The angle can be determined trigonometrically, but most calculators will give you the wrong answer first:
+\[
+\theta^{*} \approx \arctan\left(\frac{-4.33}{-0.5}\right) \approx 83.4.
+\]
+This would be the angle for $-\vec{c}$. The tangent function has a period of 180$^{\circ}$, so we can subtract this to get another valid angle in the correct quadrant:
+\[
+\theta = \theta^{*} - 180^{\circ} \approx -96.6^{\circ}.
 \]
 \end{document}

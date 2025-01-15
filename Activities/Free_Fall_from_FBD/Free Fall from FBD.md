@@ -16,10 +16,14 @@ tags:
   - learning_objectives/critical_thinking/assumptions_and_simplifications
   - learning_objectives/Newton_and_conservation_laws
   - outcomes/determine_germane_principles
+  - usage/PH211/quarter/W2025
 ---
 # Free Fall from FBD
-## Spring 2024
 [Free Fall from FBD TeX](./Free_Fall_from_FBD.tex)
-* Added to Vault
+[Free Fall from FBD Preview TeX](./Free_Fall_from_FBD_Preview.tex)
+[Free Fall from FBD Preview PDF](./Free_Fall_from_FBD_Preview.pdf)
+* Added to Vault Spring 2024
 	* Assignment Format Version 2024-04-27
 	* Refers to [[Crate Brick Box Car FBDs]]
+* Added preview document 2025 01 14
+	* Requires _cancel_ TeX package.

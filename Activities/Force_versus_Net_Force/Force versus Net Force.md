@@ -10,11 +10,11 @@ tags:
   - learning_objectives/Newton_and_conservation_laws
   - outcomes/determine_germane_principles
   - content/forces
+  - usage/PH211/quarter/W2025
 ---
 # Force versus Net Force
-## Spring 2024
 [Force versus Net Force TeX](./Force_versus_Net_Force.tex)
 [Force versus Net Force Preview TeX](./Force_versus_Net_Force_Preview.tex)
 [Force versus Net Force Preview PDF](./Force_versus_Net_Force_Preview.pdf)
-* Added to Vault
+* Added to Vault Spring 2025
 	* Assignment Format Version 2024-04-27
