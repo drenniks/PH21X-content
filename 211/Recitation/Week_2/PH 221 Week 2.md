@@ -3,11 +3,11 @@ tags:
   - modality/in-person
   - usage/PH211/quarter/Sp2024/Week2
   - usage/PH211/section_type/recitation
-  - to-do/format
   - usage/PH211/quarter/W2025
   - format/assignment2024-06-14
+  - usage/PH211/quarter/W2025/Week2
 ---
-# PH 221 2024 Spring Week 2
+# PH 221 Week 2
 ## Files
 [PH 221 Week 2 TeX](211/Recitation/Week_2/PH_221_Week_2.tex)
 [PH 221 Week 2 PDF](211/Recitation/Week_2/PH_221_Week_2.pdf)
