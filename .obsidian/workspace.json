@@ -11,10 +11,14 @@
             "id": "1ae3947f63714bc3",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "211/Recitation/Week_4/PH 221 Week 4.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "PH 221 Week 4"
             }
           }
         ]
@@ -154,21 +158,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0ee81c010de32636",
+  "active": "1ae3947f63714bc3",
   "lastOpenFiles": [
-    "211/Recitation/Week_2/PH 221 Week 2.md",
     "211/Recitation/Week_3/PH 221 Week 3.md",
-    "211/Recitation/Week_3/PH_221_Week_3.pdf",
     "211/Recitation/Week_3/PH_221_Week_3-Solution.pdf",
-    "211/Recitation/Week_3/PH_221_Week_3-Worksheet.pdf",
+    "211/Recitation/Week_3/PH_221_Week_3.pdf",
     "211/Recitation/Week_3/PH_221_Week_3.synctex(busy)",
+    "211/Recitation/Week_3/PH_221_Week_3.tex.Lh2800",
+    "211/Recitation/Week_3/PH_221_Week_3.tex.XM2800",
+    "Activities/Steady_Block_on_a_Sliding_Ramp/Steady Block on a Sliding Ramp.md",
+    "Activities/Steady_Block_on_a_Sliding_Ramp/Steady_Block_on_a_Sliding_Ramp_Preview.synctex(busy)",
+    "Activities/Steady_Block_on_a_Sliding_Ramp/Steady_Block_on_a_Sliding_Ramp.tex.TJ2800",
+    "211/Recitation/Week_2/PH 221 Week 2.md",
+    "211/Recitation/Week_3/PH_221_Week_3-Worksheet.pdf",
     "211/Recitation/Week_3/PH_221_Week_3.tex.Ti4062",
     "211/Recitation/Week_3/PH_221_Week_3.tex.kn4062",
-    "Activities/Steady_Block_on_a_Sliding_Ramp/Steady Block on a Sliding Ramp.md",
-    "211/Recitation/Week_3/PH_221_Week_3.tex.nS4062",
-    "211/Recitation/Week_3/PH_221_Week_3.synctex.gz",
-    "211/Recitation/Week_3/PH_221_Week_3.aux",
-    "211/Recitation/Week_3/PH_221_Week_3.log",
     "Activities/Apparent_Weight_in_an_Elevator/Apparent Weight in an Elevator.md",
     "211/Recitation/Week_5/PH 221 Week 5.md",
     "211/Recitation/Week_1/PH 221 Week 1.md",
