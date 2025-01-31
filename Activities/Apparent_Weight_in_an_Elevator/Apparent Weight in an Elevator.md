@@ -19,6 +19,7 @@ tags:
   - outcomes/conceptual_and_quantitative_predictions
   - learning_objectives/critical_thinking/apply_concepts
   - time/short
+  - usage/PH211/quarter/W2025/Week3
 ---
 # Apparent Weight in an Elevator
 ## Spring 2024

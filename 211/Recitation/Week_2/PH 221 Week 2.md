@@ -3,7 +3,6 @@ tags:
   - modality/in-person
   - usage/PH211/quarter/Sp2024/Week2
   - usage/PH211/section_type/recitation
-  - usage/PH211/quarter/W2025
   - format/assignment2024-06-14
   - usage/PH211/quarter/W2025/Week2
 ---
