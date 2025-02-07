@@ -1,154 +1,41 @@
-\documentclass[]{article}
-\usepackage[a4paper, total={15cm,23cm}]{geometry}
-\usepackage{fancyhdr}
-\usepackage{graphicx}
-\usepackage{amsmath}
-\usepackage{amssymb}
-\usepackage{xcolor}
-\usepackage{tikz}
-\usepackage{verbatim}
-\usepackage{tcolorbox}
-\usepackage{textcomp}
-\usepackage{xcomment}
-\usepackage{xstring}
-\usepackage{array}
-%opening
-\title{Toy Rocket Launch}
-\author{Benjamin Bauml}
-\date{Spring 2024}
-\pagestyle{fancy}
-\rhead{PH 221}
-\chead{Spring 2024}
-\lhead{Week 2}
-
-% Version 2024-02-21
-% Changes
-% 2024-02-21 Added xstring package to enable smooth implementation of new \ModePage command.
-% For Assignment, leave Purpose as 1. For Worksheet, set to 2. For Student Solution, set to 3. For Teacher Solution, set to 4.
-\newcommand{\Purpose}{4}
-
-\newcommand{\Exclusion}{0}
-\newcommand{\PageTurn}{0}
-\newcommand{\GrayProb}{0}
-\newcommand{\Tipsy}{0}
-
-% Assignment
-\if\Purpose1
-\renewcommand{\Exclusion}{1}
-\fi
-% Worksheet
-\if\Purpose2
-\renewcommand{\Exclusion}{1}
-\renewcommand{\PageTurn}{1}
-\fi
-% Student Solution
-\if\Purpose3
-\renewcommand{\PageTurn}{1}
-\renewcommand{\GrayProb}{1}
-\fi
-% Teaching Copy
-\if\Purpose4
-\renewcommand{\PageTurn}{1}
-\renewcommand{\GrayProb}{1}
-\renewcommand{\Tipsy}{1}
-\fi
-
-\if\Exclusion1
-\xcomment{Title,Problem,ProblemSub,PassFig}
-\fi
-
-\def \NewQ {0}
-\def \PForce {0}
-\newcommand{\MaybePage}[1]{
-	\def \PForce {#1}
-	\if\PForce1
-		\newpage
-	\else
-		\if\NewQ0
-		\gdef \NewQ {\PageTurn}
-		\else
-		\newpage
-		\fi
-	\fi
+\Problem{Toy Rocket Launch}{\ToyRocket}{
+A toy rocket is launched straight up with constant acceleration $ a $. It runs out of fuel at time $ t $.
 }
-
-\newcommand{\ModePage}[1]{
-	\IfSubStr{#1}{\Purpose}{\newpage}{}
+\ProblemSub{\ToyRocketA}{
+(a) Is the rocket at its maximum height the instant it runs out of fuel? Explain briefly.
 }
-
-\newenvironment{Problem}[2][0]{%The first argument is optional, and if it is set to 1, the \newpage will be forced.
-\MaybePage{#1}
-\section*{#2}
-\if\GrayProb1
-\begin{tcolorbox}[colback=lightgray,colframe=lightgray,sharp corners,boxsep=1pt,left=0pt,right=0pt,top=0pt,bottom=0pt,after skip=2pt]
-\else
-\begin{tcolorbox}[colback=white,colframe=white,sharp corners,boxsep=1pt,left=0pt,right=0pt,top=0pt,bottom=0pt,after skip=2pt]
-\fi
-}{
-\end{tcolorbox}\noindent
-}
-
-\newenvironment{ProblemSub}[1][0]{%The argument is optional, and if a string of numbers is entered into it, it will force a \newpage in any \Purpose that shows up in the string. For example, "13" would lead to the newpage being forced in modes 1 and 3.
-\ModePage{#1}
-\if\GrayProb1
-\begin{tcolorbox}[colback=lightgray,colframe=lightgray,sharp corners,boxsep=1pt,left=0pt,right=0pt,top=0pt,bottom=0pt,after skip=2pt]
-\else
-\begin{tcolorbox}[colback=white,colframe=white,sharp corners,boxsep=1pt,left=0pt,right=0pt,top=0pt,bottom=0pt,after skip=2pt]
-\fi
-}{
-\end{tcolorbox}\noindent
-}
-
-\newenvironment{PassFig}{\begin{figure}[h]}{\end{figure}}
-
-\newcommand{\TeachingTips}[1]{
-\if\Tipsy1
-\begin{tcolorbox}[colback=lightgray,colframe=black]
-#1
-\end{tcolorbox}
-\fi
-}
-
-\newenvironment{Title}{\maketitle}{}
-
-\begin{document}
-\begin{Title}
-\begin{center}
-	This activity is Problem 22 of Chapter 2 from the \textit{Student Workbook} for \textit{Physics for Scientists and Engineers}.
-\end{center}
-\end{Title}
-
-\begin{Problem}{Activity}
-	A toy rocket is launched straight up with constant acceleration $ a $. It runs out of fuel at time $ t $.
-\end{Problem}
-\begin{ProblemSub}
-	(a) Is the rocket at its maximum height the instant it runs out of fuel? Explain briefly.
-\end{ProblemSub}
+\Solution{\ToyRocketASol}{
 No. It has been gaining speed since it launched, and now it still has upward velocity to carry it further.
-\begin{ProblemSub}
-	(b) What assumptions would you make in order to solve this problem?
-\end{ProblemSub}
+}
+\ProblemSub{\ToyRocketB}{
+(b) What assumptions would you make in order to solve this problem?
+}
+\Solution{\ToyRocketBSol}{
 First, we will be modeling the rocket as a point mass for simplicity. We are given the assumption that the rocket is launched perfectly straight up, so we don't have to worry about horizontal motion and may leave the problem completely one-dimensional. We should also assume that the rocket is near the Earth's surface (thus gravity does not change appreciably with elevation). We should ignore air resistance, which further helps us to assume that the acceleration of the object is constant as it falls (after the fuel runs out).
-\begin{ProblemSub}
-	(c) What is the name of motion under the influence of only gravity? How would you write the vector for acceleration due to gravity?
-\end{ProblemSub}
+}
+\ProblemSub{\ToyRocketC}{
+(c) What is the name of motion under the influence of only gravity? How would you write the vector for acceleration due to gravity?
+}
+\Solution{\ToyRocketCSol}{
 Motion under the influence of only gravity is called \textit{free-fall} (even if the object is moving upward during the motion; it does not need to be going down to be in free-fall).
 
 Assuming that $\hat{y}$ points upward (a common and reasonable choice of coordinate system), then the vector for acceleration due to gravity would be $\vec{a}=-g\hat{y}$. Note that the negative sign comes from our coordinate system; the constant $g\approx9.8$ m/s is a positive quantity.
-\begin{ProblemSub}[34]
-	(d) Draw a motion diagram for this problem. You should have three identified points in the motion: launch, out of fuel, maximum height. We'll call these points 1, 2, and 3 to have consistent definitions.
+}
+\ProblemSub[34]{\ToyRocketD}{
+(d) Draw a motion diagram for this problem. You should have three identified points in the motion: launch, out of fuel, maximum height. We'll call these points 1, 2, and 3 to have consistent definitions.
+\begin{itemize}
+	\item Using subscripts, define quantities: $ y $, $ v_{y} $, and $ t $ at each of the three points, 
+	\item Describe the acceleration $ a_{1} $ during the interval from point 1 to point 2, and acceleration $ a_{2} $ during the interval from point 2 to point 3.
+	\item Identify each quantity as Unknown or Known:
 	\begin{itemize}
-		\item Using subscripts, define quantities: $ y $, $ v_{y} $, and $ t $ at each of the three points, 
-		\item Describe the acceleration $ a_{1} $ during the interval from point 1 to point 2, and acceleration $ a_{2} $ during the interval from point 2 to point 3.
-		\item Identify each quantity as Unknown or Known:
-		\begin{itemize}
-			\item Was it given numerically? 
-			\item Was it given symbolically? 
-			\item Can we reason that it must be zero? 
-			\item Be careful with signs!
-		\end{itemize}
+		\item Was it given numerically? 
+		\item Was it given symbolically? 
+		\item Can we reason that it must be zero? 
+		\item Be careful with signs!
 	\end{itemize}
-\end{ProblemSub}
+\end{itemize}
+}
+\Solution{\ToyRocketDSol}{
 \begin{figure}[h]
 	\centering
 	\begin{tikzpicture}
@@ -203,9 +90,11 @@ We can set the starting height $y_{1}$ of the rocket to zero, and we can always 
 Symbolically, we are given the out-of-fuel time, $t_{2} = t$, and the upward acceleration during the launch, $a_{2}=a$. Note that this is the overall acceleration, which accounts for both the downward pull of gravity and the stronger upward thrust of the rocket engine. We also know that $a_{2}=-g$, as the object is in free-fall after it runs out of fuel. It is negative, as the acceleration is downward and we are choosing up to be the positive direction.
 
 That leaves $y_{2}$, $v_{y_{2}}$, $t_{3}$, and $y_{3}$ as unknowns.
-\begin{ProblemSub}[34]
-	(e) Draw qualitatively accurate graphs of the acceleration vs. time and the velocity vs. time.
-\end{ProblemSub}
+}
+\ProblemSub[34]{\ToyRocketE}{
+(e) Draw qualitatively accurate graphs of the acceleration vs. time and the velocity vs. time.
+}
+\Solution{\ToyRocketESol}{
 \begin{figure}[h]
 	\centering
 	\begin{tikzpicture}
@@ -275,12 +164,14 @@ That leaves $y_{2}$, $v_{y_{2}}$, $t_{3}$, and $y_{3}$ as unknowns.
 Having constant acceleration means that the acceleration will consist of (piecewise) horizontal lines, and thus the velocity graph will be (piecewise) linear. Since the acceleration graph has a jump discontinuity at $t$, the velocity graph will have a corner (a place where the slopes do not match) at the same time.
 
 These graphs were drawn to match the picture in part (d). If the rocket is assumed to cover less distance after the fuel runs out than before, then the area under the velocity graph must be smaller from $t$ to $t_{3}$ than from 0 to $t$. This also means that the slope is steeper from $t$ to $t_{3}$, so the acceleration due to gravity must have a greater magnitude than $a$.
-\begin{ProblemSub}
-	Suppose we want to know the maximum height of the rocket.
-\end{ProblemSub}
-\begin{ProblemSub}
-	(f) This is a two-part problem. Use your knowledge of calculus and motion to write \textit{kinematic equations} for the first part of the motion. Use the given (symbolic) values for $a_1$ and $t_2$ to determine---again symbolically---the two unknown quantities at point 2.
-\end{ProblemSub}
+}
+\ProblemSub{\ToyRocketFGH}{
+Suppose we want to know the maximum height of the rocket.
+}
+\ProblemSub{\ToyRocketF}{
+(f) This is a two-part problem. Use your knowledge of calculus and motion to write \textit{kinematic equations} for the first part of the motion. Use the given (symbolic) values for $a_1$ and $t_2$ to determine---again symbolically---the two unknown quantities at point 2.
+}
+\Solution{\ToyRocketFSol}{
 We know the time of flight, acceleration, and initial velocity, and we want to know $ v_{y_{2}} $, so the following equation is most relevant:
 \[
 v_{y_{2}}=v_{y_{1}}+a_{1}(t_{2}-t_{1}) = 0 + a(t-0) = at.
@@ -292,9 +183,11 @@ We know the inital position and velocity, the acceleration, and the time of flig
 	& = 0+0+\frac{1}{2}a(t-0)^{2} = \frac{1}{2}at^{2}.
 \end{split}
 \]
-\begin{ProblemSub}
-	(g) Use your knowledge of calculus and motion to write similar \textit{kinematic equations} for the second interval of the motion. Just write the equations; don't solve it yet.
-\end{ProblemSub}
+}
+\ProblemSub{\ToyRocketG}{
+(g) Use your knowledge of calculus and motion to write similar \textit{kinematic equations} for the second interval of the motion. Just write the equations; don't solve it yet.
+}
+\Solution{\ToyRocketGSol}{
 By this point, we know the acceleration (solely gravitational) and the final velocity $ v_{y_{3}} = 0 $, and we would know $ y_{2} $ and $ v_{y_{2}} $ if we solved the above equations. We want to know the maximum height $ y_{3} $, so it would make sense to take the equation
 \[
 \begin{split}
@@ -318,6 +211,7 @@ If you happen to know the third kinematic equation,
 v_{f}^{2} = v_{i}^{2} + 2a\Delta y,
 \]
 then you can skip the step of substituting for time and just obtain the prior result directly.
+}
 \TeachingTips{
 Students may not have seen the third equation in class, and may be interested in seeing the derivation. Start with
 \[
@@ -340,9 +234,10 @@ This substitutes cleanly into the prior equation to give
 v_{f}^{2} = v_{i}^{2} + 2a\Delta y.
 \]
 }
-\begin{ProblemSub}
-	(h) Now, substitute the known information from previous parts of the question into your equations from part (g). Find $y_3$ in terms of quantities given in the problem and the constant $g$.
-\end{ProblemSub}
+\ProblemSub{\ToyRocketH}{
+(h) Now, substitute the known information from previous parts of the question into your equations from part (g). Find $y_3$ in terms of quantities given in the problem and the constant $g$.
+}
+\Solution{\ToyRocketHSol}{
 We begin with
 \[
 y_{3} = y_{2} + \frac{v^{2}_{y_{2}}}{2g}.
@@ -351,4 +246,4 @@ We know that $ v_{y_{2}} = at $ and $ y_{2} = \frac{1}{2}at^{2} $, so we get
 \[
 y_{3} = \frac{1}{2} at^{2} + \frac{a^{2}t^{2}}{2g} = \frac{(ga+a^{2})t^{2}}{2g}.
 \]
-\end{document}
+}
