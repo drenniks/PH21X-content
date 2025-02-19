@@ -13,6 +13,7 @@ tags:
   - learning_objectives/critical_thinking/apply_concepts
   - learning_objectives/critical_thinking/sensemaking
   - outcomes/determine_germane_principles
+  - usage/PH211/quarter/W2025/Week7
 ---
 # Lifting Boxes
 ## Spring 2024

@@ -5,8 +5,9 @@ tags:
   - format/assignment2024-04-27
   - modality/in-person
   - time/medium
+  - usage/PH211/quarter/W2025/Week7
 ---
-# PH 221 2024 Spring Week 7
+# PH 221 Week 7
 ## Files
 [PH 221 Week 7 TeX](PH_221_Week_7.tex)
 [PH 221 Week 7 PDF](PH_221_Week_7.pdf)
@@ -18,5 +19,5 @@ tags:
 [[Lifting Boxes]]
 [[Spring Reasoning]]
 ## Notes
-* Added to Vault
+* Added to Vault 2024 Spring
 	* Assignment Format 2024-04-27

@@ -10,6 +10,7 @@ tags:
   - source/Knight/chapter9/workbook
   - content/energy/work
   - content/scalars
+  - usage/PH211/quarter/W2025/Week7
 ---
 # Visual Dot Product Practice
 ## Spring 2024
