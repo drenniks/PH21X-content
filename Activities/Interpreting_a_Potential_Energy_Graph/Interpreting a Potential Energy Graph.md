@@ -17,6 +17,7 @@ tags:
   - learning_objectives/extend_principles_to_specific_applications
   - learning_objectives/Newton_and_conservation_laws
   - time/short
+  - usage/PH211/quarter/W2025/Week8
 ---
 # Interpreting a Potential Energy Graph
 ## Spring 2024

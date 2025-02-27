@@ -20,6 +20,7 @@ tags:
   - learning_objectives/point_model
   - learning_objectives/representations
   - time/short
+  - usage/PH211/quarter/W2025/Week8
 ---
 # Sliding Cube in a Bowl
 ## Spring 2024

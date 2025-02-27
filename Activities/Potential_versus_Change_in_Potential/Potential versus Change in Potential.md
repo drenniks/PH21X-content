@@ -12,6 +12,7 @@ tags:
   - outcomes/determine_germane_principles
   - content/forces/negative_gradient_of_potential
   - time/short
+  - usage/PH211/quarter/W2025/Week8
 ---
 # Potential versus Change in Potential
 ## Spring 2024

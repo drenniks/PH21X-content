@@ -18,6 +18,7 @@ tags:
   - learning_objectives/Newton_and_conservation_laws
   - learning_objectives/representations
   - time/short
+  - usage/PH211/quarter/W2025/Week8
 ---
 # Producing a Potential Energy Graph
 ## Spring 2024
