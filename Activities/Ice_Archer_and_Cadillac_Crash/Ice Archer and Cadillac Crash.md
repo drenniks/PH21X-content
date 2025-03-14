@@ -20,6 +20,7 @@ tags:
   - content/momentum/collisions/inelastic
   - usage/PH211/quarter/Sp2024/Week9
   - usage/PH211/section_type/recitation
+  - usage/PH211/quarter/W2025/Week9
 ---
 # Ice Archer and Cadillac Crash
 ## Spring 2024
@@ -32,3 +33,6 @@ tags:
 		* ![Archer on Ice](Archer_on_Ice.pdf)
 		* ![Cadillac_Collision](Cadillac_Collision.pdf)
 	* Heavily modified to involve more ARCS steps and sensemaking.
+## Winter 2025
+* Added part regarding change in kinetic energy.
+* Edited part (e) (formerly part (d)) to not require matching special cases.

@@ -5,8 +5,9 @@ tags:
   - format/assignment2024-05-19
   - modality/in-person
   - time/unknown
+  - usage/PH211/quarter/W2025/Week9
 ---
-# PH 221 2024 Spring Week 9
+# PH 221 Week 9
 ## Files
 [PH 221 Week 9 TeX](PH_221_Week_9.tex)
 [PH 221 Week 9 PDF](PH_221_Week_9.pdf)
@@ -16,6 +17,6 @@ tags:
 [[Comparing Pushed Particles]]
 [[Ice Archer and Cadillac Crash]]
 ## Notes
-* Added to Vault
+* Added to Vault 2024 Spring
 	* Assignment Format 2024-05-19
 	* No instructor notes

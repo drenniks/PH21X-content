@@ -17,6 +17,7 @@ tags:
   - learning_objectives/critical_thinking/sensemaking
   - learning_objectives/Newton_and_conservation_laws
   - learning_objectives/point_model
+  - usage/PH211/quarter/W2025/Week9
 ---
 # Comparing Pushed Particles
 ## Spring 2024

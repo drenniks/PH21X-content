@@ -1,6 +1,7 @@
 \Problem{Cliffside Midair Collision}{\CliffMidColl}{
 You are standing at the bottom of a cliff, your friend is standing at the top, and each of you is in possession of a ball. Your friend drops the ball off of the edge, and at the exact same time, you throw your ball up toward it such that they collide in midair.
 }
+\TeachingTips{\OverTip}{This problem is achievable for students, as they have been exposed to all of the necessary concepts. However, the lack of scaffolding (which is a rather healthy thing for them to experience) and length of the problem make it quite intimidating. For that reason, it may take a more hands-on approach from the instructor. First, go through the diagram with the entire class, asking them to identify the critical pieces of information that should be included based on what is being asked about in the subsequent parts. Part (a) requests a height of collision and a collision speed, so the diagram should at least depict the cliff, establish a coordinate system, and indicate the height of collision, as well as perhaps indicate initial and final speeds. Part (b) requests information about energy before and after the collision, and part (c) requests similar information about momentum, so our diagram should depict the situation (with relevant quantities indicated) at multiple relevant instants (at least the initial time, the time immediately before the collision, and the time immediately after). I chose to not depict the final time, as the exact location of the lower ball is not immediately apparent (though we will pretty quickly find out that it will return to the ground at that time). Be sure to define all of the symbols you devise on the board.}
 \Solution{\CliffMidCollSol}{
 
 Let $h$ be the height of the cliff, $y_{c}$ be the height of the collision, $m_{d}$ be the mass of the ball your friend drops, and $m_{l}$ be the mass of the ball you launch upward. At the time of the drop and launch, $t_{i}$, your friend's ball is at rest at height $h$, and yours has initial speed $v_{li}$ at height zero. At the instant right before the collision, $t_{bc}$, both balls are at $y_{c}$, with your friend's ball moving at speed $v_{dbc}$ and your ball moving at speed $v_{lbc}$. The instant after the collision, $t_{ac}$, your friend's ball has speed $v_{dac}$, and your ball has speed $v_{lac}$. The time at which your friend's ball reaches the top of the cliff once again will be denoted $t_{f}$.
@@ -41,7 +42,7 @@ Let $h$ be the height of the cliff, $y_{c}$ be the height of the collision, $m_{
 	\end{tikzpicture}
 \end{figure}
 }
-\ProblemSub{\CliffMidCollA}{
+\ProblemSub[4]{\CliffMidCollA}{
 (a) At what height do the two balls collide? How fast is your ball going when the two balls collide?
 }
 \Solution{\CliffMidCollASol}{
@@ -65,12 +66,55 @@ As for the speed of your ball, we can conclude that
 	\label{vcol}
 \end{equation}
 }
-\ProblemSub[34]{\CliffMidCollB}{
+\ProblemSub[3]{\CliffMidCollB}{
 (b) If you want your friend's ball to bounce back to the top of the cliff after the collision, how much kinetic energy must it have after the collision? What is its velocity after the collision?
+}
+\TeachingTips{\EnergyTip}{
+
+Consider leading the students through the energy bar charts, asking them to help you set up the columns. They'll get the punchline of the activity, but they can still do the symbolic parts, now with the guidance of knowing the outcome.
 }
 \Solution{\CliffMidCollBSol}{
 
-Let us write expressions for the energies of the dropped ball at all four times.
+We can start by guiding ourselves with a graphical representation of how the energy in the dropped ball is distributed. We know that the height (and therefore the gravitational potential energy) must be the same at $t_{i}$ and $t_{f}$. Since the height right before and right after the collision is the same, the potential energies at $t_{bc}$ and $t_{ac}$ are equal to each other as well. These energies are smaller than the beginning and ending potential energies, as the collision height is lower than the top of the cliff.
+
+The system we've defined (Earth and the ball) has no net external work from $t_{i}$ to $t_{bc}$, and no external work from $t_{ac}$ to $t_{f}$, so $E_{tot}(t_{i}) = E_{tot}(t_{bc})$ and $E_{tot}(t_{ac}) = E_{tot}(t_{f})$. The potential energy decrease from $t_{i}$ to $t_{bc}$ is therefore equal to the kinetic energy at $t_{bc}$, and the potential energy increase from $t_{ac}$ to $t_{f}$ is equal to the kinetic energy at $t_{ac}$.
+
+\begin{center}
+	\begin{tikzpicture}
+		\begin{scope}[shift={(0,0)}]
+			\draw[thick] (0,0) node[anchor=east] {$t_{i}$} -- (1.5,0);
+			\draw[thick] (0.1,-0.1) -- (0.1,0) -- (0.4,0) node[anchor=north] {$K_{d}$} -- (0.7,0) -- (0.7,-0.1);
+			%\filldraw[blue] (0.1,0) rectangle (0.7,);
+			\draw[thick] (0.8,-0.1) -- (0.8,0) -- (1.1,0) node[anchor=north] {$U_{gd}$} -- (1.4,0) -- (1.4,-0.1);
+			\filldraw[blue] (0.8,0) rectangle (1.4,1);
+		\end{scope}
+		\begin{scope}[shift={(2.5,0)}]
+			\draw[thick] (0,0) node[anchor=east] {$t_{bc}$} -- (1.5,0);
+			\draw[thick] (0.1,-0.1) -- (0.1,0) -- (0.4,0) node[anchor=north] {$K_{d}$} -- (0.7,0) -- (0.7,-0.1);
+			\filldraw[blue] (0.1,0) rectangle (0.7,0.7);
+			\draw[thick] (0.8,-0.1) -- (0.8,0) -- (1.1,0) node[anchor=north] {$U_{gd}$} -- (1.4,0) -- (1.4,-0.1);
+			\filldraw[blue] (0.8,0) rectangle (1.4,0.3);
+		\end{scope}
+		\begin{scope}[shift={(7.5,0)}]
+			\draw[thick] (0,0) node[anchor=east] {$t_{f}$} -- (1.5,0);
+			\draw[thick] (0.1,-0.1) -- (0.1,0) -- (0.4,0) node[anchor=north] {$K_{d}$} -- (0.7,0) -- (0.7,-0.1);
+			%\filldraw[blue] (0.1,0) rectangle (0.7,);
+			\draw[thick] (0.8,-0.1) -- (0.8,0) -- (1.1,0) node[anchor=north] {$U_{gd}$} -- (1.4,0) -- (1.4,-0.1);
+			\filldraw[blue] (0.8,0) rectangle (1.4,1);
+		\end{scope}
+		\begin{scope}[shift={(5,0)}]
+			\draw[thick] (0,0) node[anchor=east] {$t_{ac}$} -- (1.5,0);
+			\draw[thick] (0.1,-0.1) -- (0.1,0) -- (0.4,0) node[anchor=north] {$K_{d}$} -- (0.7,0) -- (0.7,-0.1);
+			\filldraw[blue] (0.1,0) rectangle (0.7,0.7);
+			\draw[thick] (0.8,-0.1) -- (0.8,0) -- (1.1,0) node[anchor=north] {$U_{gd}$} -- (1.4,0) -- (1.4,-0.1);
+			\filldraw[blue] (0.8,0) rectangle (1.4,0.3);
+		\end{scope}
+	\end{tikzpicture}
+\end{center}
+
+However, since that potential energy difference is the same across each of those time intervals, The kinetic energies at $t_{bc}$ and $t_{ac}$ must be equal. This is enough to conclude that the speed does not change after the collision, though the velocity does (it reverses direction, since the balls bounce off of each other).
+
+To see this in symbolic form, let us write expressions for the energies of the dropped ball at all four times.
 \begin{center}
 	\begin{tabular}{c|c|c||c}
 		& $K_{d}$ & $U_{gd}$ & $E_{tot}$ \\
@@ -112,6 +156,10 @@ It is also worth noting that $\vec{v}_{dac} = -\vec{v}_{dbc}$ implies that $\vec
 }
 \ProblemSub{\CliffMidCollC}{
 (c) How fast do you have to throw your ball in order for your friend's ball to bounce back to the top of the cliff? Assume the collision is perfectly elastic.
+}
+\TeachingTips{\MomentumTip}{
+
+Students need to recognize that, since part (a) gave them $v_{lbc}$ in terms of $v_{li}$, we need to find $v_{lbc}$ to get our answer. Leading the students through the momentum vector diagrams, asking them to spot your (intentional) mistakes, would be useful, and it would still leave the math for them.
 }
 \Solution{\CliffMidCollCSol}{
 
@@ -172,17 +220,31 @@ This situation conserves energy for each ball, but not the momentum of the whole
 	\end{tikzpicture}
 \end{center}
 
-In symbolic form, the change of the momentum of the dropped ball is
+In symbolic form, we can equate the initial and final momenta of the system, as momentum is conserved here:
 \[
-\Delta \vec{p}_{d} = \vec{p}_{dac}-\vec{p}_{dbc} = -2\vec{p}_{dbc} = 2p_{dbc}\hat{y},
+\begin{split}
+	\vec{p}_{sys,bc} & = \vec{p}_{sys,ac} \\
+	\vec{p}_{dbc} + \vec{p}_{lbc} & = \vec{p}_{dac} + \vec{p}_{lac} \\
+	m_{d}\vec{v}_{dbc} + m_{l}\vec{v}_{lbc} & = m_{d}\vec{v}_{dac} + m_{l}\vec{v}_{lac}.
+\end{split}
 \]
-so by conservation of momentum, it must be that $\Delta\vec{p}_{l} = -2p_{dbc}\hat{y}$. In turn, this means that $\Delta\vec{v}_{l} = -2\frac{p_{dbc}}{m_{l}}\hat{y}$, which gives us
+Since both of the final speeds just reverse direction, this expression becomes
 \[
-\vec{v}_{lac} = \vec{v}_{lbc} + \Delta\vec{v}_{l} = \left(v_{lbc}-2\frac{p_{dbc}}{m_{l}}\right)\hat{y}.
+\begin{split}
+	m_{d}\vec{v}_{dbc} + m_{l}\vec{v}_{lbc} & = -m_{d}\vec{v}_{dbc} - m_{l}\vec{v}_{lbc} \\
+	2m_{l}\vec{lbc} & = -2m_{d}\vec{v}_{dbc} \\
+	\vec{v}_{lbc} & = -\frac{m_{d}}{m_{l}}\vec{v}_{dbc}.
+\end{split}
 \]
-We need $v_{lbc}-2\frac{p_{dbc}}{m_{l}} = \pm v_{lbc}$ in order to conserve kinetic energy, and $v_{lbc}-2\frac{p_{dbc}}{m_{l}} = v_{lbc}$ would only be possible if $p_{dbc}=0$, which we know is not true, so $\vec{v}_{lac}=-\vec{v}_{lbc}$ (this is another line of reasoning to conclude that the launched ball bounces back from the collision, which we already figured out). In turn, this implies that $\frac{p_{dbc}}{m_{l}} = v_{lbc}$, and therefore
+The velocity of the dropped ball before collision was downward, so this can be rewritten as
 \[
-v_{lbc} = \frac{m_{d}}{m_{l}}v_{dbc} = \frac{m_{d}}{m_{l}}\frac{gh}{v_{li}}.
+\vec{v}_{lbc} = \frac{m_{d}}{m_{l}}v_{dbc}\hat{y},
+\]
+and we expect the lower ball to be traveling upward, so this has the correct direction.
+
+We know $v_{dbc} = v_{dac} = \frac{gh}{v_{li}}$, which we found in part (b), so
+\[
+v_{lbc} = \frac{m_{d}}{m_{l}}\frac{gh}{v_{li}}.
 \]
 From Eqn. \ref{vcol}, we can see that
 \[
@@ -192,6 +254,11 @@ From Eqn. \ref{vcol}, we can see that
 	\implies v_{li} & = \sqrt{\left(\frac{m_{d}}{m_{l}}+1\right)gh}.
 \end{split}
 \]
+}
+\ProblemSub{\CliffMidCollD}{
+(d) Perform sensemaking (use multiple techniques!) on your answer for initial speed of the launched ball.
+}
+\Solution{\CliffMidCollDSol}{
 
 We can see that $v_{li}$ increases as $m_{d},\ g$, or $h$ increases, which makes sense, as a more massive dropped ball, stronger gravity, or a longer fall all give the dropped ball more momentum right before the collision, which means we have to increase the momentum of the launched ball to successfully turn the dropped ball around. Conversely, $v_{li}$ decreases as $m_{l}$ increases, as we can get the same momentum for less speed by using a more massive ball.
 

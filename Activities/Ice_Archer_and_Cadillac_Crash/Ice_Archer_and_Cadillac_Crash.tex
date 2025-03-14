@@ -65,7 +65,7 @@ The normal forces on the cars are balanced against the forces of gravity, so the
 The combined initial momentum of the archer and arrow (which is zero, since they both start from rest) is equal to the combined final momentum of the pair:
 \[
 \begin{split}
-	m_{archer}\cancel{(v_{ix})}_{\Arxr} + m_{\Arrw}\cancel{(v_{ix})}_{\Arrw} & = m_{\Arxr}(v_{fx})_{\Arxr} + m_{\Arrw}(v_{fx})_{\Arrw} \\
+	m_{\Arxr}\cancel{(v_{ix})}_{\Arxr} + m_{\Arrw}\cancel{(v_{ix})}_{\Arrw} & = m_{\Arxr}(v_{fx})_{\Arxr} + m_{\Arrw}(v_{fx})_{\Arrw} \\
 	0 & = m_{\Arxr}(v_{fx})_{\Arxr} + m_{\Arrw}(v_{fx})_{\Arrw} \\
 	(v_{fx})_{\Arxr} & = -\frac{m_{\Arrw}}{m_{\Arxr}}(v_{fx})_{\Arrw} \\
 	& = -\frac{0.1\text{ kg}}{50\text{ kg}}(100\text{ m/s}) \\
@@ -92,9 +92,42 @@ The combined initial momentum of the Cadillac and Volkswagen is equal to the com
 You must hit the Cadillac at 2 mph to stop it.
 }
 \ProblemSub{\IceCadD}{
-(d) Identify and check special cases for each of these situations. If you examine a particular special case for one situation, adjust it to apply to the other situation. The math will be practically identical, but the physical interpretation will be distinct.
+(d) Calculate the change in kinetic energy in both situations, and identify where the energy comes from or goes to.
 }
-\Solution{\IceCadDSol}{
+\ProblemSub{\IceCadDI}{
+(i) How much kinetic energy do the archer and arrow have after firing? Where did it come from?
+}
+\Solution{\IceCadDISol}{
+
+The arrow has
+\[
+K_{\Arrw} = \frac{1}{2} m_{\Arrw}(v_{fx})_{\Arrw}^{2} = \frac{1}{2}(0.1\text{ kg})(100\text{ m/s})^{2} = 500 \text{ J}.
+\]
+The archer has
+\[
+K_{\Arxr} = \frac{1}{2} m_{\Arxr}(v_{fx})_{\Arxr}^{2} = \frac{1}{2}(50\text{ kg})(0.2\text{ m/s})^{2} = 1 \text{ J}.
+\]
+In total, 501 J of kinetic energy is gained by the system. This came from the elastic potential energy stored in the bow, which was put there by the archer expending chemical potential energy to pull it back.
+}
+\ProblemSub{\IceCadDII}{
+(ii) How much kinetic energy did the two cars have before the collision? Where did it go?
+}
+\Solution{\IceCadDIISol}{
+
+The Cadillac (going 1 mph, or about 0.447 m/s) had
+\[
+K_{1} = \frac{1}{2}m_{1}(v_{ix})_{1}^{2} = \frac{1}{2}(2000\text{ kg})(0.447\text{ m/s})^{2} \approx 200\text{ J},
+\]
+while the Volkswagen (going 2 mph, or about 0.894 m/s) had
+\[
+K_{2} = \frac{1}{2}m_{2}(v_{ix})_{2}^{2} = \frac{1}{2}(1000\text{ kg})(0.894\text{ m/s})^{2} \approx 400\text{ J}.
+\]
+Note that the Volkswagen, with half the mass but double the speed, had more kinetic energy. Together, they shared 600 J of kinetic energy, which was lost to heat, sound, and deformation of the materials of the cars.
+}
+\ProblemSub{\IceCadE}{
+(e) Identify and check 3 special cases for each of these situations. (You may notice that the three special cases in one situation are basically mathematically identical to the three in the other. You may find it interesting to match these together, as while the math is the same, the physical interpretations are quite distinct.)
+}
+\Solution{\IceCadESol}{
 
 \noindent\textbf{\underline{Case 1: Equal Masses}}
 
